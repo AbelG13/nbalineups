@@ -79,10 +79,18 @@ return (
                   <div
                     key={player.id}
                     onClick={() => handlePlayerSelect(player)}
-                    className="p-3 hover:bg-blue-50 cursor-pointer border-b border-gray-200 last:border-b-0"
+                    className="flex items-center gap-3 p-3 hover:bg-blue-50 cursor-pointer border-b border-gray-200 last:border-b-0"
                   >
-                    <div className="font-medium">{`${player.first_name} ${player.last_name}`}</div>
-                    <div className="text-sm text-gray-600">{player.team_abbreviation} • {player.position}</div>
+                    <img
+                      src={`https://cdn.nba.com/headshots/nba/latest/1040x760/${player.player_id}.png`}
+                      alt={`${player.first_name} ${player.last_name}`}
+                      className="w-10 h-10 rounded-full object-cover border border-gray-300"
+                      onError={(e) => e.target.style.display = 'none'}
+                    />
+                    <div>
+                      <div className="font-medium">{`${player.first_name} ${player.last_name}`}</div>
+                      <div className="text-sm text-gray-600">{player.team_abbreviation} • {player.position}</div>
+                    </div>
                   </div>
                 ))}
             </div>
@@ -158,71 +166,116 @@ return (
               {/* Player Positions */}
               <div 
                 onClick={() => handlePositionClick(0, true)}
-                className="absolute left-1/2 top-[68%] -translate-x-1/2 w-16 h-16 bg-blue-500 rounded-full border-2 border-white flex items-center justify-center cursor-pointer hover:bg-blue-600 transition-colors shadow-lg"
+                className="absolute left-1/2 top-[68%] -translate-x-1/2 flex flex-col items-center cursor-pointer"
               >
-                {courtPlayers[0] ? (
-                  <div className="text-xs text-center">
-                    <div className="font-bold">{courtPlayers[0].last_name}</div>
-                    <div className="text-xs">{courtPlayers[0].position}</div>
+                <div className="w-16 h-16 bg-blue-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-blue-600 transition-colors shadow-lg">
+                  {courtPlayers[0] ? (
+                    <img
+                      src={`https://cdn.nba.com/headshots/nba/latest/1040x760/${courtPlayers[0].player_id}.png`}
+                      alt={`${courtPlayers[0].first_name} ${courtPlayers[0].last_name}`}
+                      className="w-12 h-12 rounded-full object-cover border border-white"
+                      onError={(e) => e.target.style.display = 'none'}
+                    />
+                  ) : (
+                    <span className="text-white text-sm">PG</span>
+                  )}
+                </div>
+                {courtPlayers[0] && (
+                  <div className="text-xs font-bold text-white mt-1 text-center">
+                    {courtPlayers[0].last_name}
                   </div>
-                ) : (
-                  <span className="text-white text-sm">PG</span>
                 )}
               </div>
               
               <div 
                 onClick={() => handlePositionClick(1, true)}
-                className="absolute left-[0%] top-[35%] w-16 h-16 bg-green-500 rounded-full border-2 border-white flex items-center justify-center cursor-pointer hover:bg-green-600 transition-colors shadow-lg"
+                className="absolute left-[0%] top-[35%] flex flex-col items-center cursor-pointer"
               >
-                {courtPlayers[1] ? (
-                  <div className="text-xs text-center">
-                    <div className="font-bold">{courtPlayers[1].last_name}</div>
-                    <div className="text-xs">{courtPlayers[1].position}</div>
+                <div className="w-16 h-16 bg-green-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-green-600 transition-colors shadow-lg">
+                  {courtPlayers[1] ? (
+                    <img
+                      src={`https://cdn.nba.com/headshots/nba/latest/1040x760/${courtPlayers[1].player_id}.png`}
+                      alt={`${courtPlayers[1].first_name} ${courtPlayers[1].last_name}`}
+                      className="w-12 h-12 rounded-full object-cover border border-white"
+                      onError={(e) => e.target.style.display = 'none'}
+                    />
+                  ) : (
+                    <span className="text-white text-sm">SG</span>
+                  )}
+                </div>
+                {courtPlayers[1] && (
+                  <div className="text-xs font-bold text-white mt-1 text-center">
+                    {courtPlayers[1].last_name}
                   </div>
-                ) : (
-                  <span className="text-white text-sm">SG</span>
                 )}
               </div>
               
               <div 
                 onClick={() => handlePositionClick(2, true)}
-                className="absolute right-[0%] top-[25%] w-16 h-16 bg-green-500 rounded-full border-2 border-white flex items-center justify-center cursor-pointer hover:bg-green-600 transition-colors shadow-lg"
+                className="absolute right-[0%] top-[25%] flex flex-col items-center cursor-pointer"
               >
-                {courtPlayers[2] ? (
-                  <div className="text-xs text-center">
-                    <div className="font-bold">{courtPlayers[2].last_name}</div>
-                    <div className="text-xs">{courtPlayers[2].position}</div>
+                <div className="w-16 h-16 bg-green-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-green-600 transition-colors shadow-lg">
+                  {courtPlayers[2] ? (
+                    <img
+                      src={`https://cdn.nba.com/headshots/nba/latest/1040x760/${courtPlayers[2].player_id}.png`}
+                      alt={`${courtPlayers[2].first_name} ${courtPlayers[2].last_name}`}
+                      className="w-12 h-12 rounded-full object-cover border border-white"
+                      onError={(e) => e.target.style.display = 'none'}
+                    />
+                  ) : (
+                    <span className="text-white text-sm">SF</span>
+                  )}
+                </div>
+                {courtPlayers[2] && (
+                  <div className="text-xs font-bold text-white mt-1 text-center">
+                    {courtPlayers[2].last_name}
                   </div>
-                ) : (
-                  <span className="text-white text-sm">SF</span>
                 )}
               </div>
               
               <div 
                 onClick={() => handlePositionClick(3, true)}
-                className="absolute left-[25%] bottom-[40%] w-16 h-16 bg-red-500 rounded-full border-2 border-white flex items-center justify-center cursor-pointer hover:bg-red-600 transition-colors shadow-lg"
+                className="absolute left-[25%] bottom-[40%] flex flex-col items-center cursor-pointer"
               >
-                {courtPlayers[3] ? (
-                  <div className="text-xs text-center">
-                    <div className="font-bold">{courtPlayers[3].last_name}</div>
-                    <div className="text-xs">{courtPlayers[3].position}</div>
+                <div className="w-16 h-16 bg-red-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-red-600 transition-colors shadow-lg">
+                  {courtPlayers[3] ? (
+                    <img
+                      src={`https://cdn.nba.com/headshots/nba/latest/1040x760/${courtPlayers[3].player_id}.png`}
+                      alt={`${courtPlayers[3].first_name} ${courtPlayers[3].last_name}`}
+                      className="w-12 h-12 rounded-full object-cover border border-white"
+                      onError={(e) => e.target.style.display = 'none'}
+                    />
+                  ) : (
+                    <span className="text-white text-sm">PF</span>
+                  )}
+                </div>
+                {courtPlayers[3] && (
+                  <div className="text-xs font-bold text-white mt-1 text-center">
+                    {courtPlayers[3].last_name}
                   </div>
-                ) : (
-                  <span className="text-white text-sm">PF</span>
                 )}
               </div>
               
               <div 
                 onClick={() => handlePositionClick(4, true)}
-                className="absolute right-[30%] bottom-[65%] w-16 h-16 bg-red-500 rounded-full border-2 border-white flex items-center justify-center cursor-pointer hover:bg-red-600 transition-colors shadow-lg"
+                className="absolute right-[30%] bottom-[65%] flex flex-col items-center cursor-pointer"
               >
-                {courtPlayers[4] ? (
-                  <div className="text-xs text-center">
-                    <div className="font-bold">{courtPlayers[4].last_name}</div>
-                    <div className="text-xs">{courtPlayers[4].position}</div>
+                <div className="w-16 h-16 bg-red-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-red-600 transition-colors shadow-lg">
+                  {courtPlayers[4] ? (
+                    <img
+                      src={`https://cdn.nba.com/headshots/nba/latest/1040x760/${courtPlayers[4].player_id}.png`}
+                      alt={`${courtPlayers[4].first_name} ${courtPlayers[4].last_name}`}
+                      className="w-12 h-12 rounded-full object-cover border border-white"
+                      onError={(e) => e.target.style.display = 'none'}
+                    />
+                  ) : (
+                    <span className="text-white text-sm">C</span>
+                  )}
+                </div>
+                {courtPlayers[4] && (
+                  <div className="text-xs font-bold text-white mt-1 text-center">
+                    {courtPlayers[4].last_name}
                   </div>
-                ) : (
-                  <span className="text-white text-sm">C</span>
                 )}
               </div>
             </div>
@@ -237,15 +290,24 @@ return (
                   <div
                     key={index}
                     onClick={() => handlePositionClick(index, false)}
-                    className="w-16 h-16 bg-gray-600 rounded-full border-2 border-gray-500 flex items-center justify-center cursor-pointer hover:bg-gray-500 transition-colors mx-auto"
+                    className="flex flex-col items-center cursor-pointer"
                   >
-                    {player ? (
-                      <div className="text-xs text-center text-white">
-                        <div className="font-bold">{player.last_name}</div>
-                        <div className="text-xs">{player.position}</div>
+                    <div className="w-16 h-16 bg-gray-600 rounded-full border-2 border-gray-500 flex items-center justify-center hover:bg-gray-500 transition-colors">
+                      {player ? (
+                        <img
+                          src={`https://cdn.nba.com/headshots/nba/latest/1040x760/${player.player_id}.png`}
+                          alt={`${player.first_name} ${player.last_name}`}
+                          className="w-12 h-12 rounded-full object-cover border border-gray-300"
+                          onError={(e) => e.target.style.display = 'none'}
+                        />
+                      ) : (
+                        <span className="text-gray-300 text-sm">Bench {index + 1}</span>
+                      )}
+                    </div>
+                    {player && (
+                      <div className="text-xs font-bold text-white mt-1 text-center">
+                        {player.last_name}
                       </div>
-                    ) : (
-                      <span className="text-gray-300 text-sm">Bench {index + 1}</span>
                     )}
                   </div>
                 ))}
