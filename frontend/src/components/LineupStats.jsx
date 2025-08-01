@@ -53,6 +53,7 @@ function LineupStats() {
   const [currentPage, setCurrentPage] = useState(1);
   const [error, setError] = useState(null);
   const [showNet, setShowNet] = useState(false);
+  const [showOpponent, setShowOpponent] = useState(false);
   const [playerMap, setPlayerMap] = useState({});
 
   // Dropdown state
@@ -216,18 +217,20 @@ function LineupStats() {
     );
   }
 
-  // Table columns for totals and net
-  const totalColumns = [
+  // Table columns for team, opponent, and net
+  const teamColumns = [
     { key: 'points', label: 'Points' },
-    { key: 'opp_points', label: 'Opp Points' },
     { key: 'rebounds', label: 'Rebounds' },
-    { key: 'opp_rebounds', label: 'Opp Rebounds' },
     { key: 'assists', label: 'Assists' },
-    { key: 'opp_assists', label: 'Opp Assists' },
     { key: 'turnovers', label: 'Turnovers' },
+    { key: 'fouls_committed', label: 'Fouls' },
+  ];
+  const opponentColumns = [
+    { key: 'opp_points', label: 'Opp Points' },
+    { key: 'opp_rebounds', label: 'Opp Rebounds' },
+    { key: 'opp_assists', label: 'Opp Assists' },
     { key: 'opp_turnovers', label: 'Opp Turnovers' },
-    { key: 'fouls_committed', label: 'Fouls Committed' },
-    { key: 'fouls_drawn', label: 'Fouls Drawn' },
+    { key: 'fouls_drawn', label: 'Opp Fouls' },
   ];
   const netColumns = [
     { key: 'net_points', label: 'Net Points' },
@@ -236,7 +239,17 @@ function LineupStats() {
     { key: 'net_turnovers', label: 'Net Turnovers' },
     { key: 'net_fouls', label: 'Net Fouls' },
   ];
-  const columns = showNet ? netColumns : totalColumns;
+  
+  // Determine which columns to show based on current selection
+  let columns = [];
+  if (showNet) {
+    columns = netColumns;
+  } else if (showOpponent) {
+    columns = opponentColumns;
+  } else {
+    // Default to team stats
+    columns = teamColumns;
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -364,10 +377,16 @@ function LineupStats() {
               <label className="block text-sm font-medium text-gray-700 mb-3">Show</label>
               <div className="flex space-x-2">
                 <button
-                  className={`px-4 py-2 rounded-lg font-semibold border ${!showNet ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'} border-blue-600 hover:bg-blue-600 hover:text-white transition-colors`}
-                  onClick={() => setShowNet(false)}
+                  className={`px-4 py-2 rounded-lg font-semibold border ${!showNet && !showOpponent ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'} border-blue-600 hover:bg-blue-600 hover:text-white transition-colors`}
+                  onClick={() => { setShowNet(false); setShowOpponent(false); }}
                 >
-                  Totals
+                  Team
+                </button>
+                <button
+                  className={`px-4 py-2 rounded-lg font-semibold border ${showOpponent ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'} border-blue-600 hover:bg-blue-600 hover:text-white transition-colors`}
+                  onClick={() => { setShowNet(false); setShowOpponent(true); }}
+                >
+                  Opponent
                 </button>
                 <button
                   className={`px-4 py-2 rounded-lg font-semibold border ${showNet ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'} border-blue-600 hover:bg-blue-600 hover:text-white transition-colors`}
@@ -420,16 +439,26 @@ function LineupStats() {
             <table className="w-full">
               <thead className="bg-gray-50">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-[480px]">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-[600px]">
                     Lineup
                   </th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Team
+                  </th>
+                  <th className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Height
+                  </th>
+                  <th 
+                    className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    onClick={() => handleSort('minutes_played')}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    Minutes <SortIcon column="minutes_played" />
                   </th>
                   {columns.map(col => (
                     <th
                       key={col.key}
-                      className={`px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider ${col.key === columns[0].key ? 'border-l-2 border-gray-200' : ''}`}
+                      className={`px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider ${col.key === columns[0].key ? 'border-l-2 border-gray-200' : ''}`}
                       onClick={() => handleSort(col.key)}
                       style={{ cursor: 'pointer' }}
                     >
@@ -442,9 +471,9 @@ function LineupStats() {
                 {paginatedData.map((row, index) => (
                   <tr key={index} className="hover:bg-gray-50">
                     {/* Lineup headshots and last names */}
-                    <td className="px-6 py-3 text-sm text-gray-900 w-[480px]">
+                    <td className="px-6 py-3 text-sm text-gray-900 w-[600px]">
                       <div className="flex flex-col items-start">
-                        <div className="flex gap-4 mb-1">
+                        <div className="flex gap-10 mb-2">
                           {parseLineup(row.lineup).map((player, idx) => {
                             const cleanName = cleanPlayerName(player);
                             const norm = normalizeName(cleanName);
@@ -455,26 +484,32 @@ function LineupStats() {
                                   <img
                                     src={info.image_url}
                                     alt={cleanName}
-                                    className="w-10 h-10 rounded-full object-cover border border-gray-300 bg-gray-100"
+                                    className="w-16 h-16 rounded-full object-cover border border-gray-300 bg-gray-100"
                                     onError={e => {
                                       e.target.style.display = 'none';
                                       e.target.nextSibling.style.display = 'flex';
                                     }}
                                   />
                                 ) : null}
-                                <div className={`w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center border border-gray-300 text-xs text-gray-500 ${info.image_url ? 'hidden' : ''}`}>
+                                <div className={`w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center border border-gray-300 text-xs text-gray-500 ${info.image_url ? 'hidden' : ''}`}>
                                   {getInitials(cleanName)}
                                 </div>
-                                <span className="text-xs text-gray-700 mt-1 text-center max-w-16 truncate">{info.last_name || cleanName.split(' ').slice(-1)[0]}</span>
+                                <span className="text-xs text-gray-700 mt-1 text-center max-w-20 truncate">{info.last_name || cleanName.split(' ').slice(-1)[0]}</span>
                               </div>
                             );
                           })}
                         </div>
                       </div>
                     </td>
-                    <td className="px-4 py-3 text-sm text-gray-900">{row.team}</td>
+                    <td className="px-3 py-3 text-sm text-gray-900">{row.team}</td>
+                    <td className="px-3 py-3 text-sm text-gray-900">
+                      {row.team_avg_height ? row.team_avg_height.toFixed(1) : '0.0'}
+                    </td>
+                    <td className="px-3 py-3 text-sm text-gray-900">
+                      {row.minutes_played ? row.minutes_played.toFixed(1) : '0.0'}
+                    </td>
                     {columns.map(col => (
-                      <td key={col.key} className={`px-4 py-3 text-sm text-gray-900 ${col.key === columns[0].key ? 'border-l-2 border-gray-200' : ''}`}>
+                      <td key={col.key} className={`px-3 py-3 text-sm text-gray-900 ${col.key === columns[0].key ? 'border-l-2 border-gray-200' : ''}`}>
                         {row[col.key]}
                       </td>
                     ))}

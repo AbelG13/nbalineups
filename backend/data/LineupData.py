@@ -7,6 +7,7 @@ import random
 import numpy as np
 import unicodedata
 import os
+from datetime import datetime
 
 #time how long it takes to run
 time_start = time.time()
@@ -70,7 +71,8 @@ def infer_lineup_for_team(start_index, pbp_df, team_players, team_side, max_look
 
         if len(on) == 5:
             break
-
+    
+    # Debugging.. backtracking was not able to find all 5 players in certain games
     if len(on) < 5:
         if game_id == '0022400223': 
             on.add('Tobais Harris')
@@ -101,6 +103,19 @@ def infer_lineup_for_team(start_index, pbp_df, team_players, team_side, max_look
             print(list(on))
 
     return list(on)
+
+def parse_pctimestring(t):
+    # Converts a string like "11:32" into a timedelta
+    return datetime.strptime(t, "%M:%S")
+
+def elapsed_time(idx, row, df):
+    if row['EVENTMSGTYPE'] == 12:
+        return 0
+    else:
+        t_current = parse_pctimestring(row['PCTIMESTRING'])
+        t_prev = parse_pctimestring(df.loc[idx - 1, 'PCTIMESTRING'])
+        delta_min = (t_prev - t_current).total_seconds() /60
+        return delta_min
 
 # Fetch the full 2024–25 NBA schedule
 sched = scheduleleaguev2.ScheduleLeagueV2(
@@ -133,8 +148,16 @@ team_lineup_stats = {
     team: pd.DataFrame(columns=stat_fields)
     for team in team_abbreviations
 }
+
+# Active player csv
+additional_data = pd.read_csv('nba_players_full.csv')
+
+height_dict = dict()
+
 count = 0
-for idx,id in enumerate(game_ids[1250:]):
+start=1200
+end=1200
+for idx,id in enumerate(game_ids[start:]):
     
     # Load game
     game_id = id
@@ -147,6 +170,8 @@ for idx,id in enumerate(game_ids[1250:]):
         except Exception as e:
             print(f"Attempt {attempt + 1} failed for game {game_id}: {str(e)}")
             time.sleep(int(np.random.choice([21, 33,42])))
+        
+        
 
     # Debug.. rows are in wrong order
     if game_id == "0022400316":
@@ -166,16 +191,16 @@ for idx,id in enumerate(game_ids[1250:]):
     # avoid rate limits
     if idx % 1 == 0:
         if idx%25 == 0:
-            print(idx)
-        time.sleep(1)
+            print(idx+start)
+        time.sleep(0.5)
 
     # Build player-to-team map
     player_team_map = dict(zip(box_df['full_name'], box_df['teamTricode']))
 
-    teams = box_df['teamTricode'].unique()
+    team_codes = box_df['teamTricode'].unique()
     try:
-        home_team = teams[1]
-        away_team = teams[0]
+        home_team = team_codes[1]
+        away_team = team_codes[0]
     except:
         print(f"[⚠️ Warning : {game_id}] Could not resolve teams, {game_id}")
         # print(teams)
@@ -193,6 +218,10 @@ for idx,id in enumerate(game_ids[1250:]):
         'home': set(box_df[box_df['teamTricode'] == home_team]['full_name']),
         'away': set(box_df[box_df['teamTricode'] == away_team]['full_name']),
     }
+    if 'Tobais Harris' in team_rosters['home']:
+        print(f"Tobais Harris in home team")
+    if 'Tobais Harris' in team_rosters['away']:
+        print(f"Tobais Harris in away team")
 
     for idx, row in pbp_df.iterrows():
         event_type = row['EVENTMSGTYPE']
@@ -200,9 +229,14 @@ for idx,id in enumerate(game_ids[1250:]):
         player1 = row['PLAYER1_NAME']
         team_involved = None
         
+        if row['PLAYER1_NAME'] == 'Tobais Harris' or row['PLAYER2_NAME'] == 'Tobais Harris' or row['PLAYER3_NAME'] == 'Tobais Harris':
+            print(f"tobais instead of tobias in {game_id}")
         #Debugging.. remove ejection -- come back to later and fix
         if game_id == "0022400770":
             pbp_df = pbp_df[~pbp_df['EVENTNUM'].isin([341, 347])]
+            pbp_df.reset_index(drop=True, inplace=True)
+            if idx >= 424:
+                break
 
         if row['EVENTMSGTYPE'] == 12 and row['PERIOD'] > 1:
             home_on_court = infer_lineup_for_team(idx + 1, pbp_df, list(team_rosters['home']), 'home')
@@ -254,6 +288,41 @@ for idx,id in enumerate(game_ids[1250:]):
             # For non-sub events, infer team from player involved if possible
             if player1 in player_team_map:
                 team_involved = 'home' if player_team_map[player1] == home_team else 'away'
+        
+
+        # calculate average height of home and away
+        total_height = 0
+        if tuple(sorted(home_on_court)) not in height_dict:
+            for player in sorted(home_on_court):
+                first_name, last_name = player.split(' ', 1)
+                if last_name == 'Lavine':
+                    last_name = 'LaVine'
+                height = additional_data[(additional_data['first_name'] == first_name) & (additional_data['last_name'] == last_name)]['height']
+                if len(height) == 0:
+                    print(f"[⚠️ Height Error] Could not resolve height {height} for home player: {player}, {game_id}")
+                    continue
+                feet, inches = str(height.dropna().reset_index(drop=True)[0]).split('-')
+                total_height += int(feet) * 12 + int(inches)
+            avg_home_height = total_height / len(home_on_court)
+            height_dict[tuple(sorted(home_on_court))] = avg_home_height
+
+        total_height = 0
+        
+        if tuple(sorted(away_on_court)) not in height_dict:
+            for player in sorted(away_on_court):
+                first_name, last_name = player.split(' ', 1)
+                if last_name == 'Lavine':
+                    last_name = 'LaVine'
+                if first_name == 'Tobais' and last_name == 'Harris':
+                    first_name = 'Tobias'
+                height = additional_data[(additional_data['first_name'] == first_name) & (additional_data['last_name'] == last_name)]['height']
+                if len(height) == 0:
+                    print(f"[⚠️ Height Error] Could not resolve height {height} for away player: {first_name} {last_name}, {game_id}")
+                    continue
+                feet, inches = str(height.dropna().reset_index(drop=True)[0]).split('-')
+                total_height += int(feet) * 12 + int(inches)
+            avg_away_height = total_height / len(away_on_court)
+            height_dict[tuple(sorted(away_on_court))] = avg_away_height
 
         # Log current state
         lineup_tracking.append({
@@ -262,14 +331,19 @@ for idx,id in enumerate(game_ids[1250:]):
             'event_code': row['EVENTMSGTYPE'],
             'period': row['PERIOD'],
             'time': row['PCTIMESTRING'],
+            'elapsed_time': elapsed_time(idx, row, pbp_df),
             'description': event_desc,
             'player_involved': player1,
             'team_involved': team_involved,
             'home_on_court': tuple(sorted(home_on_court)),
             'away_on_court': tuple(sorted(away_on_court)),
+            'avg_home_height': height_dict[tuple(sorted(home_on_court))],
+            'avg_away_height': height_dict[tuple(sorted(away_on_court))],
         })
 
     lineup_df = pd.DataFrame(lineup_tracking)
+
+    lineup_df.to_csv(f'test_lineup.csv', index=False)
 
     periods = 5
 
@@ -278,7 +352,9 @@ for idx,id in enumerate(game_ids[1250:]):
     unique_lineups_away = set(lineup_df['away_on_court'])
     count1=0
     count2=0
+    lineup_df[(lineup_df['period'] == 2)].to_csv('test_lineup.csv', index=False)
     for period in range(1, periods + 1):
+
         for lineup in unique_lineups_home: 
             new_lineup_df = lineup_df[(lineup_df['period'] == period) & (lineup_df['home_on_court'] == lineup)]
 
@@ -288,7 +364,7 @@ for idx,id in enumerate(game_ids[1250:]):
                 
             # Calculate stats
 
-            made_2pt = made_fts = made_3pt = missed_2pt = missed_fts = missed_3pt = rebounds = assists = turnovers = fouls_committed = 0
+            made_2pt = made_fts = made_3pt = missed_2pt = missed_fts = missed_3pt = rebounds = assists = turnovers = fouls_committed = minutes_played = 0
             opp_made_2pt = opp_made_fts = opp_made_3pt = opp_missed_2pt = opp_missed_fts = opp_missed_3pt = opp_rebounds = opp_assists = opp_turnovers = fouls_drawn = 0
 
             for _, row in new_lineup_df.iterrows():
@@ -296,7 +372,8 @@ for idx,id in enumerate(game_ids[1250:]):
                 is_us = team_involved == 'home'
                 if_not_us = team_involved == 'away'
                 desc = str(row['description'])
-
+                minutes_played += row['elapsed_time']
+                
                 if is_us:
                     if row['event_code'] == 1 and 'AST' in desc:
                         assists += 1
@@ -318,6 +395,7 @@ for idx,id in enumerate(game_ids[1250:]):
                         missed_3pt += 1
                     if row['event_code'] == 3 and "MISS" in desc:
                         missed_fts += 1
+
                 elif if_not_us:
                     if row['event_code'] == 1 and 'AST' in desc:
                         opp_assists += 1
@@ -346,7 +424,10 @@ for idx,id in enumerate(game_ids[1250:]):
                 'game_id': game_id,
                 'team': home_team,
                 'opponent': away_team,
+                'team_avg_height': row['avg_home_height'],
+                'opp_avg_height': row['avg_away_height'],
                 'lineup': lineup,
+                'minutes_played': minutes_played,
                 'period': period,
                 'points': 2*made_2pt + 3*made_3pt + made_fts,
                 'opp_points': 2*opp_made_2pt + 3*opp_made_3pt + opp_made_fts,
@@ -376,7 +457,7 @@ for idx,id in enumerate(game_ids[1250:]):
 
             # Calculate stats
 
-            made_2pt = made_fts = made_3pt = missed_2pt = missed_fts = missed_3pt = rebounds = assists = turnovers = fouls_committed = 0
+            made_2pt = made_fts = made_3pt = missed_2pt = missed_fts = missed_3pt = rebounds = assists = turnovers = fouls_committed = minutes_played = 0
             opp_made_2pt = opp_made_fts = opp_made_3pt = opp_missed_2pt = opp_missed_fts = opp_missed_3pt = opp_rebounds = opp_assists = opp_turnovers = fouls_drawn = 0
             
             for _, row in new_lineup_df.iterrows():
@@ -384,6 +465,7 @@ for idx,id in enumerate(game_ids[1250:]):
                 is_us = team_involved == 'away'
                 if_not_us = team_involved == 'home'
                 desc = str(row['description'])
+                minutes_played += row['elapsed_time']
 
                 if is_us:
                     if row['event_code'] == 1 and 'AST' in desc:
@@ -431,11 +513,15 @@ for idx,id in enumerate(game_ids[1250:]):
                     if row['event_code'] == 3 and "MISS" in desc:
                         opp_missed_fts += 1
 
+
             record = {
                 'game_id': game_id,
                 'team': away_team,
                 'opponent': home_team,
+                'team_avg_height': row['avg_away_height'],
+                'opp_avg_height': row['avg_home_height'],
                 'lineup': lineup,
+                'minutes_played': minutes_played,
                 'period': period,
                 'points': 2*made_2pt + 3*made_3pt + made_fts,
                 'opp_points': 2*opp_made_2pt + 3*opp_made_3pt + opp_made_fts,
@@ -455,32 +541,48 @@ for idx,id in enumerate(game_ids[1250:]):
                 ignore_index=True
             )
     
-
-
-# for team in team_lineup_stats.keys():
-#     print(team_lineup_stats[team])
-
-
 time_end = time.time()
 time_total = time_end - time_start
 print(f"Time taken: {time_total}")
 
 
-# for team in team_lineup_stats.keys():
-#     df = team_lineup_stats[team]
-#     # Step 1: Sort the DataFrame by game_id (and optionally by period if needed)
-#     df = df.sort_values('game_id').reset_index(drop=True)
-#     # Step 2: Create a mapping of each unique game_id to a game number (1 to 82)
-#     game_id_map = {game_id: i+1 for i, game_id in enumerate(df['game_id'].unique())}
-#     # Step 3: Map the game_id in your DataFrame to the corresponding game_number
-#     df['game_number'] = df['game_id'].map(game_id_map)
-#     # save to csv
-#     df.to_csv(f'{team}_2024_25.csv', index=False)
+# Create empty CSV files for each team
+team_abbrevs = [team['abbreviation'] for team in teams.get_teams()]
+
+columns = [
+    'game_id',
+    'team',
+    'opponent',
+    'team_avg_height',
+    'opp_avg_height',
+    'lineup',
+    'minutes_played',
+    'period',
+    'points',
+    'opp_points',
+    'rebounds',
+    'opp_rebounds',
+    'assists',
+    'opp_assists',
+    'turnovers',
+    'opp_turnovers',
+    'fouls_committed',
+    'fouls_drawn',
+]
+
+for abbrev in team_abbrevs:
+    filename = f"v2_{abbrev}_2024_25.csv"
+    if not os.path.exists(filename):
+        pd.DataFrame(columns=columns).to_csv(filename, index=False)
+
 
 for team in team_lineup_stats.keys():
     df = team_lineup_stats[team]
-    csv_path = f'{team}_2024_25.csv'
+    csv_path = f'v2_{team}_2024_25.csv'
 
+    # Reorder columns explicitly before writing
+    df = df[columns]
+    
     # If file exists, append without header
     if os.path.exists(csv_path):
         df.to_csv(csv_path, mode='a', header=False, index=False)
@@ -490,33 +592,3 @@ for team in team_lineup_stats.keys():
 
 
 
-### ADD GAME NUMBER
-
-# from nba_api.stats.static import teams
-# import pandas as pd
-# import os
-
-# # Get list of all NBA team abbreviations (e.g., 'BOS', 'LAL')
-# team_abbrevs = [team['abbreviation'] for team in teams.get_teams()]
-
-# # For each team abbreviation, load and update its CSV
-# for team_abbr in team_abbrevs:
-#     csv_path = f'{team_abbr}_2024_25.csv'
-
-#     # Skip if the CSV doesn't exist (not yet generated from batch runs)
-#     if not os.path.exists(csv_path):
-#         print(f"Skipping {team_abbr} as CSV doesn't exist")
-#         continue
-
-#     # Load the full dataset
-#     df = pd.read_csv(csv_path)
-
-#     # Sort and reset index
-#     df = df.sort_values('game_id').reset_index(drop=True)
-
-#     # Map game_id to game_number
-#     game_id_map = {game_id: i + 1 for i, game_id in enumerate(df['game_id'].unique())}
-#     df['game_number'] = df['game_id'].map(game_id_map)
-
-#     # Save updated CSV
-#     df.to_csv(csv_path, index=False)

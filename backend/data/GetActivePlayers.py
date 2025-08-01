@@ -64,7 +64,7 @@ import ast
 df1 = pd.read_csv("nba_players_full.csv")
 df2 = pd.read_csv("nba_players.csv")
 
-# Mapping of simplified names → corrected official names
+# Debugging... Mapping of simplified names → corrected official names
 name_corrections = {
     ("Bogdan", "Bogdanovic"): ("Bogdan", "Bogdanović"),
     ("Brandon", "Boston Jr."): ("Brandon", "Boston"),
@@ -104,6 +104,10 @@ name_corrections = {
     ("Tristan", "Da Silva"): ("Tristan", "da Silva"),
     ("Vlatko", "Cancar"): ("Vlatko", "Čančar"),
     ("Dario", "Saric"): ("Dario", "Šarić"),
+    ("Pacome", "Dadiet"): ("Pacôme", "Dadiet"),
+    ("Zach", "Lavine"): ("Zach", "LaVine"),
+    ("PJ", "Tucker"): ("P.J.", "Tucker"),
+    ("Tobias", "Harris"): ("Tobias", "Harris")
 }
 
 # Apply corrections
@@ -112,6 +116,8 @@ for (old_first, old_last), (new_first, new_last) in name_corrections.items():
         (df1["first_name"] == old_first) & (df1["last_name"] == old_last),
         ["first_name", "last_name"]
     ] = new_first, new_last
+
+df1.to_csv("nba_players_full.csv", index=False)
 
 # join df1 and df2 on first_name and last_name
 
