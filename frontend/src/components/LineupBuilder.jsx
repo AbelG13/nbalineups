@@ -8,6 +8,7 @@ function LineupBuilder() {
   const [courtPlayers, setCourtPlayers] = useState(Array(5).fill(null));
   const [benchPlayers, setBenchPlayers] = useState(Array(5).fill(null));
   const [searchText, setSearchText] = useState('');
+  const [draggedIndex, setDraggedIndex] = useState(null);
 
   useEffect(() => {
     axios.get("http://127.0.0.1:8000/players")
@@ -47,6 +48,39 @@ function LineupBuilder() {
       court: isCourt ? 'court' : 'bench',
       position_index: positionIndex,
     });
+  };
+
+  const handleDragStart = (e, index) => {
+    if (!courtPlayers[index]) return;
+    setDraggedIndex(index);
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', index.toString());
+  };
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+  };
+
+  const handleDrop = (e, targetIndex) => {
+    e.preventDefault();
+    if (draggedIndex !== null && draggedIndex !== targetIndex) {
+      const newCourtPlayers = [...courtPlayers];
+      const temp = newCourtPlayers[targetIndex];
+      newCourtPlayers[targetIndex] = newCourtPlayers[draggedIndex];
+      newCourtPlayers[draggedIndex] = temp;
+      setCourtPlayers(newCourtPlayers);
+      
+      posthog.capture('player_moved', {
+        from_position: draggedIndex,
+        to_position: targetIndex,
+      });
+    }
+    setDraggedIndex(null);
+  };
+
+  const handleDragEnd = () => {
+    setDraggedIndex(null);
   };
 
   return (
@@ -162,10 +196,15 @@ function LineupBuilder() {
 
               {/* Player Positions */}
               <div 
+                draggable={!!courtPlayers[0]}
+                onDragStart={(e) => handleDragStart(e, 0)}
+                onDragOver={handleDragOver}
+                onDrop={(e) => handleDrop(e, 0)}
+                onDragEnd={handleDragEnd}
                 onClick={() => handlePositionClick(0, true)}
                 className="absolute left-1/2 top-[68%] -translate-x-1/2 flex flex-col items-center cursor-pointer"
               >
-                <div className="w-14 h-14 bg-accent-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-accent-600 transition-colors shadow-soft">
+                <div className={`w-14 h-14 bg-accent-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-accent-600 transition-colors shadow-soft ${draggedIndex === 0 ? 'opacity-50' : ''}`}>
                   {courtPlayers[0] ? (
                     <img
                       src={`https://cdn.nba.com/headshots/nba/latest/1040x760/${courtPlayers[0].player_id}.png`}
@@ -185,10 +224,15 @@ function LineupBuilder() {
               </div>
               
               <div 
+                draggable={!!courtPlayers[1]}
+                onDragStart={(e) => handleDragStart(e, 1)}
+                onDragOver={handleDragOver}
+                onDrop={(e) => handleDrop(e, 1)}
+                onDragEnd={handleDragEnd}
                 onClick={() => handlePositionClick(1, true)}
                 className="absolute left-[0%] top-[35%] flex flex-col items-center cursor-pointer"
               >
-                <div className="w-14 h-14 bg-accent-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-accent-600 transition-colors shadow-soft">
+                <div className={`w-14 h-14 bg-accent-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-accent-600 transition-colors shadow-soft ${draggedIndex === 1 ? 'opacity-50' : ''}`}>
                   {courtPlayers[1] ? (
                     <img
                       src={`https://cdn.nba.com/headshots/nba/latest/1040x760/${courtPlayers[1].player_id}.png`}
@@ -208,10 +252,15 @@ function LineupBuilder() {
               </div>
               
               <div 
+                draggable={!!courtPlayers[2]}
+                onDragStart={(e) => handleDragStart(e, 2)}
+                onDragOver={handleDragOver}
+                onDrop={(e) => handleDrop(e, 2)}
+                onDragEnd={handleDragEnd}
                 onClick={() => handlePositionClick(2, true)}
                 className="absolute right-[0%] top-[25%] flex flex-col items-center cursor-pointer"
               >
-                <div className="w-14 h-14 bg-accent-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-accent-600 transition-colors shadow-soft">
+                <div className={`w-14 h-14 bg-accent-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-accent-600 transition-colors shadow-soft ${draggedIndex === 2 ? 'opacity-50' : ''}`}>
                   {courtPlayers[2] ? (
                     <img
                       src={`https://cdn.nba.com/headshots/nba/latest/1040x760/${courtPlayers[2].player_id}.png`}
@@ -231,10 +280,15 @@ function LineupBuilder() {
               </div>
               
               <div 
+                draggable={!!courtPlayers[3]}
+                onDragStart={(e) => handleDragStart(e, 3)}
+                onDragOver={handleDragOver}
+                onDrop={(e) => handleDrop(e, 3)}
+                onDragEnd={handleDragEnd}
                 onClick={() => handlePositionClick(3, true)}
                 className="absolute left-[25%] bottom-[40%] flex flex-col items-center cursor-pointer"
               >
-                <div className="w-14 h-14 bg-accent-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-accent-600 transition-colors shadow-soft">
+                <div className={`w-14 h-14 bg-accent-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-accent-600 transition-colors shadow-soft ${draggedIndex === 3 ? 'opacity-50' : ''}`}>
                   {courtPlayers[3] ? (
                     <img
                       src={`https://cdn.nba.com/headshots/nba/latest/1040x760/${courtPlayers[3].player_id}.png`}
@@ -254,10 +308,15 @@ function LineupBuilder() {
               </div>
               
               <div 
+                draggable={!!courtPlayers[4]}
+                onDragStart={(e) => handleDragStart(e, 4)}
+                onDragOver={handleDragOver}
+                onDrop={(e) => handleDrop(e, 4)}
+                onDragEnd={handleDragEnd}
                 onClick={() => handlePositionClick(4, true)}
                 className="absolute right-[30%] bottom-[65%] flex flex-col items-center cursor-pointer"
               >
-                <div className="w-14 h-14 bg-accent-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-accent-600 transition-colors shadow-soft">
+                <div className={`w-14 h-14 bg-accent-500 rounded-full border-2 border-white flex items-center justify-center hover:bg-accent-600 transition-colors shadow-soft ${draggedIndex === 4 ? 'opacity-50' : ''}`}>
                   {courtPlayers[4] ? (
                     <img
                       src={`https://cdn.nba.com/headshots/nba/latest/1040x760/${courtPlayers[4].player_id}.png`}
