@@ -99,54 +99,33 @@ function LineupStats() {
         if (selectedPeriods.length > 0) {
           params.periods = selectedPeriods.join(','); // Send as comma-separated string
         }
-        const response = await axios.get(`http://127.0.0.1:8000/lineup-stats/${team}`, { params });
+        
+        const response = await axios.get(`http://127.0.0.1:8000/lineup_stats/${team}`, { params });
         if (response.data && Array.isArray(response.data)) {
           allData.push(...response.data);
         }
       } catch (error) {
+        console.error(`Error loading data for ${team}:`, error);
         setError(`Failed to load data for ${team}`);
+        break;
       }
     }
+    
     setLineupData(allData);
     setLoading(false);
-    setCurrentPage(1);
   };
 
-  // Load initial data
+  // Load data on mount and when filters change
   useEffect(() => {
     loadData();
-  }, []);
+  }, [selectedTeams, selectedPeriods, gameRange]);
 
-  // Apply pending filters when "Show Results" is clicked
   const handleShowResults = () => {
     setSelectedTeams(pendingTeams);
     setSelectedPeriods(pendingPeriods);
     setGameRange(pendingGameRange);
-    // Data will be loaded in the next render cycle
+    setCurrentPage(1);
   };
-
-  // Load data when active filters change
-  useEffect(() => {
-    if (selectedTeams.length > 0) {
-      loadData();
-    }
-  }, [selectedTeams, selectedPeriods, gameRange]);
-
-  const sortedData = [...lineupData].sort((a, b) => {
-    let aValue = a[sortBy];
-    let bValue = b[sortBy];
-    if (sortOrder === 'asc') {
-      return aValue - bValue;
-    } else {
-      return bValue - aValue;
-    }
-  });
-
-  // Pagination
-  const totalPages = Math.ceil(sortedData.length / recordsPerPage);
-  const startIndex = (currentPage - 1) * recordsPerPage;
-  const endIndex = startIndex + recordsPerPage;
-  const paginatedData = sortedData.slice(startIndex, endIndex);
 
   const handleSort = (column) => {
     if (sortBy === column) {
@@ -157,21 +136,15 @@ function LineupStats() {
     }
   };
 
-  // Parse lineup string to array of player names
   const parseLineup = (lineupStr) => {
-    try {
-      return JSON.parse(lineupStr.replace(/'/g, '"'));
-    } catch {
-      return lineupStr.split(',').map(s => s.trim());
-    }
+    return lineupStr.split(',').map(player => player.trim());
   };
 
   const SortIcon = ({ column }) => {
-    if (sortBy !== column) return null;
-    return sortOrder === 'asc' ? '↑' : '↓';
+    if (sortBy !== column) return <span className="text-gray-400">↕</span>;
+    return sortOrder === 'asc' ? <span className="text-accent-500">↑</span> : <span className="text-accent-500">↓</span>;
   };
 
-  // Team dropdown handlers
   const handleTeamToggle = (team) => {
     if (pendingTeams.includes(team)) {
       setPendingTeams(pendingTeams.filter(t => t !== team));
@@ -190,10 +163,11 @@ function LineupStats() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen bg-gray-950 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading lineup statistics...</p>
+          <div className="text-5xl mb-4 animate-pulse-subtle">🏀</div>
+          <h3 className="text-xl font-semibold text-white mb-2">Loading Data...</h3>
+          <p className="text-gray-400">Please wait while we fetch the latest lineup statistics</p>
         </div>
       </div>
     );
@@ -201,14 +175,14 @@ function LineupStats() {
 
   if (error) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen bg-gray-950 flex items-center justify-center">
         <div className="text-center">
-          <div className="text-6xl mb-4">⚠️</div>
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">Error Loading Data</h3>
-          <p className="text-gray-600">{error}</p>
+          <div className="text-5xl mb-4">⚠️</div>
+          <h3 className="text-xl font-semibold text-white mb-2">Error Loading Data</h3>
+          <p className="text-gray-400">{error}</p>
           <button
             onClick={() => window.location.reload()}
-            className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+            className="mt-4 bg-accent-500 text-white px-4 py-2 rounded-lg hover:bg-accent-600 transition-all duration-200"
           >
             Retry
           </button>
@@ -251,29 +225,41 @@ function LineupStats() {
     columns = teamColumns;
   }
 
+  // Sort and paginate data
+  const sortedData = [...lineupData].sort((a, b) => {
+    const aVal = a[sortBy] || 0;
+    const bVal = b[sortBy] || 0;
+    return sortOrder === 'asc' ? aVal - bVal : bVal - aVal;
+  });
+
+  const totalPages = Math.ceil(sortedData.length / recordsPerPage);
+  const startIndex = (currentPage - 1) * recordsPerPage;
+  const endIndex = startIndex + recordsPerPage;
+  const paginatedData = sortedData.slice(startIndex, endIndex);
+
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="container mx-auto px-4 py-8">
+    <div className="min-h-screen bg-gray-950">
+      <div className="container mx-auto px-6 py-8">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Lineup Statistics</h1>
-          <p className="text-gray-600 text-lg">
+          <h1 className="text-3xl font-bold text-white mb-4">Lineup Statistics</h1>
+          <p className="text-gray-400 text-lg">
             Explore aggregated lineup performance data from the 2024-25 NBA season
           </p>
         </div>
 
         {/* Filters and toggles */}
-        <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
+        <div className="bg-gray-900 rounded-xl shadow-subtle p-6 mb-8 border border-gray-800">
           <div className="grid md:grid-cols-4 gap-6 items-end">
             {/* Team Filter */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-3">
+              <label className="block text-sm font-medium text-gray-300 mb-3">
                 Teams ({pendingTeams.length} selected)
               </label>
               <div className="relative">
                 <button
                   type="button"
                   onClick={() => setIsTeamDropdownOpen(!isTeamDropdownOpen)}
-                  className="w-full px-3 py-2 text-left border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-3 py-2 text-left border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
                 >
                   {pendingTeams.length === 0 ? 'Select teams...' : `${pendingTeams.length} teams selected`}
                   <span className="absolute inset-y-0 right-0 flex items-center pr-2">
@@ -284,18 +270,18 @@ function LineupStats() {
                 </button>
                 
                 {isTeamDropdownOpen && (
-                  <div className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-y-auto">
-                    <div className="p-2 border-b border-gray-200">
+                  <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-700 rounded-lg shadow-medium max-h-60 overflow-y-auto">
+                    <div className="p-2 border-b border-gray-700">
                       <div className="flex space-x-2">
                         <button
                           onClick={handleSelectAllTeams}
-                          className="px-2 py-1 text-xs bg-blue-100 text-blue-700 rounded hover:bg-blue-200"
+                          className="px-2 py-1 text-xs bg-accent-500/20 text-accent-400 rounded hover:bg-accent-500/30 transition-colors"
                         >
                           Select All
                         </button>
                         <button
                           onClick={handleDeselectAllTeams}
-                          className="px-2 py-1 text-xs bg-gray-100 text-gray-700 rounded hover:bg-gray-200"
+                          className="px-2 py-1 text-xs bg-gray-700 text-gray-300 rounded hover:bg-gray-600 transition-colors"
                         >
                           Deselect All
                         </button>
@@ -303,14 +289,14 @@ function LineupStats() {
                     </div>
                     <div className="p-2">
                       {teams.map(team => (
-                        <label key={team} className="flex items-center space-x-2 p-1 hover:bg-gray-50 rounded cursor-pointer">
+                        <label key={team} className="flex items-center space-x-2 p-1 hover:bg-gray-700 rounded cursor-pointer transition-colors">
                           <input
                             type="checkbox"
                             checked={pendingTeams.includes(team)}
                             onChange={() => handleTeamToggle(team)}
-                            className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                            className="rounded border-gray-600 text-accent-500 focus:ring-accent-500 bg-gray-700"
                           />
-                          <span className="text-sm">{team}</span>
+                          <span className="text-sm text-gray-300">{team}</span>
                         </label>
                       ))}
                     </div>
@@ -321,7 +307,7 @@ function LineupStats() {
 
             {/* Period Filter */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-3">
+              <label className="block text-sm font-medium text-gray-300 mb-3">
                 Periods ({pendingPeriods.length === 0 ? 'All' : pendingPeriods.length} selected)
               </label>
               <div className="grid grid-cols-3 gap-2">
@@ -337,9 +323,9 @@ function LineupStats() {
                           setPendingPeriods([...pendingPeriods, period]);
                         }
                       }}
-                      className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                      className="rounded border-gray-600 text-accent-500 focus:ring-accent-500 bg-gray-700"
                     />
-                    <span className="text-sm">
+                    <span className="text-sm text-gray-300">
                       {period === 5 ? 'OT' : `Q${period}`}
                     </span>
                   </label>
@@ -349,7 +335,7 @@ function LineupStats() {
 
             {/* Game Range Filter */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-3">
+              <label className="block text-sm font-medium text-gray-300 mb-3">
                 Game Range: {pendingGameRange[0]} - {pendingGameRange[1]}
               </label>
               <div className="space-y-2">
@@ -359,7 +345,7 @@ function LineupStats() {
                   max="82"
                   value={pendingGameRange[0]}
                   onChange={(e) => setPendingGameRange([parseInt(e.target.value), pendingGameRange[1]])}
-                  className="w-full"
+                  className="w-full accent-accent-500"
                 />
                 <input
                   type="range"
@@ -367,29 +353,29 @@ function LineupStats() {
                   max="82"
                   value={pendingGameRange[1]}
                   onChange={(e) => setPendingGameRange([pendingGameRange[0], parseInt(e.target.value)])}
-                  className="w-full"
+                  className="w-full accent-accent-500"
                 />
               </div>
             </div>
 
             {/* Totals/Net Buttons */}
             <div className="flex flex-col items-start">
-              <label className="block text-sm font-medium text-gray-700 mb-3">Show</label>
+              <label className="block text-sm font-medium text-gray-300 mb-3">Show</label>
               <div className="flex space-x-2">
                 <button
-                  className={`px-4 py-2 rounded-lg font-semibold border ${!showNet && !showOpponent ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'} border-blue-600 hover:bg-blue-600 hover:text-white transition-colors`}
+                  className={`px-4 py-2 rounded-lg font-medium border transition-all duration-200 ${!showNet && !showOpponent ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
                   onClick={() => { setShowNet(false); setShowOpponent(false); }}
                 >
                   Team
                 </button>
                 <button
-                  className={`px-4 py-2 rounded-lg font-semibold border ${showOpponent ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'} border-blue-600 hover:bg-blue-600 hover:text-white transition-colors`}
+                  className={`px-4 py-2 rounded-lg font-medium border transition-all duration-200 ${showOpponent ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
                   onClick={() => { setShowNet(false); setShowOpponent(true); }}
                 >
                   Opponent
                 </button>
                 <button
-                  className={`px-4 py-2 rounded-lg font-semibold border ${showNet ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'} border-blue-600 hover:bg-blue-600 hover:text-white transition-colors`}
+                  className={`px-4 py-2 rounded-lg font-medium border transition-all duration-200 ${showNet ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
                   onClick={() => setShowNet(true)}
                 >
                   Net
@@ -400,7 +386,7 @@ function LineupStats() {
           <div className="mt-6 flex justify-center">
             <button
               onClick={handleShowResults}
-              className="px-6 py-3 rounded-lg font-semibold border bg-blue-600 text-white border-blue-600 hover:bg-blue-700 transition-colors"
+              className="px-6 py-3 rounded-lg font-medium border bg-accent-500 text-white border-accent-500 hover:bg-accent-600 transition-all duration-200 shadow-soft"
             >
               Show Results
             </button>
@@ -409,24 +395,24 @@ function LineupStats() {
 
         {/* Pagination Info */}
         <div className="mb-4 flex justify-between items-center">
-          <div className="text-sm text-gray-600">
+          <div className="text-sm text-gray-400">
             Showing {startIndex + 1}-{Math.min(endIndex, sortedData.length)} of {sortedData.length} lineups
           </div>
           <div className="flex space-x-2">
             <button
               onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
               disabled={currentPage === 1}
-              className="px-3 py-1 border border-gray-300 rounded disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
+              className="px-3 py-1 border border-gray-700 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-800 text-gray-300 transition-colors"
             >
               Previous
             </button>
-            <span className="px-3 py-1 text-sm">
+            <span className="px-3 py-1 text-sm text-gray-300">
               Page {currentPage} of {totalPages}
             </span>
             <button
               onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
               disabled={currentPage === totalPages}
-              className="px-3 py-1 border border-gray-300 rounded disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50"
+              className="px-3 py-1 border border-gray-700 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-800 text-gray-300 transition-colors"
             >
               Next
             </button>
@@ -434,22 +420,22 @@ function LineupStats() {
         </div>
 
         {/* Data Table */}
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="bg-gray-900 rounded-xl shadow-subtle overflow-hidden border border-gray-800">
           <div className="overflow-x-auto">
             <table className="w-full">
-              <thead className="bg-gray-50">
+              <thead className="bg-gray-800">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-[600px]">
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider w-[600px]">
                     Lineup
                   </th>
-                  <th className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
                     Team
                   </th>
-                  <th className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
                     Height
                   </th>
                   <th 
-                    className="px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    className="px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider"
                     onClick={() => handleSort('minutes_played')}
                     style={{ cursor: 'pointer' }}
                   >
@@ -458,7 +444,7 @@ function LineupStats() {
                   {columns.map(col => (
                     <th
                       key={col.key}
-                      className={`px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider ${col.key === columns[0].key ? 'border-l-2 border-gray-200' : ''}`}
+                      className={`px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider ${col.key === columns[0].key ? 'border-l-2 border-gray-700' : ''}`}
                       onClick={() => handleSort(col.key)}
                       style={{ cursor: 'pointer' }}
                     >
@@ -467,11 +453,11 @@ function LineupStats() {
                   ))}
                 </tr>
               </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
+              <tbody className="bg-gray-900 divide-y divide-gray-800">
                 {paginatedData.map((row, index) => (
-                  <tr key={index} className="hover:bg-gray-50">
+                  <tr key={index} className="hover:bg-gray-800 transition-colors duration-200">
                     {/* Lineup headshots and last names */}
-                    <td className="px-6 py-3 text-sm text-gray-900 w-[600px]">
+                    <td className="px-6 py-3 text-sm text-white w-[600px]">
                       <div className="flex flex-col items-start">
                         <div className="flex gap-10 mb-2">
                           {parseLineup(row.lineup).map((player, idx) => {
@@ -484,32 +470,32 @@ function LineupStats() {
                                   <img
                                     src={info.image_url}
                                     alt={cleanName}
-                                    className="w-16 h-16 rounded-full object-cover border border-gray-300 bg-gray-100"
+                                    className="w-16 h-16 rounded-full object-cover border border-gray-600 bg-gray-800"
                                     onError={e => {
                                       e.target.style.display = 'none';
                                       e.target.nextSibling.style.display = 'flex';
                                     }}
                                   />
                                 ) : null}
-                                <div className={`w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center border border-gray-300 text-xs text-gray-500 ${info.image_url ? 'hidden' : ''}`}>
+                                <div className={`w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center border border-gray-600 text-xs text-gray-400 ${info.image_url ? 'hidden' : ''}`}>
                                   {getInitials(cleanName)}
                                 </div>
-                                <span className="text-xs text-gray-700 mt-1 text-center max-w-20 truncate">{info.last_name || cleanName.split(' ').slice(-1)[0]}</span>
+                                <span className="text-xs text-gray-300 mt-1 text-center max-w-20 truncate">{info.last_name || cleanName.split(' ').slice(-1)[0]}</span>
                               </div>
                             );
                           })}
                         </div>
                       </div>
                     </td>
-                    <td className="px-3 py-3 text-sm text-gray-900">{row.team}</td>
-                    <td className="px-3 py-3 text-sm text-gray-900">
+                    <td className="px-3 py-3 text-sm text-white">{row.team}</td>
+                    <td className="px-3 py-3 text-sm text-white">
                       {row.team_avg_height ? row.team_avg_height.toFixed(1) : '0.0'}
                     </td>
-                    <td className="px-3 py-3 text-sm text-gray-900">
+                    <td className="px-3 py-3 text-sm text-white">
                       {row.minutes_played ? row.minutes_played.toFixed(1) : '0.0'}
                     </td>
                     {columns.map(col => (
-                      <td key={col.key} className={`px-3 py-3 text-sm text-gray-900 ${col.key === columns[0].key ? 'border-l-2 border-gray-200' : ''}`}>
+                      <td key={col.key} className={`px-3 py-3 text-sm text-white ${col.key === columns[0].key ? 'border-l-2 border-gray-700' : ''}`}>
                         {row[col.key]}
                       </td>
                     ))}
@@ -522,9 +508,9 @@ function LineupStats() {
 
         {paginatedData.length === 0 && (
           <div className="text-center py-12">
-            <div className="text-6xl mb-4">📊</div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">No data found</h3>
-            <p className="text-gray-600">Try adjusting your filters or selecting more teams</p>
+            <div className="text-5xl mb-4">📊</div>
+            <h3 className="text-xl font-semibold text-white mb-2">No data found</h3>
+            <p className="text-gray-400">Try adjusting your filters or selecting more teams</p>
           </div>
         )}
       </div>
