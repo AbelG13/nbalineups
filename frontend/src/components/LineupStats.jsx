@@ -100,7 +100,7 @@ function LineupStats() {
           params.periods = selectedPeriods.join(','); // Send as comma-separated string
         }
         
-        const response = await axios.get(`http://127.0.0.1:8000/lineup_stats/${team}`, { params });
+        const response = await axios.get(`http://127.0.0.1:8000/lineup-stats/${team}`, { params });
         if (response.data && Array.isArray(response.data)) {
           allData.push(...response.data);
         }

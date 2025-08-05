@@ -56,11 +56,7 @@ def infer_lineup_for_team(start_index, pbp_df, team_players, team_side, max_look
             # UPDATED
             players = [row['PLAYER1_NAME'], row['PLAYER2_NAME'], row['PLAYER3_NAME']]
             
-            # # Debugging.. remove accent marks from names in pbp
-            # players = [
-            #     unicodedata.normalize('NFKD', name).encode('ASCII', 'ignore').decode('ASCII') if isinstance(name, str) else name
-            #     for name in players
-            # ]
+            
             for player in players:
                 if pd.isna(player):
                     continue
