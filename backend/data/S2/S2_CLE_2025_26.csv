@@ -1,0 +1,72 @@
+game_id,team,opponent,team_avg_height,opp_avg_height,lineup,minutes_played,period,points,opp_points,rebounds,opp_rebounds,assists,opp_assists,turnovers,opp_turnovers,fouls_committed,fouls_drawn,game_number
+22500003,CLE,NYK,78.4,78.8,"('Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen', 'Jaylon Tyson', 'Sam Merrill')",4.9,1,10,14,2,6,2,4,1,2,2,2,1
+22500003,CLE,NYK,78.4,77.4,"('Craig Porter Jr.', 'Dean Wade', 'Evan Mobley', 'Jaylon Tyson', 'Lonzo Ball')",2.2333333333333334,1,3,8,2,2,1,0,1,0,2,0,1
+22500003,CLE,NYK,77.2,77.2,"('Craig Porter Jr.', 'Dean Wade', 'Donovan Mitchell', 'Jarrett Allen', 'Lonzo Ball')",2.6166666666666667,1,7,8,0,2,2,1,0,1,1,1,1
+22500003,CLE,NYK,78.4,78.8,"('Dean Wade', 'Donovan Mitchell', 'Evan Mobley', 'Jaylon Tyson', 'Sam Merrill')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
+22500003,CLE,NYK,78.0,77.4,"('Craig Porter Jr.', 'Dean Wade', 'Jarrett Allen', 'Jaylon Tyson', 'Lonzo Ball')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
+22500003,CLE,NYK,79.0,77.4,"('Dean Wade', 'Evan Mobley', 'Jaylon Tyson', 'Lonzo Ball', 'Sam Merrill')",2.25,1,3,3,3,5,1,1,1,0,0,0,1
+22500003,CLE,NYK,78.2,77.8,"('Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen', 'Lonzo Ball', 'Sam Merrill')",1.7,2,4,7,1,3,0,1,1,2,0,2,1
+22500003,CLE,NYK,79.0,77.8,"('Dean Wade', 'Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen', 'Sam Merrill')",0.15,2,0,0,0,0,0,0,0,0,0,0,1
+22500003,CLE,NYK,79.0,76.4,"('Dean Wade', 'Evan Mobley', 'Larry Nance Jr.', 'Lonzo Ball', 'Sam Merrill')",1.833333333333334,2,5,5,3,2,1,1,0,0,1,0,1
+22500003,CLE,NYK,78.2,77.8,"('Dean Wade', 'Donovan Mitchell', 'Evan Mobley', 'Lonzo Ball', 'Sam Merrill')",1.7499999999999998,2,3,9,0,3,1,2,1,0,2,0,1
+22500003,CLE,NYK,77.8,79.4,"('Donovan Mitchell', 'Evan Mobley', 'Jaylon Tyson', 'Larry Nance Jr.', 'Tyrese Proctor')",2.05,2,6,3,1,0,2,0,1,1,1,2,1
+22500003,CLE,NYK,77.4,78.6,"('Donovan Mitchell', 'Jarrett Allen', 'Jaylon Tyson', 'Larry Nance Jr.', 'Tyrese Proctor')",0.9166666666666669,2,0,1,0,2,0,0,0,0,1,0,1
+22500003,CLE,NYK,79.2,77.4,"('Dean Wade', 'Evan Mobley', 'Jaylon Tyson', 'Larry Nance Jr.', 'Sam Merrill')",0.5499999999999999,2,0,0,1,0,0,0,1,1,0,0,1
+22500003,CLE,NYK,76.4,78.6,"('Craig Porter Jr.', 'Donovan Mitchell', 'Jarrett Allen', 'Larry Nance Jr.', 'Tyrese Proctor')",1.8666666666666667,2,4,7,0,2,1,1,0,0,1,0,1
+22500003,CLE,NYK,79.2,77.4,"('Dean Wade', 'Evan Mobley', 'Jaylon Tyson', 'Larry Nance Jr.', 'Tyrese Proctor')",1.1833333333333331,2,5,0,3,0,2,0,1,0,0,0,1
+22500003,CLE,NYK,79.0,78.8,"('Dean Wade', 'Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen', 'Sam Merrill')",4.516666666666667,3,12,12,3,4,2,3,1,2,2,3,1
+22500003,CLE,NYK,78.4,79.8,"('Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen', 'Jaylon Tyson', 'Sam Merrill')",1.6333333333333333,3,8,2,2,0,1,0,0,0,3,2,1
+22500003,CLE,NYK,78.0,77.6,"('Dean Wade', 'Donovan Mitchell', 'Jarrett Allen', 'Larry Nance Jr.', 'Tyrese Proctor')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
+22500003,CLE,NYK,79.6,77.0,"('Dean Wade', 'Evan Mobley', 'Jarrett Allen', 'Lonzo Ball', 'Sam Merrill')",0.5333333333333333,3,2,0,1,1,0,0,0,1,0,0,1
+22500003,CLE,NYK,79.8,77.6,"('Dean Wade', 'Evan Mobley', 'Jarrett Allen', 'Larry Nance Jr.', 'Tyrese Proctor')",0.35,3,1,0,1,0,0,0,0,0,0,0,1
+22500003,CLE,NYK,77.2,77.6,"('Donovan Mitchell', 'Jarrett Allen', 'Larry Nance Jr.', 'Lonzo Ball', 'Tyrese Proctor')",2.1333333333333333,3,5,2,3,2,0,0,0,0,0,1,1
+22500003,CLE,NYK,79.0,77.0,"('Dean Wade', 'Evan Mobley', 'Larry Nance Jr.', 'Lonzo Ball', 'Tyrese Proctor')",1.0666666666666669,3,4,0,2,0,1,0,0,0,0,1,1
+22500003,CLE,NYK,77.2,77.6,"('Dean Wade', 'Donovan Mitchell', 'Larry Nance Jr.', 'Lonzo Ball', 'Tyrese Proctor')",1.7666666666666666,3,5,6,0,1,1,2,1,1,0,1,1
+22500003,CLE,NYK,79.6,77.0,"('Dean Wade', 'Evan Mobley', 'Jarrett Allen', 'Lonzo Ball', 'Tyrese Proctor')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
+22500003,CLE,NYK,77.4,77.6,"('Donovan Mitchell', 'Evan Mobley', 'Jaylon Tyson', 'Sam Merrill', 'Tyrese Proctor')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
+22500003,CLE,NYK,79.0,77.8,"('Dean Wade', 'Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen', 'Sam Merrill')",2.716666666666667,4,9,8,2,1,2,2,1,0,2,2,1
+22500003,CLE,NYK,78.0,77.8,"('Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen', 'Sam Merrill', 'Tyrese Proctor')",0.5333333333333333,4,0,1,0,1,0,0,0,1,0,1,1
+22500003,CLE,NYK,78.2,76.4,"('Dean Wade', 'Donovan Mitchell', 'Evan Mobley', 'Lonzo Ball', 'Sam Merrill')",2.2166666666666672,4,6,4,1,2,0,1,2,1,1,2,1
+22500003,CLE,NYK,79.6,77.8,"('Dean Wade', 'Evan Mobley', 'Jarrett Allen', 'Lonzo Ball', 'Sam Merrill')",0.1166666666666666,4,0,0,0,0,0,0,0,0,1,0,1
+22500003,CLE,NYK,77.8,77.4,"('Dean Wade', 'Donovan Mitchell', 'Jarrett Allen', 'Lonzo Ball', 'Sam Merrill')",0.9666666666666668,4,0,0,0,2,0,0,0,0,1,1,1
+22500003,CLE,NYK,77.8,77.6,"('Donovan Mitchell', 'Evan Mobley', 'Jaylon Tyson', 'Larry Nance Jr.', 'Tyrese Proctor')",1.4666666666666666,4,0,6,0,1,0,1,2,0,2,0,1
+22500003,CLE,NYK,77.4,77.6,"('Donovan Mitchell', 'Jarrett Allen', 'Jaylon Tyson', 'Larry Nance Jr.', 'Tyrese Proctor')",1.8000000000000005,4,2,8,0,4,0,2,0,0,1,0,1
+22500003,CLE,NYK,78.4,77.6,"('Dean Wade', 'Donovan Mitchell', 'Evan Mobley', 'Jaylon Tyson', 'Sam Merrill')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
+22500003,CLE,NYK,78.2,76.4,"('Dean Wade', 'Donovan Mitchell', 'Evan Mobley', 'Lonzo Ball', 'Tyrese Proctor')",0.1833333333333333,4,0,1,0,1,0,0,0,0,0,0,1
+22500003,CLE,NYK,78.6,77.8,"('Evan Mobley', 'Jarrett Allen', 'Lonzo Ball', 'Sam Merrill', 'Tyrese Proctor')",0.7666666666666666,4,2,2,0,1,0,0,0,0,1,1,1
+22500003,CLE,NYK,79.0,78.0,"('Dean Wade', 'Evan Mobley', 'Jaylon Tyson', 'Lonzo Ball', 'Sam Merrill')",1.2333333333333334,4,5,2,1,0,1,0,0,0,0,1,1
+22500091,CLE,BKN,77.0,80.8,"('Craig Porter Jr.', 'Dean Wade', 'Donovan Mitchell', 'Jarrett Allen', 'Tyrese Proctor')",1.3333333333333333,1,5,3,2,1,1,1,0,0,0,2,2
+22500091,CLE,BKN,78.4,79.2,"('Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen', 'Jaylon Tyson', 'Sam Merrill')",5.0,1,18,7,6,2,6,2,2,3,2,1,2
+22500091,CLE,BKN,78.6,80.0,"('Dean Wade', 'Jarrett Allen', 'Jaylon Tyson', 'Lonzo Ball', 'Sam Merrill')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
+22500091,CLE,BKN,77.2,80.6,"('Craig Porter Jr.', 'Dean Wade', 'Donovan Mitchell', 'Jarrett Allen', 'Lonzo Ball')",3.033333333333333,1,6,3,1,1,1,1,2,4,1,3,2
+22500091,CLE,BKN,78.4,80.8,"('Craig Porter Jr.', 'Dean Wade', 'Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen')",0.1666666666666666,1,0,3,0,1,0,1,0,0,0,0,2
+22500091,CLE,BKN,77.6,79.2,"('Donovan Mitchell', 'Evan Mobley', 'Jaylon Tyson', 'Lonzo Ball', 'Sam Merrill')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
+22500091,CLE,BKN,78.0,80.0,"('Craig Porter Jr.', 'Dean Wade', 'Jarrett Allen', 'Jaylon Tyson', 'Lonzo Ball')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
+22500091,CLE,BKN,79.0,80.0,"('Dean Wade', 'Evan Mobley', 'Jaylon Tyson', 'Lonzo Ball', 'Sam Merrill')",2.4666666666666672,1,5,7,3,2,2,2,1,2,0,0,2
+22500091,CLE,BKN,78.2,80.4,"('Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen', 'Lonzo Ball', 'Sam Merrill')",2.6833333333333336,2,5,9,0,1,1,2,1,0,1,1,2
+22500091,CLE,BKN,78.6,78.8,"('Dean Wade', 'Jarrett Allen', 'Larry Nance Jr.', 'Lonzo Ball', 'Tyrese Proctor')",0.0,2,0,0,0,0,0,0,0,0,0,0,2
+22500091,CLE,BKN,78.0,78.8,"('Dean Wade', 'Jaylon Tyson', 'Larry Nance Jr.', 'Lonzo Ball', 'Tyrese Proctor')",0.0,2,0,0,0,0,0,0,0,0,0,0,2
+22500091,CLE,BKN,76.8,81.0,"('Craig Porter Jr.', 'Donovan Mitchell', 'Evan Mobley', 'Larry Nance Jr.', 'Tyrese Proctor')",2.8833333333333333,2,9,7,1,2,2,3,0,0,1,0,2
+22500091,CLE,BKN,79.6,79.8,"('Dean Wade', 'Evan Mobley', 'Jarrett Allen', 'Lonzo Ball', 'Sam Merrill')",0.0,2,0,0,0,0,0,0,0,0,0,0,2
+22500091,CLE,BKN,77.8,79.6,"('Donovan Mitchell', 'Evan Mobley', 'Jaylon Tyson', 'Larry Nance Jr.', 'Tyrese Proctor')",1.366666666666667,2,6,2,3,2,0,0,0,0,1,1,2
+22500091,CLE,BKN,78.6,79.8,"('Dean Wade', 'Jarrett Allen', 'Larry Nance Jr.', 'Lonzo Ball', 'Sam Merrill')",3.4499999999999997,2,9,4,5,3,3,0,1,1,0,5,2
+22500091,CLE,BKN,79.2,78.8,"('Dean Wade', 'Evan Mobley', 'Jaylon Tyson', 'Larry Nance Jr.', 'Tyrese Proctor')",1.6166666666666665,2,0,6,0,1,0,1,1,1,3,0,2
+22500091,CLE,BKN,78.4,79.2,"('Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen', 'Jaylon Tyson', 'Sam Merrill')",5.083333333333334,3,20,12,3,2,6,4,3,0,0,3,2
+22500091,CLE,BKN,78.4,80.4,"('Craig Porter Jr.', 'Dean Wade', 'Evan Mobley', 'Jaylon Tyson', 'Lonzo Ball')",1.2333333333333334,3,5,2,0,1,2,0,0,0,1,1,2
+22500091,CLE,BKN,77.2,80.0,"('Craig Porter Jr.', 'Dean Wade', 'Donovan Mitchell', 'Jarrett Allen', 'Lonzo Ball')",4.0,3,16,12,2,3,4,2,0,2,1,1,2
+22500091,CLE,BKN,78.4,80.0,"('Craig Porter Jr.', 'Dean Wade', 'Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen')",0.0,3,0,0,0,0,0,0,0,0,0,0,2
+22500091,CLE,BKN,77.6,79.2,"('Donovan Mitchell', 'Evan Mobley', 'Jaylon Tyson', 'Lonzo Ball', 'Sam Merrill')",0.1,3,0,0,0,0,0,0,0,0,0,0,2
+22500091,CLE,BKN,78.0,80.4,"('Craig Porter Jr.', 'Dean Wade', 'Jarrett Allen', 'Jaylon Tyson', 'Lonzo Ball')",0.0,3,0,0,0,0,0,0,0,0,0,0,2
+22500091,CLE,BKN,79.4,80.0,"('Dean Wade', 'Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen', 'Jaylon Tyson')",0.1333333333333333,3,1,0,1,0,0,0,0,0,0,0,2
+22500091,CLE,BKN,79.0,79.8,"('Dean Wade', 'Evan Mobley', 'Jaylon Tyson', 'Lonzo Ball', 'Sam Merrill')",1.4500000000000002,3,3,9,0,2,1,1,2,1,2,0,2
+22500091,CLE,BKN,78.2,79.8,"('Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen', 'Lonzo Ball', 'Sam Merrill')",0.9333333333333332,4,1,2,3,2,0,0,0,0,1,1,2
+22500091,CLE,BKN,79.0,80.2,"('Dean Wade', 'Donovan Mitchell', 'Evan Mobley', 'Jarrett Allen', 'Sam Merrill')",3.0666666666666664,4,5,3,4,3,1,1,0,1,1,3,2
+22500091,CLE,BKN,76.8,81.4,"('Craig Porter Jr.', 'Donovan Mitchell', 'Evan Mobley', 'Larry Nance Jr.', 'Tyrese Proctor')",1.766666666666667,4,3,7,0,1,0,1,1,1,0,3,2
+22500091,CLE,BKN,79.4,80.2,"('Dean Wade', 'Evan Mobley', 'Jaylon Tyson', 'Larry Nance Jr.', 'Lonzo Ball')",1.15,4,2,5,0,1,1,1,0,0,1,0,2
+22500091,CLE,BKN,77.6,79.8,"('Donovan Mitchell', 'Evan Mobley', 'Larry Nance Jr.', 'Lonzo Ball', 'Sam Merrill')",0.0166666666666666,4,2,0,0,0,0,0,0,0,0,1,2
+22500091,CLE,BKN,77.2,79.4,"('Dean Wade', 'Donovan Mitchell', 'Larry Nance Jr.', 'Lonzo Ball', 'Sam Merrill')",0.5333333333333333,4,3,1,0,0,1,0,0,0,1,0,2
+22500091,CLE,BKN,78.2,79.8,"('Dean Wade', 'Donovan Mitchell', 'Evan Mobley', 'Lonzo Ball', 'Sam Merrill')",0.1166666666666666,4,2,2,0,0,0,1,0,0,0,1,2
+22500091,CLE,BKN,77.8,79.6,"('Dean Wade', 'Donovan Mitchell', 'Jarrett Allen', 'Lonzo Ball', 'Sam Merrill')",1.4333333333333331,4,0,5,1,2,0,2,1,1,1,1,2
+22500091,CLE,BKN,77.8,81.4,"('Donovan Mitchell', 'Evan Mobley', 'Jaylon Tyson', 'Larry Nance Jr.', 'Tyrese Proctor')",1.2166666666666666,4,3,5,0,1,0,2,2,0,0,2,2
+22500091,CLE,BKN,77.6,80.2,"('Dean Wade', 'Donovan Mitchell', 'Jaylon Tyson', 'Larry Nance Jr.', 'Lonzo Ball')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
+22500091,CLE,BKN,79.2,80.0,"('Dean Wade', 'Evan Mobley', 'Jaylon Tyson', 'Larry Nance Jr.', 'Tyrese Proctor')",1.766666666666667,4,2,8,1,4,0,2,0,2,0,0,2

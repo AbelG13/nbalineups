@@ -39,11 +39,13 @@ function LineupStats() {
   const [selectedTeams, setSelectedTeams] = useState(['ATL']);
   const [selectedPeriods, setSelectedPeriods] = useState(periods);
   const [gameRange, setGameRange] = useState([1, 82]);
+  const [selectedSeason, setSelectedSeason] = useState('2024-25');
 
   // Pending filters (what user sees and modifies)
   const [pendingTeams, setPendingTeams] = useState(['ATL']);
   const [pendingPeriods, setPendingPeriods] = useState(periods);
   const [pendingGameRange, setPendingGameRange] = useState([1, 82]);
+  const [pendingSeason, setPendingSeason] = useState('2024-25');
 
   // UI state
   const [lineupData, setLineupData] = useState([]);
@@ -93,6 +95,7 @@ function LineupStats() {
     for (const team of selectedTeams) {
       try {
         const params = {
+          season: selectedSeason,
           game_min: gameRange[0],
           game_max: gameRange[1]
         };
@@ -118,12 +121,14 @@ function LineupStats() {
   // Load data on mount and when filters change
   useEffect(() => {
     loadData();
-  }, [selectedTeams, selectedPeriods, gameRange]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedTeams, selectedPeriods, gameRange, selectedSeason]);
 
   const handleShowResults = () => {
     setSelectedTeams(pendingTeams);
     setSelectedPeriods(pendingPeriods);
     setGameRange(pendingGameRange);
+    setSelectedSeason(pendingSeason);
     setCurrentPage(1);
   };
 
@@ -243,13 +248,28 @@ function LineupStats() {
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-white mb-4">Lineup Statistics</h1>
           <p className="text-gray-400 text-lg">
-            Explore aggregated lineup performance data from the 2024-25 NBA season
+            Explore aggregated lineup performance data
           </p>
         </div>
 
         {/* Filters and toggles */}
         <div className="bg-gray-900 rounded-xl shadow-subtle p-6 mb-8 border border-gray-800">
-          <div className="grid md:grid-cols-4 gap-6 items-end">
+          <div className="grid md:grid-cols-5 gap-6 items-end">
+            {/* Season Selector */}
+            <div>
+              <label className="block text-sm font-medium text-gray-300 mb-3">
+                Season
+              </label>
+              <select
+                value={pendingSeason}
+                onChange={(e) => setPendingSeason(e.target.value)}
+                className="w-full px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
+              >
+                <option value="2024-25">2024-25</option>
+                <option value="2025-26">2025-26</option>
+              </select>
+            </div>
+
             {/* Team Filter */}
             <div>
               <label className="block text-sm font-medium text-gray-300 mb-3">

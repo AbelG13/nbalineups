@@ -41,13 +41,13 @@
 
 # fieldnames = list(all_players[0].keys())
 
-# with open("nba_players_full.csv", "w", encoding="utf-8", newline="") as f:
+# with open("playersBDL25.csv", "w", encoding="utf-8", newline="") as f:
 #     writer = csv.DictWriter(f, fieldnames=fieldnames)
 #     writer.writeheader()
 #     writer.writerows(all_players)
 
 
-# print("Saved to nba_players_full.csv")
+# print("Saved to playersBDL25.csv")
 
 # from nba_api.stats.static import players
 # nba_players = players.get_players()
@@ -55,14 +55,55 @@
 # # convert to pandas dataframe
 # import pandas as pd
 # df = pd.DataFrame(nba_players)
-# df.to_csv('nba_players.csv', index=False)
+# df.to_csv('playersAPI25.csv', index=False)
 
+#### IF STATIC API DOES NOT WORK USE THIS ENDPOINT ####
+
+# from nba_api.stats.endpoints import commonallplayers
+# import pandas as pd
+
+# # Get all players
+# players_df = commonallplayers.CommonAllPlayers(is_only_current_season=0).get_data_frames()[0]
+
+# # Rename columns
+# renamed = players_df.rename(columns={
+#     'PERSON_ID': 'id',
+#     'DISPLAY_FIRST_LAST': 'full_name',
+#     'DISPLAY_LAST_COMMA_FIRST': 'last_comma_first',
+#     'ROSTERSTATUS': 'is_active'
+# })
+
+# # Split last_comma_first safely
+# def split_last_comma_first(name):
+#     if isinstance(name, str) and ',' in name:
+#         last, first = name.split(',', 1)
+#         return pd.Series([last.strip(), first.strip()])
+#     else:
+#         # If no comma, put entire name as full_name in first_name and leave last_name blank
+#         return pd.Series(['', name.strip() if isinstance(name, str) else ''])
+
+# renamed[['last_name', 'first_name']] = renamed['last_comma_first'].apply(split_last_comma_first)
+
+# # Convert is_active to boolean
+# renamed['is_active'] = renamed['is_active'].apply(lambda x: True if x == 1 else False)
+
+# # Drop helper column
+# renamed = renamed.drop(columns=['last_comma_first'])
+
+# # Debugging
+
+# # where full name is Yang Hansen, change first name to Yang and last name to Hansen
+# renamed.loc[renamed['full_name'] == 'Yang Hansen', 'first_name'] = 'Yang'
+# renamed.loc[renamed['full_name'] == 'Yang Hansen', 'last_name'] = 'Hansen'
+
+
+# renamed[['id', 'full_name', 'is_active', 'last_name', 'first_name']].to_csv("playersAPI25.csv", index=False)
 
 import pandas as pd 
 import ast
 
-df1 = pd.read_csv("nba_players_full.csv")
-df2 = pd.read_csv("nba_players.csv")
+df1 = pd.read_csv("playersBDL25.csv")
+df2 = pd.read_csv("playersAPI25.csv")
 
 # Debugging... Mapping of simplified names → corrected official names
 name_corrections = {
@@ -107,7 +148,18 @@ name_corrections = {
     ("Pacome", "Dadiet"): ("Pacôme", "Dadiet"),
     ("Zach", "Lavine"): ("Zach", "LaVine"),
     ("PJ", "Tucker"): ("P.J.", "Tucker"),
-    ("Tobias", "Harris"): ("Tobias", "Harris")
+    ("Tobias", "Harris"): ("Tobias", "Harris"),
+    ("Airious", "Bailey"): ("Ace", "Bailey"),
+    ("Egor", "Demin"): ("Egor", "Dëmin"),
+    ("Nolan", "Traoré"): ("Nolan", "Traore"),
+    ("David", "Jones"): ("David", "Jones Garcia"),
+    ("Hansen", "Yang"): ("Yang", "Hansen"),
+    ("Nigel", "Hayes"): ("Nigel", "Hayes-Davis"),
+    ("Yanic Konan", "Niederhauser"): ("Yanic Konan", "Niederhäuser")
+
+
+
+
 }
 
 # Apply corrections
@@ -117,7 +169,7 @@ for (old_first, old_last), (new_first, new_last) in name_corrections.items():
         ["first_name", "last_name"]
     ] = new_first, new_last
 
-df1.to_csv("nba_players_full.csv", index=False)
+df1.to_csv("playersBDL25.csv", index=False)
 
 # join df1 and df2 on first_name and last_name
 
@@ -137,7 +189,7 @@ filtered_df.loc[:, 'team_abbreviation'] = filtered_df['team'].apply(lambda x: x.
 filtered_df.rename(columns={'id_y': 'player_id'}, inplace=True)
 
 # Save the updated DataFrame to CSV
-filtered_df[['player_id', 'first_name', 'last_name', 'position', 'team_abbreviation']].to_csv("active_nba_players.csv", index=False)
+filtered_df[['player_id', 'first_name', 'last_name', 'position', 'team_abbreviation']].to_csv("active25.csv", index=False)
 
 
 

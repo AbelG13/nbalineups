@@ -9,7 +9,8 @@ team_abbrevs = [team['abbreviation'] for team in teams.get_teams()]
 
 # For each team abbreviation, load and update its CSV
 for team_abbr in team_abbrevs:
-    csv_path = f'v2_{team_abbr}_2024_25.csv'
+    save_dir = "S2"
+    csv_path = os.path.join(save_dir, f'S2_{team_abbr}_2025_26.csv')
 
     # Skip if the CSV doesn't exist (not yet generated from batch runs)
     if not os.path.exists(csv_path):

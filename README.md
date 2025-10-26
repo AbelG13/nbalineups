@@ -73,8 +73,13 @@ A modern, interactive web application for building and analyzing NBA team lineup
 
 1. **Start the backend server**
    ```bash
+   Mac:
    cd backend
    python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
+
+   Windows:
+   cd backend
+   uvicorn main:app --reload
    ```
 
 2. **Start the frontend development server**

@@ -1,0 +1,68 @@
+game_id,team,opponent,team_avg_height,opp_avg_height,lineup,minutes_played,period,points,opp_points,rebounds,opp_rebounds,assists,opp_assists,turnovers,opp_turnovers,fouls_committed,fouls_drawn,game_number
+22500003,NYK,CLE,77.8,79.0,"('Ariel Hukporti', 'Guerschon Yabusele', 'Jalen Brunson', 'Mikal Bridges', 'Miles McBride')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
+22500003,NYK,CLE,78.8,79.0,"('Ariel Hukporti', 'Guerschon Yabusele', 'Jalen Brunson', 'Mikal Bridges', 'OG Anunoby')",2.599999999999999,1,5,3,6,3,1,1,0,1,0,0,1
+22500003,NYK,CLE,79.8,78.4,"('Ariel Hukporti', 'Jalen Brunson', 'Karl-Anthony Towns', 'Mikal Bridges', 'OG Anunoby')",4.55,1,12,10,5,2,4,2,2,1,2,2,1
+22500003,NYK,CLE,77.2,77.2,"('Jalen Brunson', 'Landry Shamet', 'Miles McBride', 'OG Anunoby', 'Trey Jemison III')",2.0166666666666666,1,6,5,2,0,1,1,1,0,1,0,1
+22500003,NYK,CLE,77.4,77.2,"('Jalen Brunson', 'Mikal Bridges', 'Miles McBride', 'OG Anunoby', 'Trey Jemison III')",0.6,1,2,2,0,0,0,1,0,0,0,1,1
+22500003,NYK,CLE,77.4,78.4,"('Guerschon Yabusele', 'Jalen Brunson', 'Mikal Bridges', 'Miles McBride', 'Trey Jemison III')",2.2333333333333334,1,8,3,2,2,0,1,0,1,0,2,1
+22500003,NYK,CLE,79.4,79.2,"('Ariel Hukporti', 'Jordan Clarkson', 'Karl-Anthony Towns', 'Mikal Bridges', 'Tyler Kolek')",1.1833333333333331,2,0,5,0,3,0,2,0,1,0,0,1
+22500003,NYK,CLE,77.4,79.0,"('Ariel Hukporti', 'Jalen Brunson', 'Landry Shamet', 'Mikal Bridges', 'Miles McBride')",2.3833333333333324,2,5,5,2,4,1,1,1,1,0,1,1
+22500003,NYK,CLE,76.4,78.2,"('Jalen Brunson', 'Landry Shamet', 'Mikal Bridges', 'Miles McBride', 'OG Anunoby')",0.9666666666666668,2,4,3,2,0,1,1,0,0,0,1,1
+22500003,NYK,CLE,77.8,79.0,"('Jalen Brunson', 'Karl-Anthony Towns', 'Mikal Bridges', 'Miles McBride', 'OG Anunoby')",2.6333333333333337,2,12,4,4,1,2,0,2,2,2,1,1
+22500003,NYK,CLE,77.4,79.2,"('Ariel Hukporti', 'Landry Shamet', 'Mikal Bridges', 'Miles McBride', 'Tyler Kolek')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
+22500003,NYK,CLE,78.6,77.8,"('Guerschon Yabusele', 'Jordan Clarkson', 'Karl-Anthony Towns', 'OG Anunoby', 'Tyler Kolek')",4.833333333333333,2,11,10,4,1,1,3,1,1,2,3,1
+22500003,NYK,CLE,79.6,77.8,"('Ariel Hukporti', 'Guerschon Yabusele', 'Jordan Clarkson', 'Karl-Anthony Towns', 'Tyler Kolek')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
+22500003,NYK,CLE,78.0,79.2,"('Ariel Hukporti', 'Jordan Clarkson', 'Landry Shamet', 'Mikal Bridges', 'Tyler Kolek')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
+22500003,NYK,CLE,77.2,77.2,"('Landry Shamet', 'Miles McBride', 'OG Anunoby', 'Trey Jemison III', 'Tyler Kolek')",0.9666666666666668,3,3,3,1,0,1,0,1,0,0,0,1
+22500003,NYK,CLE,77.6,77.2,"('Karl-Anthony Towns', 'Landry Shamet', 'Miles McBride', 'OG Anunoby', 'Tyler Kolek')",2.1333333333333333,3,2,5,2,3,0,0,0,0,1,0,1
+22500003,NYK,CLE,79.8,79.0,"('Ariel Hukporti', 'Jalen Brunson', 'Karl-Anthony Towns', 'Mikal Bridges', 'OG Anunoby')",4.3166666666666655,3,12,15,1,3,3,2,1,1,4,4,1
+22500003,NYK,CLE,77.6,79.8,"('Jalen Brunson', 'Jordan Clarkson', 'Karl-Anthony Towns', 'Miles McBride', 'OG Anunoby')",0.35,3,0,1,0,1,0,0,0,0,0,0,1
+22500003,NYK,CLE,77.0,77.2,"('Jalen Brunson', 'Landry Shamet', 'Mikal Bridges', 'Miles McBride', 'Trey Jemison III')",1.866666666666667,3,3,6,0,2,1,2,0,1,2,0,1
+22500003,NYK,CLE,77.6,77.2,"('Jordan Clarkson', 'Karl-Anthony Towns', 'Miles McBride', 'OG Anunoby', 'Tyler Kolek')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
+22500003,NYK,CLE,79.4,79.6,"('Guerschon Yabusele', 'Jalen Brunson', 'Karl-Anthony Towns', 'Mikal Bridges', 'Trey Jemison III')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
+22500003,NYK,CLE,78.8,79.6,"('Guerschon Yabusele', 'Jalen Brunson', 'Karl-Anthony Towns', 'Mikal Bridges', 'OG Anunoby')",2.3666666666666663,3,2,7,4,3,0,1,2,0,1,1,1
+22500003,NYK,CLE,78.0,77.2,"('Landry Shamet', 'Mikal Bridges', 'Miles McBride', 'OG Anunoby', 'Trey Jemison III')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
+22500003,NYK,CLE,78.0,79.6,"('Guerschon Yabusele', 'Jalen Brunson', 'Landry Shamet', 'Mikal Bridges', 'Trey Jemison III')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
+22500003,NYK,CLE,78.0,77.8,"('Ariel Hukporti', 'Jalen Brunson', 'Jordan Clarkson', 'Landry Shamet', 'Mikal Bridges')",2.283333333333333,4,2,3,2,1,0,0,0,1,3,0,1
+22500003,NYK,CLE,77.4,77.8,"('Ariel Hukporti', 'Jalen Brunson', 'Landry Shamet', 'Mikal Bridges', 'Miles McBride')",0.4333333333333333,4,0,0,1,0,0,0,0,0,0,1,1
+22500003,NYK,CLE,77.6,79.0,"('Jalen Brunson', 'Jordan Clarkson', 'Karl-Anthony Towns', 'OG Anunoby', 'Tyler Kolek')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
+22500003,NYK,CLE,76.4,78.2,"('Jalen Brunson', 'Landry Shamet', 'Mikal Bridges', 'Miles McBride', 'OG Anunoby')",0.65,4,3,3,2,0,1,0,1,1,0,1,1
+22500003,NYK,CLE,77.4,79.0,"('Ariel Hukporti', 'Jalen Brunson', 'Jordan Clarkson', 'Mikal Bridges', 'Tyler Kolek')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
+22500003,NYK,CLE,77.8,78.2,"('Jalen Brunson', 'Karl-Anthony Towns', 'Mikal Bridges', 'Miles McBride', 'OG Anunoby')",4.016666666666667,4,11,11,3,2,2,2,1,1,4,3,1
+22500003,NYK,CLE,77.6,79.0,"('Jordan Clarkson', 'Karl-Anthony Towns', 'Miles McBride', 'OG Anunoby', 'Tyler Kolek')",4.5,4,16,7,5,1,3,1,0,2,1,3,1
+22500003,NYK,CLE,77.4,79.6,"('Jalen Brunson', 'Karl-Anthony Towns', 'Landry Shamet', 'Mikal Bridges', 'Miles McBride')",0.1166666666666666,4,0,0,0,0,0,0,0,0,0,1,1
+22500003,NYK,CLE,78.6,79.0,"('Ariel Hukporti', 'Jalen Brunson', 'Jordan Clarkson', 'Karl-Anthony Towns', 'Tyler Kolek')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
+22500018,NYK,BOS,77.2,78.2,"('Guerschon Yabusele', 'Jalen Brunson', 'Josh Hart', 'Landry Shamet', 'OG Anunoby')",1.4333333333333331,1,5,2,1,3,1,0,0,0,0,0,2
+22500018,NYK,BOS,77.2,78.2,"('Jalen Brunson', 'Josh Hart', 'Karl-Anthony Towns', 'Landry Shamet', 'Miles McBride')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
+22500018,NYK,BOS,78.2,78.2,"('Jalen Brunson', 'Josh Hart', 'Karl-Anthony Towns', 'Landry Shamet', 'OG Anunoby')",2.0,1,4,10,0,1,1,2,0,0,1,0,2
+22500018,NYK,BOS,77.8,78.0,"('Jalen Brunson', 'Karl-Anthony Towns', 'Mikal Bridges', 'Miles McBride', 'OG Anunoby')",4.299999999999999,1,7,10,7,3,2,3,1,3,4,2,2
+22500018,NYK,BOS,77.6,78.0,"('Jalen Brunson', 'Karl-Anthony Towns', 'Landry Shamet', 'Miles McBride', 'OG Anunoby')",2.1666666666666665,1,6,4,2,5,2,1,0,1,0,1,2
+22500018,NYK,BOS,76.2,78.2,"('Guerschon Yabusele', 'Jalen Brunson', 'Josh Hart', 'Landry Shamet', 'Miles McBride')",2.1,1,0,4,2,3,0,0,0,0,0,1,2
+22500018,NYK,BOS,76.4,77.8,"('Guerschon Yabusele', 'Jordan Clarkson', 'Mikal Bridges', 'Miles McBride', 'Tyler Kolek')",1.3166666666666669,2,5,0,3,0,1,0,0,1,0,3,2
+22500018,NYK,BOS,77.6,77.0,"('Guerschon Yabusele', 'Jalen Brunson', 'Josh Hart', 'Karl-Anthony Towns', 'Miles McBride')",0.0,2,0,0,0,0,0,0,0,0,0,0,2
+22500018,NYK,BOS,78.4,77.4,"('Jordan Clarkson', 'Karl-Anthony Towns', 'Mikal Bridges', 'OG Anunoby', 'Tyler Kolek')",3.2666666666666666,2,9,3,3,3,3,1,2,1,0,0,2
+22500018,NYK,BOS,76.4,77.0,"('Guerschon Yabusele', 'Jalen Brunson', 'Jordan Clarkson', 'Mikal Bridges', 'Miles McBride')",2.1833333333333336,2,10,1,3,0,2,0,0,1,2,2,2
+22500018,NYK,BOS,78.2,77.4,"('Jordan Clarkson', 'Karl-Anthony Towns', 'Landry Shamet', 'OG Anunoby', 'Tyler Kolek')",0.75,2,2,0,0,0,1,0,0,0,0,0,2
+22500018,NYK,BOS,77.8,77.0,"('Jalen Brunson', 'Karl-Anthony Towns', 'Mikal Bridges', 'Miles McBride', 'OG Anunoby')",0.0,2,0,0,0,0,0,0,0,0,0,0,2
+22500018,NYK,BOS,77.6,77.0,"('Jalen Brunson', 'Josh Hart', 'Karl-Anthony Towns', 'Miles McBride', 'OG Anunoby')",0.0,2,0,0,0,0,0,0,0,0,0,0,2
+22500018,NYK,BOS,77.4,77.4,"('Guerschon Yabusele', 'Jordan Clarkson', 'Mikal Bridges', 'OG Anunoby', 'Tyler Kolek')",1.0,2,2,3,2,1,0,1,0,0,0,2,2
+22500018,NYK,BOS,78.4,77.0,"('Jalen Brunson', 'Josh Hart', 'Karl-Anthony Towns', 'Mikal Bridges', 'OG Anunoby')",3.3833333333333337,2,14,7,6,1,3,2,0,2,1,4,2
+22500018,NYK,BOS,76.2,77.0,"('Guerschon Yabusele', 'Jalen Brunson', 'Josh Hart', 'Landry Shamet', 'Miles McBride')",0.1,2,0,0,0,0,0,0,0,0,0,0,2
+22500018,NYK,BOS,76.8,77.0,"('Guerschon Yabusele', 'Jalen Brunson', 'Mikal Bridges', 'Miles McBride', 'OG Anunoby')",0.0,2,0,0,0,0,0,0,0,0,0,0,2
+22500018,NYK,BOS,77.2,76.8,"('Guerschon Yabusele', 'Josh Hart', 'Landry Shamet', 'OG Anunoby', 'Tyler Kolek')",1.6333333333333333,3,0,2,1,1,0,0,1,1,1,0,2
+22500018,NYK,BOS,77.0,76.6,"('Josh Hart', 'Landry Shamet', 'Mikal Bridges', 'Miles McBride', 'OG Anunoby')",0.0999999999999999,3,0,0,0,0,0,0,0,0,0,0,2
+22500018,NYK,BOS,77.0,77.4,"('Guerschon Yabusele', 'Josh Hart', 'Landry Shamet', 'Mikal Bridges', 'Tyler Kolek')",1.3833333333333335,3,0,2,1,0,0,1,1,0,0,1,2
+22500018,NYK,BOS,77.0,77.4,"('Guerschon Yabusele', 'Jalen Brunson', 'Josh Hart', 'Landry Shamet', 'Mikal Bridges')",0.1333333333333333,3,0,0,0,0,0,0,1,0,1,0,2
+22500018,NYK,BOS,78.2,76.8,"('Josh Hart', 'Karl-Anthony Towns', 'Landry Shamet', 'Miles McBride', 'OG Anunoby')",0.0,3,0,0,0,0,0,0,0,0,0,0,2
+22500018,NYK,BOS,78.2,76.8,"('Josh Hart', 'Karl-Anthony Towns', 'Landry Shamet', 'OG Anunoby', 'Tyler Kolek')",0.75,3,0,0,1,0,0,0,2,0,1,1,2
+22500018,NYK,BOS,77.8,77.6,"('Jalen Brunson', 'Karl-Anthony Towns', 'Mikal Bridges', 'Miles McBride', 'OG Anunoby')",7.349999999999997,3,16,14,5,3,3,3,3,3,1,1,2
+22500018,NYK,BOS,78.0,77.4,"('Jalen Brunson', 'Josh Hart', 'Karl-Anthony Towns', 'Landry Shamet', 'Mikal Bridges')",0.0,3,0,0,0,0,0,0,0,0,0,0,2
+22500018,NYK,BOS,77.4,77.4,"('Jalen Brunson', 'Karl-Anthony Towns', 'Landry Shamet', 'Mikal Bridges', 'Miles McBride')",0.6499999999999999,3,2,3,0,0,0,1,0,0,0,1,2
+22500018,NYK,BOS,76.2,76.8,"('Jalen Brunson', 'Jordan Clarkson', 'Josh Hart', 'Miles McBride', 'OG Anunoby')",1.0,4,2,2,2,0,1,0,0,0,0,0,2
+22500018,NYK,BOS,76.4,76.8,"('Guerschon Yabusele', 'Jalen Brunson', 'Jordan Clarkson', 'Mikal Bridges', 'Miles McBride')",1.9833333333333336,4,4,6,2,3,0,2,1,1,0,1,2
+22500018,NYK,BOS,76.2,76.8,"('Guerschon Yabusele', 'Jalen Brunson', 'Jordan Clarkson', 'Josh Hart', 'Miles McBride')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
+22500018,NYK,BOS,77.4,76.4,"('Jordan Clarkson', 'Karl-Anthony Towns', 'Mikal Bridges', 'Miles McBride', 'Tyler Kolek')",3.033333333333333,4,5,10,5,2,1,1,2,0,3,2,2
+22500018,NYK,BOS,77.4,78.0,"('Jalen Brunson', 'Jordan Clarkson', 'Karl-Anthony Towns', 'Mikal Bridges', 'Miles McBride')",1.0333333333333334,4,0,0,2,2,0,0,1,0,0,1,2
+22500018,NYK,BOS,76.0,78.0,"('Jalen Brunson', 'Josh Hart', 'Landry Shamet', 'Mikal Bridges', 'Miles McBride')",0.6666666666666666,4,1,0,1,2,0,0,0,0,0,0,2
+22500018,NYK,BOS,77.4,78.0,"('Jalen Brunson', 'Josh Hart', 'Karl-Anthony Towns', 'Mikal Bridges', 'Miles McBride')",4.283333333333332,4,11,12,4,4,2,1,0,1,3,2,2
+22500018,NYK,BOS,76.4,76.8,"('Jalen Brunson', 'Josh Hart', 'Mikal Bridges', 'Miles McBride', 'OG Anunoby')",0.0,4,0,0,0,0,0,0,0,0,0,0,2

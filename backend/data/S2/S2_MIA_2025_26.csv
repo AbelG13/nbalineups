@@ -1,0 +1,56 @@
+game_id,team,opponent,team_avg_height,opp_avg_height,lineup,minutes_played,period,points,opp_points,rebounds,opp_rebounds,assists,opp_assists,turnovers,opp_turnovers,fouls_committed,fouls_drawn,game_number
+22500081,MIA,ORL,78.0,79.6,"('Bam Adebayo', 'Davion Mitchell', 'Jaime Jaquez Jr.', ""Kel'el Ware"", 'Norman Powell')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
+22500081,MIA,ORL,77.6,79.6,"('Davion Mitchell', 'Jaime Jaquez Jr.', ""Kel'el Ware"", 'Norman Powell', 'Simone Fontecchio')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
+22500081,MIA,ORL,77.6,79.6,"('Bam Adebayo', 'Davion Mitchell', 'Jaime Jaquez Jr.', 'Nikola Jović', 'Norman Powell')",4.7333333333333325,1,14,10,7,7,3,1,1,1,2,2,1
+22500081,MIA,ORL,78.0,79.6,"('Dru Smith', 'Jaime Jaquez Jr.', ""Kel'el Ware"", 'Norman Powell', 'Simone Fontecchio')",0.5833333333333334,1,3,0,1,0,1,0,0,0,0,1,1
+22500081,MIA,ORL,78.6,80.2,"('Andrew Wiggins', 'Dru Smith', 'Jaime Jaquez Jr.', ""Kel'el Ware"", 'Simone Fontecchio')",3.1500000000000004,1,7,15,3,3,2,4,2,1,2,1,1
+22500081,MIA,ORL,77.6,79.2,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Nikola Jović', 'Norman Powell')",3.533333333333333,1,15,13,3,1,3,2,1,0,2,2,1
+22500081,MIA,ORL,77.8,79.2,"('Andrew Wiggins', 'Bam Adebayo', 'Dru Smith', 'Pelle Larsson', 'Simone Fontecchio')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
+22500081,MIA,ORL,77.4,79.2,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Pelle Larsson', 'Simone Fontecchio')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
+22500081,MIA,ORL,77.6,80.8,"('Bam Adebayo', 'Davion Mitchell', 'Jaime Jaquez Jr.', 'Nikola Jović', 'Norman Powell')",4.033333333333333,2,8,5,4,2,1,0,3,3,2,4,1
+22500081,MIA,ORL,76.8,78.8,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Jaime Jaquez Jr.', 'Norman Powell')",0.6333333333333333,2,0,2,1,2,0,0,0,0,0,0,1
+22500081,MIA,ORL,78.4,79.2,"('Andrew Wiggins', 'Dru Smith', ""Kel'el Ware"", 'Pelle Larsson', 'Simone Fontecchio')",3.833333333333333,2,11,11,2,4,2,3,1,1,3,0,1
+22500081,MIA,ORL,77.6,80.8,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Nikola Jović', 'Norman Powell')",3.016666666666667,2,7,9,3,3,1,1,1,0,1,0,1
+22500081,MIA,ORL,77.6,79.2,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Jaime Jaquez Jr.', 'Simone Fontecchio')",0.4833333333333333,2,0,4,0,1,0,1,0,0,0,0,1
+22500081,MIA,ORL,77.2,80.6,"('Andrew Wiggins', 'Bam Adebayo', 'Dru Smith', 'Jaime Jaquez Jr.', 'Norman Powell')",1.15,3,4,0,1,1,1,0,0,1,0,0,1
+22500081,MIA,ORL,79.4,80.2,"('Bam Adebayo', 'Jaime Jaquez Jr.', ""Kel'el Ware"", 'Norman Powell', 'Simone Fontecchio')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
+22500081,MIA,ORL,77.4,80.2,"('Bam Adebayo', 'Dru Smith', 'Jaime Jaquez Jr.', 'Norman Powell', 'Simone Fontecchio')",0.5666666666666667,3,0,1,0,1,0,0,0,1,0,1,1
+22500081,MIA,ORL,77.6,80.2,"('Davion Mitchell', 'Jaime Jaquez Jr.', ""Kel'el Ware"", 'Norman Powell', 'Simone Fontecchio')",2.266666666666667,3,6,7,1,1,2,2,1,0,0,1,1
+22500081,MIA,ORL,78.0,80.6,"('Andrew Wiggins', 'Bam Adebayo', 'Dru Smith', 'Jaime Jaquez Jr.', 'Simone Fontecchio')",1.5666666666666669,3,2,3,3,0,0,1,0,0,2,0,1
+22500081,MIA,ORL,76.8,79.2,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Jaime Jaquez Jr.', 'Norman Powell')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
+22500081,MIA,ORL,77.6,79.2,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Nikola Jović', 'Norman Powell')",6.449999999999998,3,14,10,4,7,3,3,2,6,4,2,1
+22500081,MIA,ORL,78.2,80.2,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Jaime Jaquez Jr.', 'Nikola Jović')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
+22500081,MIA,ORL,79.2,80.2,"('Andrew Wiggins', 'Bam Adebayo', 'Jaime Jaquez Jr.', ""Kel'el Ware"", 'Norman Powell')",0.0,4,0,1,0,0,0,0,0,0,0,0,1
+22500081,MIA,ORL,77.0,80.2,"('Bam Adebayo', 'Davion Mitchell', 'Jaime Jaquez Jr.', 'Norman Powell', 'Simone Fontecchio')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
+22500081,MIA,ORL,78.0,80.2,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', ""Kel'el Ware"", 'Norman Powell')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
+22500081,MIA,ORL,77.6,80.2,"('Davion Mitchell', 'Jaime Jaquez Jr.', ""Kel'el Ware"", 'Norman Powell', 'Simone Fontecchio')",3.966666666666666,4,16,11,6,2,4,3,1,0,2,1,1
+22500081,MIA,ORL,78.0,80.8,"('Andrew Wiggins', 'Bam Adebayo', 'Dru Smith', 'Jaime Jaquez Jr.', 'Simone Fontecchio')",2.3833333333333333,4,4,6,2,1,1,1,2,0,1,2,1
+22500081,MIA,ORL,76.8,80.2,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Jaime Jaquez Jr.', 'Norman Powell')",4.133333333333334,4,8,13,5,7,2,1,1,1,5,2,1
+22500081,MIA,ORL,76.8,80.2,"('Bam Adebayo', 'Davion Mitchell', 'Dru Smith', 'Jaime Jaquez Jr.', 'Simone Fontecchio')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
+22500081,MIA,ORL,77.6,80.2,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Nikola Jović', 'Norman Powell')",1.35,4,2,4,1,3,0,0,1,0,2,1,1
+22500081,MIA,ORL,77.6,80.2,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Jaime Jaquez Jr.', 'Simone Fontecchio')",0.1666666666666666,4,0,0,0,0,0,0,0,0,0,0,1
+22500094,MIA,MEM,78.0,78.6,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', ""Kel'el Ware"", 'Norman Powell')",5.549999999999999,1,20,18,6,4,4,5,2,2,2,6,2
+22500094,MIA,MEM,78.0,78.4,"('Bam Adebayo', 'Dru Smith', 'Jaime Jaquez Jr.', 'Nikola Jović', 'Norman Powell')",2.15,1,8,0,4,1,2,0,0,0,0,0,2
+22500094,MIA,MEM,77.6,79.0,"('Bam Adebayo', 'Davion Mitchell', 'Jaime Jaquez Jr.', 'Nikola Jović', 'Norman Powell')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
+22500094,MIA,MEM,77.4,78.6,"('Andrew Wiggins', 'Davion Mitchell', 'Jaime Jaquez Jr.', ""Kel'el Ware"", 'Norman Powell')",0.05,1,0,0,0,0,0,0,1,0,1,0,2
+22500094,MIA,MEM,77.6,78.4,"('Dru Smith', 'Jaime Jaquez Jr.', 'Nikola Jović', 'Norman Powell', 'Simone Fontecchio')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
+22500094,MIA,MEM,76.8,79.0,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Jaime Jaquez Jr.', 'Norman Powell')",2.483333333333333,1,7,3,5,2,1,1,0,0,0,0,2
+22500094,MIA,MEM,79.4,78.4,"('Dru Smith', 'Jaime Jaquez Jr.', ""Kel'el Ware"", 'Nikola Jović', 'Simone Fontecchio')",1.7666666666666668,1,9,4,2,1,3,0,0,1,1,0,2
+22500094,MIA,MEM,78.4,77.8,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Nikola Jović', 'Simone Fontecchio')",0.6499999999999999,2,1,3,0,1,0,1,0,0,1,0,2
+22500094,MIA,MEM,78.8,77.8,"('Andrew Wiggins', 'Bam Adebayo', 'Dru Smith', 'Nikola Jović', 'Simone Fontecchio')",0.0,2,0,0,0,0,0,0,0,0,0,0,2
+22500094,MIA,MEM,78.8,77.8,"('Bam Adebayo', 'Dru Smith', 'Jaime Jaquez Jr.', 'Nikola Jović', 'Simone Fontecchio')",2.5333333333333337,2,15,5,3,0,5,2,0,1,0,2,2
+22500094,MIA,MEM,77.4,79.2,"('Andrew Wiggins', 'Davion Mitchell', 'Jaime Jaquez Jr.', ""Kel'el Ware"", 'Norman Powell')",1.1,2,3,0,3,2,0,0,0,2,0,2,2
+22500094,MIA,MEM,76.8,79.4,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Jaime Jaquez Jr.', 'Norman Powell')",3.2333333333333334,2,9,7,4,6,2,2,0,2,2,3,2
+22500094,MIA,MEM,79.4,78.2,"('Dru Smith', 'Jaime Jaquez Jr.', ""Kel'el Ware"", 'Nikola Jović', 'Simone Fontecchio')",2.516666666666667,2,7,4,2,3,2,1,1,1,2,1,2
+22500094,MIA,MEM,79.0,78.8,"('Andrew Wiggins', 'Davion Mitchell', ""Kel'el Ware"", 'Nikola Jović', 'Simone Fontecchio')",0.6,2,4,1,0,0,1,0,0,1,0,1,2
+22500094,MIA,MEM,78.2,78.8,"('Andrew Wiggins', 'Davion Mitchell', ""Kel'el Ware"", 'Nikola Jović', 'Norman Powell')",1.3666666666666667,2,3,2,1,1,0,1,0,0,0,0,2
+22500094,MIA,MEM,78.0,78.6,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', ""Kel'el Ware"", 'Norman Powell')",5.266666666666668,3,8,12,4,5,3,3,5,2,6,0,2
+22500094,MIA,MEM,77.2,79.0,"('Andrew Wiggins', 'Bam Adebayo', 'Dru Smith', 'Jaime Jaquez Jr.', 'Norman Powell')",3.1333333333333333,3,6,11,1,3,2,2,1,2,2,1,2
+22500094,MIA,MEM,78.8,78.4,"('Bam Adebayo', 'Dru Smith', 'Jaime Jaquez Jr.', 'Nikola Jović', 'Simone Fontecchio')",3.35,3,14,4,8,1,3,1,1,3,0,1,2
+22500094,MIA,MEM,77.4,78.6,"('Andrew Wiggins', 'Davion Mitchell', 'Jaime Jaquez Jr.', ""Kel'el Ware"", 'Norman Powell')",0.25,3,0,2,0,0,0,1,1,0,0,0,2
+22500094,MIA,MEM,76.8,78.6,"('Andrew Wiggins', 'Bam Adebayo', 'Davion Mitchell', 'Jaime Jaquez Jr.', 'Norman Powell')",0.0,3,0,0,0,0,0,0,0,0,0,0,2
+22500094,MIA,MEM,77.4,79.0,"('Bam Adebayo', 'Dru Smith', 'Jaime Jaquez Jr.', 'Norman Powell', 'Simone Fontecchio')",0.0,3,0,0,0,0,0,0,0,0,0,0,2
+22500094,MIA,MEM,77.6,77.2,"('Jahmir Young', 'Keshad Johnson', 'Nikola Jović', 'Pelle Larsson', 'Simone Fontecchio')",6.866666666666665,4,15,24,6,9,3,5,3,3,4,0,2
+22500094,MIA,MEM,79.4,77.2,"('Dru Smith', 'Jaime Jaquez Jr.', ""Kel'el Ware"", 'Nikola Jović', 'Simone Fontecchio')",4.366666666666668,4,15,11,7,2,3,3,4,0,4,2,2
+22500094,MIA,MEM,79.4,77.2,"('Dru Smith', ""Kel'el Ware"", 'Keshad Johnson', 'Nikola Jović', 'Simone Fontecchio')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
+22500094,MIA,MEM,78.0,77.2,"('Dru Smith', 'Keshad Johnson', 'Nikola Jović', 'Pelle Larsson', 'Simone Fontecchio')",0.7666666666666667,4,2,3,1,0,0,1,0,0,0,0,2

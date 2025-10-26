@@ -116,15 +116,15 @@ def elapsed_time(idx, row, df):
 # Fetch the full 2024–25 NBA schedule
 sched = scheduleleaguev2.ScheduleLeagueV2(
     league_id='00', 
-    season='2024-25'
+    season='2025-26'
 )
 df = sched.get_data_frames()[0]  # 'SeasonGames' table
 
 # Filter for regular season games
 df_reg = df[df['gameId'].str.startswith('0022')]
 
-game_ids = df_reg['gameId'].unique().tolist()
 
+game_ids = df_reg['gameId'].unique().tolist()
 
 # Get all NBA teams
 nba_teams_data = teams.get_teams()
@@ -146,28 +146,37 @@ team_lineup_stats = {
 }
 
 # Active player csv
-additional_data = pd.read_csv('nba_players_full.csv')
+additional_data = pd.read_csv('playersBDL25.csv')
 
 height_dict = dict()
 
 count = 0
-start=1200
-end=1200
-for idx,id in enumerate(game_ids[start:]):
-    
+
+
+start=0
+end=100
+for idx,id in enumerate(game_ids[start:end]):
     # Load game
     game_id = id
     for attempt in range(3):
         try:
+            double_break = False
             pbp_df = playbyplayv2.PlayByPlayV2(game_id=game_id).get_data_frames()[0]
             box_df = boxscoretraditionalv3.BoxScoreTraditionalV3(game_id=game_id).get_data_frames()[0]
             box_df['full_name'] = box_df['firstName'] + ' ' + box_df['familyName']
             break
         except Exception as e:
-            print(f"Attempt {attempt + 1} failed for game {game_id}: {str(e)}")
-            time.sleep(int(np.random.choice([21, 33,42])))
-        
-        
+            if "'NoneType' object has no attribute 'keys'" in str(e):
+                print(f"Game {game_id} not played yet: {str(e)}. Further games likely not played either.")
+                double_break = True
+                break  
+            else:
+                print(f"Attempt {attempt + 1} failed for game {game_id}: {str(e)}")
+                time.sleep(int(np.random.choice([21, 33,42])))
+    if double_break:
+        break
+    
+    pbp_df.to_csv('test_pbp.csv', index=False)
 
     # Debug.. rows are in wrong order
     if game_id == "0022400316":
@@ -192,6 +201,10 @@ for idx,id in enumerate(game_ids[start:]):
 
     # Build player-to-team map
     player_team_map = dict(zip(box_df['full_name'], box_df['teamTricode']))
+
+    # If Hansen Yang is in dictionary, reverse it to Yang Hansen
+    if 'Hansen Yang' in player_team_map:
+        player_team_map['Yang Hansen'] = player_team_map.pop('Hansen Yang')
 
     team_codes = box_df['teamTricode'].unique()
     try:
@@ -255,7 +268,7 @@ for idx,id in enumerate(game_ids[start:]):
             elif team_code == away_team:
                 lineup = away_on_court
             else:
-                print(f"[⚠️ Unknown team] Could not resolve team for sub: {player_out} -> {player_in}, {game_id}")
+                print(f"[⚠️ Unknown team] Could not resolve team for sub: {player_out} -> {player_in}, {game_id}, {row['EVENTNUM']}, {player_team_map}")
                 continue
 
             # Debugging.. fix player name (poor fix, improve later)
@@ -291,11 +304,17 @@ for idx,id in enumerate(game_ids[start:]):
         if tuple(sorted(home_on_court)) not in height_dict:
             for player in sorted(home_on_court):
                 first_name, last_name = player.split(' ', 1)
+                
+                # Debugging... fix player name (poor fix, improve later)
+                if first_name == 'Yanic':
+                    first_name = "Yanic Konan"
+                    last_name = "Niederhäuser"
                 if last_name == 'Lavine':
                     last_name = 'LaVine'
+
                 height = additional_data[(additional_data['first_name'] == first_name) & (additional_data['last_name'] == last_name)]['height']
                 if len(height) == 0:
-                    print(f"[⚠️ Height Error] Could not resolve height {height} for home player: {player}, {game_id}")
+                    print(f"[⚠️ Height Error] Could not resolve height {height} for home player: {first_name} (first) {last_name} (last), {game_id}")
                     continue
                 feet, inches = str(height.dropna().reset_index(drop=True)[0]).split('-')
                 total_height += int(feet) * 12 + int(inches)
@@ -307,13 +326,18 @@ for idx,id in enumerate(game_ids[start:]):
         if tuple(sorted(away_on_court)) not in height_dict:
             for player in sorted(away_on_court):
                 first_name, last_name = player.split(' ', 1)
+                
+                # Debugging... fix player name (poor fix, improve later)
+                if first_name == 'Yanic':
+                    first_name = "Yanic Konan"
+                    last_name = "Niederhäuser"
                 if last_name == 'Lavine':
                     last_name = 'LaVine'
                 if first_name == 'Tobais' and last_name == 'Harris':
                     first_name = 'Tobias'
                 height = additional_data[(additional_data['first_name'] == first_name) & (additional_data['last_name'] == last_name)]['height']
                 if len(height) == 0:
-                    print(f"[⚠️ Height Error] Could not resolve height {height} for away player: {first_name} {last_name}, {game_id}")
+                    print(f"[⚠️ Height Error] Could not resolve height {height} for away player: {first_name} (first) {last_name} (last), {game_id}")
                     continue
                 feet, inches = str(height.dropna().reset_index(drop=True)[0]).split('-')
                 total_height += int(feet) * 12 + int(inches)
@@ -346,9 +370,6 @@ for idx,id in enumerate(game_ids[start:]):
     # Get list of unique lineups for home and away
     unique_lineups_home = set(lineup_df['home_on_court'])
     unique_lineups_away = set(lineup_df['away_on_court'])
-    count1=0
-    count2=0
-    lineup_df[(lineup_df['period'] == 2)].to_csv('test_lineup.csv', index=False)
     for period in range(1, periods + 1):
 
         for lineup in unique_lineups_home: 
@@ -402,8 +423,6 @@ for idx,id in enumerate(game_ids[start:]):
                     if row['event_code'] == 3 and "MISS" not in desc:
                         opp_made_fts += 1
                     if row['event_code'] == 4:
-                        # print(count1, desc)
-                        # count1 += 1
                         opp_rebounds += 1
                     if row['event_code'] == 5:
                         opp_turnovers += 1
@@ -473,8 +492,6 @@ for idx,id in enumerate(game_ids[start:]):
                     if row['event_code'] == 3 and "MISS" not in desc:
                         made_fts += 1
                     if row['event_code'] == 4:
-                        # print(count2, desc)
-                        # count2 += 1
                         rebounds += 1
                     if row['event_code'] == 5:
                         turnovers += 1
@@ -566,19 +583,26 @@ columns = [
     'fouls_drawn',
 ]
 
+# Define the subfolder where you want to save files
+save_dir = os.path.join("S2")
+
+# Create the folder if it doesn’t exist
+os.makedirs(save_dir, exist_ok=True)
+
+# Create empty files if they don’t exist
 for abbrev in team_abbrevs:
-    filename = f"v2_{abbrev}_2024_25.csv"
-    if not os.path.exists(filename):
-        pd.DataFrame(columns=columns).to_csv(filename, index=False)
+    filename = f"S2_{abbrev}_2025_26.csv"
+    file_path = os.path.join(save_dir, filename)
+    if not os.path.exists(file_path):
+        pd.DataFrame(columns=columns).to_csv(file_path, index=False)
 
-
+# Append or write team data
 for team in team_lineup_stats.keys():
     df = team_lineup_stats[team]
-    csv_path = f'v2_{team}_2024_25.csv'
-
     # Reorder columns explicitly before writing
     df = df[columns]
-    
+    csv_path = os.path.join(save_dir, f"S2_{team}_2025_26.csv")
+
     # If file exists, append without header
     if os.path.exists(csv_path):
         df.to_csv(csv_path, mode='a', header=False, index=False)
