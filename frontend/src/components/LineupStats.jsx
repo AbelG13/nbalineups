@@ -44,7 +44,9 @@ function LineupStats() {
   // Pending filters (what user sees and modifies)
   const [pendingTeams, setPendingTeams] = useState(['ATL']);
   const [pendingPeriods, setPendingPeriods] = useState(periods);
-  const [pendingGameRange, setPendingGameRange] = useState([1, 82]);
+  const defaultGameRange = { min: 1, max: 82 };
+  const [pendingMinGame, setPendingMinGame] = useState(String(defaultGameRange.min));
+  const [pendingMaxGame, setPendingMaxGame] = useState(String(defaultGameRange.max));
   const [pendingSeason, setPendingSeason] = useState('2024-25');
 
   // UI state
@@ -56,10 +58,16 @@ function LineupStats() {
   const [error, setError] = useState(null);
   const [showNet, setShowNet] = useState(false);
   const [showOpponent, setShowOpponent] = useState(false);
+  const [perMinute, setPerMinute] = useState(false);
   const [playerMap, setPlayerMap] = useState({});
+  const defaultMinutes = { min: 1, max: 2000 };
+  const [selectedMinutesRange, setSelectedMinutesRange] = useState([defaultMinutes.min, defaultMinutes.max]);
+  const [pendingMinMinutes, setPendingMinMinutes] = useState(String(defaultMinutes.min));
+  const [pendingMaxMinutes, setPendingMaxMinutes] = useState(String(defaultMinutes.max));
 
   // Dropdown state
   const [isTeamDropdownOpen, setIsTeamDropdownOpen] = useState(false);
+  const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
 
   // Load player info for headshots and last names
   useEffect(() => {
@@ -127,8 +135,14 @@ function LineupStats() {
   const handleShowResults = () => {
     setSelectedTeams(pendingTeams);
     setSelectedPeriods(pendingPeriods);
-    setGameRange(pendingGameRange);
+    const defaultGame = { min: 1, max: 82 };
+    const minGameVal = (typeof pendingMinGame === 'string' ? pendingMinGame.trim() : '') === '' ? defaultGame.min : Number(pendingMinGame);
+    const maxGameVal = (typeof pendingMaxGame === 'string' ? pendingMaxGame.trim() : '') === '' ? defaultGame.max : Number(pendingMaxGame);
+    setGameRange([isNaN(minGameVal) ? defaultGame.min : minGameVal, isNaN(maxGameVal) ? defaultGame.max : maxGameVal]);
     setSelectedSeason(pendingSeason);
+    const minVal = pendingMinMinutes.trim() === '' ? defaultMinutes.min : Number(pendingMinMinutes);
+    const maxVal = pendingMaxMinutes.trim() === '' ? defaultMinutes.max : Number(pendingMaxMinutes);
+    setSelectedMinutesRange([isNaN(minVal) ? defaultMinutes.min : minVal, isNaN(maxVal) ? defaultMinutes.max : maxVal]);
     setCurrentPage(1);
   };
 
@@ -148,6 +162,15 @@ function LineupStats() {
   const SortIcon = ({ column }) => {
     if (sortBy !== column) return <span className="text-gray-400">↕</span>;
     return sortOrder === 'asc' ? <span className="text-accent-500">↑</span> : <span className="text-accent-500">↓</span>;
+  };
+
+  const getValueForKey = (row, key) => {
+    const value = row[key] ?? 0;
+    if (!perMinute) return value;
+    if (key === 'minutes_played') return row.minutes_played ?? 0;
+    const minutes = row.minutes_played ?? 0;
+    if (!minutes || minutes === 0) return 0;
+    return value / minutes;
   };
 
   const handleTeamToggle = (team) => {
@@ -230,10 +253,16 @@ function LineupStats() {
     columns = teamColumns;
   }
 
+  // Apply minutes filter
+  const minutesFiltered = lineupData.filter((row) => {
+    const minutes = row.minutes_played || 0;
+    return minutes >= selectedMinutesRange[0] && minutes <= selectedMinutesRange[1];
+  });
+
   // Sort and paginate data
-  const sortedData = [...lineupData].sort((a, b) => {
-    const aVal = a[sortBy] || 0;
-    const bVal = b[sortBy] || 0;
+  const sortedData = [...minutesFiltered].sort((a, b) => {
+    const aVal = getValueForKey(a, sortBy) || 0;
+    const bVal = getValueForKey(b, sortBy) || 0;
     return sortOrder === 'asc' ? aVal - bVal : bVal - aVal;
   });
 
@@ -254,7 +283,7 @@ function LineupStats() {
 
         {/* Filters and toggles */}
         <div className="bg-gray-900 rounded-xl shadow-subtle p-6 mb-8 border border-gray-800">
-          <div className="grid md:grid-cols-5 gap-6 items-end">
+          <div className="grid md:grid-cols-7 gap-6 items-start">
             {/* Season Selector */}
             <div>
               <label className="block text-sm font-medium text-gray-300 mb-3">
@@ -325,77 +354,157 @@ function LineupStats() {
               </div>
             </div>
 
-            {/* Period Filter */}
+            {/* Period Filter - dropdown selector */}
             <div>
               <label className="block text-sm font-medium text-gray-300 mb-3">
                 Periods ({pendingPeriods.length === 0 ? 'All' : pendingPeriods.length} selected)
               </label>
-              <div className="grid grid-cols-3 gap-2">
-                {periods.map(period => (
-                  <label key={period} className="flex items-center space-x-2 cursor-pointer">
-                    <input
-                      type="checkbox"
-                      checked={pendingPeriods.includes(period)}
-                      onChange={() => {
-                        if (pendingPeriods.includes(period)) {
-                          setPendingPeriods(pendingPeriods.filter(p => p !== period));
-                        } else {
-                          setPendingPeriods([...pendingPeriods, period]);
-                        }
-                      }}
-                      className="rounded border-gray-600 text-accent-500 focus:ring-accent-500 bg-gray-700"
-                    />
-                    <span className="text-sm text-gray-300">
-                      {period === 5 ? 'OT' : `Q${period}`}
-                    </span>
-                  </label>
-                ))}
+              <div className="relative">
+                <button
+                  type="button"
+                  onClick={() => setIsPeriodDropdownOpen(!isPeriodDropdownOpen)}
+                  className="w-full px-3 py-2 text-left border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
+                >
+                  {pendingPeriods.length === 0 ? 'Select periods...' : `${pendingPeriods.length} selected`}
+                  <span className="absolute inset-y-0 right-0 flex items-center pr-2">
+                    <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </span>
+                </button>
+                {isPeriodDropdownOpen && (
+                  <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-700 rounded-lg shadow-medium max-h-60 overflow-y-auto">
+                    <div className="p-2 border-b border-gray-700">
+                      <div className="flex space-x-2">
+                        <button
+                          onClick={() => setPendingPeriods(periods)}
+                          className="px-2 py-1 text-xs bg-accent-500/20 text-accent-400 rounded hover:bg-accent-500/30 transition-colors"
+                        >
+                          Select All
+                        </button>
+                        <button
+                          onClick={() => setPendingPeriods([])}
+                          className="px-2 py-1 text-xs bg-gray-700 text-gray-300 rounded hover:bg-gray-600 transition-colors"
+                        >
+                          Deselect All
+                        </button>
+                      </div>
+                    </div>
+                    <div className="p-2">
+                      {periods.map(period => (
+                        <label key={period} className="flex items-center space-x-2 p-1 hover:bg-gray-700 rounded cursor-pointer transition-colors">
+                          <input
+                            type="checkbox"
+                            checked={pendingPeriods.includes(period)}
+                            onChange={() => {
+                              if (pendingPeriods.includes(period)) {
+                                setPendingPeriods(pendingPeriods.filter(p => p !== period));
+                              } else {
+                                setPendingPeriods([...pendingPeriods, period]);
+                              }
+                            }}
+                            className="rounded border-gray-600 text-accent-500 focus:ring-accent-500 bg-gray-700"
+                          />
+                          <span className="text-sm text-gray-300">{period === 5 ? 'OT' : `Q${period}`}</span>
+                        </label>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
 
-            {/* Game Range Filter */}
+            {/* Game Range - min/max inputs */}
             <div>
-              <label className="block text-sm font-medium text-gray-300 mb-3">
-                Game Range: {pendingGameRange[0]} - {pendingGameRange[1]}
-              </label>
-              <div className="space-y-2">
+              <label className="block text-sm font-medium text-gray-300 mb-3">Game Range</label>
+              <div className="flex items-center space-x-2 w-full">
                 <input
-                  type="range"
+                  type="number"
                   min="1"
-                  max="82"
-                  value={pendingGameRange[0]}
-                  onChange={(e) => setPendingGameRange([parseInt(e.target.value), pendingGameRange[1]])}
-                  className="w-full accent-accent-500"
+                  step="1"
+                  value={pendingMinGame}
+                  onChange={(e) => setPendingMinGame(e.target.value)}
+                  placeholder="1"
+                  className="w-16 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500"
                 />
+                <span className="text-gray-400">-</span>
                 <input
-                  type="range"
+                  type="number"
                   min="1"
-                  max="82"
-                  value={pendingGameRange[1]}
-                  onChange={(e) => setPendingGameRange([pendingGameRange[0], parseInt(e.target.value)])}
-                  className="w-full accent-accent-500"
+                  step="1"
+                  value={pendingMaxGame}
+                  onChange={(e) => setPendingMaxGame(e.target.value)}
+                  placeholder="82"
+                  className="w-16 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500"
                 />
+              </div>
+              <p className="mt-2 text-xs text-gray-400">Defaults used for empty boxes.</p>
+            </div>
+
+            {/* Minutes filter (min - max) moved here after Game Range */}
+            <div className="flex flex-col items-start">
+              <label className="block text-sm font-medium text-gray-300 mb-3">Minutes</label>
+              <div className="flex items-center space-x-2 w-full">
+                <input
+                  type="number"
+                  min="0"
+                  step="0.1"
+                  value={pendingMinMinutes}
+                  onChange={(e) => setPendingMinMinutes(e.target.value)}
+                  placeholder={String(defaultMinutes.min)}
+                  className="w-20 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500"
+                />
+                <span className="text-gray-400">-</span>
+                <input
+                  type="number"
+                  min="0"
+                  step="0.1"
+                  value={pendingMaxMinutes}
+                  onChange={(e) => setPendingMaxMinutes(e.target.value)}
+                  placeholder={String(defaultMinutes.max)}
+                  className="w-20 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500"
+                />
+              </div>
+              <p className="mt-2 text-xs text-gray-400">Defaults used for empty boxes.</p>
+            </div>
+
+            {/* Scale: Total vs Per Minute */}
+            <div className="flex flex-col items-start">
+              <label className="block text-sm font-medium text-gray-300 mb-3">Scale</label>
+              <div className="flex flex-col space-y-2 w-full">
+                <button
+                  className={`px-3 py-1.5 text-sm rounded-lg font-medium border transition-all duration-200 ${!perMinute ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
+                  onClick={() => setPerMinute(false)}
+                >
+                  Total
+                </button>
+                <button
+                  className={`px-3 py-1.5 text-sm rounded-lg font-medium border transition-all duration-200 ${perMinute ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
+                  onClick={() => setPerMinute(true)}
+                >
+                  Per Minute
+                </button>
               </div>
             </div>
 
-            {/* Totals/Net Buttons */}
+            {/* Show: Team/Opponent/Net */}
             <div className="flex flex-col items-start">
               <label className="block text-sm font-medium text-gray-300 mb-3">Show</label>
-              <div className="flex space-x-2">
+              <div className="flex flex-col space-y-2 w-full">
                 <button
-                  className={`px-4 py-2 rounded-lg font-medium border transition-all duration-200 ${!showNet && !showOpponent ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
+                  className={`px-3 py-1.5 text-sm rounded-lg font-medium border transition-all duration-200 ${!showNet && !showOpponent ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
                   onClick={() => { setShowNet(false); setShowOpponent(false); }}
                 >
                   Team
                 </button>
                 <button
-                  className={`px-4 py-2 rounded-lg font-medium border transition-all duration-200 ${showOpponent ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
+                  className={`px-3 py-1.5 text-sm rounded-lg font-medium border transition-all duration-200 ${showOpponent ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
                   onClick={() => { setShowNet(false); setShowOpponent(true); }}
                 >
                   Opponent
                 </button>
                 <button
-                  className={`px-4 py-2 rounded-lg font-medium border transition-all duration-200 ${showNet ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
+                  className={`px-3 py-1.5 text-sm rounded-lg font-medium border transition-all duration-200 ${showNet ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
                   onClick={() => setShowNet(true)}
                 >
                   Net
@@ -468,7 +577,7 @@ function LineupStats() {
                       onClick={() => handleSort(col.key)}
                       style={{ cursor: 'pointer' }}
                     >
-                      {col.label} <SortIcon column={col.key} />
+                      {perMinute ? `${col.label} / min` : col.label} <SortIcon column={col.key} />
                     </th>
                   ))}
                 </tr>
@@ -516,7 +625,13 @@ function LineupStats() {
                     </td>
                     {columns.map(col => (
                       <td key={col.key} className={`px-3 py-3 text-sm text-white ${col.key === columns[0].key ? 'border-l-2 border-gray-700' : ''}`}>
-                        {row[col.key]}
+                        {(() => {
+                          const val = getValueForKey(row, col.key);
+                          if (typeof val === 'number') {
+                            return perMinute ? val.toFixed(2) : val;
+                          }
+                          return val;
+                        })()}
                       </td>
                     ))}
                   </tr>

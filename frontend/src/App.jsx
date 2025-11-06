@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import LineupBuilder from './components/LineupBuilder';
 import Home from './components/Home';
 import LineupStats from './components/LineupStats';
+import PregameReports from './components/PregameReports';
 
 function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -10,6 +11,7 @@ function App() {
     { id: 'home', name: 'Home', icon: '🏠' },
     { id: 'lineup-builder', name: 'Lineup Builder', icon: '🏀' },
     { id: 'lineup-stats', name: 'Lineup Statistics', icon: '📊' },
+    { id: 'pregame-reports', name: 'Pregame Reports', icon: '📰' },
   ];
 
   const renderContent = () => {
@@ -20,6 +22,8 @@ function App() {
         return <LineupBuilder />;
       case 'lineup-stats':
         return <LineupStats />;
+      case 'pregame-reports':
+        return <PregameReports />;
       default:
         return <Home onNavigate={setActiveTab} />;
     }
