@@ -292,7 +292,7 @@ function LineupStats() {
               <select
                 value={pendingSeason}
                 onChange={(e) => setPendingSeason(e.target.value)}
-                className="w-full px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
+                className="w-30 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
               >
                 <option value="2024-25">2024-25</option>
                 <option value="2025-26">2025-26</option>
@@ -301,14 +301,14 @@ function LineupStats() {
 
             {/* Team Filter */}
             <div>
-              <label className="block text-sm font-medium text-gray-300 mb-3">
+              <label className="block text-sm font-medium text-gray-300 mb-3 -translate-x-10">
                 Teams ({pendingTeams.length} selected)
               </label>
               <div className="relative">
                 <button
                   type="button"
                   onClick={() => setIsTeamDropdownOpen(!isTeamDropdownOpen)}
-                  className="w-full px-3 py-2 text-left border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
+                  className="w-48 px-3 py-2 -translate-x-10 text-left border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
                 >
                   {pendingTeams.length === 0 ? 'Select teams...' : `${pendingTeams.length} teams selected`}
                   <span className="absolute inset-y-0 right-0 flex items-center pr-2">
@@ -470,8 +470,8 @@ function LineupStats() {
 
             {/* Scale: Total vs Per Minute */}
             <div className="flex flex-col items-start">
-              <label className="block text-sm font-medium text-gray-300 mb-3">Scale</label>
-              <div className="flex flex-col space-y-2 w-full">
+              <label className="block text-sm font-medium text-gray-300 mb-3 translate-x-7">Scale</label>
+              <div className="flex flex-col space-y-2 w-32 translate-x-7">
                 <button
                   className={`px-3 py-1.5 text-sm rounded-lg font-medium border transition-all duration-200 ${!perMinute ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
                   onClick={() => setPerMinute(false)}
@@ -489,8 +489,8 @@ function LineupStats() {
 
             {/* Show: Team/Opponent/Net */}
             <div className="flex flex-col items-start">
-              <label className="block text-sm font-medium text-gray-300 mb-3">Show</label>
-              <div className="flex flex-col space-y-2 w-full">
+              <label className="block text-sm font-medium text-gray-300 mb-3 translate-x-2">Show</label>
+              <div className="flex flex-col space-y-2 w-32 translate-x-2">
                 <button
                   className={`px-3 py-1.5 text-sm rounded-lg font-medium border transition-all duration-200 ${!showNet && !showOpponent ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
                   onClick={() => { setShowNet(false); setShowOpponent(false); }}
