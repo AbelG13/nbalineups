@@ -1,155 +1,147 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Home({ onNavigate }) {
-  const features = [
+  const [displayedText, setDisplayedText] = useState('');
+  const [isTyping, setIsTyping] = useState(true);
+  const fullText = 'Welcome to the NBA Lineup Hub';
+  const typingSpeed = 70;
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const timer = setInterval(() => {
+      if (currentIndex < fullText.length) {
+        setDisplayedText(fullText.slice(0, currentIndex + 1));
+        currentIndex++;
+      } else {
+        clearInterval(timer);
+        setIsTyping(false);
+      }
+    }, typingSpeed);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const tools = [
     {
-      icon: '🏀',
-      title: 'Interactive Lineup Builder',
-      description: 'Create and visualize your perfect NBA lineup with our interactive court builder. Drag and drop players to build your dream team.',
-      gradient: 'from-gray-800 to-gray-700'
+      id: 'lineup-builder',
+      title: 'Lineup Builder',
+      subtitle: 'the fun one',
+      description: 'Visualize your team after a trade. Build lineups, experiment with rotations, and see how players fit together on the court.',
+      details: 'Select and place players, adjust positions, and explore different combinations in real-time.'
     },
     {
-      icon: '📊',
-      title: 'Player Statistics',
-      description: 'Explore detailed player stats, performance metrics, and advanced analytics to make informed decisions.',
-      gradient: 'from-gray-800 to-gray-700'
+      id: 'lineup-stats',
+      title: 'Lineup Statistics',
+      subtitle: 'the explorative one',
+      description: 'See how lineups around the league are performing. Dive into lineup scoring and defense statistics across all 30 teams.',
+      details: 'Filter by team, game range, minutes played, and period to uncover insights about lineup effectiveness.'
     },
     {
-      icon: '🏆',
-      title: 'Team Analysis',
-      description: 'Analyze team compositions, compare rosters, and discover the best strategies for different matchups.',
-      gradient: 'from-gray-800 to-gray-700'
-    },
-    {
-      icon: '⚡',
-      title: 'Real-time Updates',
-      description: 'Stay up-to-date with the latest player data, injuries, and roster changes as they happen.',
-      gradient: 'from-gray-800 to-gray-700'
+      id: 'pregame-reports',
+      title: 'Pregame Report',
+      subtitle: 'the analytical one',
+      description: 'Find matchup edges before tip-off. Analyze historical performance, identify favorable matchups, and discover lineup advantages.',
+      details: 'Get detailed breakdowns of team tendencies, lineup matchups, and key statistical trends for upcoming games.'
     }
   ];
 
-  const stats = [
-    { label: 'Active Players', value: '450+', icon: '👥' },
-    { label: 'NBA Teams', value: '30', icon: '🏀' },
-    { label: 'Positions', value: '5', icon: '📍' },
-    { label: 'Stats Tracked', value: '50+', icon: '📈' }
-  ];
-
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-accent-500/5 to-transparent"></div>
-        <div className="container mx-auto px-6 text-center relative z-10">
-          <div className="text-5xl mb-6 animate-pulse-subtle">🏀</div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-            Welcome to NBA Lineup Hub
-          </h1>
-          <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-gray-300 leading-relaxed">
-            The ultimate platform for building, analyzing, and optimizing your NBA lineups. 
-            Create winning combinations with our interactive tools and comprehensive player data.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button 
-              onClick={() => onNavigate('lineup-builder')}
-              className="bg-accent-500 text-white px-8 py-3 rounded-lg font-medium hover:bg-accent-600 transition-all duration-200 shadow-soft"
-            >
-              Get Started
-            </button>
-            <button 
-              onClick={() => onNavigate('lineup-stats')}
-              className="border border-gray-600 text-gray-300 px-8 py-3 rounded-lg font-medium hover:bg-gray-800 hover:text-white transition-all duration-200"
-            >
-              View Statistics
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Stats Section */}
-      <div className="py-16 bg-gray-900">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl mb-2">{stat.icon}</div>
-                <div className="text-2xl font-bold text-accent-400 mb-1">{stat.value}</div>
-                <div className="text-gray-400 text-sm">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Features Section */}
-      <div className="py-16 bg-gray-950">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 text-white">
-            Powerful Features for NBA Analysis
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {features.map((feature, index) => (
-              <div key={index} className="bg-gray-900 rounded-xl shadow-subtle p-6 hover:shadow-medium transition-all duration-300 border border-gray-800">
-                <div className={`w-12 h-12 bg-gradient-to-r ${feature.gradient} rounded-lg flex items-center justify-center text-xl mb-4`}>
-                  {feature.icon}
-                </div>
-                <h3 className="text-lg font-semibold mb-3 text-white">{feature.title}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* How It Works Section */}
-      <div className="py-16 bg-gray-900">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 text-white">
-            How It Works
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-accent-500 rounded-lg flex items-center justify-center text-white font-semibold mx-auto mb-4 shadow-soft">
-                1
-              </div>
-              <h3 className="text-lg font-semibold mb-3 text-white">Search Players</h3>
-              <p className="text-gray-400 text-sm">Find your favorite NBA players using our comprehensive search tool.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-accent-500 rounded-lg flex items-center justify-center text-white font-semibold mx-auto mb-4 shadow-soft">
-                2
-              </div>
-              <h3 className="text-lg font-semibold mb-3 text-white">Build Lineups</h3>
-              <p className="text-gray-400 text-sm">Drag and drop players to create your perfect lineup on our interactive court.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-accent-500 rounded-lg flex items-center justify-center text-white font-semibold mx-auto mb-4 shadow-soft">
-                3
-              </div>
-              <h3 className="text-lg font-semibold mb-3 text-white">Analyze Performance</h3>
-              <p className="text-gray-400 text-sm">Get detailed statistics and insights about your lineup's potential performance.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <div className="py-16 bg-gray-900">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-white">Ready to Build Your Dream Team?</h2>
-          <p className="text-lg mb-8 text-gray-300 max-w-2xl mx-auto">
-            Start creating winning lineups today with our powerful tools and comprehensive player data.
-          </p>
-          <button 
-            onClick={() => onNavigate('lineup-builder')}
-            className="bg-accent-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent-600 transition-all duration-200 shadow-soft"
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-16 md:py-24">
+      <div className="max-w-5xl w-full space-y-16">
+        {/* Welcome Section */}
+        <div className="text-center space-y-6">
+          <h1 
+            className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4"
+            style={{ fontFamily: "'Courier New', monospace", letterSpacing: '-0.02em' }}
           >
-            Start Building Now
-          </button>
+            {displayedText}
+            {isTyping && <span className="animate-pulse text-accent-400">|</span>}
+          </h1>
+          <div className="max-w-2xl mx-auto">
+            <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
+              Three tools to help you understand NBA lineups. Whether you're exploring trades, 
+              analyzing performance, or preparing for games—we've got you covered.
+            </p>
+          </div>
+        </div>
+
+        {/* Tools Section - Appear immediately */}
+        <div className="space-y-6">
+          {tools.map((tool, index) => (
+            <div
+              key={tool.id}
+              className="border border-gray-700/50 bg-gray-900/40 backdrop-blur-sm p-8 md:p-10 hover:bg-gray-900/60 hover:border-gray-600/70 hover:shadow-lg transition-all duration-300 cursor-pointer group tool-card"
+              style={{ 
+                animationDelay: `${100 + index * 60}ms`
+              }}
+              onClick={() => onNavigate(tool.id)}
+            >
+              <div className="flex flex-col gap-6">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                  <div className="flex-1 space-y-3">
+                    <div className="flex items-baseline gap-4 flex-wrap">
+                      <h2 
+                        className="text-3xl md:text-4xl text-white group-hover:text-gray-100 transition-colors font-semibold"
+                        style={{ fontFamily: "'Courier New', monospace" }}
+                      >
+                        {tool.title}
+                      </h2>
+                      <span className="text-sm text-gray-500 italic font-normal">
+                        {tool.subtitle}
+                      </span>
+                    </div>
+                    <p className="text-gray-300 text-lg md:text-xl leading-relaxed group-hover:text-gray-200 transition-colors">
+                      {tool.description}
+                    </p>
+                    <p className="text-gray-500 text-base leading-relaxed">
+                      {tool.details}
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-end md:justify-start">
+                    <div className="text-gray-600 group-hover:text-gray-400 transition-colors p-2 group-hover:translate-x-1 transform transition-transform duration-300">
+                      <svg 
+                        className="w-7 h-7" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Footer note */}
+        <div className="text-center pt-8">
+          <p className="text-gray-600 text-sm">
+            Built for basketball fans who care about the details.
+          </p>
         </div>
       </div>
+
+      <style>{`
+        .tool-card {
+          opacity: 0;
+          animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </div>
   );
 }
 
-export default Home; 
+export default Home;
