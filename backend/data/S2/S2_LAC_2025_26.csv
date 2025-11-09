@@ -1,243 +1,208 @@
 game_id,team,opponent,team_avg_height,opp_avg_height,lineup,minutes_played,period,points,opp_points,rebounds,opp_rebounds,assists,opp_assists,turnovers,opp_turnovers,fouls_committed,fouls_drawn,game_number
-22500027,LAC,NOP,77.8,78.4,"('Derrick Jones Jr.', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
-22500027,LAC,NOP,79.2,78.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",3.983333333333333,4,14,15,1,2,2,3,0,0,3,2,1
-22500027,LAC,NOP,78.6,78.4,"('Derrick Jones Jr.', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Nicolas Batum')",0.1,4,0,0,0,0,0,0,1,0,0,0,1
-22500027,LAC,NOP,78.6,78.6,"('Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
 22500027,LAC,NOP,78.4,78.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",2.1833333333333336,4,5,4,2,2,2,0,1,1,1,1,1
-22500027,LAC,NOP,79.2,78.6,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",1.8833333333333333,4,2,9,1,1,0,3,1,0,1,1,1
 22500027,LAC,NOP,79.4,77.4,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",3.85,4,11,12,2,5,2,1,1,1,2,2,1
+22500027,LAC,NOP,79.2,78.6,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",1.8833333333333333,4,2,9,1,1,0,3,1,0,1,1,1
+22500027,LAC,NOP,79.2,78.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",3.983333333333333,4,14,15,1,2,2,3,0,0,3,2,1
+22500027,LAC,NOP,77.8,78.4,"('Derrick Jones Jr.', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
+22500027,LAC,NOP,78.6,78.6,"('Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
+22500027,LAC,NOP,78.6,78.4,"('Derrick Jones Jr.', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Nicolas Batum')",0.1,4,0,0,0,0,0,0,1,0,0,0,1
 22500027,LAC,NOP,78.2,78.8,"('Bradley Beal', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Nicolas Batum')",0.2333333333333333,2,0,0,0,0,0,0,0,0,0,0,1
-22500027,LAC,NOP,79.6,78.8,"('Bradley Beal', 'Brook Lopez', 'James Harden', 'John Collins', 'Nicolas Batum')",3.333333333333333,2,12,8,4,3,3,3,0,1,1,2,1
-22500027,LAC,NOP,77.4,77.8,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard', 'Kris Dunn')",1.5166666666666668,1,2,3,1,1,1,0,1,0,0,0,1
-22500027,LAC,NOP,77.6,77.8,"('Bradley Beal', 'Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
-22500027,LAC,NOP,78.0,77.4,"('Chris Paul', 'Ivica Zubac', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",1.2333333333333334,1,4,2,1,0,1,1,0,0,0,2,1
+22500027,LAC,NOP,78.4,79.2,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",3.4000000000000004,2,17,10,2,2,1,3,1,3,1,1,1
 22500027,LAC,NOP,78.2,78.4,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.0,1,5,3,0,2,1,0,0,2,1,0,1
-22500027,LAC,NOP,78.6,78.8,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",2.0,2,9,7,0,1,2,2,0,0,2,2,1
+22500027,LAC,NOP,77.6,77.8,"('Bradley Beal', 'Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
+22500027,LAC,NOP,77.4,77.8,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard', 'Kris Dunn')",1.5166666666666668,1,2,3,1,1,1,0,1,0,0,0,1
+22500027,LAC,NOP,78.0,77.4,"('Chris Paul', 'Ivica Zubac', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",1.2333333333333334,1,4,2,1,0,1,1,0,0,0,2,1
+22500027,LAC,NOP,79.6,78.8,"('Bradley Beal', 'Brook Lopez', 'James Harden', 'John Collins', 'Nicolas Batum')",3.333333333333333,2,12,8,4,3,3,3,0,1,1,2,1
 22500027,LAC,NOP,78.8,78.8,"('Bradley Beal', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",0.5666666666666668,2,0,3,2,1,0,0,1,0,0,0,1
 22500027,LAC,NOP,78.6,79.4,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",7.249999999999997,1,15,20,7,8,4,8,2,3,0,0,1
-22500027,LAC,NOP,77.4,77.6,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard', 'Kris Dunn')",0.4666666666666667,3,2,1,0,0,1,0,0,0,1,0,1
-22500027,LAC,NOP,78.0,77.4,"('Chris Paul', 'Ivica Zubac', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",1.3333333333333337,3,3,1,1,2,1,0,0,0,1,1,1
-22500027,LAC,NOP,78.4,79.2,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",3.4000000000000004,2,17,10,2,2,1,3,1,3,1,1,1
-22500027,LAC,NOP,79.4,77.4,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",2.4666666666666663,2,3,3,4,2,0,1,0,0,1,3,1
 22500027,LAC,NOP,78.2,77.4,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.3999999999999995,3,4,11,1,3,1,0,1,2,2,0,1
-22500027,LAC,NOP,78.6,79.4,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",7.799999999999996,3,18,12,8,8,6,3,2,2,2,1,1
+22500027,LAC,NOP,77.4,77.6,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard', 'Kris Dunn')",0.4666666666666667,3,2,1,0,0,1,0,0,0,1,0,1
+22500027,LAC,NOP,79.4,77.4,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",2.4666666666666663,2,3,3,4,2,0,1,0,0,1,3,1
+22500027,LAC,NOP,78.6,78.8,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",2.0,2,9,7,0,1,2,2,0,0,2,2,1
+22500027,LAC,NOP,78.0,77.4,"('Chris Paul', 'Ivica Zubac', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",1.3333333333333337,3,3,1,1,2,1,0,0,0,1,1,1
 22500027,LAC,NOP,77.8,79.4,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
-22500087,LAC,UTA,78.6,80.4,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",6.333333333333332,1,14,21,2,5,3,8,2,1,3,2,2
-22500087,LAC,UTA,78.0,80.8,"('Bradley Beal', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",2.35,2,8,5,1,1,2,2,0,1,1,1,2
+22500027,LAC,NOP,78.6,79.4,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",7.799999999999996,3,18,12,8,8,6,3,2,2,2,1,1
 22500087,LAC,UTA,78.4,80.6,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",3.25,1,3,11,3,4,1,2,3,1,2,2,2
-22500087,LAC,UTA,79.2,79.8,"('Brook Lopez', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
-22500087,LAC,UTA,79.0,79.8,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",1.8666666666666667,1,2,7,0,1,0,2,2,1,1,0,2
+22500087,LAC,UTA,78.0,80.8,"('Bradley Beal', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",2.35,2,8,5,1,1,2,2,0,1,1,1,2
 22500087,LAC,UTA,78.2,79.8,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.5499999999999999,1,0,4,0,0,0,0,2,0,1,0,2
 22500087,LAC,UTA,79.6,80.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
-22500087,LAC,UTA,78.6,81.2,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",2.65,2,6,10,1,2,2,3,1,1,2,1,2
-22500087,LAC,UTA,78.4,81.2,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",1.6,2,5,3,0,0,2,0,0,1,1,1,2
-22500087,LAC,UTA,79.6,79.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",3.216666666666667,3,10,7,4,3,4,3,1,1,1,3,2
+22500087,LAC,UTA,78.6,80.4,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",6.333333333333332,1,14,21,2,5,3,8,2,1,3,2,2
+22500087,LAC,UTA,79.0,79.8,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",1.8666666666666667,1,2,7,0,1,0,2,2,1,1,0,2
+22500087,LAC,UTA,79.2,79.8,"('Brook Lopez', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
+22500087,LAC,UTA,78.8,81.0,"('Bradley Beal', 'Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn')",0.7833333333333333,2,2,3,0,1,1,1,0,0,0,0,2
+22500087,LAC,UTA,77.8,81.2,"('Bradley Beal', 'Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn')",1.2666666666666666,2,6,3,2,1,2,1,0,0,0,0,2
+22500087,LAC,UTA,79.0,80.8,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",3.3166666666666664,3,12,9,3,3,2,4,0,1,0,3,2
+22500087,LAC,UTA,77.8,80.4,"('Cam Christie', 'Chris Paul', 'John Collins', 'Kobe Sanders', 'Nicolas Batum')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
+22500087,LAC,UTA,78.4,81.8,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",3.65,4,3,7,3,6,1,1,1,1,1,1,2
+22500087,LAC,UTA,77.8,80.4,"('Cam Christie', 'Chris Paul', 'John Collins', 'Kobe Brown', 'Kobe Sanders')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
 22500087,LAC,UTA,80.0,80.2,"('Cam Christie', 'John Collins', 'Kobe Brown', 'Kobe Sanders', 'Yanic Konan Niederhäuser')",3.85,4,13,8,5,4,3,2,0,1,0,4,2
 22500087,LAC,UTA,78.8,81.2,"('Brook Lopez', 'Cam Christie', 'Chris Paul', 'John Collins', 'Nicolas Batum')",4.499999999999998,4,12,6,7,4,2,2,0,1,5,2,2
-22500087,LAC,UTA,78.4,81.8,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",3.65,4,3,7,3,6,1,1,1,1,1,1,2
-22500087,LAC,UTA,77.8,80.4,"('Cam Christie', 'Chris Paul', 'John Collins', 'Kobe Sanders', 'Nicolas Batum')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
-22500087,LAC,UTA,77.8,80.4,"('Cam Christie', 'Chris Paul', 'John Collins', 'Kobe Brown', 'Kobe Sanders')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
+22500087,LAC,UTA,79.6,79.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",3.216666666666667,3,10,7,4,3,4,3,1,1,1,3,2
 22500087,LAC,UTA,78.6,81.2,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",5.466666666666666,3,11,14,4,6,3,4,2,0,2,1,2
-22500087,LAC,UTA,79.0,80.8,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",3.3166666666666664,3,12,9,3,3,2,4,0,1,0,3,2
-22500087,LAC,UTA,78.2,81.0,"('Bradley Beal', 'Brook Lopez', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",1.3666666666666667,2,1,0,2,1,0,0,0,1,1,1,2
-22500087,LAC,UTA,77.8,81.2,"('Bradley Beal', 'Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn')",1.2666666666666666,2,6,3,2,1,2,1,0,0,0,0,2
-22500087,LAC,UTA,78.6,80.8,"('Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",1.9833333333333336,2,0,11,1,4,0,3,1,0,0,0,2
-22500087,LAC,UTA,78.8,81.0,"('Bradley Beal', 'Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn')",0.7833333333333333,2,2,3,0,1,1,1,0,0,0,0,2
 22500087,LAC,UTA,80.0,81.0,"('Bradley Beal', 'Brook Lopez', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",0.0,2,0,0,0,0,0,0,0,0,0,0,2
-22500099,LAC,PHX,78.6,78.4,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",7.5166666666666675,3,22,12,8,4,5,3,4,3,3,6,3
-22500099,LAC,PHX,79.2,78.0,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",2.8666666666666663,3,6,4,3,3,1,0,0,1,1,3,3
+22500087,LAC,UTA,78.4,81.2,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",1.6,2,5,3,0,0,2,0,0,1,1,1,2
+22500087,LAC,UTA,78.2,81.0,"('Bradley Beal', 'Brook Lopez', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",1.3666666666666667,2,1,0,2,1,0,0,0,1,1,1,2
+22500087,LAC,UTA,78.6,81.2,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",2.65,2,6,10,1,2,2,3,1,1,2,1,2
+22500087,LAC,UTA,78.6,80.8,"('Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",1.9833333333333336,2,0,11,1,4,0,3,1,0,0,0,2
 22500099,LAC,PHX,79.6,78.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",0.0,3,0,0,0,0,0,0,0,0,0,0,3
-22500099,LAC,PHX,80.0,77.6,"('Bradley Beal', 'Brook Lopez', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",0.0,2,0,0,0,0,0,0,0,0,0,0,3
-22500099,LAC,PHX,79.6,78.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",2.5,2,7,6,1,4,2,1,1,1,1,2,3
-22500099,LAC,PHX,78.6,79.2,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",0.7500000000000002,2,0,2,0,4,0,0,0,0,0,0,3
+22500099,LAC,PHX,79.0,78.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn')",0.0,3,0,0,0,0,0,0,0,0,0,0,3
+22500099,LAC,PHX,79.4,77.6,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",1.6166666666666667,3,6,5,2,1,2,1,1,0,2,0,3
 22500099,LAC,PHX,78.2,77.6,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.333333333333333,2,8,0,4,1,2,0,1,1,0,0,3
+22500099,LAC,PHX,79.2,79.0,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins')",2.2166666666666663,2,8,4,1,2,2,1,1,2,1,2,3
+22500099,LAC,PHX,80.0,77.6,"('Bradley Beal', 'Brook Lopez', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",0.0,2,0,0,0,0,0,0,0,0,0,0,3
 22500099,LAC,PHX,77.2,77.6,"('Bradley Beal', 'Brook Lopez', 'Chris Paul', 'Kawhi Leonard', 'Kris Dunn')",2.8333333333333326,2,6,6,2,4,2,2,0,2,0,0,3
+22500099,LAC,PHX,78.6,79.2,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",0.7500000000000002,2,0,2,0,4,0,0,0,0,0,0,3
 22500099,LAC,PHX,78.4,78.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",1.3666666666666667,2,9,5,1,0,3,0,0,0,1,1,3
 22500099,LAC,PHX,78.4,78.4,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",1.0166666666666666,1,2,2,2,1,0,0,1,1,0,1,3
 22500099,LAC,PHX,81.2,78.4,"('Brook Lopez', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",0.0,1,0,0,0,0,0,0,0,0,0,0,3
-22500099,LAC,PHX,79.6,78.6,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",0.0,1,0,0,0,0,0,0,0,0,0,0,3
-22500099,LAC,PHX,79.8,78.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",0.6666666666666666,1,4,1,1,0,1,0,0,0,1,2,3
-22500099,LAC,PHX,78.6,78.6,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",6.783333333333332,1,14,23,4,6,2,7,2,0,2,3,3
 22500099,LAC,PHX,79.4,78.4,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",2.1333333333333337,1,11,4,2,0,2,0,0,2,1,2,3
+22500099,LAC,PHX,79.6,78.6,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",0.0,1,0,0,0,0,0,0,0,0,0,0,3
 22500099,LAC,PHX,78.2,77.6,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",1.3,1,3,3,2,0,0,1,0,0,0,0,3
+22500099,LAC,PHX,79.8,78.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",0.6666666666666666,1,4,1,1,0,1,0,0,0,1,2,3
 22500099,LAC,PHX,76.8,77.6,"('Chris Paul', 'Derrick Jones Jr.', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.0999999999999999,1,0,0,1,0,0,0,0,0,1,0,3
-22500099,LAC,PHX,79.2,79.0,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins')",2.2166666666666663,2,8,4,1,2,2,1,1,2,1,2,3
+22500099,LAC,PHX,78.6,78.6,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",6.783333333333332,1,14,23,4,6,2,7,2,0,2,3,3
+22500099,LAC,PHX,79.6,78.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",2.5,2,7,6,1,4,2,1,1,1,1,2,3
 22500099,LAC,PHX,78.2,77.6,"('Bradley Beal', 'Brook Lopez', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",0.0,2,0,0,0,0,0,0,0,0,0,0,3
+22500099,LAC,PHX,78.2,78.6,"('Cam Christie', 'Chris Paul', 'Kobe Brown', 'Kobe Sanders', 'Yanic Konan Niederhäuser')",4.766666666666667,4,8,7,4,2,2,0,3,2,3,0,3
 22500099,LAC,PHX,78.8,78.2,"('Brook Lopez', 'Chris Paul', 'Derrick Jones Jr.', 'John Collins', 'Kawhi Leonard')",1.3166666666666669,4,2,2,2,0,1,1,1,1,0,1,3
-22500099,LAC,PHX,79.0,78.6,"('Brook Lopez', 'Chris Paul', 'Derrick Jones Jr.', 'John Collins', 'Kobe Brown')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
+22500099,LAC,PHX,78.2,78.8,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",5.916666666666667,4,13,16,5,5,5,6,2,2,2,2,3
 22500099,LAC,PHX,79.0,78.6,"('Chris Paul', 'John Collins', 'Kobe Brown', 'Kobe Sanders', 'Yanic Konan Niederhäuser')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
 22500099,LAC,PHX,79.4,78.6,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kobe Brown', 'Kobe Sanders')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
-22500099,LAC,PHX,78.2,78.6,"('Cam Christie', 'Chris Paul', 'Kobe Brown', 'Kobe Sanders', 'Yanic Konan Niederhäuser')",4.766666666666667,4,8,7,4,2,2,0,3,2,3,0,3
-22500099,LAC,PHX,79.4,77.6,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",1.6166666666666667,3,6,5,2,1,2,1,1,0,2,0,3
-22500099,LAC,PHX,79.0,78.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn')",0.0,3,0,0,0,0,0,0,0,0,0,0,3
-22500099,LAC,PHX,78.2,78.8,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",5.916666666666667,4,13,16,5,5,5,6,2,2,2,2,3
+22500099,LAC,PHX,78.6,78.4,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",7.5166666666666675,3,22,12,8,4,5,3,4,3,3,6,3
+22500099,LAC,PHX,79.2,78.0,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",2.8666666666666663,3,6,4,3,3,1,0,0,1,1,3,3
+22500099,LAC,PHX,79.0,78.6,"('Brook Lopez', 'Chris Paul', 'Derrick Jones Jr.', 'John Collins', 'Kobe Brown')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
 22500112,LAC,POR,79.6,79.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",0.0,2,0,0,0,0,0,0,0,0,0,0,4
-22500112,LAC,POR,78.8,78.2,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",3.783333333333333,2,7,11,3,7,1,4,1,0,1,2,4
-22500112,LAC,POR,79.4,79.2,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",3.5500000000000003,1,11,5,5,2,2,0,1,2,4,2,4
-22500112,LAC,POR,79.8,79.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",0.5166666666666666,1,2,0,0,1,0,0,0,0,1,0,4
+22500112,LAC,POR,78.4,79.8,"('Chris Paul', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",0.6166666666666667,2,0,2,0,0,0,0,1,0,1,2,4
 22500112,LAC,POR,79.0,79.8,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Nicolas Batum')",0.0,1,0,0,0,0,0,0,0,0,0,0,4
+22500112,LAC,POR,79.8,79.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",0.5166666666666666,1,2,0,0,1,0,0,0,0,1,0,4
 22500112,LAC,POR,78.8,79.8,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",7.933333333333333,1,21,18,10,4,4,5,2,1,3,2,4
 22500112,LAC,POR,79.2,79.4,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",0.0,1,0,0,0,0,0,0,0,0,0,0,4
-22500112,LAC,POR,79.0,79.2,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Nicolas Batum')",1.5333333333333334,2,2,5,1,1,1,1,2,2,2,2,4
-22500112,LAC,POR,79.8,79.0,"('Bogdan Bogdanović', 'Brook Lopez', 'James Harden', 'John Collins', 'Nicolas Batum')",1.15,3,3,4,0,0,0,1,2,0,1,1,4
-22500112,LAC,POR,78.6,78.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kris Dunn', 'Nicolas Batum')",0.0,3,0,0,0,0,0,0,0,0,0,0,4
+22500112,LAC,POR,79.4,79.2,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",3.5500000000000003,1,11,5,5,2,2,0,1,2,4,2,4
 22500112,LAC,POR,79.0,78.2,"('Bogdan Bogdanović', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",0.7,2,4,0,1,0,1,0,0,1,0,0,4
-22500112,LAC,POR,78.2,78.2,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.2666666666666666,2,2,7,2,2,1,2,2,0,2,0,4
-22500112,LAC,POR,78.4,79.8,"('Chris Paul', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",0.6166666666666667,2,0,2,0,0,0,0,1,0,1,2,4
-22500112,LAC,POR,79.2,79.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",0.6000000000000001,2,0,5,0,2,0,0,1,0,1,0,4
-22500112,LAC,POR,78.0,78.8,"('Chris Paul', 'Ivica Zubac', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.5,2,6,7,3,1,2,2,1,0,2,1,4
 22500112,LAC,POR,79.8,78.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",1.0166666666666666,3,3,1,1,2,1,0,0,1,1,0,4
-22500112,LAC,POR,79.0,78.2,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",3.483333333333333,4,9,5,3,2,0,1,3,3,1,0,4
 22500112,LAC,POR,79.6,79.0,"('Bogdan Bogdanović', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",2.866666666666667,3,4,1,4,3,1,0,3,2,0,0,4
+22500112,LAC,POR,78.0,78.8,"('Chris Paul', 'Ivica Zubac', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.5,2,6,7,3,1,2,2,1,0,2,1,4
+22500112,LAC,POR,79.0,79.2,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Nicolas Batum')",1.5333333333333334,2,2,5,1,1,1,1,2,2,2,2,4
+22500112,LAC,POR,78.2,78.2,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.2666666666666666,2,2,7,2,2,1,2,2,0,2,0,4
+22500112,LAC,POR,78.8,78.2,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",3.783333333333333,2,7,11,3,7,1,4,1,0,1,2,4
+22500112,LAC,POR,79.2,79.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",0.6000000000000001,2,0,5,0,2,0,0,1,0,1,0,4
+22500112,LAC,POR,79.8,79.0,"('Bogdan Bogdanović', 'Brook Lopez', 'James Harden', 'John Collins', 'Nicolas Batum')",1.15,3,3,4,0,0,0,1,2,0,1,1,4
+22500112,LAC,POR,78.0,78.2,"('James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",0.7666666666666666,4,0,2,1,1,0,0,0,0,0,0,4
+22500112,LAC,POR,78.6,78.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kris Dunn', 'Nicolas Batum')",0.0,3,0,0,0,0,0,0,0,0,0,0,4
 22500112,LAC,POR,78.4,78.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",6.966666666666664,3,22,16,4,7,6,4,1,2,4,3,4
+22500112,LAC,POR,79.2,78.2,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",2.066666666666667,4,5,7,0,1,2,2,1,1,0,3,4
+22500112,LAC,POR,79.0,78.2,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",3.483333333333333,4,9,5,3,2,0,1,3,3,1,0,4
+22500112,LAC,POR,79.2,78.4,"('Brook Lopez', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.0,4,0,0,0,0,0,0,0,0,0,0,4
 22500112,LAC,POR,78.6,78.4,"('Bogdan Bogdanović', 'Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard')",5.65,4,13,11,8,6,4,2,1,1,4,3,4
 22500112,LAC,POR,79.6,78.4,"('Bogdan Bogdanović', 'Brook Lopez', 'James Harden', 'John Collins', 'Kawhi Leonard')",0.0333333333333333,4,0,0,0,0,0,0,0,0,0,0,4
-22500112,LAC,POR,79.2,78.2,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",2.066666666666667,4,5,7,0,1,2,2,1,1,0,3,4
-22500112,LAC,POR,79.2,78.4,"('Brook Lopez', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.0,4,0,0,0,0,0,0,0,0,0,0,4
-22500112,LAC,POR,78.0,78.2,"('James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",0.7666666666666666,4,0,2,1,1,0,0,0,0,0,0,4
-22500127,LAC,GSW,79.4,77.0,"('Bogdan Bogdanović', 'Cam Christie', 'John Collins', 'Kobe Brown', 'Yanic Konan Niederhäuser')",1.7333333333333334,4,3,2,0,2,1,0,0,1,0,1,5
-22500127,LAC,GSW,79.6,78.2,"('Bogdan Bogdanović', 'Cam Christie', 'Ivica Zubac', 'John Collins', 'Kobe Brown')",0.0,4,0,0,0,0,0,0,0,0,0,0,5
+22500127,LAC,GSW,79.2,78.2,"('Cam Christie', 'Ivica Zubac', 'John Collins', 'Kobe Brown', 'Kris Dunn')",1.0166666666666668,4,0,3,1,1,0,0,0,0,0,0,5
 22500127,LAC,GSW,79.0,77.0,"('Bogdan Bogdanović', 'Cam Christie', 'Jahmyl Telfort', 'Kobe Brown', 'Yanic Konan Niederhäuser')",2.8833333333333333,4,6,3,3,1,1,1,1,1,1,1,5
 22500127,LAC,GSW,79.2,77.6,"('Brook Lopez', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",3.35,4,4,10,2,3,1,3,0,1,0,1,5
-22500127,LAC,GSW,79.2,78.2,"('Cam Christie', 'Ivica Zubac', 'John Collins', 'Kobe Brown', 'Kris Dunn')",1.0166666666666668,4,0,3,1,1,0,0,0,0,0,0,5
-22500127,LAC,GSW,79.4,77.6,"('Ivica Zubac', 'John Collins', 'Kawhi Leonard', 'Kobe Brown', 'Kris Dunn')",0.0,4,0,0,0,0,0,0,0,0,0,0,5
-22500127,LAC,GSW,78.2,76.2,"('Brook Lopez', 'Chris Paul', 'Derrick Jones Jr.', 'John Collins', 'Kris Dunn')",2.8666666666666667,3,2,10,0,3,0,3,1,0,0,0,5
-22500127,LAC,GSW,78.8,77.0,"('Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",0.0,3,0,0,0,0,0,0,0,0,0,0,5
-22500127,LAC,GSW,78.0,77.4,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'John Collins', 'Kris Dunn')",0.4666666666666666,3,0,0,1,1,0,0,0,0,0,0,5
-22500127,LAC,GSW,79.2,77.0,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",7.749999999999999,3,10,17,9,6,0,3,3,1,1,3,5
-22500127,LAC,GSW,77.4,77.4,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard', 'Kris Dunn')",0.9166666666666669,3,2,5,0,0,1,0,1,0,0,0,5
-22500127,LAC,GSW,78.6,76.6,"('Brook Lopez', 'Chris Paul', 'James Harden', 'John Collins', 'Kawhi Leonard')",3.45,2,10,4,4,3,1,2,2,3,0,1,5
-22500127,LAC,GSW,78.2,77.4,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",3.783333333333332,2,0,7,3,7,0,3,2,3,0,0,5
-22500127,LAC,GSW,78.6,77.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kris Dunn', 'Nicolas Batum')",4.766666666666667,2,14,2,8,4,2,0,1,0,0,2,5
-22500127,LAC,GSW,80.0,76.6,"('Brook Lopez', 'Derrick Jones Jr.', 'James Harden', 'John Collins', 'Nicolas Batum')",0.0,2,0,0,0,0,0,0,0,0,0,0,5
-22500127,LAC,GSW,78.8,76.6,"('Brook Lopez', 'Chris Paul', 'James Harden', 'John Collins', 'Nicolas Batum')",0.0,2,0,0,0,0,0,0,0,0,0,0,5
-22500127,LAC,GSW,78.0,76.6,"('Derrick Jones Jr.', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",0.0,2,0,0,0,0,0,0,0,0,0,0,5
-22500127,LAC,GSW,78.0,77.0,"('James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
-22500127,LAC,GSW,79.4,77.0,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",3.3833333333333337,1,10,3,5,1,1,1,0,0,1,2,5
-22500127,LAC,GSW,79.2,78.2,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",1.2833333333333334,1,3,6,1,1,1,2,0,0,0,0,5
-22500127,LAC,GSW,78.6,77.0,"('Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",2.416666666666666,1,4,7,4,3,0,1,0,0,0,0,5
-22500127,LAC,GSW,78.8,78.6,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",4.749999999999999,1,7,14,4,5,0,4,0,1,1,2,5
-22500127,LAC,GSW,78.0,77.0,"('Derrick Jones Jr.', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",0.1666666666666666,1,1,3,0,0,0,1,0,0,0,0,5
 22500127,LAC,GSW,79.0,77.6,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.6166666666666667,4,0,0,0,0,0,0,0,0,1,0,5
 22500127,LAC,GSW,78.2,78.6,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.4000000000000004,4,3,2,2,1,1,0,2,2,0,2,5
-0022500087,LAC,UTA,78.4,80.6,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",3.25,1,3,11,3,4,1,2,3,1,2,2
-0022500087,LAC,UTA,79.2,79.8,"('Brook Lopez', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500087,LAC,UTA,79.6,80.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500087,LAC,UTA,79.0,79.8,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",1.8666666666666667,1,2,7,0,1,0,2,2,1,1,0
-0022500087,LAC,UTA,78.6,80.4,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",6.333333333333332,1,14,21,2,5,3,8,2,1,3,2
-0022500087,LAC,UTA,78.2,79.8,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.5499999999999999,1,0,4,0,0,0,0,2,0,1,0
-0022500087,LAC,UTA,78.4,81.2,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",1.6,2,5,3,0,0,2,0,0,1,1,1
-0022500087,LAC,UTA,78.8,81.0,"('Bradley Beal', 'Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn')",0.7833333333333333,2,2,3,0,1,1,1,0,0,0,0
-0022500087,LAC,UTA,80.0,81.0,"('Bradley Beal', 'Brook Lopez', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500087,LAC,UTA,77.8,81.2,"('Bradley Beal', 'Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn')",1.2666666666666666,2,6,3,2,1,2,1,0,0,0,0
-0022500087,LAC,UTA,78.2,81.0,"('Bradley Beal', 'Brook Lopez', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",1.3666666666666667,2,1,0,2,1,0,0,0,1,1,1
-0022500087,LAC,UTA,78.6,81.2,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",2.65,2,6,10,1,2,2,3,1,1,2,1
-0022500087,LAC,UTA,78.6,80.8,"('Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",1.9833333333333336,2,0,11,1,4,0,3,1,0,0,0
-0022500087,LAC,UTA,78.0,80.8,"('Bradley Beal', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",2.35,2,8,5,1,1,2,2,0,1,1,1
-0022500087,LAC,UTA,79.6,79.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",3.216666666666667,3,10,7,4,3,4,3,1,1,1,3
-0022500087,LAC,UTA,79.0,80.8,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",3.3166666666666664,3,12,9,3,3,2,4,0,1,0,3
-0022500087,LAC,UTA,78.6,81.2,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",5.466666666666666,3,11,14,4,6,3,4,2,0,2,1
-0022500087,LAC,UTA,78.4,81.8,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",3.6499999999999995,4,3,7,3,6,1,1,1,1,1,1
-0022500087,LAC,UTA,78.8,81.2,"('Brook Lopez', 'Cam Christie', 'Chris Paul', 'John Collins', 'Nicolas Batum')",4.499999999999998,4,12,6,7,4,2,2,0,1,5,2
-0022500087,LAC,UTA,77.8,80.4,"('Cam Christie', 'Chris Paul', 'John Collins', 'Kobe Sanders', 'Nicolas Batum')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500087,LAC,UTA,77.8,80.4,"('Cam Christie', 'Chris Paul', 'John Collins', 'Kobe Brown', 'Kobe Sanders')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500087,LAC,UTA,80.0,80.2,"('Cam Christie', 'John Collins', 'Kobe Brown', 'Kobe Sanders', 'Yanic Konan Niederhäuser')",3.8499999999999996,4,13,8,5,4,3,2,0,1,0,4
-0022500099,LAC,PHX,81.2,78.4,"('Brook Lopez', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500099,LAC,PHX,79.4,78.4,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",2.1333333333333337,1,11,4,2,0,2,0,0,2,1,2
-0022500099,LAC,PHX,79.6,78.6,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500099,LAC,PHX,76.8,77.6,"('Chris Paul', 'Derrick Jones Jr.', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.09999999999999999,1,0,0,1,0,0,0,0,0,1,0
-0022500099,LAC,PHX,78.6,78.6,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",6.783333333333332,1,14,23,4,6,2,7,2,0,2,3
-0022500099,LAC,PHX,78.4,78.4,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",1.0166666666666666,1,2,2,2,1,0,0,1,1,0,1
-0022500099,LAC,PHX,79.8,78.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",0.6666666666666666,1,4,1,1,0,1,0,0,0,1,2
-0022500099,LAC,PHX,78.2,77.6,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",1.3,1,3,3,2,0,0,1,0,0,0,0
-0022500099,LAC,PHX,78.2,77.6,"('Bradley Beal', 'Brook Lopez', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500099,LAC,PHX,79.6,78.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",2.4999999999999996,2,7,6,1,4,2,1,1,1,1,2
-0022500099,LAC,PHX,79.2,79.0,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins')",2.2166666666666663,2,8,4,1,2,2,1,1,2,1,2
-0022500099,LAC,PHX,77.2,77.6,"('Bradley Beal', 'Brook Lopez', 'Chris Paul', 'Kawhi Leonard', 'Kris Dunn')",2.8333333333333326,2,6,6,2,4,2,2,0,2,0,0
-0022500099,LAC,PHX,80.0,77.6,"('Bradley Beal', 'Brook Lopez', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500099,LAC,PHX,78.6,79.2,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",0.7500000000000002,2,0,2,0,4,0,0,0,0,0,0
-0022500099,LAC,PHX,78.4,78.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",1.3666666666666667,2,9,5,1,0,3,0,0,0,1,1
-0022500099,LAC,PHX,78.2,77.6,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.333333333333333,2,8,0,4,1,2,0,1,1,0,0
-0022500099,LAC,PHX,79.4,77.6,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",1.6166666666666667,3,6,5,2,1,2,1,1,0,2,0
-0022500099,LAC,PHX,79.2,78.0,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",2.8666666666666663,3,6,4,3,3,1,0,0,1,1,3
-0022500099,LAC,PHX,79.6,78.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",0.0,3,0,0,0,0,0,0,0,0,0,0
-0022500099,LAC,PHX,79.0,78.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn')",0.0,3,0,0,0,0,0,0,0,0,0,0
-0022500099,LAC,PHX,78.6,78.4,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",7.5166666666666675,3,22,12,8,4,5,3,4,3,3,6
-0022500099,LAC,PHX,79.0,78.6,"('Brook Lopez', 'Chris Paul', 'Derrick Jones Jr.', 'John Collins', 'Kobe Brown')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500099,LAC,PHX,79.0,78.6,"('Chris Paul', 'John Collins', 'Kobe Brown', 'Kobe Sanders', 'Yanic Konan Niederhäuser')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500099,LAC,PHX,79.4,78.6,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kobe Brown', 'Kobe Sanders')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500099,LAC,PHX,78.8,78.2,"('Brook Lopez', 'Chris Paul', 'Derrick Jones Jr.', 'John Collins', 'Kawhi Leonard')",1.3166666666666667,4,2,2,2,0,1,1,1,1,0,1
-0022500099,LAC,PHX,78.2,78.6,"('Cam Christie', 'Chris Paul', 'Kobe Brown', 'Kobe Sanders', 'Yanic Konan Niederhäuser')",4.766666666666667,4,8,7,4,2,2,0,3,2,3,0
-0022500099,LAC,PHX,78.2,78.8,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",5.916666666666667,4,13,16,5,5,5,6,2,2,2,2
-0022500112,LAC,POR,79.4,79.2,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",3.5500000000000003,1,11,5,5,2,2,0,1,2,4,2
-0022500112,LAC,POR,79.2,79.4,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500112,LAC,POR,79.0,79.8,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Nicolas Batum')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500112,LAC,POR,79.8,79.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",0.5166666666666666,1,2,0,0,1,0,0,0,0,1,0
-0022500112,LAC,POR,78.8,79.8,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",7.933333333333333,1,21,18,10,4,4,5,2,1,3,2
-0022500112,LAC,POR,79.2,79.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",0.6000000000000001,2,0,5,0,2,0,0,1,0,1,0
-0022500112,LAC,POR,79.6,79.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500112,LAC,POR,79.0,78.2,"('Bogdan Bogdanović', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",0.7,2,4,0,1,0,1,0,0,1,0,0
-0022500112,LAC,POR,79.0,79.2,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Nicolas Batum')",1.5333333333333334,2,2,5,1,1,1,1,2,2,2,2
-0022500112,LAC,POR,78.4,79.8,"('Chris Paul', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",0.6166666666666667,2,0,2,0,0,0,0,1,0,1,2
-0022500112,LAC,POR,78.8,78.2,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",3.783333333333333,2,7,11,3,7,1,4,1,0,1,2
-0022500112,LAC,POR,78.0,78.8,"('Chris Paul', 'Ivica Zubac', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.5,2,6,7,3,1,2,2,1,0,2,1
-0022500112,LAC,POR,78.2,78.2,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.2666666666666666,2,2,7,2,2,1,2,2,0,2,0
-0022500112,LAC,POR,79.8,79.0,"('Bogdan Bogdanović', 'Brook Lopez', 'James Harden', 'John Collins', 'Nicolas Batum')",1.15,3,3,4,0,0,0,1,2,0,1,1
-0022500112,LAC,POR,79.6,79.0,"('Bogdan Bogdanović', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",2.866666666666667,3,4,1,4,3,1,0,3,2,0,0
-0022500112,LAC,POR,78.6,78.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kris Dunn', 'Nicolas Batum')",0.0,3,0,0,0,0,0,0,0,0,0,0
-0022500112,LAC,POR,79.8,78.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",1.0166666666666666,3,3,1,1,2,1,0,0,1,1,0
-0022500112,LAC,POR,78.4,78.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",6.966666666666664,3,22,16,4,7,6,4,1,2,4,3
-0022500112,LAC,POR,79.6,78.4,"('Bogdan Bogdanović', 'Brook Lopez', 'James Harden', 'John Collins', 'Kawhi Leonard')",0.03333333333333333,4,0,0,0,0,0,0,0,0,0,0
-0022500112,LAC,POR,79.2,78.2,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",2.066666666666667,4,5,7,0,1,2,2,1,1,0,3
-0022500112,LAC,POR,79.2,78.4,"('Brook Lopez', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500112,LAC,POR,79.0,78.2,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",3.483333333333333,4,9,5,3,2,0,1,3,3,1,0
-0022500112,LAC,POR,78.6,78.4,"('Bogdan Bogdanović', 'Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard')",5.65,4,13,11,8,6,4,2,1,1,4,3
-0022500112,LAC,POR,78.0,78.2,"('James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",0.7666666666666666,4,0,2,1,1,0,0,0,0,0,0
-0022500127,LAC,GSW,78.6,77.0,"('Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",2.416666666666666,1,4,7,4,3,0,1,0,0,0,0
-0022500127,LAC,GSW,79.4,77.0,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",3.3833333333333337,1,10,3,5,1,1,1,0,0,1,2
-0022500127,LAC,GSW,79.2,78.2,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",1.2833333333333334,1,3,6,1,1,1,2,0,0,0,0
-0022500127,LAC,GSW,78.0,77.0,"('James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500127,LAC,GSW,78.0,77.0,"('Derrick Jones Jr.', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",0.16666666666666666,1,1,3,0,0,0,1,0,0,0,0
-0022500127,LAC,GSW,78.8,78.6,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",4.749999999999999,1,7,14,4,5,0,4,0,1,1,2
-0022500127,LAC,GSW,78.8,76.6,"('Brook Lopez', 'Chris Paul', 'James Harden', 'John Collins', 'Nicolas Batum')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500127,LAC,GSW,80.0,76.6,"('Brook Lopez', 'Derrick Jones Jr.', 'James Harden', 'John Collins', 'Nicolas Batum')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500127,LAC,GSW,78.6,76.6,"('Brook Lopez', 'Chris Paul', 'James Harden', 'John Collins', 'Kawhi Leonard')",3.45,2,10,4,4,3,1,2,2,3,0,1
-0022500127,LAC,GSW,78.6,77.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kris Dunn', 'Nicolas Batum')",4.766666666666667,2,14,2,8,4,2,0,1,0,0,2
-0022500127,LAC,GSW,78.0,76.6,"('Derrick Jones Jr.', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500127,LAC,GSW,78.2,77.4,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",3.7833333333333323,2,0,7,3,7,0,3,2,3,0,0
-0022500127,LAC,GSW,78.2,76.2,"('Brook Lopez', 'Chris Paul', 'Derrick Jones Jr.', 'John Collins', 'Kris Dunn')",2.8666666666666667,3,2,10,0,3,0,3,1,0,0,0
-0022500127,LAC,GSW,78.0,77.4,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'John Collins', 'Kris Dunn')",0.4666666666666666,3,0,0,1,1,0,0,0,0,0,0
-0022500127,LAC,GSW,79.2,77.0,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",7.749999999999999,3,10,17,9,6,0,3,3,1,1,3
-0022500127,LAC,GSW,78.8,77.0,"('Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",0.0,3,0,0,0,0,0,0,0,0,0,0
-0022500127,LAC,GSW,77.4,77.4,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard', 'Kris Dunn')",0.9166666666666667,3,2,5,0,0,1,0,1,0,0,0
-0022500127,LAC,GSW,79.6,78.2,"('Bogdan Bogdanović', 'Cam Christie', 'Ivica Zubac', 'John Collins', 'Kobe Brown')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500127,LAC,GSW,79.2,78.2,"('Cam Christie', 'Ivica Zubac', 'John Collins', 'Kobe Brown', 'Kris Dunn')",1.0166666666666668,4,0,3,1,1,0,0,0,0,0,0
-0022500127,LAC,GSW,79.0,77.0,"('Bogdan Bogdanović', 'Cam Christie', 'Jahmyl Telfort', 'Kobe Brown', 'Yanic Konan Niederhäuser')",2.8833333333333333,4,6,3,3,1,1,1,1,1,1,1
-0022500127,LAC,GSW,79.2,77.6,"('Brook Lopez', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",3.35,4,4,10,2,3,1,3,0,1,0,1
-0022500127,LAC,GSW,79.4,77.0,"('Bogdan Bogdanović', 'Cam Christie', 'John Collins', 'Kobe Brown', 'Yanic Konan Niederhäuser')",1.7333333333333334,4,3,2,0,2,1,0,0,1,0,1
-0022500127,LAC,GSW,79.0,77.6,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.6166666666666667,4,0,0,0,0,0,0,0,0,1,0
-0022500127,LAC,GSW,78.2,78.6,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.4000000000000004,4,3,2,2,1,1,0,2,2,0,2
-0022500127,LAC,GSW,79.4,77.6,"('Ivica Zubac', 'John Collins', 'Kawhi Leonard', 'Kobe Brown', 'Kris Dunn')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500027,LAC,NOP,77.4,77.8,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard', 'Kris Dunn')",1.5166666666666668,1,2,3,1,1,1,0,1,0,0,0
-0022500027,LAC,NOP,78.0,77.4,"('Chris Paul', 'Ivica Zubac', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",1.2333333333333334,1,4,2,1,0,1,1,0,0,0,2
-0022500027,LAC,NOP,78.6,79.4,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",7.249999999999997,1,15,20,7,8,4,8,2,3,0,0
-0022500027,LAC,NOP,77.6,77.8,"('Bradley Beal', 'Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500027,LAC,NOP,78.2,78.4,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.0,1,5,3,0,2,1,0,0,2,1,0
-0022500027,LAC,NOP,78.8,78.8,"('Bradley Beal', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",0.5666666666666668,2,0,3,2,1,0,0,1,0,0,0
-0022500027,LAC,NOP,79.6,78.8,"('Bradley Beal', 'Brook Lopez', 'James Harden', 'John Collins', 'Nicolas Batum')",3.3333333333333335,2,12,8,4,3,3,3,0,1,1,2
-0022500027,LAC,NOP,78.2,78.8,"('Bradley Beal', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Nicolas Batum')",0.23333333333333334,2,0,0,0,0,0,0,0,0,0,0
-0022500027,LAC,NOP,78.6,78.8,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",2.0,2,9,7,0,1,2,2,0,0,2,2
-0022500027,LAC,NOP,78.4,79.2,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",3.4000000000000004,2,17,10,2,2,1,3,1,3,1,1
-0022500027,LAC,NOP,79.4,77.4,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",2.4666666666666663,2,3,3,4,2,0,1,0,0,1,3
-0022500027,LAC,NOP,77.4,77.6,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard', 'Kris Dunn')",0.4666666666666667,3,2,1,0,0,1,0,0,0,1,0
-0022500027,LAC,NOP,77.8,79.4,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",0.0,3,0,0,0,0,0,0,0,0,0,0
-0022500027,LAC,NOP,78.0,77.4,"('Chris Paul', 'Ivica Zubac', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",1.3333333333333335,3,3,1,1,2,1,0,0,0,1,1
-0022500027,LAC,NOP,78.6,79.4,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",7.799999999999996,3,18,12,8,8,6,3,2,2,2,1
-0022500027,LAC,NOP,78.2,77.4,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.3999999999999995,3,4,11,1,3,1,0,1,2,2,0
-0022500027,LAC,NOP,79.2,78.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",3.983333333333333,4,14,15,1,2,2,3,0,0,3,2
-0022500027,LAC,NOP,79.2,78.6,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",1.8833333333333333,4,2,9,1,1,0,3,1,0,1,1
-0022500027,LAC,NOP,77.8,78.4,"('Derrick Jones Jr.', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500027,LAC,NOP,78.6,78.4,"('Derrick Jones Jr.', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Nicolas Batum')",0.1,4,0,0,0,0,0,0,1,0,0,0
-0022500027,LAC,NOP,78.6,78.6,"('Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500027,LAC,NOP,78.4,78.4,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",2.1833333333333336,4,5,4,2,2,2,0,1,1,1,1
-0022500027,LAC,NOP,79.4,77.4,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",3.8499999999999996,4,11,12,2,5,2,1,1,1,2,2
+22500127,LAC,GSW,79.4,77.6,"('Ivica Zubac', 'John Collins', 'Kawhi Leonard', 'Kobe Brown', 'Kris Dunn')",0.0,4,0,0,0,0,0,0,0,0,0,0,5
+22500127,LAC,GSW,78.0,77.4,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'John Collins', 'Kris Dunn')",0.4666666666666666,3,0,0,1,1,0,0,0,0,0,0,5
+22500127,LAC,GSW,78.8,77.0,"('Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",0.0,3,0,0,0,0,0,0,0,0,0,0,5
+22500127,LAC,GSW,78.2,76.2,"('Brook Lopez', 'Chris Paul', 'Derrick Jones Jr.', 'John Collins', 'Kris Dunn')",2.8666666666666667,3,2,10,0,3,0,3,1,0,0,0,5
+22500127,LAC,GSW,79.2,77.0,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",7.749999999999999,3,10,17,9,6,0,3,3,1,1,3,5
+22500127,LAC,GSW,77.4,77.4,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard', 'Kris Dunn')",0.9166666666666669,3,2,5,0,0,1,0,1,0,0,0,5
+22500127,LAC,GSW,78.6,77.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kris Dunn', 'Nicolas Batum')",4.766666666666667,2,14,2,8,4,2,0,1,0,0,2,5
+22500127,LAC,GSW,78.8,76.6,"('Brook Lopez', 'Chris Paul', 'James Harden', 'John Collins', 'Nicolas Batum')",0.0,2,0,0,0,0,0,0,0,0,0,0,5
+22500127,LAC,GSW,80.0,76.6,"('Brook Lopez', 'Derrick Jones Jr.', 'James Harden', 'John Collins', 'Nicolas Batum')",0.0,2,0,0,0,0,0,0,0,0,0,0,5
+22500127,LAC,GSW,78.6,76.6,"('Brook Lopez', 'Chris Paul', 'James Harden', 'John Collins', 'Kawhi Leonard')",3.45,2,10,4,4,3,1,2,2,3,0,1,5
+22500127,LAC,GSW,78.2,77.4,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",3.783333333333332,2,0,7,3,7,0,3,2,3,0,0,5
+22500127,LAC,GSW,78.0,76.6,"('Derrick Jones Jr.', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",0.0,2,0,0,0,0,0,0,0,0,0,0,5
+22500127,LAC,GSW,78.0,77.0,"('James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
+22500127,LAC,GSW,78.6,77.0,"('Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",2.416666666666666,1,4,7,4,3,0,1,0,0,0,0,5
+22500127,LAC,GSW,78.8,78.6,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",4.749999999999999,1,7,14,4,5,0,4,0,1,1,2,5
+22500127,LAC,GSW,79.2,78.2,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Nicolas Batum')",1.2833333333333334,1,3,6,1,1,1,2,0,0,0,0,5
+22500127,LAC,GSW,79.4,77.0,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",3.3833333333333337,1,10,3,5,1,1,1,0,0,1,2,5
+22500127,LAC,GSW,78.0,77.0,"('Derrick Jones Jr.', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",0.1666666666666666,1,1,3,0,0,0,1,0,0,0,0,5
+22500127,LAC,GSW,79.6,78.2,"('Bogdan Bogdanović', 'Cam Christie', 'Ivica Zubac', 'John Collins', 'Kobe Brown')",0.0,4,0,0,0,0,0,0,0,0,0,0,5
+22500127,LAC,GSW,79.4,77.0,"('Bogdan Bogdanović', 'Cam Christie', 'John Collins', 'Kobe Brown', 'Yanic Konan Niederhäuser')",1.7333333333333334,4,3,2,0,2,1,0,0,1,0,1,5
+22500164,LAC,MIA,78.0,78.2,"('Chris Paul', 'Ivica Zubac', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.333333333333333,1,0,7,2,3,0,2,1,1,0,0,6
+22500164,LAC,MIA,77.4,77.8,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard', 'Kris Dunn')",0.4833333333333333,1,3,0,1,0,0,0,0,0,0,0,6
+22500164,LAC,MIA,77.8,76.6,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",0.0,1,0,0,0,0,0,0,0,0,0,0,6
+22500164,LAC,MIA,78.6,76.6,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",7.03333333333333,1,21,19,8,7,4,7,1,1,1,4,6
+22500164,LAC,MIA,78.2,79.4,"('Brook Lopez', 'Chris Paul', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",2.15,1,6,6,1,1,2,1,2,0,2,0,6
+22500164,LAC,MIA,78.8,78.6,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Nicolas Batum')",0.0,2,0,0,0,0,0,0,0,0,0,0,6
+22500164,LAC,MIA,79.6,79.4,"('Bradley Beal', 'Brook Lopez', 'James Harden', 'John Collins', 'Nicolas Batum')",1.9666666666666663,2,7,7,0,1,1,2,0,1,1,1,6
+22500164,LAC,MIA,79.0,78.6,"('Bradley Beal', 'Brook Lopez', 'Derrick Jones Jr.', 'James Harden', 'Nicolas Batum')",1.833333333333333,2,3,4,2,3,1,2,1,0,1,0,6
+22500164,LAC,MIA,79.4,79.4,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",2.45,2,10,11,0,3,3,4,0,0,1,1,6
+22500164,LAC,MIA,78.6,76.8,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",2.8,2,14,4,4,3,3,1,0,3,2,2,6
+22500164,LAC,MIA,78.4,76.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",2.350000000000001,2,7,4,3,1,2,2,1,2,1,0,6
+22500164,LAC,MIA,78.6,76.8,"('Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn', 'Nicolas Batum')",0.6,2,0,4,0,2,0,0,0,0,1,0,6
+22500164,LAC,MIA,78.0,79.4,"('Chris Paul', 'Ivica Zubac', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",4.199999999999999,3,12,9,4,1,3,1,0,2,1,3,6
+22500164,LAC,MIA,77.4,77.8,"('Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kawhi Leonard', 'Kris Dunn')",0.0,3,0,0,0,0,0,0,0,0,0,0,6
+22500164,LAC,MIA,78.6,77.2,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard')",6.516666666666667,3,10,25,4,1,2,7,7,0,7,1,6
+22500164,LAC,MIA,78.4,77.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",1.2833333333333332,3,2,3,1,1,0,1,2,1,1,1,6
+22500164,LAC,MIA,78.0,78.4,"('Brook Lopez', 'Chris Paul', 'James Harden', 'John Collins', 'Kris Dunn')",4.6000000000000005,4,12,4,7,5,3,1,2,4,2,1,6
+22500164,LAC,MIA,79.2,76.6,"('Brook Lopez', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",1.5333333333333334,4,2,3,2,1,0,1,0,0,0,0,6
+22500164,LAC,MIA,79.0,76.6,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard', 'Kris Dunn')",1.0,4,0,3,0,1,0,0,1,0,1,0,6
+22500164,LAC,MIA,79.6,76.6,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kawhi Leonard')",4.866666666666666,4,10,7,5,3,1,1,2,1,2,1,6
+22500164,LAC,MIA,78.4,76.6,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kawhi Leonard', 'Kris Dunn')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
+22500170,LAC,OKC,77.8,77.8,"('Bogdan Bogdanović', 'Chris Paul', 'Ivica Zubac', 'John Collins', 'Kris Dunn')",1.1333333333333333,1,2,2,1,1,1,0,0,0,0,1,7
+22500170,LAC,OKC,78.4,77.8,"('Bogdan Bogdanović', 'Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'John Collins')",0.0,1,0,0,0,0,0,0,0,0,0,0,7
+22500170,LAC,OKC,78.0,78.4,"('Bogdan Bogdanović', 'Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn')",2.0000000000000004,1,5,6,2,2,1,2,0,0,1,1,7
+22500170,LAC,OKC,78.6,78.2,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kris Dunn', 'Nicolas Batum')",7.016666666666668,1,20,14,9,7,5,4,0,3,3,5,7
+22500170,LAC,OKC,79.8,78.2,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",0.0,1,0,0,0,0,0,0,0,0,0,0,7
+22500170,LAC,OKC,79.4,77.4,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins')",1.8500000000000003,1,6,1,4,2,2,0,0,0,1,0,7
+22500170,LAC,OKC,79.2,77.6,"('Brook Lopez', 'Derrick Jones Jr.', 'James Harden', 'John Collins', 'Kris Dunn')",0.2333333333333333,2,0,1,0,1,0,0,1,0,2,0,7
+22500170,LAC,OKC,79.0,78.0,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn')",3.8833333333333337,2,6,11,5,3,1,3,2,0,0,0,7
+22500170,LAC,OKC,79.6,78.2,"('Bogdan Bogdanović', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",0.5666666666666667,2,2,3,0,0,1,0,0,0,0,0,7
+22500170,LAC,OKC,78.8,79.8,"('Bogdan Bogdanović', 'Brook Lopez', 'Chris Paul', 'John Collins', 'Nicolas Batum')",1.7833333333333337,2,0,6,1,2,0,3,2,1,2,0,7
+22500170,LAC,OKC,78.2,78.2,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kris Dunn')",2.15,2,7,5,1,1,1,1,1,1,2,1,7
+22500170,LAC,OKC,79.8,78.0,"('Bogdan Bogdanović', 'Brook Lopez', 'James Harden', 'John Collins', 'Nicolas Batum')",1.15,2,3,2,1,0,1,1,1,0,0,1,7
+22500170,LAC,OKC,79.6,77.6,"('Bogdan Bogdanović', 'Brook Lopez', 'Derrick Jones Jr.', 'James Harden', 'John Collins')",2.2333333333333334,2,6,5,2,0,2,1,1,1,0,1,7
+22500170,LAC,OKC,78.4,78.2,"('Bogdan Bogdanović', 'Ivica Zubac', 'James Harden', 'Kris Dunn', 'Nicolas Batum')",0.0,2,0,0,0,0,0,0,0,0,0,0,7
+22500170,LAC,OKC,78.4,77.8,"('Bogdan Bogdanović', 'Chris Paul', 'Derrick Jones Jr.', 'Ivica Zubac', 'John Collins')",0.0,3,0,0,0,0,0,0,0,0,0,0,7
+22500170,LAC,OKC,78.0,77.6,"('Bogdan Bogdanović', 'Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn')",1.0166666666666666,3,0,6,0,1,0,1,1,0,0,0,7
+22500170,LAC,OKC,78.6,77.8,"('Bogdan Bogdanović', 'Brook Lopez', 'Chris Paul', 'Derrick Jones Jr.', 'John Collins')",1.9666666666666663,3,8,7,2,2,2,1,1,0,2,0,7
+22500170,LAC,OKC,78.6,78.2,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kris Dunn', 'Nicolas Batum')",7.316666666666665,3,16,18,4,4,4,2,4,2,2,4,7
+22500170,LAC,OKC,79.8,78.2,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Nicolas Batum')",0.0,3,0,0,0,0,0,0,0,0,0,0,7
+22500170,LAC,OKC,79.4,77.8,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins')",1.7000000000000002,3,5,7,2,1,0,2,0,0,0,2,7
+22500170,LAC,OKC,78.0,79.8,"('Bogdan Bogdanović', 'Brook Lopez', 'Chris Paul', 'John Collins', 'Kris Dunn')",3.4166666666666674,4,3,12,0,4,1,2,3,1,2,1,7
+22500170,LAC,OKC,79.0,79.8,"('Bogdan Bogdanović', 'Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn')",2.0000000000000004,4,3,8,0,2,1,2,1,0,3,2,7
+22500170,LAC,OKC,79.0,79.8,"('Bogdan Bogdanović', 'Cam Christie', 'Jahmyl Telfort', 'Kobe Brown', 'Yanic Konan Niederhäuser')",6.583333333333333,4,15,12,8,7,3,3,1,1,1,4,7
+22500170,LAC,OKC,78.6,79.8,"('Bogdan Bogdanović', 'Cam Christie', 'Jahmyl Telfort', 'James Harden', 'Yanic Konan Niederhäuser')",0.0,4,0,0,0,0,0,0,0,0,0,0,7
+22500170,LAC,OKC,79.4,79.8,"('Bogdan Bogdanović', 'Brook Lopez', 'Cam Christie', 'James Harden', 'John Collins')",0.0,4,0,0,0,0,0,0,0,0,0,0,7
+22500170,LAC,OKC,79.0,79.8,"('Bogdan Bogdanović', 'Cam Christie', 'James Harden', 'John Collins', 'Yanic Konan Niederhäuser')",0.0,4,0,0,0,0,0,0,0,0,0,0,7
+22500182,LAC,PHX,78.2,77.4,"('Bogdan Bogdanović', 'Cam Christie', 'Chris Paul', 'Ivica Zubac', 'John Collins')",1.4,1,5,2,2,0,0,0,0,1,0,0,8
+22500182,LAC,PHX,78.6,77.4,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kris Dunn', 'Nicolas Batum')",0.8166666666666667,1,3,3,0,0,1,1,0,0,0,1,8
+22500182,LAC,PHX,78.6,77.4,"('Bogdan Bogdanović', 'Chris Paul', 'Ivica Zubac', 'John Collins', 'Nicolas Batum')",0.0,1,0,0,0,0,0,0,0,0,0,0,8
+22500182,LAC,PHX,78.4,76.8,"('Bogdan Bogdanović', 'Brook Lopez', 'Cam Christie', 'Chris Paul', 'John Collins')",2.6166666666666667,1,4,8,1,4,1,3,0,1,1,1,8
+22500182,LAC,PHX,78.4,77.4,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kris Dunn', 'Nicolas Batum')",7.166666666666665,1,15,18,6,7,3,3,3,2,3,3,8
+22500182,LAC,PHX,79.2,77.4,"('Bogdan Bogdanović', 'Ivica Zubac', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",0.0,1,0,0,0,0,0,0,0,0,0,0,8
+22500182,LAC,PHX,78.8,78.8,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'John Collins', 'Kris Dunn')",0.35,2,0,0,0,1,0,0,0,1,0,0,8
+22500182,LAC,PHX,79.4,78.8,"('Bradley Beal', 'Brook Lopez', 'Cam Christie', 'Derrick Jones Jr.', 'John Collins')",0.0,2,0,0,0,0,0,0,0,0,0,0,8
+22500182,LAC,PHX,78.4,78.8,"('Bogdan Bogdanović', 'Brook Lopez', 'Cam Christie', 'Chris Paul', 'John Collins')",5.483333333333332,2,10,4,5,9,4,0,1,4,1,3,8
+22500182,LAC,PHX,78.2,77.2,"('Bradley Beal', 'Cam Christie', 'Ivica Zubac', 'Kris Dunn', 'Nicolas Batum')",0.4833333333333333,2,2,0,1,0,0,0,0,0,0,1,8
+22500182,LAC,PHX,79.2,78.8,"('Bogdan Bogdanović', 'Bradley Beal', 'Brook Lopez', 'Cam Christie', 'John Collins')",0.0,2,0,0,0,0,0,0,0,0,0,0,8
+22500182,LAC,PHX,79.0,78.8,"('Bradley Beal', 'Brook Lopez', 'Derrick Jones Jr.', 'John Collins', 'Kris Dunn')",0.3333333333333333,2,0,2,0,1,0,0,0,0,1,0,8
+22500182,LAC,PHX,78.4,78.0,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kris Dunn', 'Nicolas Batum')",5.35,2,12,11,4,6,4,4,1,2,2,1,8
+22500182,LAC,PHX,78.8,78.8,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'John Collins', 'Kris Dunn')",1.3833333333333333,3,0,4,2,2,0,1,1,0,1,1,8
+22500182,LAC,PHX,79.0,78.4,"('Bogdan Bogdanović', 'Derrick Jones Jr.', 'Ivica Zubac', 'John Collins', 'Kris Dunn')",2.1500000000000004,3,5,8,2,1,1,2,2,1,0,2,8
+22500182,LAC,PHX,77.8,77.8,"('Bogdan Bogdanović', 'Cam Christie', 'John Collins', 'Kobe Brown', 'Kris Dunn')",0.3999999999999999,3,1,3,0,0,0,1,0,0,0,0,8
+22500182,LAC,PHX,79.6,77.8,"('Bogdan Bogdanović', 'Cam Christie', 'Ivica Zubac', 'John Collins', 'Kobe Brown')",2.7166666666666663,3,9,2,4,1,1,0,0,1,1,4,8
+22500182,LAC,PHX,79.2,77.4,"('Bogdan Bogdanović', 'Ivica Zubac', 'John Collins', 'Kobe Brown', 'Kris Dunn')",0.7666666666666667,3,0,0,0,1,0,0,1,0,1,0,8
+22500182,LAC,PHX,78.4,78.8,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'Kris Dunn', 'Nicolas Batum')",4.583333333333332,3,8,23,1,4,1,4,1,0,4,1,8
+22500182,LAC,PHX,79.4,77.6,"('Bogdan Bogdanović', 'Brook Lopez', 'Cam Christie', 'Jahmyl Telfort', 'Kobe Brown')",3.9333333333333327,4,11,5,4,3,2,1,1,1,3,2,8
+22500182,LAC,PHX,79.8,78.2,"('Bogdan Bogdanović', 'Brook Lopez', 'Cam Christie', 'John Collins', 'Kobe Brown')",5.449999999999999,4,10,16,7,3,3,5,4,1,1,1,8
+22500182,LAC,PHX,79.0,78.6,"('Bogdan Bogdanović', 'Cam Christie', 'Jahmyl Telfort', 'Kobe Brown', 'Yanic Konan Niederhäuser')",2.616666666666666,4,7,6,2,1,3,2,0,0,0,2,8
+22500190,LAC,PHX,79.8,78.0,"('Brook Lopez', 'Cam Christie', 'James Harden', 'John Collins', 'Nicolas Batum')",2.916666666666667,1,8,10,1,1,0,4,0,0,1,1,9
+22500190,LAC,PHX,78.0,78.4,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kris Dunn')",5.916666666666665,1,12,16,2,6,1,4,2,2,4,2,9
+22500190,LAC,PHX,79.6,78.0,"('Brook Lopez', 'Cam Christie', 'Derrick Jones Jr.', 'James Harden', 'John Collins')",1.2333333333333334,1,5,3,1,0,0,1,0,0,0,1,9
+22500190,LAC,PHX,78.2,78.4,"('Bradley Beal', 'Brook Lopez', 'Derrick Jones Jr.', 'James Harden', 'Kris Dunn')",0.0,1,0,0,0,0,0,0,0,0,0,0,9
+22500190,LAC,PHX,78.6,78.8,"('Bradley Beal', 'Brook Lopez', 'Cam Christie', 'Derrick Jones Jr.', 'James Harden')",1.9333333333333331,1,4,6,1,3,2,1,0,0,0,1,9
+22500190,LAC,PHX,79.4,77.8,"('Cam Christie', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins')",0.6666666666666667,2,2,0,1,0,1,0,0,0,0,0,9
+22500190,LAC,PHX,79.4,77.8,"('Derrick Jones Jr.', 'Ivica Zubac', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",0.0,2,0,0,0,0,0,0,0,0,0,0,9
+22500190,LAC,PHX,79.0,78.2,"('Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn')",0.8,2,1,6,0,1,0,2,0,0,0,0,9
+22500190,LAC,PHX,79.0,78.4,"('Cam Christie', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Nicolas Batum')",4.65,2,2,13,2,5,0,3,3,0,1,2,9
+22500190,LAC,PHX,79.0,77.8,"('Bradley Beal', 'Ivica Zubac', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",5.883333333333331,2,12,6,8,5,3,2,2,2,0,4,9
+22500190,LAC,PHX,79.4,78.0,"('Cam Christie', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'John Collins')",0.0,3,0,0,0,0,0,0,0,0,0,0,9
+22500190,LAC,PHX,78.0,78.4,"('Bradley Beal', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kris Dunn')",5.883333333333332,3,17,15,3,5,7,3,0,2,4,2,9
+22500190,LAC,PHX,79.2,77.0,"('Brook Lopez', 'Cam Christie', 'Derrick Jones Jr.', 'John Collins', 'Kris Dunn')",1.5,3,4,4,0,1,0,2,0,0,0,0,9
+22500190,LAC,PHX,79.6,77.0,"('Brook Lopez', 'Cam Christie', 'Derrick Jones Jr.', 'James Harden', 'John Collins')",3.383333333333333,3,9,4,1,5,3,0,1,2,2,3,9
+22500190,LAC,PHX,78.2,78.0,"('Cam Christie', 'Derrick Jones Jr.', 'Ivica Zubac', 'James Harden', 'Kris Dunn')",1.2333333333333334,3,4,2,0,0,1,1,0,0,0,1,9
+22500190,LAC,PHX,79.2,78.8,"('Ivica Zubac', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",10.083333333333334,4,23,23,5,7,8,5,2,4,3,2,9
+22500190,LAC,PHX,79.4,77.0,"('Brook Lopez', 'James Harden', 'John Collins', 'Kris Dunn', 'Nicolas Batum')",1.916666666666667,4,0,6,2,3,0,2,1,0,0,1,9

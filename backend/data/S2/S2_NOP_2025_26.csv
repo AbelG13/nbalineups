@@ -1,355 +1,254 @@
 game_id,team,opponent,team_avg_height,opp_avg_height,lineup,minutes_played,period,points,opp_points,rebounds,opp_rebounds,assists,opp_assists,turnovers,opp_turnovers,fouls_committed,fouls_drawn,game_number
 22500027,NOP,LAC,78.2,77.6,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
 22500027,NOP,LAC,77.8,78.0,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",1.5166666666666668,1,3,2,1,1,0,1,0,1,0,0,1
-22500027,NOP,LAC,77.4,78.2,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Zion Williamson')",3.083333333333333,1,4,9,2,1,1,2,2,0,2,1,1
-22500027,NOP,LAC,78.4,78.2,"('Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",0.15,1,1,0,0,0,0,0,0,0,0,0,1
-22500027,NOP,LAC,78.0,78.2,"('Derik Queen', 'Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Zion Williamson')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
-22500027,NOP,LAC,79.0,78.6,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",5.399999999999999,1,12,10,6,5,5,3,3,2,0,0,1
-22500027,NOP,LAC,79.6,77.6,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
 22500027,NOP,LAC,79.4,77.6,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.85,1,8,5,2,2,3,1,0,0,0,0,1
-22500027,NOP,LAC,78.8,78.4,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",5.133333333333332,2,18,17,4,4,5,3,0,1,3,2,1
-22500027,NOP,LAC,79.2,78.4,"('Herbert Jones', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",2.5166666666666666,2,8,13,2,1,2,1,3,1,0,1,1
-22500027,NOP,LAC,77.4,77.4,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
-22500027,NOP,LAC,80.2,79.6,"('Jordan Poole', 'Karlo Matković', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
+22500027,NOP,LAC,79.0,78.6,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",5.399999999999999,1,12,10,6,5,5,3,3,2,0,0,1
+22500027,NOP,LAC,78.0,78.2,"('Derik Queen', 'Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Zion Williamson')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
+22500027,NOP,LAC,78.4,78.2,"('Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",0.15,1,1,0,0,0,0,0,0,0,0,0,1
+22500027,NOP,LAC,79.6,77.6,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
+22500027,NOP,LAC,77.4,78.2,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Zion Williamson')",3.083333333333333,1,4,9,2,1,1,2,2,0,2,1,1
 22500027,NOP,LAC,78.4,79.6,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Karlo Matković', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
-22500027,NOP,LAC,78.2,79.2,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
-22500027,NOP,LAC,77.6,79.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Zion Williamson')",0.65,4,2,0,1,0,0,0,0,0,0,1,1
-22500027,NOP,LAC,78.6,79.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",3.85,4,11,5,3,3,3,1,1,2,2,1,1
-22500027,NOP,LAC,76.8,79.2,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
-22500027,NOP,LAC,77.4,79.4,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Zion Williamson')",2.9,4,10,6,5,1,1,2,1,1,2,2,1
-22500027,NOP,LAC,77.6,78.4,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Zion Williamson')",3.4000000000000004,4,13,14,1,1,3,2,0,0,2,3,1
-22500027,NOP,LAC,78.4,78.4,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.25,4,2,2,0,0,0,1,0,1,0,0,1
-22500027,NOP,LAC,77.4,79.2,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III', 'Zion Williamson')",0.95,4,2,5,0,1,0,0,0,0,0,0,1
-22500027,NOP,LAC,78.8,77.4,"('Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
-22500027,NOP,LAC,79.0,78.6,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",5.649999999999999,3,12,13,6,6,3,4,1,2,0,2,1
-22500027,NOP,LAC,77.4,78.2,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Zion Williamson')",3.316666666666666,3,11,5,5,2,0,1,2,1,0,3,1
-22500027,NOP,LAC,79.4,77.4,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",2.15,3,0,5,2,2,0,2,1,0,1,0,1
-22500027,NOP,LAC,77.6,78.0,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",0.8833333333333333,3,2,4,0,0,0,2,0,0,1,1,1
-22500027,NOP,LAC,78.6,79.6,"('Jordan Poole', 'Jose Alvarado', 'Karlo Matković', 'Trey Murphy III', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
-22500027,NOP,LAC,78.4,78.4,"('Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.8833333333333333,2,2,4,0,1,1,0,0,0,1,0,1
 22500027,NOP,LAC,77.4,79.6,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Karlo Matković', 'Zion Williamson')",3.466666666666667,2,3,7,3,6,1,2,1,0,4,2,1
-22500085,NOP,MEM,79.0,79.0,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",0.2333333333333333,1,1,0,0,0,0,0,0,0,0,0,2
-22500085,NOP,MEM,79.2,79.8,"('Herbert Jones', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",4.483333333333333,1,13,6,3,3,4,1,1,3,2,4,2
-22500085,NOP,MEM,80.8,78.6,"('Hunter Dickinson', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
-22500085,NOP,MEM,78.0,77.2,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Zion Williamson')",3.95,4,11,9,3,2,3,2,2,0,2,1,2
-22500085,NOP,MEM,79.6,77.8,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",2.1,4,7,0,5,0,2,0,0,0,1,2,2
-22500085,NOP,MEM,79.4,77.0,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.4166666666666663,4,4,5,0,0,1,1,0,1,1,0,2
-22500085,NOP,MEM,78.4,77.2,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
-22500085,NOP,MEM,78.6,78.2,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",3.0,4,6,7,2,4,1,0,0,0,3,1,2
-22500085,NOP,MEM,77.8,78.6,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",1.5333333333333332,4,5,10,2,2,0,1,1,1,3,1,2
-22500085,NOP,MEM,78.6,79.0,"('Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
-22500085,NOP,MEM,79.0,79.0,"('Hunter Dickinson', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Zion Williamson')",3.6,1,5,15,2,4,1,3,2,0,3,2,2
-22500085,NOP,MEM,78.6,79.4,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",4.533333333333331,2,14,8,5,5,2,0,1,5,3,3,2
-22500085,NOP,MEM,79.0,77.6,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Yves Missi')",0.7,2,1,3,0,1,0,1,0,0,2,0,2
-22500085,NOP,MEM,79.2,76.8,"('Derik Queen', 'Herbert Jones', 'Jordan Hawkins', 'Jordan Poole', 'Yves Missi')",0.7666666666666666,2,3,0,2,1,0,0,0,1,0,2,2
-22500085,NOP,MEM,78.4,77.6,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Yves Missi', 'Zion Williamson')",2.883333333333333,2,10,6,3,2,2,0,0,0,1,2,2
-22500085,NOP,MEM,79.2,78.8,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.15,2,5,5,0,1,0,1,0,0,1,2,2
-22500085,NOP,MEM,80.0,78.6,"('Hunter Dickinson', 'Jordan Hawkins', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
+22500027,NOP,LAC,78.8,77.4,"('Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
+22500027,NOP,LAC,78.4,78.4,"('Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.8833333333333333,2,2,4,0,1,1,0,0,0,1,0,1
+22500027,NOP,LAC,78.8,78.4,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",5.133333333333332,2,18,17,4,4,5,3,0,1,3,2,1
+22500027,NOP,LAC,76.8,79.2,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
+22500027,NOP,LAC,77.4,79.2,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III', 'Zion Williamson')",0.95,4,2,5,0,1,0,0,0,0,0,0,1
+22500027,NOP,LAC,77.4,79.4,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Zion Williamson')",2.9,4,10,6,5,1,1,2,1,1,2,2,1
+22500027,NOP,LAC,78.4,78.4,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.25,4,2,2,0,0,0,1,0,1,0,0,1
+22500027,NOP,LAC,78.2,79.2,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
+22500027,NOP,LAC,78.6,79.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",3.85,4,11,5,3,3,3,1,1,2,2,1,1
+22500027,NOP,LAC,77.6,79.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Zion Williamson')",0.65,4,2,0,1,0,0,0,0,0,0,1,1
+22500027,NOP,LAC,77.6,78.4,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Zion Williamson')",3.4000000000000004,4,13,14,1,1,3,2,0,0,2,3,1
+22500027,NOP,LAC,77.6,78.0,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",0.8833333333333333,3,2,4,0,0,0,2,0,0,1,1,1
+22500027,NOP,LAC,79.0,78.6,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",5.649999999999999,3,12,13,6,6,3,4,1,2,0,2,1
+22500027,NOP,LAC,79.4,77.4,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",2.15,3,0,5,2,2,0,2,1,0,1,0,1
+22500027,NOP,LAC,77.4,78.2,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Zion Williamson')",3.316666666666666,3,11,5,5,2,0,1,2,1,0,3,1
+22500027,NOP,LAC,77.4,77.4,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
+22500027,NOP,LAC,78.6,79.6,"('Jordan Poole', 'Jose Alvarado', 'Karlo Matković', 'Trey Murphy III', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
+22500027,NOP,LAC,79.2,78.4,"('Herbert Jones', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",2.5166666666666666,2,8,13,2,1,2,1,3,1,0,1,1
+22500027,NOP,LAC,80.2,79.6,"('Jordan Poole', 'Karlo Matković', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
 22500085,NOP,MEM,79.6,78.6,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",2.5666666666666664,1,11,3,4,0,2,0,0,2,0,1,2
+22500085,NOP,MEM,79.2,79.8,"('Herbert Jones', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",4.483333333333333,1,13,6,3,3,4,1,1,3,2,4,2
+22500085,NOP,MEM,79.0,79.0,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",0.2333333333333333,1,1,0,0,0,0,0,0,0,0,0,2
+22500085,NOP,MEM,79.6,77.8,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",2.1,4,7,0,5,0,2,0,0,0,1,2,2
+22500085,NOP,MEM,78.6,78.2,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",3.0,4,6,7,2,4,1,0,0,0,3,1,2
+22500085,NOP,MEM,79.4,77.0,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.4166666666666663,4,4,5,0,0,1,1,0,1,1,0,2
+22500085,NOP,MEM,77.8,78.6,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",1.5333333333333332,4,5,10,2,2,0,1,1,1,3,1,2
+22500085,NOP,MEM,78.4,77.2,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
+22500085,NOP,MEM,78.0,77.2,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Zion Williamson')",3.95,4,11,9,3,2,3,2,2,0,2,1,2
+22500085,NOP,MEM,80.0,78.6,"('Hunter Dickinson', 'Jordan Hawkins', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
 22500085,NOP,MEM,79.6,78.6,"('Hunter Dickinson', 'Jordan Hawkins', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.1166666666666667,1,0,3,1,0,0,1,1,0,1,0,2
+22500085,NOP,MEM,79.2,76.8,"('Derik Queen', 'Herbert Jones', 'Jordan Hawkins', 'Jordan Poole', 'Yves Missi')",0.7666666666666666,2,3,0,2,1,0,0,0,1,0,2,2
+22500085,NOP,MEM,79.8,77.0,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",0.3833333333333333,2,0,2,0,1,0,0,0,0,1,0,2
+22500085,NOP,MEM,79.0,77.6,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Yves Missi')",0.7,2,1,3,0,1,0,1,0,0,2,0,2
+22500085,NOP,MEM,78.6,79.4,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",4.533333333333331,2,14,8,5,5,2,0,1,5,3,3,2
+22500085,NOP,MEM,80.0,78.8,"('Derik Queen', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.5833333333333333,2,4,5,2,3,0,2,0,1,0,1,2
+22500085,NOP,MEM,80.8,78.6,"('Hunter Dickinson', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
+22500085,NOP,MEM,79.0,79.0,"('Hunter Dickinson', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Zion Williamson')",3.6,1,5,15,2,4,1,3,2,0,3,2,2
+22500085,NOP,MEM,78.6,79.0,"('Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
 22500085,NOP,MEM,78.2,79.0,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Zion Williamson')",3.999999999999999,3,11,13,5,4,1,2,2,1,3,3,2
 22500085,NOP,MEM,79.6,78.6,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.7833333333333333,3,0,4,1,2,0,1,0,0,1,1,2
 22500085,NOP,MEM,79.0,78.6,"('Derik Queen', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.0,3,0,0,0,0,0,0,0,0,0,0,2
 22500085,NOP,MEM,78.8,78.6,"('Derik Queen', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.0,3,0,0,0,0,0,0,0,0,0,0,2
 22500085,NOP,MEM,79.2,78.6,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.9666666666666663,3,0,9,1,2,0,2,1,0,1,0,2
 22500085,NOP,MEM,78.8,77.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Yves Missi')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
-22500085,NOP,MEM,79.8,77.0,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",0.3833333333333333,2,0,2,0,1,0,0,0,0,1,0,2
+22500085,NOP,MEM,78.4,77.6,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Yves Missi', 'Zion Williamson')",2.883333333333333,2,10,6,3,2,2,0,0,0,1,2,2
 22500085,NOP,MEM,79.2,79.0,"('Herbert Jones', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",5.25,3,11,15,6,2,1,2,3,2,2,3,2
-22500085,NOP,MEM,80.0,78.8,"('Derik Queen', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.5833333333333333,2,4,5,2,3,0,2,0,1,0,1,2
-22500095,NOP,SAS,77.2,78.6,"('Jeremiah Fears', 'Jordan Hawkins', 'Jordan Poole', 'Trey Murphy III', 'Zion Williamson')",0.2333333333333333,1,2,0,0,0,1,0,0,0,0,0,3
-22500095,NOP,SAS,77.6,81.0,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",0.8333333333333335,2,0,2,1,2,0,1,0,1,0,1,3
-22500095,NOP,SAS,78.6,81.0,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",1.5166666666666666,2,0,4,0,4,0,1,1,0,2,0,3
-22500095,NOP,SAS,77.6,79.8,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Jordan Poole')",1.8833333333333333,3,4,2,1,1,0,0,0,1,1,2,3
-22500095,NOP,SAS,78.6,79.6,"('Derik Queen', 'Herbert Jones', 'Jordan Hawkins', 'Jordan Poole', 'Saddiq Bey')",0.0,1,0,0,0,0,0,0,0,0,0,0,3
+22500085,NOP,MEM,79.2,78.8,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.15,2,5,5,0,1,0,1,0,0,1,2,2
+22500095,NOP,SAS,77.4,79.8,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Jordan Poole', 'Zion Williamson')",2.7166666666666663,1,5,8,0,7,0,1,0,1,1,3,3
+22500095,NOP,SAS,78.0,79.6,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",1.0833333333333337,2,1,3,2,2,0,0,0,0,0,1,3
 22500095,NOP,SAS,77.6,79.2,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III')",1.5499999999999998,2,7,5,0,2,2,1,0,1,1,3,3
-22500095,NOP,SAS,79.0,79.4,"('Derik Queen', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",3.1833333333333327,2,12,4,5,2,2,0,2,1,2,3,3
-22500095,NOP,SAS,79.2,79.4,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",2.716666666666667,4,4,5,2,4,1,1,1,2,2,0,3
-22500095,NOP,SAS,78.2,80.2,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Trey Murphy III', 'Zion Williamson')",3.833333333333333,4,13,4,5,1,3,1,0,0,2,3,3
+22500095,NOP,SAS,78.2,79.8,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Trey Murphy III', 'Zion Williamson')",2.483333333333333,3,7,2,3,3,1,1,1,0,0,1,3
+22500095,NOP,SAS,78.6,79.6,"('Derik Queen', 'Herbert Jones', 'Jordan Hawkins', 'Jordan Poole', 'Saddiq Bey')",0.0,1,0,0,0,0,0,0,0,0,0,0,3
+22500095,NOP,SAS,78.4,79.6,"('Derik Queen', 'Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",0.0,2,0,0,0,0,0,0,0,0,0,0,3
+22500095,NOP,SAS,78.6,81.0,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",1.5166666666666666,2,0,4,0,4,0,1,1,0,2,0,3
+22500095,NOP,SAS,78.0,81.4,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Zion Williamson')",3.9,4,10,8,4,4,0,2,1,3,0,3,3
+22500095,NOP,SAS,79.6,80.2,"('Derik Queen', 'Herbert Jones', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.1833333333333333,4,0,0,0,0,0,0,0,0,0,0,3
 22500095,NOP,SAS,78.0,79.6,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Zion Williamson')",3.3666666666666654,5,3,9,1,4,1,2,0,2,2,2,3
 22500095,NOP,SAS,77.6,79.6,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Zion Williamson')",1.6333333333333335,5,6,4,2,0,2,0,1,2,2,1,3
-22500095,NOP,SAS,78.0,81.4,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Zion Williamson')",3.9,4,10,8,4,4,0,2,1,3,0,3,3
 22500095,NOP,SAS,78.0,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.15,4,0,5,0,3,0,0,0,0,1,0,3
-22500095,NOP,SAS,78.4,79.6,"('Derik Queen', 'Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",0.0,2,0,0,0,0,0,0,0,0,0,0,3
+22500095,NOP,SAS,79.2,79.4,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",2.716666666666667,4,4,5,2,4,1,1,1,2,2,0,3
+22500095,NOP,SAS,79.0,79.4,"('Derik Queen', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",3.1833333333333327,2,12,4,5,2,2,0,2,1,2,3,3
+22500095,NOP,SAS,78.6,79.6,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Trey Murphy III')",0.3666666666666667,2,0,3,0,0,0,1,1,0,1,0,3
 22500095,NOP,SAS,79.2,81.0,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",0.0,2,0,0,0,0,0,0,0,0,0,0,3
 22500095,NOP,SAS,78.0,80.4,"('Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",3.466666666666667,2,11,6,4,1,3,1,0,0,1,1,3
-22500095,NOP,SAS,78.0,79.6,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",1.0833333333333337,2,1,3,2,2,0,0,0,0,0,1,3
-22500095,NOP,SAS,78.6,79.6,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Trey Murphy III')",0.3666666666666667,2,0,3,0,0,0,1,1,0,1,0,3
-22500095,NOP,SAS,78.6,80.2,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",5.216666666666665,3,7,15,6,5,3,5,2,1,1,1,3
-22500095,NOP,SAS,78.6,80.2,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",5.033333333333333,1,9,13,4,6,2,3,1,1,1,1,3
-22500095,NOP,SAS,77.4,79.8,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Jordan Poole', 'Zion Williamson')",0.0,3,0,0,0,0,0,0,0,0,0,0,3
-22500095,NOP,SAS,78.2,79.8,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Trey Murphy III', 'Zion Williamson')",2.483333333333333,3,7,2,3,3,1,1,1,0,0,1,3
-22500095,NOP,SAS,79.2,79.6,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",0.7333333333333333,3,0,0,1,1,0,0,0,0,0,1,3
+22500095,NOP,SAS,77.6,81.0,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",0.8333333333333335,2,0,2,1,2,0,1,0,1,0,1,3
 22500095,NOP,SAS,78.2,79.0,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III')",1.6833333333333336,3,4,6,2,1,0,2,1,1,0,1,3
+22500095,NOP,SAS,77.2,78.6,"('Jeremiah Fears', 'Jordan Hawkins', 'Jordan Poole', 'Trey Murphy III', 'Zion Williamson')",0.2333333333333333,1,2,0,0,0,1,0,0,0,0,0,3
+22500095,NOP,SAS,78.6,80.2,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",5.216666666666665,3,7,15,6,5,3,5,2,1,1,1,3
+22500095,NOP,SAS,77.6,79.8,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Jordan Poole')",1.8833333333333333,3,4,2,1,1,0,0,0,1,1,2,3
+22500095,NOP,SAS,79.2,79.6,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",0.7333333333333333,3,0,0,1,1,0,0,0,0,0,1,3
+22500095,NOP,SAS,77.4,79.8,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Jordan Poole', 'Zion Williamson')",0.0,3,0,0,0,0,0,0,0,0,0,0,3
 22500095,NOP,SAS,78.6,81.4,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Zion Williamson')",0.2166666666666666,4,0,3,0,1,0,1,0,0,0,0,3
-22500095,NOP,SAS,79.6,80.2,"('Derik Queen', 'Herbert Jones', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.1833333333333333,4,0,0,0,0,0,0,0,0,0,0,3
+22500095,NOP,SAS,78.2,80.2,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Trey Murphy III', 'Zion Williamson')",3.833333333333333,4,13,4,5,1,3,1,0,0,2,3,3
 22500095,NOP,SAS,79.0,79.4,"('Derik Queen', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
-22500095,NOP,SAS,77.4,79.8,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Jordan Poole', 'Zion Williamson')",2.7166666666666663,1,5,8,0,7,0,1,0,1,1,3,3
 22500095,NOP,SAS,77.6,79.2,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Jordan Poole')",1.7333333333333332,1,5,5,0,4,0,0,0,0,2,0,3
+22500095,NOP,SAS,78.6,80.2,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",5.033333333333333,1,9,13,4,6,2,3,1,1,1,1,3
 22500095,NOP,SAS,79.2,79.6,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",2.2833333333333337,1,6,4,2,1,3,1,1,1,0,2,3
-22500117,NOP,BOS,77.8,77.6,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",3.55,1,12,8,3,2,0,2,0,2,1,5,4
-22500117,NOP,BOS,78.6,77.6,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Yves Missi')",0.7166666666666667,1,2,1,1,0,1,0,0,0,0,1,4
-22500117,NOP,BOS,78.0,77.6,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",0.9166666666666669,1,2,3,0,0,1,0,1,0,0,0,4
-22500117,NOP,BOS,78.0,78.4,"('DeAndre Jordan', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",0.0,2,0,0,0,0,0,0,0,0,0,0,4
-22500117,NOP,BOS,79.2,78.6,"('DeAndre Jordan', 'Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Trey Murphy III')",3.0166666666666666,2,6,0,3,6,3,0,0,2,0,3,4
-22500117,NOP,BOS,79.6,78.2,"('DeAndre Jordan', 'Jeremiah Fears', 'Jordan Hawkins', 'Trey Murphy III', 'Yves Missi')",1.5666666666666664,2,0,5,1,4,0,2,0,0,1,0,4
-22500117,NOP,BOS,77.6,77.4,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",1.0666666666666669,1,3,3,0,3,1,0,0,0,2,0,4
-22500117,NOP,BOS,78.6,78.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",4.949999999999999,1,5,16,2,7,2,4,1,0,3,1,4
 22500117,NOP,BOS,78.0,77.4,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi')",0.8,1,2,3,1,0,0,1,0,0,0,1,4
-22500117,NOP,BOS,78.6,77.2,"('Jeremiah Fears', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy', 'Saddiq Bey')",0.0,4,0,0,0,0,0,0,0,0,0,0,4
-22500117,NOP,BOS,79.2,77.2,"('Jeremiah Fears', 'Karlo Matković', 'Micah Peavy', 'Saddiq Bey', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,4
-22500117,NOP,BOS,78.0,77.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.2666666666666666,4,0,3,1,1,0,0,1,0,3,0,4
-22500117,NOP,BOS,77.6,78.8,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,4
-22500117,NOP,BOS,78.2,78.4,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III')",3.4166666666666665,4,2,11,1,4,0,2,2,1,1,0,4
-22500117,NOP,BOS,78.0,77.2,"('Jeremiah Fears', 'Jordan Poole', 'Micah Peavy', 'Saddiq Bey', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,4
-22500117,NOP,BOS,78.0,76.6,"('Jeremiah Fears', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.15,2,1,1,0,0,0,0,0,0,1,0,4
-22500117,NOP,BOS,78.2,76.6,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.4,2,5,5,2,0,1,0,1,0,1,1,4
-22500117,NOP,BOS,79.4,78.2,"('DeAndre Jordan', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0,4
-22500117,NOP,BOS,78.0,77.8,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi')",1.2166666666666668,2,0,3,1,1,0,0,1,1,0,1,4
-22500117,NOP,BOS,76.6,76.6,"('Jeremiah Fears', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",0.0166666666666666,2,0,1,0,0,0,0,0,0,0,0,4
-22500117,NOP,BOS,78.8,77.4,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",4.616666666666666,3,10,8,2,5,4,1,2,1,1,1,4
-22500117,NOP,BOS,78.2,76.2,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.5333333333333333,3,3,0,1,0,0,0,0,0,0,0,4
-22500117,NOP,BOS,78.6,78.4,"('DeAndre Jordan', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey')",2.333333333333333,2,5,9,1,4,0,2,1,1,0,4,4
-22500117,NOP,BOS,79.4,78.2,"('DeAndre Jordan', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0,4
+22500117,NOP,BOS,77.6,77.4,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",1.0666666666666669,1,3,3,0,3,1,0,0,0,2,0,4
+22500117,NOP,BOS,78.0,77.6,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",0.9166666666666669,1,2,3,0,0,1,0,1,0,0,0,4
 22500117,NOP,BOS,78.0,76.4,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III', 'Yves Missi')",2.3,2,11,7,1,1,1,1,0,1,1,3,4
-22500117,NOP,BOS,77.2,78.0,"('Derik Queen', 'Jordan Hawkins', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",0.9333333333333332,3,2,2,0,1,1,0,0,0,1,0,4
-22500117,NOP,BOS,78.0,77.8,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",4.7333333333333325,3,5,10,5,7,2,3,2,1,1,1,4
+22500117,NOP,BOS,78.0,77.8,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi')",1.2166666666666668,2,0,3,1,1,0,0,1,1,0,1,4
+22500117,NOP,BOS,79.4,78.2,"('DeAndre Jordan', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0,4
+22500117,NOP,BOS,77.8,77.6,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",3.55,1,12,8,3,2,0,2,0,2,1,5,4
+22500117,NOP,BOS,78.6,78.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",4.949999999999999,1,5,16,2,7,2,4,1,0,3,1,4
+22500117,NOP,BOS,78.6,77.6,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Yves Missi')",0.7166666666666667,1,2,1,1,0,1,0,0,0,0,1,4
+22500117,NOP,BOS,79.2,77.2,"('Jeremiah Fears', 'Karlo Matković', 'Micah Peavy', 'Saddiq Bey', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,4
+22500117,NOP,BOS,78.6,77.2,"('Jeremiah Fears', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy', 'Saddiq Bey')",0.0,4,0,0,0,0,0,0,0,0,0,0,4
 22500117,NOP,BOS,77.8,78.4,"('DeAndre Jordan', 'Derik Queen', 'Jordan Hawkins', 'Jordan Poole', 'Jose Alvarado')",0.6333333333333333,4,3,0,1,1,0,0,0,0,0,1,4
+22500117,NOP,BOS,78.0,77.2,"('Jeremiah Fears', 'Jordan Poole', 'Micah Peavy', 'Saddiq Bey', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,4
 22500117,NOP,BOS,78.2,78.6,"('Bryce McGowens', 'Jeremiah Fears', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy')",3.2666666666666666,4,2,11,3,3,0,4,1,0,0,1,4
-22500117,NOP,BOS,78.2,78.8,"('DeAndre Jordan', 'Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado')",3.416666666666666,4,5,10,3,4,0,2,0,1,1,2,4
-22500117,NOP,BOS,78.4,77.4,"('Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,3,0,0,0,0,0,0,0,0,0,0,4
+22500117,NOP,BOS,78.0,77.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.2666666666666666,4,0,3,1,1,0,0,1,0,3,0,4
+22500117,NOP,BOS,76.6,76.6,"('Jeremiah Fears', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",0.0166666666666666,2,0,1,0,0,0,0,0,0,0,0,4
+22500117,NOP,BOS,78.6,78.4,"('DeAndre Jordan', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey')",2.333333333333333,2,5,9,1,4,0,2,1,1,0,4,4
+22500117,NOP,BOS,78.0,78.4,"('DeAndre Jordan', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",0.0,2,0,0,0,0,0,0,0,0,0,0,4
+22500117,NOP,BOS,79.6,78.2,"('DeAndre Jordan', 'Jeremiah Fears', 'Jordan Hawkins', 'Trey Murphy III', 'Yves Missi')",1.5666666666666664,2,0,5,1,4,0,2,0,0,1,0,4
+22500117,NOP,BOS,79.2,78.6,"('DeAndre Jordan', 'Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Trey Murphy III')",3.0166666666666666,2,6,0,3,6,3,0,0,2,0,3,4
 22500117,NOP,BOS,78.6,78.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",1.1833333333333331,3,4,2,2,0,0,1,0,0,2,0,4
+22500117,NOP,BOS,78.0,77.8,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",4.7333333333333325,3,5,10,5,7,2,3,2,1,1,1,4
+22500117,NOP,BOS,78.2,76.6,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.4,2,5,5,2,0,1,0,1,0,1,1,4
+22500117,NOP,BOS,78.0,76.6,"('Jeremiah Fears', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.15,2,1,1,0,0,0,0,0,0,1,0,4
+22500117,NOP,BOS,79.4,78.2,"('DeAndre Jordan', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0,4
 22500117,NOP,BOS,78.4,76.2,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi')",0.0,3,0,0,0,0,0,0,0,0,0,0,4
-22500134,NOP,DEN,80.0,78.8,"('DeAndre Jordan', 'Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
-22500134,NOP,DEN,78.0,79.6,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
+22500117,NOP,BOS,78.4,77.4,"('Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,3,0,0,0,0,0,0,0,0,0,0,4
+22500117,NOP,BOS,78.2,78.4,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III')",3.4166666666666665,4,2,11,1,4,0,2,2,1,1,0,4
+22500117,NOP,BOS,77.6,78.8,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,4
+22500117,NOP,BOS,78.2,78.8,"('DeAndre Jordan', 'Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado')",3.416666666666666,4,5,10,3,4,0,2,0,1,1,2,4
+22500117,NOP,BOS,78.2,76.2,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.5333333333333333,3,3,0,1,0,0,0,0,0,0,0,4
+22500117,NOP,BOS,77.2,78.0,"('Derik Queen', 'Jordan Hawkins', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",0.9333333333333332,3,2,2,0,1,1,0,0,0,1,0,4
+22500117,NOP,BOS,78.8,77.4,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",4.616666666666666,3,10,8,2,5,4,1,2,1,1,1,4
 22500134,NOP,DEN,79.4,78.8,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.833333333333333,1,4,3,0,2,1,1,0,2,1,0,5
-22500134,NOP,DEN,79.0,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
-22500134,NOP,DEN,79.6,78.6,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi')",3.25,2,6,7,1,1,1,3,2,2,0,2,5
+22500134,NOP,DEN,78.6,79.6,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Yves Missi')",2.0666666666666664,1,8,8,0,1,1,4,0,0,1,0,5
 22500134,NOP,DEN,79.2,79.6,"('DeAndre Jordan', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Yves Missi')",0.2833333333333333,1,0,2,0,0,0,0,1,0,0,0,5
 22500134,NOP,DEN,77.8,79.2,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",3.416666666666666,1,6,12,3,5,2,4,1,1,3,1,5
+22500134,NOP,DEN,79.6,78.6,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi')",3.25,2,6,7,1,1,1,3,2,2,0,2,5
 22500134,NOP,DEN,79.0,79.4,"('DeAndre Jordan', 'Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Zion Williamson')",4.4,1,7,9,6,2,1,2,2,0,1,1,5
-22500134,NOP,DEN,78.4,78.0,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.8333333333333333,4,5,13,0,3,1,3,0,0,1,0,5
-22500134,NOP,DEN,78.0,78.6,"('Bryce McGowens', 'Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Micah Peavy')",2.4166666666666665,4,4,2,4,4,1,1,0,1,1,2,5
-22500134,NOP,DEN,78.4,78.0,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Micah Peavy', 'Trey Murphy III')",1.6833333333333331,4,4,5,1,1,1,2,0,0,1,0,5
-22500134,NOP,DEN,79.4,78.6,"('Bryce McGowens', 'Derik Queen', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy')",3.699999999999999,4,9,6,4,5,1,1,1,2,0,4,5
-22500134,NOP,DEN,78.6,78.0,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,5
+22500134,NOP,DEN,78.0,79.6,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
+22500134,NOP,DEN,80.0,78.8,"('DeAndre Jordan', 'Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
 22500134,NOP,DEN,77.8,78.0,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",2.3666666666666667,4,8,4,2,2,0,2,0,1,0,3,5
+22500134,NOP,DEN,78.0,78.6,"('Bryce McGowens', 'Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Micah Peavy')",2.4166666666666665,4,4,2,4,4,1,1,0,1,1,2,5
+22500134,NOP,DEN,78.4,78.0,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.8333333333333333,4,5,13,0,3,1,3,0,0,1,0,5
+22500134,NOP,DEN,79.4,78.6,"('Bryce McGowens', 'Derik Queen', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy')",3.699999999999999,4,9,6,4,5,1,1,1,2,0,4,5
+22500134,NOP,DEN,78.4,78.0,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Micah Peavy', 'Trey Murphy III')",1.6833333333333331,4,4,5,1,1,1,2,0,0,1,0,5
+22500134,NOP,DEN,78.6,78.0,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,5
+22500134,NOP,DEN,77.8,78.6,"('DeAndre Jordan', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III', 'Zion Williamson')",3.65,2,2,10,4,6,0,3,2,1,1,2,5
+22500134,NOP,DEN,79.0,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",3.5,2,14,2,1,5,4,1,0,1,1,3,5
 22500134,NOP,DEN,76.8,79.4,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III')",0.0,2,0,0,0,0,0,0,0,0,0,0,5
 22500134,NOP,DEN,79.0,79.4,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",0.9333333333333336,2,0,0,4,1,0,0,0,0,1,0,5
-22500134,NOP,DEN,78.4,79.4,"('DeAndre Jordan', 'Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III')",0.6166666666666666,2,0,0,1,0,0,0,0,0,0,0,5
-22500134,NOP,DEN,79.0,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",3.5,2,14,2,1,5,4,1,0,1,1,3,5
 22500134,NOP,DEN,79.0,79.4,"('DeAndre Jordan', 'Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Zion Williamson')",3.3833333333333337,3,2,11,1,6,0,3,0,0,2,1,5
-22500134,NOP,DEN,78.8,79.4,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.4666666666666666,3,0,5,0,1,0,2,1,0,0,0,5
 22500134,NOP,DEN,78.2,79.4,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.866666666666667,3,0,10,0,4,0,3,0,0,0,0,5
-22500134,NOP,DEN,77.8,78.8,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",4.4,3,9,10,4,5,3,4,2,1,1,3,5
 22500134,NOP,DEN,79.4,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.8166666666666667,3,0,2,0,1,0,1,0,0,0,1,5
+22500134,NOP,DEN,78.8,79.4,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.4666666666666666,3,0,5,0,1,0,2,1,0,0,0,5
+22500134,NOP,DEN,77.8,78.8,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",4.4,3,9,10,4,5,3,4,2,1,1,3,5
 22500134,NOP,DEN,79.0,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",1.0666666666666669,3,0,1,0,1,0,0,1,2,0,1,5
 22500134,NOP,DEN,79.2,79.4,"('Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.05,2,0,0,0,0,0,0,0,0,0,0,5
-22500134,NOP,DEN,78.6,79.6,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Yves Missi')",2.0666666666666664,1,8,8,0,1,1,4,0,0,1,0,5
-22500134,NOP,DEN,77.8,78.6,"('DeAndre Jordan', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III', 'Zion Williamson')",3.65,2,2,10,4,6,0,3,2,1,1,2,5
-22500148,NOP,OKC,77.6,78.2,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Saddiq Bey')",1.9166666666666667,1,2,6,1,1,1,1,2,0,2,0,6
-22500148,NOP,OKC,79.2,78.2,"('Herbert Jones', 'Jordan Poole', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",0.0,1,0,0,0,0,0,0,0,0,0,0,6
+22500134,NOP,DEN,79.0,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
+22500134,NOP,DEN,78.4,79.4,"('DeAndre Jordan', 'Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III')",0.6166666666666666,2,0,0,1,0,0,0,0,0,0,0,5
 22500148,NOP,OKC,80.2,78.2,"('Herbert Jones', 'Kevon Looney', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.0,1,0,0,0,0,0,0,0,0,0,0,6
+22500148,NOP,OKC,79.2,78.2,"('Herbert Jones', 'Jordan Poole', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",0.0,1,0,0,0,0,0,0,0,0,0,0,6
 22500148,NOP,OKC,80.6,78.2,"('Herbert Jones', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0,6
-22500148,NOP,OKC,79.0,78.2,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",7.449999999999997,1,18,27,5,6,5,9,3,0,3,1,6
+22500148,NOP,OKC,77.6,78.2,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Saddiq Bey')",1.9166666666666667,1,2,6,1,1,1,1,2,0,2,0,6
 22500148,NOP,OKC,77.8,78.2,"('Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",2.6333333333333333,1,2,6,2,3,1,2,0,1,0,0,6
-22500148,NOP,OKC,78.8,78.4,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.4666666666666667,2,1,0,0,0,0,0,0,0,0,1,6
-22500148,NOP,OKC,78.4,77.6,"('Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.65,2,0,3,1,1,0,0,0,0,1,0,6
-22500148,NOP,OKC,77.2,78.4,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",2.733333333333333,2,7,10,0,4,2,4,0,2,1,3,6
-22500148,NOP,OKC,78.2,78.4,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0,6
-22500148,NOP,OKC,79.0,78.8,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",0.0,2,0,0,0,0,0,0,0,0,0,0,6
-22500148,NOP,OKC,77.4,79.0,"('Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Trey Murphy III', 'Zion Williamson')",2.333333333333333,2,5,5,1,3,2,2,0,0,0,1,6
-22500148,NOP,OKC,79.0,79.0,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",1.4833333333333336,2,4,2,2,0,2,0,2,1,1,0,6
+22500148,NOP,OKC,79.0,78.2,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",7.449999999999997,1,18,27,5,6,5,9,3,0,3,1,6
 22500148,NOP,OKC,79.2,79.2,"('Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",1.7166666666666666,2,5,7,1,1,1,1,1,0,2,1,6
 22500148,NOP,OKC,78.6,78.8,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Yves Missi')",2.6166666666666667,2,8,9,3,0,2,2,1,1,2,1,6
-22500148,NOP,OKC,77.6,78.2,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Saddiq Bey')",3.45,3,9,7,4,5,0,0,0,1,2,1,6
-22500148,NOP,OKC,79.2,79.0,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",1.1166666666666667,3,2,8,0,2,0,1,0,0,0,1,6
-22500148,NOP,OKC,78.0,79.0,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi')",0.0,3,0,0,0,0,0,0,0,0,0,0,6
-22500148,NOP,OKC,79.0,79.0,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",5.083333333333331,3,13,8,8,5,3,2,1,2,4,2,6
-22500148,NOP,OKC,77.8,76.4,"('Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",0.9833333333333334,3,3,6,0,1,1,0,0,0,1,0,6
-22500148,NOP,OKC,79.2,78.8,"('Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",1.3666666666666667,3,3,4,0,0,1,1,2,0,1,1,6
+22500148,NOP,OKC,79.0,78.8,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",0.0,2,0,0,0,0,0,0,0,0,0,0,6
+22500148,NOP,OKC,78.2,78.4,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0,6
+22500148,NOP,OKC,77.4,79.0,"('Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Trey Murphy III', 'Zion Williamson')",2.333333333333333,2,5,5,1,3,2,2,0,0,0,1,6
+22500148,NOP,OKC,77.2,78.4,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",2.733333333333333,2,7,10,0,4,2,4,0,2,1,3,6
+22500148,NOP,OKC,78.8,78.4,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.4666666666666667,2,1,0,0,0,0,0,0,0,0,1,6
+22500148,NOP,OKC,78.4,77.6,"('Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.65,2,0,3,1,1,0,0,0,0,1,0,6
+22500148,NOP,OKC,79.0,79.0,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",1.4833333333333336,2,4,2,2,0,2,0,2,1,1,0,6
 22500148,NOP,OKC,80.0,78.8,"('Herbert Jones', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.0,3,0,0,0,0,0,0,0,0,0,0,6
-22500148,NOP,OKC,78.8,77.8,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy')",3.766666666666666,4,7,8,3,4,2,3,1,2,0,2,6
-22500148,NOP,OKC,78.0,77.6,"('Jeremiah Fears', 'Jordan Poole', 'Kevon Looney', 'Trey Murphy III', 'Zion Williamson')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
-22500148,NOP,OKC,79.2,77.8,"('Herbert Jones', 'Jeremiah Fears', 'Karlo Matković', 'Kevon Looney', 'Micah Peavy')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
-22500148,NOP,OKC,79.4,77.8,"('Bryce McGowens', 'Derik Queen', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy')",3.083333333333333,4,9,7,3,1,2,2,0,0,0,1,6
-22500148,NOP,OKC,77.4,77.6,"('Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Trey Murphy III', 'Zion Williamson')",4.116666666666666,4,8,8,4,5,1,2,1,1,1,6,6
-22500148,NOP,OKC,78.8,77.8,"('Herbert Jones', 'Jeremiah Fears', 'Kevon Looney', 'Micah Peavy', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
+22500148,NOP,OKC,78.0,79.0,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi')",0.0,3,0,0,0,0,0,0,0,0,0,0,6
+22500148,NOP,OKC,79.2,78.8,"('Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",1.3666666666666667,3,3,4,0,0,1,1,2,0,1,1,6
+22500148,NOP,OKC,79.2,79.0,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",1.1166666666666667,3,2,8,0,2,0,1,0,0,0,1,6
+22500148,NOP,OKC,77.6,78.2,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Saddiq Bey')",3.45,3,9,7,4,5,0,0,0,1,2,1,6
+22500148,NOP,OKC,77.8,76.4,"('Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",0.9833333333333334,3,3,6,0,1,1,0,0,0,1,0,6
+22500148,NOP,OKC,79.0,79.0,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",5.083333333333331,3,13,8,8,5,3,2,1,2,4,2,6
 22500148,NOP,OKC,78.2,77.8,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Kevon Looney', 'Trey Murphy III')",1.0333333333333334,4,0,6,0,0,0,1,2,0,1,0,6
 22500148,NOP,OKC,78.4,77.8,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
-0022500085,NOP,MEM,78.6,79.0,"('Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500085,NOP,MEM,80.8,78.6,"('Hunter Dickinson', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500085,NOP,MEM,79.6,78.6,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",2.5666666666666664,1,11,3,4,0,2,0,0,2,0,1
-0022500085,NOP,MEM,79.2,79.8,"('Herbert Jones', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",4.483333333333333,1,13,6,3,3,4,1,1,3,2,4
-0022500085,NOP,MEM,79.0,79.0,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",0.23333333333333334,1,1,0,0,0,0,0,0,0,0,0
-0022500085,NOP,MEM,79.0,79.0,"('Hunter Dickinson', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Zion Williamson')",3.6,1,5,15,2,4,1,3,2,0,3,2
-0022500085,NOP,MEM,79.6,78.6,"('Hunter Dickinson', 'Jordan Hawkins', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.1166666666666667,1,0,3,1,0,0,1,1,0,1,0
-0022500085,NOP,MEM,80.0,78.6,"('Hunter Dickinson', 'Jordan Hawkins', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500085,NOP,MEM,79.0,77.6,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Yves Missi')",0.7,2,1,3,0,1,0,1,0,0,2,0
-0022500085,NOP,MEM,80.0,78.8,"('Derik Queen', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.5833333333333333,2,4,5,2,3,0,2,0,1,0,1
-0022500085,NOP,MEM,79.8,77.0,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",0.3833333333333333,2,0,2,0,1,0,0,0,0,1,0
-0022500085,NOP,MEM,78.4,77.6,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Yves Missi', 'Zion Williamson')",2.883333333333333,2,10,6,3,2,2,0,0,0,1,2
-0022500085,NOP,MEM,79.2,76.8,"('Derik Queen', 'Herbert Jones', 'Jordan Hawkins', 'Jordan Poole', 'Yves Missi')",0.7666666666666666,2,3,0,2,1,0,0,0,1,0,2
-0022500085,NOP,MEM,78.6,79.4,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",4.533333333333331,2,14,8,5,5,2,0,1,5,3,3
-0022500085,NOP,MEM,79.2,78.8,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.1500000000000001,2,5,5,0,1,0,1,0,0,1,2
-0022500085,NOP,MEM,79.6,78.6,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.7833333333333333,3,0,4,1,2,0,1,0,0,1,1
-0022500085,NOP,MEM,79.2,79.0,"('Herbert Jones', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",5.25,3,11,15,6,2,1,2,3,2,2,3
-0022500085,NOP,MEM,78.2,79.0,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Zion Williamson')",3.999999999999999,3,11,13,5,4,1,2,2,1,3,3
-0022500085,NOP,MEM,79.0,78.6,"('Derik Queen', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.0,3,0,0,0,0,0,0,0,0,0,0
-0022500085,NOP,MEM,79.2,78.6,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.9666666666666666,3,0,9,1,2,0,2,1,0,1,0
-0022500085,NOP,MEM,78.8,78.6,"('Derik Queen', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.0,3,0,0,0,0,0,0,0,0,0,0
-0022500085,NOP,MEM,79.4,77.0,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.4166666666666665,4,4,5,0,0,1,1,0,1,1,0
-0022500085,NOP,MEM,78.8,77.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Yves Missi')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500085,NOP,MEM,79.6,77.8,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",2.0999999999999996,4,7,0,5,0,2,0,0,0,1,2
-0022500085,NOP,MEM,78.0,77.2,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Zion Williamson')",3.9499999999999997,4,11,9,3,2,3,2,2,0,2,1
-0022500085,NOP,MEM,78.6,78.2,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",3.0,4,6,7,2,4,1,0,0,0,3,1
-0022500085,NOP,MEM,77.8,78.6,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",1.5333333333333332,4,5,10,2,2,0,1,1,1,3,1
-0022500085,NOP,MEM,78.4,77.2,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500095,NOP,SAS,77.2,78.6,"('Jeremiah Fears', 'Jordan Hawkins', 'Jordan Poole', 'Trey Murphy III', 'Zion Williamson')",0.23333333333333334,1,2,0,0,0,1,0,0,0,0,0
-0022500095,NOP,SAS,78.6,79.6,"('Derik Queen', 'Herbert Jones', 'Jordan Hawkins', 'Jordan Poole', 'Saddiq Bey')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500095,NOP,SAS,77.6,79.2,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Jordan Poole')",1.7333333333333332,1,5,5,0,4,0,0,0,0,2,0
-0022500095,NOP,SAS,78.6,80.2,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",5.033333333333333,1,9,13,4,6,2,3,1,1,1,1
-0022500095,NOP,SAS,79.2,79.6,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",2.2833333333333337,1,6,4,2,1,3,1,1,1,0,2
-0022500095,NOP,SAS,77.4,79.8,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Jordan Poole', 'Zion Williamson')",2.7166666666666663,1,5,8,0,7,0,1,0,1,1,3
-0022500095,NOP,SAS,78.6,79.6,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Trey Murphy III')",0.3666666666666667,2,0,3,0,0,0,1,1,0,1,0
-0022500095,NOP,SAS,77.6,79.2,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III')",1.5499999999999998,2,7,5,0,2,2,1,0,1,1,3
-0022500095,NOP,SAS,79.0,79.4,"('Derik Queen', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",3.1833333333333327,2,12,4,5,2,2,0,2,1,2,3
-0022500095,NOP,SAS,78.6,81.0,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",1.5166666666666666,2,0,4,0,4,0,1,1,0,2,0
-0022500095,NOP,SAS,79.2,81.0,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500095,NOP,SAS,78.0,79.6,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",1.0833333333333335,2,1,3,2,2,0,0,0,0,0,1
-0022500095,NOP,SAS,78.4,79.6,"('Derik Queen', 'Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500095,NOP,SAS,77.6,81.0,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",0.8333333333333335,2,0,2,1,2,0,1,0,1,0,1
-0022500095,NOP,SAS,78.0,80.4,"('Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",3.466666666666667,2,11,6,4,1,3,1,0,0,1,1
-0022500095,NOP,SAS,77.6,79.8,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Jordan Poole')",1.8833333333333333,3,4,2,1,1,0,0,0,1,1,2
-0022500095,NOP,SAS,78.2,79.8,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Trey Murphy III', 'Zion Williamson')",2.483333333333333,3,7,2,3,3,1,1,1,0,0,1
-0022500095,NOP,SAS,78.6,80.2,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",5.216666666666665,3,7,15,6,5,3,5,2,1,1,1
-0022500095,NOP,SAS,79.2,79.6,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",0.7333333333333333,3,0,0,1,1,0,0,0,0,0,1
-0022500095,NOP,SAS,78.2,79.0,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III')",1.6833333333333336,3,4,6,2,1,0,2,1,1,0,1
-0022500095,NOP,SAS,77.4,79.8,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Jordan Poole', 'Zion Williamson')",0.0,3,0,0,0,0,0,0,0,0,0,0
-0022500095,NOP,SAS,78.0,81.4,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Zion Williamson')",3.9,4,10,8,4,4,0,2,1,3,0,3
-0022500095,NOP,SAS,78.6,81.4,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Zion Williamson')",0.21666666666666665,4,0,3,0,1,0,1,0,0,0,0
-0022500095,NOP,SAS,79.0,79.4,"('Derik Queen', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500095,NOP,SAS,78.2,80.2,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Trey Murphy III', 'Zion Williamson')",3.833333333333333,4,13,4,5,1,3,1,0,0,2,3
-0022500095,NOP,SAS,79.2,79.4,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",2.716666666666667,4,4,5,2,4,1,1,1,2,2,0
-0022500095,NOP,SAS,79.6,80.2,"('Derik Queen', 'Herbert Jones', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.18333333333333332,4,0,0,0,0,0,0,0,0,0,0
-0022500095,NOP,SAS,78.0,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.15,4,0,5,0,3,0,0,0,0,1,0
-0022500095,NOP,SAS,78.0,79.6,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Zion Williamson')",3.3666666666666654,5,3,9,1,4,1,2,0,2,2,2
-0022500095,NOP,SAS,77.6,79.6,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Zion Williamson')",1.6333333333333337,5,6,4,2,0,2,0,1,2,2,1
-0022500117,NOP,BOS,78.0,77.4,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi')",0.8,1,2,3,1,0,0,1,0,0,0,1
-0022500117,NOP,BOS,78.6,77.6,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Yves Missi')",0.7166666666666667,1,2,1,1,0,1,0,0,0,0,1
-0022500117,NOP,BOS,78.0,77.6,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",0.9166666666666669,1,2,3,0,0,1,0,1,0,0,0
-0022500117,NOP,BOS,78.6,78.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",4.949999999999999,1,5,16,2,7,2,4,1,0,3,1
-0022500117,NOP,BOS,77.6,77.4,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",1.0666666666666669,1,3,3,0,3,1,0,0,0,2,0
-0022500117,NOP,BOS,77.8,77.6,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",3.55,1,12,8,3,2,0,2,0,2,1,5
-0022500117,NOP,BOS,78.0,77.8,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi')",1.2166666666666668,2,0,3,1,1,0,0,1,1,0,1
-0022500117,NOP,BOS,78.0,76.4,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III', 'Yves Missi')",2.3,2,11,7,1,1,1,1,0,1,1,3
-0022500117,NOP,BOS,79.4,78.2,"('DeAndre Jordan', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500117,NOP,BOS,79.6,78.2,"('DeAndre Jordan', 'Jeremiah Fears', 'Jordan Hawkins', 'Trey Murphy III', 'Yves Missi')",1.5666666666666664,2,0,5,1,4,0,2,0,0,1,0
-0022500117,NOP,BOS,79.4,78.2,"('DeAndre Jordan', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500117,NOP,BOS,76.6,76.6,"('Jeremiah Fears', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",0.016666666666666666,2,0,1,0,0,0,0,0,0,0,0
-0022500117,NOP,BOS,79.2,78.6,"('DeAndre Jordan', 'Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Trey Murphy III')",3.0166666666666666,2,6,0,3,6,3,0,0,2,0,3
-0022500117,NOP,BOS,78.0,78.4,"('DeAndre Jordan', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500117,NOP,BOS,78.6,78.4,"('DeAndre Jordan', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey')",2.3333333333333335,2,5,9,1,4,0,2,1,1,0,4
-0022500117,NOP,BOS,78.0,76.6,"('Jeremiah Fears', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.15,2,1,1,0,0,0,0,0,0,1,0
-0022500117,NOP,BOS,78.2,76.6,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.4,2,5,5,2,0,1,0,1,0,1,1
-0022500117,NOP,BOS,77.2,78.0,"('Derik Queen', 'Jordan Hawkins', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",0.9333333333333333,3,2,2,0,1,1,0,0,0,1,0
-0022500117,NOP,BOS,78.8,77.4,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",4.616666666666666,3,10,8,2,5,4,1,2,1,1,1
-0022500117,NOP,BOS,78.4,76.2,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi')",0.0,3,0,0,0,0,0,0,0,0,0,0
-0022500117,NOP,BOS,78.0,77.8,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",4.7333333333333325,3,5,10,5,7,2,3,2,1,1,1
-0022500117,NOP,BOS,78.4,77.4,"('Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,3,0,0,0,0,0,0,0,0,0,0
-0022500117,NOP,BOS,78.6,78.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",1.1833333333333331,3,4,2,2,0,0,1,0,0,2,0
-0022500117,NOP,BOS,78.2,76.2,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.5333333333333333,3,3,0,1,0,0,0,0,0,0,0
-0022500117,NOP,BOS,79.2,77.2,"('Jeremiah Fears', 'Karlo Matković', 'Micah Peavy', 'Saddiq Bey', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500117,NOP,BOS,78.2,78.6,"('Bryce McGowens', 'Jeremiah Fears', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy')",3.2666666666666666,4,2,11,3,3,0,4,1,0,0,1
-0022500117,NOP,BOS,78.2,78.8,"('DeAndre Jordan', 'Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado')",3.416666666666666,4,5,10,3,4,0,2,0,1,1,2
-0022500117,NOP,BOS,77.6,78.8,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500117,NOP,BOS,78.6,77.2,"('Jeremiah Fears', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy', 'Saddiq Bey')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500117,NOP,BOS,77.8,78.4,"('DeAndre Jordan', 'Derik Queen', 'Jordan Hawkins', 'Jordan Poole', 'Jose Alvarado')",0.6333333333333333,4,3,0,1,1,0,0,0,0,0,1
-0022500117,NOP,BOS,78.0,77.2,"('Jeremiah Fears', 'Jordan Poole', 'Micah Peavy', 'Saddiq Bey', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500117,NOP,BOS,78.2,78.4,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III')",3.4166666666666665,4,2,11,1,4,0,2,2,1,1,0
-0022500117,NOP,BOS,78.0,77.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.2666666666666666,4,0,3,1,1,0,0,1,0,3,0
-0022500134,NOP,DEN,79.4,78.8,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.833333333333333,1,4,3,0,2,1,1,0,2,1,0
-0022500134,NOP,DEN,78.0,79.6,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500134,NOP,DEN,79.2,79.6,"('DeAndre Jordan', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Yves Missi')",0.2833333333333333,1,0,2,0,0,0,0,1,0,0,0
-0022500134,NOP,DEN,77.8,79.2,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",3.416666666666666,1,6,12,3,5,2,4,1,1,3,1
-0022500134,NOP,DEN,80.0,78.8,"('DeAndre Jordan', 'Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500134,NOP,DEN,78.6,79.6,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Yves Missi')",2.0666666666666664,1,8,8,0,1,1,4,0,0,1,0
-0022500134,NOP,DEN,79.0,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500134,NOP,DEN,79.0,79.4,"('DeAndre Jordan', 'Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Zion Williamson')",4.4,1,7,9,6,2,1,2,2,0,1,1
-0022500134,NOP,DEN,79.6,78.6,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi')",3.25,2,6,7,1,1,1,3,2,2,0,2
-0022500134,NOP,DEN,79.2,79.4,"('Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.05,2,0,0,0,0,0,0,0,0,0,0
-0022500134,NOP,DEN,76.8,79.4,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500134,NOP,DEN,78.4,79.4,"('DeAndre Jordan', 'Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III')",0.6166666666666666,2,0,0,1,0,0,0,0,0,0,0
-0022500134,NOP,DEN,79.0,79.4,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",0.9333333333333335,2,0,0,4,1,0,0,0,0,1,0
-0022500134,NOP,DEN,77.8,78.6,"('DeAndre Jordan', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III', 'Zion Williamson')",3.65,2,2,10,4,6,0,3,2,1,1,2
-0022500134,NOP,DEN,79.0,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",3.5,2,14,2,1,5,4,1,0,1,1,3
-0022500134,NOP,DEN,79.4,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.8166666666666667,3,0,2,0,1,0,1,0,0,0,1
-0022500134,NOP,DEN,77.8,78.8,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",4.3999999999999995,3,9,10,4,5,3,4,2,1,1,3
-0022500134,NOP,DEN,78.8,79.4,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.4666666666666666,3,0,5,0,1,0,2,1,0,0,0
-0022500134,NOP,DEN,79.0,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",1.0666666666666667,3,0,1,0,1,0,0,1,2,0,1
-0022500134,NOP,DEN,79.0,79.4,"('DeAndre Jordan', 'Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Zion Williamson')",3.3833333333333337,3,2,11,1,6,0,3,0,0,2,1
-0022500134,NOP,DEN,78.2,79.4,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.866666666666667,3,0,10,0,4,0,3,0,0,0,0
-0022500134,NOP,DEN,78.0,78.6,"('Bryce McGowens', 'Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Micah Peavy')",2.4166666666666665,4,4,2,4,4,1,1,0,1,1,2
-0022500134,NOP,DEN,78.4,78.0,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Micah Peavy', 'Trey Murphy III')",1.6833333333333333,4,4,5,1,1,1,2,0,0,1,0
-0022500134,NOP,DEN,78.6,78.0,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500134,NOP,DEN,78.4,78.0,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",1.8333333333333335,4,5,13,0,3,1,3,0,0,1,0
-0022500134,NOP,DEN,77.8,78.0,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",2.3666666666666667,4,8,4,2,2,0,2,0,1,0,3
-0022500134,NOP,DEN,79.4,78.6,"('Bryce McGowens', 'Derik Queen', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy')",3.699999999999999,4,9,6,4,5,1,1,1,2,0,4
-0022500027,NOP,LAC,79.4,77.6,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",1.8499999999999999,1,8,5,2,2,3,1,0,0,0,0
-0022500027,NOP,LAC,79.6,77.6,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500027,NOP,LAC,78.4,78.2,"('Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",0.15,1,1,0,0,0,0,0,0,0,0,0
-0022500027,NOP,LAC,79.0,78.6,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",5.399999999999999,1,12,10,6,5,5,3,3,2,0,0
-0022500027,NOP,LAC,78.0,78.2,"('Derik Queen', 'Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Zion Williamson')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500027,NOP,LAC,77.4,78.2,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Zion Williamson')",3.083333333333333,1,4,9,2,1,1,2,2,0,2,1
-0022500027,NOP,LAC,77.8,78.0,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",1.5166666666666668,1,3,2,1,1,0,1,0,1,0,0
-0022500027,NOP,LAC,78.2,77.6,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500027,NOP,LAC,80.2,79.6,"('Jordan Poole', 'Karlo Matković', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500027,NOP,LAC,77.4,79.6,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Karlo Matković', 'Zion Williamson')",3.466666666666667,2,3,7,3,6,1,2,1,0,4,2
-0022500027,NOP,LAC,78.6,79.6,"('Jordan Poole', 'Jose Alvarado', 'Karlo Matković', 'Trey Murphy III', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500027,NOP,LAC,79.2,78.4,"('Herbert Jones', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",2.5166666666666666,2,8,13,2,1,2,1,3,1,0,1
-0022500027,NOP,LAC,78.8,78.4,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",5.133333333333332,2,18,17,4,4,5,3,0,1,3,2
-0022500027,NOP,LAC,78.4,78.4,"('Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.8833333333333333,2,2,4,0,1,1,0,0,0,1,0
-0022500027,NOP,LAC,78.4,79.6,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Karlo Matković', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500027,NOP,LAC,79.4,77.4,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",2.15,3,0,5,2,2,0,2,1,0,1,0
-0022500027,NOP,LAC,77.4,77.4,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",0.0,3,0,0,0,0,0,0,0,0,0,0
-0022500027,NOP,LAC,78.8,77.4,"('Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,3,0,0,0,0,0,0,0,0,0,0
-0022500027,NOP,LAC,79.0,78.6,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",5.649999999999999,3,12,13,6,6,3,4,1,2,0,2
-0022500027,NOP,LAC,77.4,78.2,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Zion Williamson')",3.316666666666666,3,11,5,5,2,0,1,2,1,0,3
-0022500027,NOP,LAC,77.6,78.0,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",0.8833333333333333,3,2,4,0,0,0,2,0,0,1,1
-0022500027,NOP,LAC,77.6,79.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Zion Williamson')",0.65,4,2,0,1,0,0,0,0,0,0,1
-0022500027,NOP,LAC,77.4,79.2,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III', 'Zion Williamson')",0.95,4,2,5,0,1,0,0,0,0,0,0
-0022500027,NOP,LAC,77.6,78.4,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Zion Williamson')",3.4000000000000004,4,13,14,1,1,3,2,0,0,2,3
-0022500027,NOP,LAC,78.4,78.4,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",0.25,4,2,2,0,0,0,1,0,1,0,0
-0022500027,NOP,LAC,76.8,79.2,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500027,NOP,LAC,78.2,79.2,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500027,NOP,LAC,78.6,79.2,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi')",3.8499999999999996,4,11,5,3,3,3,1,1,2,2,1
-0022500027,NOP,LAC,77.4,79.4,"('Derik Queen', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Zion Williamson')",2.9,4,10,6,5,1,1,2,1,1,2,2
-0022500148,NOP,OKC,77.8,78.2,"('Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",2.6333333333333333,1,2,6,2,3,1,2,0,1,0,0
-0022500148,NOP,OKC,80.2,78.2,"('Herbert Jones', 'Kevon Looney', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500148,NOP,OKC,77.6,78.2,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Saddiq Bey')",1.9166666666666667,1,2,6,1,1,1,1,2,0,2,0
-0022500148,NOP,OKC,80.6,78.2,"('Herbert Jones', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500148,NOP,OKC,79.2,78.2,"('Herbert Jones', 'Jordan Poole', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",0.0,1,0,0,0,0,0,0,0,0,0,0
-0022500148,NOP,OKC,79.0,78.2,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",7.449999999999997,1,18,27,5,6,5,9,3,0,3,1
-0022500148,NOP,OKC,77.2,78.4,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Zion Williamson')",2.733333333333333,2,7,10,0,4,2,4,0,2,1,3
-0022500148,NOP,OKC,77.4,79.0,"('Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Trey Murphy III', 'Zion Williamson')",2.3333333333333335,2,5,5,1,3,2,2,0,0,0,1
-0022500148,NOP,OKC,79.0,78.8,"('Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500148,NOP,OKC,79.2,79.2,"('Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",1.7166666666666666,2,5,7,1,1,1,1,1,0,2,1
-0022500148,NOP,OKC,78.8,78.4,"('Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.4666666666666667,2,1,0,0,0,0,0,0,0,0,1
-0022500148,NOP,OKC,78.4,77.6,"('Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.65,2,0,3,1,1,0,0,0,0,1,0
-0022500148,NOP,OKC,78.6,78.8,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Yves Missi')",2.6166666666666667,2,8,9,3,0,2,2,1,1,2,1
-0022500148,NOP,OKC,79.0,79.0,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",1.4833333333333336,2,4,2,2,0,2,0,2,1,1,0
-0022500148,NOP,OKC,78.2,78.4,"('Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi')",0.0,2,0,0,0,0,0,0,0,0,0,0
-0022500148,NOP,OKC,78.0,79.0,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey', 'Yves Missi')",0.0,3,0,0,0,0,0,0,0,0,0,0
-0022500148,NOP,OKC,80.0,78.8,"('Herbert Jones', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",0.0,3,0,0,0,0,0,0,0,0,0,0
-0022500148,NOP,OKC,77.8,76.4,"('Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",0.9833333333333334,3,3,6,0,1,1,0,0,0,1,0
-0022500148,NOP,OKC,77.6,78.2,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Saddiq Bey')",3.45,3,9,7,4,5,0,0,0,1,2,1
-0022500148,NOP,OKC,79.2,78.8,"('Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",1.3666666666666667,3,3,4,0,0,1,1,2,0,1,1
-0022500148,NOP,OKC,79.2,79.0,"('Herbert Jones', 'Jordan Poole', 'Saddiq Bey', 'Yves Missi', 'Zion Williamson')",1.1166666666666667,3,2,8,0,2,0,1,0,0,0,1
-0022500148,NOP,OKC,79.0,79.0,"('Herbert Jones', 'Jeremiah Fears', 'Trey Murphy III', 'Yves Missi', 'Zion Williamson')",5.083333333333331,3,13,8,8,5,3,2,1,2,4,2
-0022500148,NOP,OKC,79.2,77.8,"('Herbert Jones', 'Jeremiah Fears', 'Karlo Matković', 'Kevon Looney', 'Micah Peavy')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500148,NOP,OKC,77.4,77.6,"('Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Trey Murphy III', 'Zion Williamson')",4.116666666666666,4,8,8,4,5,1,2,1,1,1,6
-0022500148,NOP,OKC,78.0,77.6,"('Jeremiah Fears', 'Jordan Poole', 'Kevon Looney', 'Trey Murphy III', 'Zion Williamson')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500148,NOP,OKC,78.2,77.8,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Kevon Looney', 'Trey Murphy III')",1.0333333333333334,4,0,6,0,0,0,1,2,0,1,0
-0022500148,NOP,OKC,78.8,77.8,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy')",3.766666666666666,4,7,8,3,4,2,3,1,2,0,2
-0022500148,NOP,OKC,78.8,77.8,"('Herbert Jones', 'Jeremiah Fears', 'Kevon Looney', 'Micah Peavy', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500148,NOP,OKC,78.4,77.8,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy')",0.0,4,0,0,0,0,0,0,0,0,0,0
-0022500148,NOP,OKC,79.4,77.8,"('Bryce McGowens', 'Derik Queen', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy')",3.083333333333333,4,9,7,3,1,2,2,0,0,0,1
+22500148,NOP,OKC,78.0,77.6,"('Jeremiah Fears', 'Jordan Poole', 'Kevon Looney', 'Trey Murphy III', 'Zion Williamson')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
+22500148,NOP,OKC,79.4,77.8,"('Bryce McGowens', 'Derik Queen', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy')",3.083333333333333,4,9,7,3,1,2,2,0,0,0,1,6
+22500148,NOP,OKC,78.8,77.8,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy')",3.766666666666666,4,7,8,3,4,2,3,1,2,0,2,6
+22500148,NOP,OKC,77.4,77.6,"('Jordan Poole', 'Jose Alvarado', 'Kevon Looney', 'Trey Murphy III', 'Zion Williamson')",4.116666666666666,4,8,8,4,5,1,2,1,1,1,6,6
+22500148,NOP,OKC,79.2,77.8,"('Herbert Jones', 'Jeremiah Fears', 'Karlo Matković', 'Kevon Looney', 'Micah Peavy')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
+22500148,NOP,OKC,78.8,77.8,"('Herbert Jones', 'Jeremiah Fears', 'Kevon Looney', 'Micah Peavy', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
+22500168,NOP,CHA,78.4,78.0,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Karlo Matković', 'Trey Murphy III')",1.8166666666666664,1,8,2,1,0,1,0,0,1,0,1,7
+22500168,NOP,CHA,78.2,78.8,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Kevon Looney', 'Trey Murphy III')",4.8166666666666655,1,8,17,1,6,3,5,1,3,0,0,7
+22500168,NOP,CHA,78.0,77.6,"('Jordan Poole', 'Jose Alvarado', 'Karlo Matković', 'Saddiq Bey', 'Trey Murphy III')",0.35,1,2,0,1,0,1,0,0,1,0,1,7
+22500168,NOP,CHA,77.8,78.8,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Karlo Matković', 'Saddiq Bey')",2.1166666666666667,1,10,4,1,1,1,1,0,0,1,2,7
+22500168,NOP,CHA,78.6,77.6,"('Jeremiah Fears', 'Jordan Poole', 'Karlo Matković', 'Saddiq Bey', 'Trey Murphy III')",0.6666666666666666,1,0,1,0,0,0,0,2,0,2,1,7
+22500168,NOP,CHA,78.0,78.8,"('Herbert Jones', 'Jordan Hawkins', 'Jose Alvarado', 'Karlo Matković', 'Saddiq Bey')",2.2333333333333334,1,5,6,2,2,2,0,0,0,2,1,7
+22500168,NOP,CHA,78.2,78.4,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Kevon Looney', 'Trey Murphy III')",4.266666666666666,2,11,12,4,5,3,2,2,1,3,2,7
+22500168,NOP,CHA,79.0,78.4,"('Herbert Jones', 'Jeremiah Fears', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",0.35,2,0,1,0,0,0,0,0,0,1,0,7
+22500168,NOP,CHA,78.4,77.6,"('Derik Queen', 'Jeremiah Fears', 'Jordan Poole', 'Saddiq Bey', 'Trey Murphy III')",0.0,2,0,0,0,0,0,0,0,0,0,0,7
+22500168,NOP,CHA,78.0,77.6,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",5.966666666666664,2,16,12,5,9,5,3,1,3,4,1,7
+22500168,NOP,CHA,78.2,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Kevon Looney', 'Saddiq Bey')",1.4166666666666667,2,1,4,1,3,0,0,0,0,1,1,7
+22500168,NOP,CHA,78.6,77.6,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Saddiq Bey', 'Trey Murphy III')",0.0,2,0,0,0,0,0,0,0,0,0,0,7
+22500168,NOP,CHA,78.2,77.6,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Trey Murphy III')",0.0,2,0,0,0,0,0,0,0,0,0,0,7
+22500168,NOP,CHA,78.2,78.8,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Poole', 'Kevon Looney', 'Trey Murphy III')",4.116666666666667,3,2,11,2,7,0,1,1,1,3,1,7
+22500168,NOP,CHA,77.8,77.8,"('Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Karlo Matković', 'Trey Murphy III')",2.7,3,8,6,7,0,2,0,1,0,1,1,7
+22500168,NOP,CHA,78.0,77.6,"('Jordan Poole', 'Jose Alvarado', 'Karlo Matković', 'Saddiq Bey', 'Trey Murphy III')",1.2666666666666668,3,5,3,1,0,0,0,0,1,1,1,7
+22500168,NOP,CHA,79.6,78.8,"('Herbert Jones', 'Jordan Poole', 'Karlo Matković', 'Kevon Looney', 'Trey Murphy III')",0.0,3,0,0,0,0,0,0,0,0,0,0,7
+22500168,NOP,CHA,78.6,77.8,"('Herbert Jones', 'Jose Alvarado', 'Karlo Matković', 'Saddiq Bey', 'Trey Murphy III')",0.0833333333333333,3,0,0,0,1,0,0,0,0,0,0,7
+22500168,NOP,CHA,78.2,77.8,"('Jordan Hawkins', 'Jose Alvarado', 'Karlo Matković', 'Saddiq Bey', 'Trey Murphy III')",3.8333333333333335,3,11,14,3,4,2,2,1,0,0,2,7
+22500168,NOP,CHA,77.8,78.6,"('Derik Queen', 'Herbert Jones', 'Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey')",5.0,4,12,10,3,4,3,4,0,3,1,3,7
+22500168,NOP,CHA,77.6,78.8,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Trey Murphy III')",3.5000000000000004,4,9,7,1,4,2,2,1,2,0,2,7
+22500168,NOP,CHA,78.4,78.8,"('Derik Queen', 'Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",3.5,4,8,2,6,3,2,0,2,3,1,3,7
+22500168,NOP,CHA,77.6,78.6,"('Derik Queen', 'Herbert Jones', 'Jordan Poole', 'Jose Alvarado', 'Saddiq Bey')",0.0,4,0,0,0,0,0,0,0,0,0,0,7
+22500177,NOP,DAL,79.0,78.8,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Karlo Matković', 'Trey Murphy III')",1.1666666666666667,1,0,3,2,1,0,1,1,0,1,0,8
+22500177,NOP,DAL,79.0,79.0,"('Herbert Jones', 'Jeremiah Fears', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",6.449999999999998,1,16,6,10,6,4,2,1,3,0,2,8
+22500177,NOP,DAL,78.8,79.0,"('Jeremiah Fears', 'Jordan Hawkins', 'Karlo Matković', 'Saddiq Bey', 'Trey Murphy III')",0.4499999999999999,1,2,1,0,0,1,0,0,0,1,0,8
+22500177,NOP,DAL,77.6,79.2,"('Derik Queen', 'Herbert Jones', 'Jordan Hawkins', 'Jose Alvarado', 'Micah Peavy')",1.9833333333333332,1,5,2,3,2,0,0,0,1,1,1,8
+22500177,NOP,DAL,78.2,79.2,"('Derik Queen', 'Herbert Jones', 'Jordan Hawkins', 'Jose Alvarado', 'Karlo Matković')",0.5833333333333334,1,1,2,1,1,0,1,0,0,1,0,8
+22500177,NOP,DAL,78.6,79.0,"('Jeremiah Fears', 'Jordan Hawkins', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",0.0,1,0,0,0,0,0,0,0,0,0,0,8
+22500177,NOP,DAL,78.4,79.2,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Karlo Matković', 'Trey Murphy III')",1.3666666666666667,1,5,5,1,2,0,1,0,1,0,1,8
+22500177,NOP,DAL,77.6,77.6,"('Herbert Jones', 'Jordan Hawkins', 'Jose Alvarado', 'Kevon Looney', 'Micah Peavy')",0.0,2,0,0,0,0,0,0,0,0,0,0,8
+22500177,NOP,DAL,79.0,79.4,"('Jeremiah Fears', 'Kevon Looney', 'Micah Peavy', 'Saddiq Bey', 'Trey Murphy III')",2.7666666666666657,2,6,10,3,5,0,0,0,0,4,0,8
+22500177,NOP,DAL,79.0,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",0.0,2,0,0,0,0,0,0,0,0,0,0,8
+22500177,NOP,DAL,79.0,78.6,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III')",2.583333333333334,2,6,10,1,2,2,1,3,0,0,1,8
+22500177,NOP,DAL,77.6,77.6,"('Derik Queen', 'Herbert Jones', 'Jordan Hawkins', 'Jose Alvarado', 'Micah Peavy')",3.766666666666666,2,5,6,5,4,1,2,0,1,1,1,8
+22500177,NOP,DAL,78.4,78.6,"('Derik Queen', 'Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",1.2666666666666668,2,4,2,2,1,0,0,1,0,0,0,8
+22500177,NOP,DAL,78.2,77.6,"('Herbert Jones', 'Jose Alvarado', 'Kevon Looney', 'Micah Peavy', 'Trey Murphy III')",1.6166666666666667,2,2,2,3,1,0,0,0,0,0,1,8
+22500177,NOP,DAL,78.4,77.6,"('Jose Alvarado', 'Kevon Looney', 'Micah Peavy', 'Saddiq Bey', 'Trey Murphy III')",0.0,2,0,0,0,0,0,0,0,0,0,0,8
+22500177,NOP,DAL,77.8,79.2,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Micah Peavy', 'Trey Murphy III')",1.0333333333333332,3,5,5,1,0,1,1,0,0,0,1,8
+22500177,NOP,DAL,79.0,77.2,"('Herbert Jones', 'Jeremiah Fears', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",4.15,3,5,12,6,5,1,3,1,1,2,0,8
+22500177,NOP,DAL,78.4,78.6,"('Herbert Jones', 'Jose Alvarado', 'Karlo Matković', 'Micah Peavy', 'Saddiq Bey')",1.05,3,5,2,1,1,0,1,0,0,0,0,8
+22500177,NOP,DAL,78.4,77.2,"('Herbert Jones', 'Jose Alvarado', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",0.0,3,0,0,0,0,0,0,0,0,0,0,8
+22500177,NOP,DAL,78.0,79.2,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",0.1166666666666666,3,0,0,1,0,0,0,0,0,0,0,8
+22500177,NOP,DAL,78.6,77.8,"('Herbert Jones', 'Jose Alvarado', 'Karlo Matković', 'Saddiq Bey', 'Trey Murphy III')",3.183333333333333,3,9,5,3,1,3,2,1,1,0,1,8
+22500177,NOP,DAL,78.0,78.6,"('Jordan Hawkins', 'Jose Alvarado', 'Karlo Matković', 'Micah Peavy', 'Saddiq Bey')",2.466666666666667,3,2,4,3,3,0,0,1,0,1,0,8
+22500177,NOP,DAL,77.6,78.6,"('Jordan Hawkins', 'Jose Alvarado', 'Micah Peavy', 'Saddiq Bey', 'Trey Murphy III')",0.0,3,0,0,0,0,0,0,0,0,0,0,8
+22500177,NOP,DAL,77.8,78.0,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Micah Peavy', 'Trey Murphy III')",2.85,4,6,4,4,0,1,1,2,2,2,0,8
+22500177,NOP,DAL,79.0,79.4,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III')",3.8333333333333326,4,4,7,3,5,2,0,1,3,2,1,8
+22500177,NOP,DAL,78.4,78.0,"('Derik Queen', 'Jeremiah Fears', 'Jordan Hawkins', 'Micah Peavy', 'Trey Murphy III')",0.7666666666666667,4,2,5,0,0,0,2,0,0,0,2,8
+22500177,NOP,DAL,78.4,79.2,"('Derik Queen', 'Herbert Jones', 'Jose Alvarado', 'Saddiq Bey', 'Trey Murphy III')",1.3000000000000005,4,5,4,1,1,1,0,0,0,1,2,8
+22500177,NOP,DAL,78.4,79.4,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Trey Murphy III')",3.25,4,6,4,2,3,1,1,1,2,1,1,8
+22500188,NOP,SAS,78.4,78.0,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Karlo Matković', 'Trey Murphy III')",2.266666666666667,1,4,10,1,1,1,4,2,0,0,0,9
+22500188,NOP,SAS,79.0,78.6,"('Derik Queen', 'Jose Alvarado', 'Karlo Matković', 'Saddiq Bey', 'Trey Murphy III')",0.0,1,0,0,0,0,0,0,0,0,0,0,9
+22500188,NOP,SAS,77.6,78.6,"('Derik Queen', 'Herbert Jones', 'Jordan Hawkins', 'Jose Alvarado', 'Micah Peavy')",2.283333333333333,1,6,4,3,1,1,1,0,0,1,0,9
+22500188,NOP,SAS,79.2,78.6,"('Herbert Jones', 'Jeremiah Fears', 'Karlo Matković', 'Saddiq Bey', 'Trey Murphy III')",2.95,1,6,4,3,3,3,1,0,1,1,0,9
+22500188,NOP,SAS,79.0,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",4.5,1,6,10,6,5,1,4,3,2,3,1,9
+22500188,NOP,SAS,78.6,78.6,"('Herbert Jones', 'Jose Alvarado', 'Karlo Matković', 'Saddiq Bey', 'Trey Murphy III')",0.0,1,0,0,0,0,0,0,0,0,0,0,9
+22500188,NOP,SAS,77.8,78.0,"('Derik Queen', 'Herbert Jones', 'Jordan Hawkins', 'Jose Alvarado', 'Trey Murphy III')",0.0,1,0,0,0,0,0,0,0,0,0,0,9
+22500188,NOP,SAS,77.8,79.2,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Micah Peavy', 'Trey Murphy III')",0.3833333333333333,2,0,4,0,0,0,0,1,0,2,0,9
+22500188,NOP,SAS,78.4,77.6,"('Jeremiah Fears', 'Jordan Hawkins', 'Kevon Looney', 'Micah Peavy', 'Trey Murphy III')",1.1,2,0,6,0,2,0,2,0,0,1,0,9
+22500188,NOP,SAS,77.6,79.2,"('Derik Queen', 'Herbert Jones', 'Jordan Hawkins', 'Jose Alvarado', 'Micah Peavy')",3.733333333333333,2,12,9,2,3,3,0,0,1,0,1,9
+22500188,NOP,SAS,79.0,79.6,"('Herbert Jones', 'Jeremiah Fears', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",5.083333333333331,2,22,11,5,2,2,2,0,2,2,4,9
+22500188,NOP,SAS,77.8,79.2,"('Jordan Hawkins', 'Jose Alvarado', 'Kevon Looney', 'Micah Peavy', 'Trey Murphy III')",0.0,2,0,1,0,0,0,0,0,0,0,0,9
+22500188,NOP,SAS,78.6,78.2,"('Jeremiah Fears', 'Jordan Hawkins', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",1.7,2,2,7,0,1,0,2,0,0,0,1,9
+22500188,NOP,SAS,77.8,80.0,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Micah Peavy', 'Trey Murphy III')",2.6166666666666663,3,12,7,2,5,3,1,1,2,3,3,9
+22500188,NOP,SAS,77.8,78.4,"('Herbert Jones', 'Jordan Hawkins', 'Jose Alvarado', 'Karlo Matković', 'Micah Peavy')",0.0,3,0,0,0,0,0,0,0,0,0,0,9
+22500188,NOP,SAS,77.6,80.0,"('Derik Queen', 'Herbert Jones', 'Jordan Hawkins', 'Jose Alvarado', 'Micah Peavy')",1.3166666666666669,3,3,2,1,1,1,0,1,0,1,1,9
+22500188,NOP,SAS,79.2,78.4,"('Herbert Jones', 'Jeremiah Fears', 'Karlo Matković', 'Saddiq Bey', 'Trey Murphy III')",2.85,3,9,8,2,2,1,2,1,0,0,0,9
+22500188,NOP,SAS,78.4,78.4,"('Herbert Jones', 'Jeremiah Fears', 'Jordan Hawkins', 'Karlo Matković', 'Micah Peavy')",0.75,3,0,4,1,1,0,2,1,0,0,1,9
+22500188,NOP,SAS,79.0,79.4,"('Herbert Jones', 'Jeremiah Fears', 'Kevon Looney', 'Saddiq Bey', 'Trey Murphy III')",4.466666666666666,3,3,5,5,7,1,1,1,3,1,3,9
+22500188,NOP,SAS,79.0,78.4,"('Herbert Jones', 'Jeremiah Fears', 'Karlo Matković', 'Micah Peavy', 'Saddiq Bey')",0.0,3,0,0,0,0,0,0,0,0,0,0,9
+22500188,NOP,SAS,77.8,79.6,"('Derik Queen', 'Jordan Hawkins', 'Jose Alvarado', 'Micah Peavy', 'Trey Murphy III')",1.8833333333333333,4,2,9,0,3,1,3,0,0,1,0,9
+22500188,NOP,SAS,78.8,77.8,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Micah Peavy', 'Trey Murphy III')",0.0,4,0,0,0,0,0,0,0,0,0,0,9
+22500188,NOP,SAS,78.8,78.0,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Micah Peavy', 'Saddiq Bey')",1.7833333333333332,4,8,3,2,0,1,1,0,0,0,1,9
+22500188,NOP,SAS,78.2,77.8,"('Derik Queen', 'Herbert Jones', 'Jose Alvarado', 'Micah Peavy', 'Trey Murphy III')",1.7666666666666666,4,5,4,2,1,1,2,0,0,0,1,9
+22500188,NOP,SAS,79.0,79.6,"('Derik Queen', 'Herbert Jones', 'Jeremiah Fears', 'Saddiq Bey', 'Trey Murphy III')",6.566666666666665,4,19,18,5,5,7,3,0,1,3,3,9

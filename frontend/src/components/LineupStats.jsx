@@ -39,7 +39,7 @@ function LineupStats() {
   const [selectedTeams, setSelectedTeams] = useState(['ATL']);
   const [selectedPeriods, setSelectedPeriods] = useState(periods);
   const [gameRange, setGameRange] = useState([1, 82]);
-  const [selectedSeason, setSelectedSeason] = useState('2024-25');
+  const [selectedSeason, setSelectedSeason] = useState('2025-26');
 
   // Pending filters (what user sees and modifies)
   const [pendingTeams, setPendingTeams] = useState(['ATL']);
@@ -47,7 +47,7 @@ function LineupStats() {
   const defaultGameRange = { min: 1, max: 82 };
   const [pendingMinGame, setPendingMinGame] = useState(String(defaultGameRange.min));
   const [pendingMaxGame, setPendingMaxGame] = useState(String(defaultGameRange.max));
-  const [pendingSeason, setPendingSeason] = useState('2024-25');
+  const [pendingSeason, setPendingSeason] = useState('2025-26');
 
   // UI state
   const [lineupData, setLineupData] = useState([]);

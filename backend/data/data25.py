@@ -153,8 +153,8 @@ height_dict = dict()
 count = 0
 
 
-start=0
-end=100
+start=90
+end=200
 for idx,id in enumerate(game_ids[start:end]):
     # Load game
     game_id = id
@@ -163,6 +163,8 @@ for idx,id in enumerate(game_ids[start:end]):
             double_break = False
             pbp_df = playbyplayv2.PlayByPlayV2(game_id=game_id).get_data_frames()[0]
             box_df = boxscoretraditionalv3.BoxScoreTraditionalV3(game_id=game_id).get_data_frames()[0]
+
+            # Add full name column to box_df
             box_df['full_name'] = box_df['firstName'] + ' ' + box_df['familyName']
             break
         except Exception as e:
@@ -170,12 +172,13 @@ for idx,id in enumerate(game_ids[start:end]):
                 print(f"Game {game_id} not played yet: {str(e)}. Further games likely not played either.")
                 double_break = True
                 break  
+            elif "columns passed" in str(e):
+                print("game in progress, wait till it finishes")
             else:
                 print(f"Attempt {attempt + 1} failed for game {game_id}: {str(e)}")
                 time.sleep(int(np.random.choice([21, 33,42])))
     if double_break:
         break
-    
     pbp_df.to_csv('test_pbp.csv', index=False)
 
     # Debug.. rows are in wrong order

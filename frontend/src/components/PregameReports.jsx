@@ -120,7 +120,9 @@ export default function PregameReports() {
         }
         setPlayerMap(map);
       } catch (e) {
-        setError('Failed to load pregame reports');
+        console.error('Error loading pregame reports:', e);
+        const errorMessage = e.response?.data?.error || e.response?.data?.details || e.message || 'Failed to load pregame reports';
+        setError(`Failed to load pregame reports: ${errorMessage}`);
       } finally {
         setLoading(false);
       }
