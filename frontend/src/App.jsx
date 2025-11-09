@@ -8,10 +8,10 @@ function App() {
   const [activeTab, setActiveTab] = useState('home');
 
   const tabs = [
-    { id: 'home', name: 'Home', icon: '🏠' },
-    { id: 'lineup-builder', name: 'Lineup Builder', icon: '🏀' },
-    { id: 'lineup-stats', name: 'Lineup Statistics', icon: '📊' },
-    { id: 'pregame-reports', name: 'Pregame Reports', icon: '📰' },
+    { id: 'home', name: 'Home', icon: '✄' },
+    { id: 'lineup-builder', name: 'Lineup Builder', icon: '✄' },
+    { id: 'lineup-stats', name: 'Lineup Statistics', icon: '✄' },
+    { id: 'pregame-reports', name: 'Pregame Reports', icon: '✄' },
   ];
 
   const renderContent = () => {
@@ -53,7 +53,6 @@ function App() {
                     <path d="M60 70 L540 70" strokeWidth="16" />
                     <path d="M60 70 L60 120" strokeWidth="16" />
                     <path d="M540 70 L540 120" strokeWidth="16" />
-                    # new is M60 120 C 26 148, 34 160, 28 178 old is M60 120 C 46 138, 34 160, 28 178
                     <path d="M60 120 C 26 148, 34 160, 28 178" strokeWidth="16" />
                     <path d="M540 120 C 574 148, 566 160, 572 178" strokeWidth="16" />
                     <path d="M28 178 L28 200" strokeWidth="16" />
@@ -91,7 +90,7 @@ function App() {
                     : 'text-gray-400 hover:text-white hover:bg-gray-800'
                 }`}
               >
-                <span className="text-sm">{tab.icon}</span>
+                <span className="text-lg">{tab.icon}</span>
                 <span className="font-medium text-sm">{tab.name}</span>
               </button>
             ))}
