@@ -1,7 +1,8 @@
-from nba_api.stats.endpoints import playbyplayv2, boxscoretraditionalv2, boxscoretraditionalv3
+from nba_api.stats.endpoints import boxscoretraditionalv3 
+from nba_api.live.nba.endpoints import playbyplay
 import pandas as pd
 from nba_api.stats.endpoints import scheduleleaguev2
-from nba_api.stats.static import teams
+from nba_api.stats.static import teams, players
 import time
 import random
 import numpy as np
@@ -11,16 +12,30 @@ from datetime import datetime
 
 #time how long it takes to run
 time_start = time.time()
-def infer_lineup_for_team(start_index, pbp_df, team_players, team_side, max_lookahead=150):
+
+# Active player csv
+additional_data = pd.read_csv('playersBDL25.csv')
+api_data = pd.read_csv('active25.csv')
+PLAYER_LOOKUP = {p["id"]: p["full_name"] for p in players.get_players()}
+
+def idToName(id):
+    try:
+        name = api_data[api_data['player_id'] == id]['first_name'].values[0] + ' ' + api_data[api_data['player_id'] == id]['last_name'].values[0]
+    except:
+        try:
+            name = PLAYER_LOOKUP.get(id)
+        except:
+            name = "none"
+            print("player id not found: " + str(id))
+    return name
+
+def infer_lineup_for_team(pbp_df, team_side):
     """
     Infer the lineup (5 players) on the court at the start of a quarter for a single team.
 
     Args:
-        start_index: index in pbp_df where the quarter starts (EVENTMSGTYPE == 12).
         pbp_df: play-by-play DataFrame.
-        team_players: list of all players on the team (from box score).
         team_side: 'home' or 'away'
-        max_lookahead: how many rows to check after quarter start
 
     Returns:
         on_court: list of 5 players inferred to be on the court
@@ -28,90 +43,37 @@ def infer_lineup_for_team(start_index, pbp_df, team_players, team_side, max_look
     on = set()
     off = set()
 
-    for i in range(start_index, min(start_index + max_lookahead, len(pbp_df))):
-        row = pbp_df.iloc[i]
+    pbp_df = pbp_df[(pbp_df['actionType'] == 'substitution' and pbp_df['teamTricode'] == team_side)]
 
-        # Ignore events with no team description on this side
-        description = row['HOMEDESCRIPTION'] if team_side == 'home' else row['VISITORDESCRIPTION']
-        if pd.isna(description):
-            continue
-
-        # UPDATED
-        # If row is a foul with na player 2, skip the event
-        if row['EVENTMSGTYPE'] == 6 and pd.isna(row['PLAYER2_NAME']):
-            continue
-
-        # Substitution event
-        if row['EVENTMSGTYPE'] == 8:
-            player_out = row['PLAYER1_NAME']
-            player_in = row['PLAYER2_NAME']
-            # Only consider subs for this team
-            if player_out in team_players or player_in in team_players:
-                if player_out and player_out not in on and player_out not in off:
-                    on.add(player_out)
-                if player_in and player_in not in on and player_in not in off:
-                    off.add(player_in)
-
-        else:
-            # UPDATED
-            players = [row['PLAYER1_NAME'], row['PLAYER2_NAME'], row['PLAYER3_NAME']]
-            
-            
-            for player in players:
-                if pd.isna(player):
-                    continue
-                if player in team_players:
-                    if player not in on:
-                        if player not in off:
-                            on.add(player)
-
+    for row in pbp_df.iterrows():
+        if row['subType'] == 'in':
+            off.add(idToName(row['personId']))
+        elif row['subType'] == 'out' and idToName(row['personId']) not in off:
+            on.add(idToName(row['personId']))
+        
         if len(on) == 5:
             break
-    
-    # Debugging.. backtracking was not able to find all 5 players in certain games
-    if len(on) < 5:
-        if game_id == '0022400223': 
-            on.add('Tobais Harris')
-        elif game_id == '0022400230':
-            on.add('Gradey Dick')
-        elif game_id == '0022400290':
-            on.add('Dillon Brooks')
-        elif game_id == '0022400762':
-            on.add('Zach Lavine')
-        elif game_id == '0022400771':
-            on.add('Corey Kispert')
-        elif game_id == '0022400903':
-            on.add('Dorian Finney-Smith')
-        elif game_id == '0022400985':
-            on.add('Justin Edwards')
-        elif game_id == '0022401102':
-            on.add('Peyton Watson')
-        elif game_id == '0022401131':
-            on.add('Alec Burks')
-        elif game_id == '0022401162':
-            on.add('Jaden Springer')
-        elif game_id == '0022400679':
-            on.add('Josh Green')
-        elif game_id == '0022400031':
-            on.add('Tazé Moore')
-        else:
-            print(f"[⚠️ Warning : {start_index}] Could not infer full lineup for {team_side} (found {len(list(on))} players), {row['GAME_ID']}, FINAL SCORE: {home_team} {away_team} {pbp_df.iloc[-1]['SCORE']}")
-            print(list(on))
 
     return list(on)
 
-def parse_pctimestring(t):
-    # Converts a string like "11:32" into a timedelta
-    return datetime.strptime(t, "%M:%S")
+
+def parse_pctimestring_iso(s):
+    # s looks like "PT11M24.00S"
+    s = s.removeprefix("PT")
+    minutes, seconds = s.split("M")
+    seconds = seconds.rstrip("S")
+
+    return int(minutes) * 60 + float(seconds)   # total seconds
 
 def elapsed_time(idx, row, df):
-    if row['EVENTMSGTYPE'] == 12:
+    if row['actionType'] == 'period' and row['subType'] == 'start':
         return 0
-    else:
-        t_current = parse_pctimestring(row['PCTIMESTRING'])
-        t_prev = parse_pctimestring(df.loc[idx - 1, 'PCTIMESTRING'])
-        delta_min = (t_prev - t_current).total_seconds() /60
-        return delta_min
+
+    t_current = parse_pctimestring_iso(row['clock'])
+    t_prev = parse_pctimestring_iso(df.loc[idx - 1, 'clock'])
+
+    delta_min = (t_prev - t_current) / 60
+    return delta_min
 
 # Fetch the full 2024–25 NBA schedule
 sched = scheduleleaguev2.ScheduleLeagueV2(
@@ -145,31 +107,25 @@ team_lineup_stats = {
     for team in team_abbreviations
 }
 
-# Active player csv
-additional_data = pd.read_csv('playersBDL25.csv')
-
 height_dict = dict()
 
-count = 0
-
-
-start=90
-end=200
+start=125
+end=207
 for idx,id in enumerate(game_ids[start:end]):
     # Load game
     game_id = id
     for attempt in range(3):
         try:
             double_break = False
-            pbp_df = playbyplayv2.PlayByPlayV2(game_id=game_id).get_data_frames()[0]
+            pbp_df = pd.DataFrame(playbyplay.PlayByPlay(game_id=game_id).get_dict()["game"]["actions"])
             box_df = boxscoretraditionalv3.BoxScoreTraditionalV3(game_id=game_id).get_data_frames()[0]
 
             # Add full name column to box_df
             box_df['full_name'] = box_df['firstName'] + ' ' + box_df['familyName']
             break
         except Exception as e:
-            if "'NoneType' object has no attribute 'keys'" in str(e):
-                print(f"Game {game_id} not played yet: {str(e)}. Further games likely not played either.")
+            if "'NoneType' object has no attribute 'keys'" in str(e) or "Expecting value" in str(e):
+                print(f"Game {game_id} not played yet: {str(e)}. Further games likely not played either. Last played game is {idx + start - 1}")
                 double_break = True
                 break  
             elif "columns passed" in str(e):
@@ -179,22 +135,8 @@ for idx,id in enumerate(game_ids[start:end]):
                 time.sleep(int(np.random.choice([21, 33,42])))
     if double_break:
         break
-    pbp_df.to_csv('test_pbp.csv', index=False)
+    # pbp_df.to_csv('test_pbp.csv', index=False)
 
-    # Debug.. rows are in wrong order
-    if game_id == "0022400316":
-        # Special fix: swap the event numbers
-        row_188 = pbp_df[pbp_df['EVENTNUM'] == 188]
-        row_191 = pbp_df[pbp_df['EVENTNUM'] == 191]
-
-        # Drop them from the DataFrame
-        pbp_df = pbp_df[~pbp_df['EVENTNUM'].isin([188, 191])]
-
-        # Append them in the desired order (substitution before rebound)
-        pbp_df = pd.concat([pbp_df, row_188, row_191], ignore_index=True)
-
-        # Optional: sort by EVENTNUM or reset index
-        pbp_df = pbp_df.sort_values(by='EVENTNUM').reset_index(drop=True)
 
     # avoid rate limits
     if idx % 1 == 0:
@@ -230,76 +172,46 @@ for idx,id in enumerate(game_ids[start:end]):
         'home': set(box_df[box_df['teamTricode'] == home_team]['full_name']),
         'away': set(box_df[box_df['teamTricode'] == away_team]['full_name']),
     }
-    if 'Tobais Harris' in team_rosters['home']:
-        print(f"Tobais Harris in home team")
-    if 'Tobais Harris' in team_rosters['away']:
-        print(f"Tobais Harris in away team")
 
     for idx, row in pbp_df.iterrows():
-        event_type = row['EVENTMSGTYPE']
-        event_desc = row['HOMEDESCRIPTION'] or row['VISITORDESCRIPTION']
-        player1 = row['PLAYER1_NAME']
-        team_involved = None
-        
-        if row['PLAYER1_NAME'] == 'Tobais Harris' or row['PLAYER2_NAME'] == 'Tobais Harris' or row['PLAYER3_NAME'] == 'Tobais Harris':
-            print(f"tobais instead of tobias in {game_id}")
-        #Debugging.. remove ejection -- come back to later and fix
-        if game_id == "0022400770":
-            pbp_df = pbp_df[~pbp_df['EVENTNUM'].isin([341, 347])]
-            pbp_df.reset_index(drop=True, inplace=True)
-            if idx >= 424:
-                break
-
-        if row['EVENTMSGTYPE'] == 12 and row['PERIOD'] > 1:
-            home_on_court = infer_lineup_for_team(idx + 1, pbp_df, list(team_rosters['home']), 'home')
-            away_on_court = infer_lineup_for_team(idx + 1, pbp_df, list(team_rosters['away']), 'away')
-        
+        if row['personId'] == 0 or row['subType'] == 'technical':
+            continue
+        event_type = row['actionType']
+        event_desc = row['description']
+        player_id = row['personId']
+        player_name = idToName(player_id)
+        if player_name == "none":
+            print(row)        
+        team_involved = 'home' if row['teamTricode'] == home_team else 'away'        
         
         # Substitution logic with team lookup
-        if event_type == 8:
-            player_out = row['PLAYER1_NAME']
-            player_in = row['PLAYER2_NAME']
-
-            # Debugging.. fix player name (poor fix, improve later)
-            if player_out == "Armel Traoré":
-                player_out = "Armel Traore"
-
-            team_code = player_team_map.get(player_out)
-
-            if team_code == home_team:
-                lineup = home_on_court
-            elif team_code == away_team:
-                lineup = away_on_court
+        if event_type == 'substitution':
+            
+            if row['teamTricode'] == home_team:
+                if row['subType'] == 'in':
+                    home_on_court.append(player_name)
+                elif row['subType'] == 'out':
+                    home_on_court.remove(player_name)
+                else:
+                    print(f"[⚠️ Unknown subType] Could not resolve subType for sub")
+                    continue
+            elif row['teamTricode'] == away_team:
+                if row['subType'] == 'in':
+                    away_on_court.append(player_name)
+                elif row['subType'] == 'out':
+                    away_on_court.remove(player_name)
+                else:
+                    print(f"[⚠️ Unknown subType] Could not resolve subType for sub")
+                    continue
             else:
-                print(f"[⚠️ Unknown team] Could not resolve team for sub: {player_out} -> {player_in}, {game_id}, {row['EVENTNUM']}, {player_team_map}")
-                continue
+                print(f"[⚠️ Unknown team] Could not resolve team for sub")
 
-            # Debugging.. fix player name (poor fix, improve later)
-            if player_out == "Armel Traore":
-                player_out = "Armel Traoré"
+        
+        if len(home_on_court) != 5 or len(away_on_court) != 5:
+            # subs in progress
+            continue
 
-            if player_out in lineup:
-                lineup.remove(player_out)
-            else:
-                print(f"[⚠️ Sub Error: idx {idx}] Tried to sub OUT {player_out} who wasn't on court, {game_id}")
-                break
 
-            if len(lineup) < 5:
-                lineup.append(player_in)
-            else:
-                print(f"[⚠️ Sub Error] More than 5 players on court after sub: {player_in}, {game_id}")
-
-            if team_code == home_team:
-                home_on_court = lineup
-                team_involved = 'home'
-            else:
-                away_on_court = lineup
-                team_involved = 'away'
-
-        else:
-            # For non-sub events, infer team from player involved if possible
-            if player1 in player_team_map:
-                team_involved = 'home' if player_team_map[player1] == home_team else 'away'
         
 
         # calculate average height of home and away
@@ -313,7 +225,7 @@ for idx,id in enumerate(game_ids[start:end]):
                     first_name = "Yanic Konan"
                     last_name = "Niederhäuser"
                 if last_name == 'Lavine':
-                    last_name = 'LaVine'
+                    last_name = 'LaVine' # capitalize the V
 
                 height = additional_data[(additional_data['first_name'] == first_name) & (additional_data['last_name'] == last_name)]['height']
                 if len(height) == 0:
@@ -338,6 +250,7 @@ for idx,id in enumerate(game_ids[start:end]):
                     last_name = 'LaVine'
                 if first_name == 'Tobais' and last_name == 'Harris':
                     first_name = 'Tobias'
+                    
                 height = additional_data[(additional_data['first_name'] == first_name) & (additional_data['last_name'] == last_name)]['height']
                 if len(height) == 0:
                     print(f"[⚠️ Height Error] Could not resolve height {height} for away player: {first_name} (first) {last_name} (last), {game_id}")
@@ -350,93 +263,106 @@ for idx,id in enumerate(game_ids[start:end]):
         # Log current state
         lineup_tracking.append({
             'play_index': idx,
-            'game_id': row['GAME_ID'],
-            'event_code': row['EVENTMSGTYPE'],
-            'period': row['PERIOD'],
-            'time': row['PCTIMESTRING'],
+            'game_id': game_id,
+            'action_type': row['actionType'],
+            'period': row['period'],
+            'time': row['clock'],
             'elapsed_time': elapsed_time(idx, row, pbp_df),
             'description': event_desc,
-            'player_involved': player1,
+            'player_involved': player_name,
+            'team_abbreviation': row['teamTricode'],
             'team_involved': team_involved,
             'home_on_court': tuple(sorted(home_on_court)),
             'away_on_court': tuple(sorted(away_on_court)),
             'avg_home_height': height_dict[tuple(sorted(home_on_court))],
             'avg_away_height': height_dict[tuple(sorted(away_on_court))],
+            'shot_result': row['shotResult'],
+            'subtype': row['subType'],
         })
 
     lineup_df = pd.DataFrame(lineup_tracking)
 
-    lineup_df.to_csv(f'test_lineup.csv', index=False)
+    # lineup_df.to_csv(f'test_lineup.csv', index=False)
 
-    periods = 5
+    periods = 8
 
     # Get list of unique lineups for home and away
     unique_lineups_home = set(lineup_df['home_on_court'])
     unique_lineups_away = set(lineup_df['away_on_court'])
+
     for period in range(1, periods + 1):
 
         for lineup in unique_lineups_home: 
             new_lineup_df = lineup_df[(lineup_df['period'] == period) & (lineup_df['home_on_court'] == lineup)]
 
             # continue if lineup is empty
-            if len(new_lineup_df) == 0:
+            if new_lineup_df.empty:
                 continue
                 
             # Calculate stats
 
-            made_2pt = made_fts = made_3pt = missed_2pt = missed_fts = missed_3pt = rebounds = assists = turnovers = fouls_committed = minutes_played = 0
-            opp_made_2pt = opp_made_fts = opp_made_3pt = opp_missed_2pt = opp_missed_fts = opp_missed_3pt = opp_rebounds = opp_assists = opp_turnovers = fouls_drawn = 0
+            made_2pt = made_fts = made_3pt = missed_2pt = missed_fts = missed_3pt = rebounds = assists = turnovers = fouls_committed = minutes_played = off_rebounds = 0
+            opp_made_2pt = opp_made_fts = opp_made_3pt = opp_missed_2pt = opp_missed_fts = opp_missed_3pt = opp_rebounds = opp_assists = opp_turnovers = fouls_drawn = opp_off_rebounds = 0
 
             for _, row in new_lineup_df.iterrows():
                 team_involved = row['team_involved']
                 is_us = team_involved == 'home'
                 if_not_us = team_involved == 'away'
                 desc = str(row['description'])
+                action = row['action_type']
                 minutes_played += row['elapsed_time']
+                result = row['shot_result']
+                subtype = row['subtype']
                 
                 if is_us:
-                    if row['event_code'] == 1 and 'AST' in desc:
+                    if action in ['2pt', '3pt'] and 'AST' in desc:
                         assists += 1
-                    if row['event_code'] == 1 and '3PT' not in desc:
+                    if action == '2pt' and result == 'Made':
                         made_2pt += 1
-                    if row['event_code'] == 1 and '3PT' in desc:
+                    if action == '3pt' and result == 'Made':
                         made_3pt += 1
-                    if row['event_code'] == 3 and "MISS" not in desc:
+                    if action == 'freethrow' and result == 'Made':
                         made_fts += 1
-                    if row['event_code'] == 4:
+                    if action == 'rebound':
                         rebounds += 1
-                    if row['event_code'] == 5:
+                    if action == 'turnover':
                         turnovers += 1
-                    if row['event_code'] == 6:
+                    if action == 'foul':
                         fouls_committed += 1
-                    if row['event_code'] == 2 and '3PT' not in desc:
+                    if action == '2pt' and result == 'Missed':
                         missed_2pt += 1
-                    if row['event_code'] == 2 and '3PT' in desc:
+                    if action == '3pt' and result == 'Missed':
                         missed_3pt += 1
-                    if row['event_code'] == 3 and "MISS" in desc:
+                    if action == 'freethrow' and result == 'Missed':
                         missed_fts += 1
+                    if action == 'rebound' and subtype == 'offensive':
+                        off_rebounds += 1
+
+                    
 
                 elif if_not_us:
-                    if row['event_code'] == 1 and 'AST' in desc:
+                    if action in ['2pt', '3pt'] and 'AST' in desc:
                         opp_assists += 1
-                    if row['event_code'] == 1 and '3PT' not in desc:
+                    if action == '2pt' and result == 'Made':
                         opp_made_2pt += 1
-                    if row['event_code'] == 1 and '3PT' in desc:
+                    if action == '3pt' and result == 'Made':
                         opp_made_3pt += 1
-                    if row['event_code'] == 3 and "MISS" not in desc:
+                    if action == 'freethrow' and result == 'Made':
                         opp_made_fts += 1
-                    if row['event_code'] == 4:
+                    if action == 'rebound':
                         opp_rebounds += 1
-                    if row['event_code'] == 5:
+                    if action == 'turnover':
                         opp_turnovers += 1
-                    if row['event_code'] == 6:
+                    if action == 'foul':
                         fouls_drawn += 1
-                    if row['event_code'] == 2 and '3PT' not in desc:
+                    if action == '2pt' and result == 'Missed':
                         opp_missed_2pt += 1
-                    if row['event_code'] == 2 and '3PT' in desc:
+                    if action == '3pt' and result == 'Missed':
                         opp_missed_3pt += 1
-                    if row['event_code'] == 3 and "MISS" in desc:
+                    if action == 'freethrow' and result == 'Missed':
                         opp_missed_fts += 1
+                    if action == 'rebound' and subtype == 'offensive':
+                        opp_off_rebounds += 1
 
             record = {
                 'game_id': game_id,
@@ -456,7 +382,9 @@ for idx,id in enumerate(game_ids[start:end]):
                 'turnovers': turnovers,
                 'opp_turnovers': opp_turnovers,
                 'fouls_committed': fouls_committed,
-                'fouls_drawn': fouls_drawn
+                'fouls_drawn': fouls_drawn,
+                'possessions': made_2pt + missed_2pt + made_3pt + missed_3pt - off_rebounds + turnovers + 0.44 * made_fts + missed_fts,
+                'opp_possessions': opp_made_2pt + opp_missed_2pt + opp_made_3pt + opp_missed_3pt - opp_off_rebounds + opp_turnovers + 0.44 * opp_made_fts + opp_missed_fts
             }
 
 
@@ -470,64 +398,74 @@ for idx,id in enumerate(game_ids[start:end]):
 
 
             # continue if lineup is empty
-            if len(new_lineup_df) == 0:
+            if new_lineup_df.empty:
                 continue
-
+            
             # Calculate stats
 
-            made_2pt = made_fts = made_3pt = missed_2pt = missed_fts = missed_3pt = rebounds = assists = turnovers = fouls_committed = minutes_played = 0
-            opp_made_2pt = opp_made_fts = opp_made_3pt = opp_missed_2pt = opp_missed_fts = opp_missed_3pt = opp_rebounds = opp_assists = opp_turnovers = fouls_drawn = 0
+            made_2pt = made_fts = made_3pt = missed_2pt = missed_fts = missed_3pt = rebounds = assists = turnovers = fouls_committed = minutes_played= off_rebounds = 0
+            opp_made_2pt = opp_made_fts = opp_made_3pt = opp_missed_2pt = opp_missed_fts = opp_missed_3pt = opp_rebounds = opp_assists = opp_turnovers = fouls_drawn = opp_off_rebounds = 0
             
-            for _, row in new_lineup_df.iterrows():
+            for i, row in new_lineup_df.iterrows():
                 team_involved = row['team_involved']
                 is_us = team_involved == 'away'
                 if_not_us = team_involved == 'home'
                 desc = str(row['description'])
+                action = row['action_type']
                 minutes_played += row['elapsed_time']
+                result = row['shot_result']
+                subtype = row['subtype']
+
 
                 if is_us:
-                    if row['event_code'] == 1 and 'AST' in desc:
+                    if action in ['2pt', '3pt'] and 'AST' in desc:
                         assists += 1
-                    if row['event_code'] == 1 and '3PT' not in desc:
+                    if action == '2pt' and result == 'Made':
                         made_2pt += 1
-                    if row['event_code'] == 1 and '3PT' in desc:
+                    if action == '3pt' and result == 'Made':
                         made_3pt += 1
-                    if row['event_code'] == 3 and "MISS" not in desc:
+                    if action == 'freethrow' and result == 'Made':
                         made_fts += 1
-                    if row['event_code'] == 4:
+                    if action == 'rebound':
                         rebounds += 1
-                    if row['event_code'] == 5:
+                    if action == 'turnover':
                         turnovers += 1
-                    if row['event_code'] == 6:
+                    if action == 'foul':
                         fouls_committed += 1
-                    if row['event_code'] == 2 and '3PT' not in desc:
+                    if action == '2pt' and result == 'Missed':
                         missed_2pt += 1
-                    if row['event_code'] == 2 and '3PT' in desc:
+                    if action == '3pt' and result == 'Missed':
                         missed_3pt += 1
-                    if row['event_code'] == 3 and "MISS" in desc:
+                    if action == 'freethrow' and result == 'Missed':
                         missed_fts += 1
+                    if action == 'rebound' and subtype == 'offensive':
+                        off_rebounds += 1
+
+                    
+
                 elif if_not_us:
-                    if row['event_code'] == 1 and 'AST' in desc:
+                    if action in ['2pt', '3pt'] and 'AST' in desc:
                         opp_assists += 1
-                    if row['event_code'] == 1 and '3PT' not in desc:
+                    if action == '2pt' and result == 'Made':
                         opp_made_2pt += 1
-                    if row['event_code'] == 1 and '3PT' in desc:
+                    if action == '3pt' and result == 'Made':
                         opp_made_3pt += 1
-                    if row['event_code'] == 3 and "MISS" not in desc:
+                    if action == 'freethrow' and result == 'Made':
                         opp_made_fts += 1
-                    if row['event_code'] == 4:
-                        
+                    if action == 'rebound':
                         opp_rebounds += 1
-                    if row['event_code'] == 5:
+                    if action == 'turnover':
                         opp_turnovers += 1
-                    if row['event_code'] == 6:
+                    if action == 'foul':
                         fouls_drawn += 1
-                    if row['event_code'] == 2 and '3PT' not in desc:
+                    if action == '2pt' and result == 'Missed':
                         opp_missed_2pt += 1
-                    if row['event_code'] == 2 and '3PT' in desc:
+                    if action == '3pt' and result == 'Missed':
                         opp_missed_3pt += 1
-                    if row['event_code'] == 3 and "MISS" in desc:
+                    if action == 'freethrow' and result == 'Missed':
                         opp_missed_fts += 1
+                    if action == 'rebound' and subtype == 'offensive':
+                        opp_off_rebounds += 1
 
 
             record = {
@@ -548,7 +486,9 @@ for idx,id in enumerate(game_ids[start:end]):
                 'turnovers': turnovers,
                 'opp_turnovers': opp_turnovers,
                 'fouls_committed': fouls_committed,
-                'fouls_drawn': fouls_drawn
+                'fouls_drawn': fouls_drawn,
+                'possessions': made_2pt + missed_2pt + made_3pt + missed_3pt - off_rebounds + turnovers + 0.44 * made_fts + missed_fts,
+                'opp_possessions': opp_made_2pt + opp_missed_2pt + opp_made_3pt + opp_missed_3pt - opp_off_rebounds + opp_turnovers + 0.44 * opp_made_fts + opp_missed_fts
             }
 
 
@@ -584,7 +524,10 @@ columns = [
     'opp_turnovers',
     'fouls_committed',
     'fouls_drawn',
+    'possessions',
+    'opp_possessions'
 ]
+
 
 # Define the subfolder where you want to save files
 save_dir = os.path.join("S2")

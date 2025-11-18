@@ -1,352 +1,358 @@
-game_id,team,opponent,team_avg_height,opp_avg_height,lineup,minutes_played,period,points,opp_points,rebounds,opp_rebounds,assists,opp_assists,turnovers,opp_turnovers,fouls_committed,fouls_drawn,game_number
-22500002,GSW,LAL,77.6,79.0,"('Al Horford', 'Brandin Podziemski', 'Gui Santos', 'Jimmy Butler III', 'Will Richard')",2.1666666666666665,1,3,6,0,1,1,1,2,2,2,1,1
-22500002,GSW,LAL,77.8,79.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gui Santos', 'Jimmy Butler III')",0.4833333333333333,1,0,2,0,1,0,0,0,0,1,0,1
-22500002,GSW,LAL,76.6,79.2,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,76.0,79.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,76.6,79.6,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.7666666666666666,1,5,3,4,2,1,0,2,1,3,0,1
-22500002,GSW,LAL,78.2,79.0,"('Al Horford', 'Gui Santos', 'Jimmy Butler III', 'Jonathan Kuminga', 'Will Richard')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,76.2,79.2,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.3833333333333335,1,0,0,2,1,0,0,2,1,0,1,1
-22500002,GSW,LAL,77.0,79.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",4.95,1,12,11,2,5,4,3,0,4,0,2,1
-22500002,GSW,LAL,76.8,79.0,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Will Richard')",0.05,1,3,0,0,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,76.8,79.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Jimmy Butler III')",1.2,1,5,0,2,0,0,0,0,0,1,1,1
-22500002,GSW,LAL,78.0,79.0,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Will Richard')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,77.8,79.2,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,78.8,79.0,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Quinten Post', 'Stephen Curry')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,78.0,79.0,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Quinten Post', 'Stephen Curry')",0.5166666666666666,2,1,2,0,0,0,0,0,0,0,1,1
-22500002,GSW,LAL,78.4,79.0,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Quinten Post')",3.883333333333333,2,7,7,3,4,2,1,3,2,2,3,1
-22500002,GSW,LAL,76.4,79.0,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,78.4,79.0,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Quinten Post')",4.166666666666666,4,10,5,5,6,2,1,0,1,3,1,1
-22500002,GSW,LAL,77.0,79.0,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.9333333333333331,4,6,3,0,1,1,0,0,0,2,1,1
-22500002,GSW,LAL,76.6,78.0,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.0500000000000003,4,8,7,2,0,2,2,0,0,0,2,1
-22500002,GSW,LAL,76.8,79.0,"('Al Horford', 'Buddy Hield', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.9,4,2,6,0,2,1,3,1,1,1,0,1
-22500002,GSW,LAL,77.4,79.0,"('Buddy Hield', 'Draymond Green', 'Quinten Post', 'Stephen Curry', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,76.8,79.0,"('Al Horford', 'Brandin Podziemski', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.95,4,3,9,0,1,1,2,2,0,1,0,1
-22500002,GSW,LAL,77.4,79.0,"('Al Horford', 'Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,77.0,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.75,2,5,12,5,3,1,2,2,1,3,3,1
-22500002,GSW,LAL,76.2,79.2,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.0166666666666666,3,5,1,1,0,2,0,0,0,1,0,1
-22500002,GSW,LAL,77.8,79.2,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Jonathan Kuminga')",1.3,3,5,2,1,0,1,0,0,1,0,0,1
-22500002,GSW,LAL,76.6,79.2,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.95,3,0,7,1,2,0,1,2,0,2,0,1
-22500002,GSW,LAL,77.2,79.2,"('Al Horford', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.5333333333333332,2,4,3,0,1,2,1,0,1,1,0,1
-22500002,GSW,LAL,77.4,79.4,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0166666666666666,2,1,0,0,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,78.2,79.0,"('Al Horford', 'Draymond Green', 'Quinten Post', 'Stephen Curry', 'Will Richard')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,76.4,79.2,"('Al Horford', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",2.6500000000000004,2,8,8,2,3,2,2,2,2,2,2,1
-22500002,GSW,LAL,77.2,78.6,"('Al Horford', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",0.6499999999999999,2,1,0,1,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,77.0,79.0,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",5.05,3,18,6,8,3,5,2,0,2,3,3,1
-22500002,GSW,LAL,77.0,79.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Will Richard')",2.6833333333333327,3,7,9,1,3,1,2,0,0,0,1,1
-22500002,GSW,LAL,76.6,79.0,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,77.0,79.2,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Stephen Curry')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
-22500002,GSW,LAL,78.2,79.0,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Quinten Post', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
-22500006,GSW,DEN,77.4,79.4,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.2666666666666666,2,4,6,1,1,0,2,0,0,0,0,2
-22500006,GSW,DEN,77.0,79.4,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0,3,0,0,0,0,0,0,0,0,0,0,2
-22500006,GSW,DEN,76.6,79.6,"('Al Horford', 'Buddy Hield', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",0.0,3,0,0,0,0,0,0,0,0,0,0,2
-22500006,GSW,DEN,76.6,79.6,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.4500000000000004,3,5,2,3,3,2,1,0,1,0,1,2
-22500006,GSW,DEN,77.0,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",5.683333333333334,3,16,11,4,4,6,2,0,1,2,3,2
-22500006,GSW,DEN,76.2,79.6,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",0.9333333333333332,3,2,2,1,0,1,0,0,0,0,0,2
-22500006,GSW,DEN,77.0,78.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Will Richard')",3.9333333333333327,3,10,9,5,3,3,2,1,1,1,3,2
-22500006,GSW,DEN,76.8,79.6,"('Al Horford', 'Buddy Hield', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",0.0,3,0,0,0,0,0,0,0,0,0,0,2
-22500006,GSW,DEN,76.8,79.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Stephen Curry')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
-22500006,GSW,DEN,77.8,79.4,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",3.4166666666666665,4,8,4,4,2,0,1,0,0,2,2,2
-22500006,GSW,DEN,76.8,79.4,"('Al Horford', 'Brandin Podziemski', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",3.5333333333333328,4,9,8,2,3,1,3,1,1,1,2,2
-22500006,GSW,DEN,76.0,79.4,"('Brandin Podziemski', 'Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Stephen Curry')",1.3666666666666665,2,4,0,3,2,1,0,0,1,0,0,2
-22500006,GSW,DEN,79.4,78.4,"('Al Horford', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post')",0.0,2,0,0,0,0,0,0,0,0,0,0,2
-22500006,GSW,DEN,76.4,80.0,"('Al Horford', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",2.983333333333333,2,7,12,1,4,2,2,0,1,3,0,2
-22500006,GSW,DEN,77.4,79.2,"('Al Horford', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry')",1.5333333333333334,2,6,4,0,0,2,0,1,1,1,0,2
-22500006,GSW,DEN,77.0,79.2,"('Al Horford', 'Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",0.0,2,0,0,0,0,0,0,0,0,0,0,2
-22500006,GSW,DEN,77.0,79.4,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
-22500006,GSW,DEN,76.0,79.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
-22500006,GSW,DEN,76.6,79.6,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.5333333333333334,1,4,4,2,2,1,1,0,1,1,0,2
-22500006,GSW,DEN,77.0,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",5.449999999999998,1,10,10,5,3,4,5,3,1,1,1,2
-22500006,GSW,DEN,76.2,79.4,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.4,1,4,6,0,0,0,1,0,0,0,0,2
-22500006,GSW,DEN,76.8,78.8,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Jimmy Butler III')",1.4833333333333334,1,0,7,0,3,0,1,1,0,0,0,2
-22500006,GSW,DEN,77.0,78.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Will Richard')",2.1333333333333333,1,9,4,4,0,1,1,0,1,1,2,2
-22500006,GSW,DEN,76.8,80.0,"('Al Horford', 'Brandin Podziemski', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",0.0,2,0,0,0,0,0,0,0,0,0,0,2
-22500006,GSW,DEN,78.6,78.4,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post')",0.7166666666666668,2,2,2,0,1,0,0,0,0,0,0,2
-22500006,GSW,DEN,78.4,78.4,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Quinten Post')",3.65,2,10,13,1,2,3,5,0,0,0,2,2
-22500006,GSW,DEN,77.0,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.4833333333333333,2,1,2,0,0,0,0,0,0,1,1,2
-22500006,GSW,DEN,77.2,79.4,"('Al Horford', 'Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Stephen Curry')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
-22500006,GSW,DEN,76.6,78.4,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Will Richard')",4.116666666666667,4,6,12,2,6,1,3,0,2,1,2,2
-22500006,GSW,DEN,76.2,78.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
-22500006,GSW,DEN,76.4,79.4,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Stephen Curry')",0.0666666666666666,4,3,0,0,0,1,0,0,0,0,0,2
-22500006,GSW,DEN,77.4,79.4,"('Al Horford', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
-22500006,GSW,DEN,77.0,79.4,"('Al Horford', 'Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",0.35,4,0,0,0,0,0,0,0,0,0,0,2
-22500006,GSW,DEN,77.4,79.4,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.5166666666666666,4,0,2,0,1,0,0,0,0,0,0,2
-22500006,GSW,DEN,76.6,78.4,"('Al Horford', 'Brandin Podziemski', 'Draymond Green', 'Stephen Curry', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
-22500006,GSW,DEN,77.8,79.4,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",4.999999999999998,5,17,11,5,3,4,2,1,1,1,3,2
-22500037,GSW,DEN,77.2,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Will Richard')",1.2,2,5,3,3,1,0,1,0,1,0,1,3
-22500037,GSW,DEN,77.2,79.4,"('Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Pat Spencer', 'Trayce Jackson-Davis')",0.0,2,0,0,0,0,0,0,0,0,0,0,3
-22500037,GSW,DEN,77.8,79.4,"('Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Pat Spencer', 'Quinten Post')",0.0,2,0,0,0,0,0,0,0,0,0,0,3
-22500037,GSW,DEN,77.4,79.4,"('Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Trayce Jackson-Davis', 'Will Richard')",3.5666666666666664,2,7,11,1,1,3,2,2,1,1,1,3
-22500037,GSW,DEN,78.2,79.4,"('Buddy Hield', 'Jimmy Butler III', 'Jonathan Kuminga', 'Pat Spencer', 'Quinten Post')",0.6166666666666667,2,0,1,1,1,0,0,0,0,1,0,3
-22500037,GSW,DEN,77.4,78.8,"('Buddy Hield', 'Draymond Green', 'Pat Spencer', 'Quinten Post', 'Will Richard')",0.0,3,0,0,0,0,0,0,0,0,0,0,3
-22500037,GSW,DEN,77.4,79.6,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga')",1.6333333333333335,1,1,6,1,3,0,2,1,0,0,0,3
-22500037,GSW,DEN,78.8,79.2,"('Buddy Hield', 'Jonathan Kuminga', 'Pat Spencer', 'Quinten Post', 'Trayce Jackson-Davis')",0.6333333333333333,1,0,3,0,0,0,1,1,0,1,0,3
-22500037,GSW,DEN,78.6,79.2,"('Buddy Hield', 'Jimmy Butler III', 'Pat Spencer', 'Quinten Post', 'Trayce Jackson-Davis')",3.366666666666667,1,11,9,4,3,3,2,0,0,0,0,3
-22500037,GSW,DEN,78.2,78.8,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Pat Spencer', 'Quinten Post')",0.9333333333333332,1,4,2,0,0,1,1,0,0,1,0,3
-22500037,GSW,DEN,77.6,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody')",5.433333333333332,1,5,12,4,7,2,4,2,0,0,1,3
-22500037,GSW,DEN,78.2,79.4,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer', 'Quinten Post')",4.733333333333332,2,13,11,5,3,4,3,1,2,0,2,3
-22500037,GSW,DEN,77.0,79.6,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Pat Spencer')",0.0,1,0,0,0,0,0,0,0,0,0,0,3
-22500037,GSW,DEN,77.8,79.4,"('Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Trayce Jackson-Davis', 'Will Richard')",1.8833333333333333,2,3,8,1,2,1,2,1,0,1,0,3
-22500037,GSW,DEN,76.6,78.4,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer')",0.4833333333333333,3,1,4,0,1,0,1,0,0,1,0,3
-22500037,GSW,DEN,78.6,79.4,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Pat Spencer', 'Quinten Post')",0.0,2,0,0,0,0,0,0,0,0,0,0,3
-22500037,GSW,DEN,77.4,79.0,"('Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Trayce Jackson-Davis', 'Will Richard')",2.6,4,5,5,3,4,1,1,0,1,1,0,3
-22500037,GSW,DEN,77.0,79.0,"('Buddy Hield', 'Gui Santos', 'Pat Spencer', 'Trayce Jackson-Davis', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
-22500037,GSW,DEN,77.8,78.8,"('Draymond Green', 'Jimmy Butler III', 'Pat Spencer', 'Quinten Post', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
-22500037,GSW,DEN,77.4,79.0,"('Brandin Podziemski', 'Buddy Hield', 'Gui Santos', 'Trayce Jackson-Davis', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
-22500037,GSW,DEN,76.6,78.6,"('Gary Payton II', 'Gui Santos', 'Pat Spencer', 'Trayce Jackson-Davis', 'Will Richard')",6.450000000000001,4,16,16,10,5,3,3,1,1,6,5,3
-22500037,GSW,DEN,78.4,78.8,"('Draymond Green', 'Pat Spencer', 'Quinten Post', 'Trayce Jackson-Davis', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
-22500037,GSW,DEN,78.4,78.8,"('Brandin Podziemski', 'Buddy Hield', 'Quinten Post', 'Trayce Jackson-Davis', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
-22500037,GSW,DEN,78.2,78.8,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer', 'Quinten Post')",2.9500000000000006,4,6,9,3,2,2,2,1,0,1,0,3
-22500037,GSW,DEN,78.0,78.8,"('Buddy Hield', 'Pat Spencer', 'Quinten Post', 'Trayce Jackson-Davis', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
-22500037,GSW,DEN,77.4,78.4,"('Buddy Hield', 'Jimmy Butler III', 'Pat Spencer', 'Quinten Post', 'Will Richard')",3.1833333333333327,3,7,12,1,2,2,4,1,0,0,4,3
-22500037,GSW,DEN,77.8,78.8,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Quinten Post', 'Will Richard')",0.0,3,0,0,0,0,0,0,0,0,0,0,3
-22500037,GSW,DEN,77.6,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody')",5.066666666666665,3,13,10,6,3,4,3,1,2,2,0,3
-22500037,GSW,DEN,78.0,78.4,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Pat Spencer', 'Quinten Post')",0.0,3,0,0,0,0,0,0,0,0,0,0,3
-22500037,GSW,DEN,78.8,79.6,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post')",0.6166666666666667,3,0,1,2,1,0,0,0,0,1,0,3
-22500037,GSW,DEN,78.6,78.8,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post')",2.65,3,7,6,1,2,2,2,0,0,1,1,3
-22500097,GSW,POR,76.6,78.2,"('Brandin Podziemski', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis', 'Will Richard')",0.0,1,0,0,0,0,0,0,0,0,0,0,4
-22500097,GSW,POR,78.4,80.2,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Quinten Post')",3.083333333333333,2,7,8,5,2,1,3,3,1,3,0,4
-22500097,GSW,POR,76.0,80.2,"('Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",0.0,2,0,0,0,0,0,0,0,0,0,0,4
-22500097,GSW,POR,76.8,80.2,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Will Richard')",1.1166666666666667,2,1,1,2,1,0,0,0,0,0,1,4
-22500097,GSW,POR,78.2,78.2,"('Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody', 'Trayce Jackson-Davis')",0.0,3,0,0,0,0,0,0,0,0,0,0,4
-22500097,GSW,POR,77.4,79.8,"('Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis', 'Will Richard')",3.8,3,8,5,3,4,2,1,0,1,1,4,4
-22500097,GSW,POR,77.4,78.2,"('Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis')",1.7666666666666668,3,5,9,1,0,1,2,3,0,1,0,4
-22500097,GSW,POR,76.2,78.2,"('Buddy Hield', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.7166666666666663,3,10,8,3,0,1,2,1,0,0,3,4
-22500097,GSW,POR,77.8,78.2,"('Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis')",0.0,3,0,0,0,0,0,0,0,0,0,0,4
-22500097,GSW,POR,77.8,80.2,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Quinten Post', 'Will Richard')",0.0,2,0,0,0,0,0,0,0,0,0,0,4
-22500097,GSW,POR,76.0,78.2,"('Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.0333333333333332,2,4,2,2,0,1,0,1,1,1,0,4
-22500097,GSW,POR,77.2,78.2,"('Gary Payton II', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry', 'Will Richard')",2.7333333333333334,2,6,8,4,1,1,2,2,1,2,1,4
-22500097,GSW,POR,76.2,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",2.5,2,4,12,0,3,1,2,0,0,0,2,4
-22500097,GSW,POR,75.8,78.2,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",0.2333333333333333,2,0,1,0,0,0,0,1,0,0,0,4
-22500097,GSW,POR,76.4,78.2,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody', 'Will Richard')",0.2833333333333333,2,1,3,0,0,0,0,0,0,0,0,4
-22500097,GSW,POR,76.8,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Will Richard')",0.0,2,0,0,0,0,0,0,0,0,0,0,4
-22500097,GSW,POR,76.4,80.2,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.0166666666666666,2,5,6,0,0,2,1,0,0,0,1,4
-22500097,GSW,POR,77.4,77.8,"('Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis', 'Will Richard')",1.4833333333333334,1,0,3,1,2,0,0,1,1,1,1,4
-22500097,GSW,POR,78.0,80.0,"('Buddy Hield', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",0.9333333333333332,1,1,4,1,3,0,2,0,0,0,0,4
-22500097,GSW,POR,76.8,78.2,"('Brandin Podziemski', 'Buddy Hield', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis')",2.066666666666667,1,10,5,2,1,2,0,0,1,1,0,4
-22500097,GSW,POR,76.0,77.8,"('Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer', 'Will Richard')",1.5666666666666669,1,1,4,1,3,0,1,0,0,1,0,4
-22500097,GSW,POR,78.6,80.0,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",5.249999999999999,1,12,8,5,6,4,2,3,3,1,1,4
-22500097,GSW,POR,77.4,79.4,"('Buddy Hield', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis')",0.5166666666666666,1,3,3,0,0,1,1,0,0,1,0,4
-22500097,GSW,POR,78.2,79.8,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",0.1833333333333333,1,1,1,0,0,0,0,0,0,0,1,4
-22500097,GSW,POR,76.4,78.2,"('Brandin Podziemski', 'Draymond Green', 'Gui Santos', 'Pat Spencer', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,4
-22500097,GSW,POR,77.2,78.2,"('Brandin Podziemski', 'Draymond Green', 'Gui Santos', 'Jonathan Kuminga', 'Stephen Curry')",1.6,4,6,9,1,0,1,1,3,1,1,4,4
-22500097,GSW,POR,76.2,80.0,"('Brandin Podziemski', 'Gui Santos', 'Moses Moody', 'Pat Spencer', 'Will Richard')",1.9333333333333331,4,6,6,1,1,1,1,1,1,1,2,4
-22500097,GSW,POR,77.2,78.2,"('Brandin Podziemski', 'Draymond Green', 'Gui Santos', 'Jonathan Kuminga', 'Pat Spencer')",0.5,4,1,2,0,0,0,1,0,0,0,0,4
-22500097,GSW,POR,77.6,78.2,"('Buddy Hield', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry', 'Trayce Jackson-Davis')",0.0,3,0,0,0,0,0,0,0,0,0,0,4
-22500097,GSW,POR,78.2,78.2,"('Buddy Hield', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",0.0,3,0,0,0,0,0,0,0,0,0,0,4
-22500097,GSW,POR,77.2,80.2,"('Gui Santos', 'Moses Moody', 'Pat Spencer', 'Trayce Jackson-Davis', 'Will Richard')",6.916666666666667,4,15,16,5,5,2,4,3,5,4,3,4
-22500097,GSW,POR,77.0,77.8,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.05,4,0,3,1,1,0,0,2,1,1,1,4
-22500097,GSW,POR,78.6,78.2,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",3.716666666666667,3,12,12,3,5,3,4,1,1,2,3,4
-22500121,GSW,MEM,77.4,77.6,"('Draymond Green', 'Jonathan Kuminga', 'Stephen Curry', 'Trayce Jackson-Davis', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,77.4,77.6,"('Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Trayce Jackson-Davis', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,78.0,79.2,"('Brandin Podziemski', 'Gary Payton II', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post')",1.7166666666666666,4,7,6,4,1,1,1,0,0,0,1,5
-22500121,GSW,MEM,76.8,77.6,"('Brandin Podziemski', 'Gary Payton II', 'Gui Santos', 'Jimmy Butler III', 'Moses Moody')",1.2833333333333334,4,3,4,0,2,1,0,0,1,0,1,5
-22500121,GSW,MEM,77.8,79.2,"('Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Quinten Post')",0.8333333333333334,4,4,3,1,0,1,1,0,0,1,0,5
-22500121,GSW,MEM,78.0,77.4,"('Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Quinten Post', 'Will Richard')",0.2833333333333333,4,0,1,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,77.6,78.0,"('Gary Payton II', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",0.0,3,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,77.6,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody')",2.383333333333333,2,4,10,0,2,1,4,2,0,1,1,5
-22500121,GSW,MEM,76.6,79.2,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0,2,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,78.6,77.6,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",2.6333333333333333,2,5,2,4,2,1,0,2,0,2,1,5
-22500121,GSW,MEM,77.2,78.2,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",0.0,2,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,77.0,79.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.7500000000000004,2,5,4,2,3,1,0,1,0,2,2,5
-22500121,GSW,MEM,77.2,78.0,"('Brandin Podziemski', 'Gui Santos', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.6333333333333333,2,2,3,0,1,0,1,0,0,0,1,5
-22500121,GSW,MEM,76.4,77.4,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",0.85,2,3,0,1,1,1,0,0,1,1,0,5
-22500121,GSW,MEM,76.6,78.0,"('Buddy Hield', 'Gui Santos', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",2.583333333333333,2,9,5,3,3,2,1,1,3,1,4,5
-22500121,GSW,MEM,77.2,79.2,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody')",0.1666666666666666,2,1,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,77.0,78.2,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0,2,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,76.8,78.0,"('Brandin Podziemski', 'Buddy Hield', 'Gui Santos', 'Jonathan Kuminga', 'Stephen Curry')",0.0,2,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,77.8,78.6,"('Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",1.5666666666666669,1,2,6,1,0,1,1,2,0,2,0,5
-22500121,GSW,MEM,76.6,78.0,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,77.2,78.0,"('Buddy Hield', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis')",0.3666666666666666,1,1,1,0,0,0,0,0,0,1,0,5
-22500121,GSW,MEM,77.0,78.0,"('Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Jimmy Butler III', 'Trayce Jackson-Davis')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,77.6,78.0,"('Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis')",1.9333333333333336,1,6,6,0,1,2,3,0,1,0,2,5
-22500121,GSW,MEM,77.2,78.6,"('Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis')",1.8666666666666667,1,0,5,2,2,0,2,2,0,0,1,5
-22500121,GSW,MEM,77.0,78.0,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",5.966666666666667,1,25,15,4,4,8,4,0,2,2,0,5
-22500121,GSW,MEM,77.4,78.6,"('Draymond Green', 'Gary Payton II', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,77.0,76.8,"('Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Stephen Curry', 'Trayce Jackson-Davis')",0.0999999999999999,1,2,1,0,0,1,0,0,0,0,0,5
-22500121,GSW,MEM,77.0,78.6,"('Buddy Hield', 'Gary Payton II', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",0.1999999999999999,1,0,3,0,0,0,1,0,0,0,0,5
-22500121,GSW,MEM,77.8,78.6,"('Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,77.6,77.6,"('Brandin Podziemski', 'Draymond Green', 'Gui Santos', 'Jimmy Butler III', 'Moses Moody')",0.7166666666666667,4,0,0,0,0,0,0,1,0,2,0,5
-22500121,GSW,MEM,77.2,77.6,"('Brandin Podziemski', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis')",1.45,4,5,2,1,1,2,1,0,0,0,0,5
-22500121,GSW,MEM,76.4,78.6,"('Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",1.5166666666666668,3,8,2,2,1,3,1,0,1,0,0,5
-22500121,GSW,MEM,78.2,78.0,"('Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",2.483333333333333,3,7,5,2,2,1,2,0,1,0,1,5
-22500121,GSW,MEM,77.0,78.8,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody')",3.416666666666667,3,8,7,3,4,2,2,1,1,1,1,5
-22500121,GSW,MEM,77.0,78.0,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",3.2166666666666663,3,8,7,4,2,2,2,1,0,1,3,5
-22500121,GSW,MEM,78.4,78.0,"('Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",0.0,3,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,75.8,79.0,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Moses Moody', 'Stephen Curry')",1.3666666666666667,3,5,3,1,1,0,1,1,1,2,1,5
-22500121,GSW,MEM,76.2,79.0,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Moses Moody', 'Stephen Curry')",0.0,3,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,76.4,78.2,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.0166666666666668,4,3,0,0,1,1,0,0,1,1,0,5
-22500121,GSW,MEM,77.2,76.8,"('Gui Santos', 'Moses Moody', 'Pat Spencer', 'Trayce Jackson-Davis', 'Will Richard')",1.1166666666666667,4,0,4,1,3,0,1,1,0,1,0,5
-22500121,GSW,MEM,75.8,79.2,"('Gary Payton II', 'Gui Santos', 'Moses Moody', 'Pat Spencer', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,77.6,77.4,"('Buddy Hield', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry', 'Will Richard')",3.583333333333333,4,8,13,3,2,4,3,1,0,4,0,5
-22500121,GSW,MEM,77.2,79.2,"('Brandin Podziemski', 'Gary Payton II', 'Moses Moody', 'Quinten Post', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,77.0,77.6,"('Gary Payton II', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,76.8,79.2,"('Gary Payton II', 'Moses Moody', 'Pat Spencer', 'Quinten Post', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,5
-22500121,GSW,MEM,77.4,77.6,"('Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Trayce Jackson-Davis', 'Will Richard')",0.0,4,0,0,0,0,0,0,0,0,0,0,5
-22500127,GSW,LAC,77.6,79.2,"('Al Horford', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",1.6333333333333333,4,3,0,1,1,0,0,0,0,0,1,6
-22500127,GSW,LAC,79.6,79.2,"('Al Horford', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
-22500127,GSW,LAC,78.2,79.4,"('Al Horford', 'Brandin Podziemski', 'Gui Santos', 'Jonathan Kuminga', 'Moses Moody')",1.7333333333333334,4,2,3,2,0,0,1,1,0,1,0,6
-22500127,GSW,LAC,77.2,79.2,"('Al Horford', 'Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
-22500127,GSW,LAC,78.6,79.4,"('Al Horford', 'Brandin Podziemski', 'Gui Santos', 'Moses Moody', 'Trayce Jackson-Davis')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
-22500127,GSW,LAC,77.0,79.0,"('Brandin Podziemski', 'Gui Santos', 'Pat Spencer', 'Trayce Jackson-Davis', 'Will Richard')",2.8833333333333333,4,3,6,1,3,1,1,1,1,1,1,6
-22500127,GSW,LAC,78.0,79.4,"('Al Horford', 'Brandin Podziemski', 'Gui Santos', 'Pat Spencer', 'Trayce Jackson-Davis')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
-22500127,GSW,LAC,78.6,79.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",5.749999999999999,4,12,7,4,4,3,2,3,2,3,0,6
-22500127,GSW,LAC,79.4,79.2,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
-22500127,GSW,LAC,77.0,77.4,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.9166666666666669,3,5,2,0,0,0,1,0,1,0,0,6
-22500127,GSW,LAC,78.2,78.6,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",3.133333333333332,1,13,4,4,4,3,0,0,0,0,0,6
-22500127,GSW,LAC,77.0,78.0,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.1666666666666666,1,3,1,0,0,1,0,0,0,0,0,6
-22500127,GSW,LAC,77.0,79.4,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody')",3.3833333333333337,1,3,10,1,5,1,1,0,0,2,1,6
-22500127,GSW,LAC,76.6,78.6,"('Al Horford', 'Draymond Green', 'Gary Payton II', 'Moses Moody', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,6
-22500127,GSW,LAC,77.2,78.6,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Quinten Post', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,6
-22500127,GSW,LAC,78.6,79.2,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",5.316666666666666,1,14,10,5,5,4,1,1,0,2,1,6
-22500127,GSW,LAC,78.6,79.2,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",4.783333333333332,3,14,8,2,4,3,0,1,2,2,1,6
-22500127,GSW,LAC,77.4,78.2,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody')",3.2833333333333337,3,10,2,4,1,3,0,0,1,0,0,6
-22500127,GSW,LAC,77.2,79.2,"('Al Horford', 'Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",1.1666666666666663,3,0,2,0,3,0,0,0,1,1,0,6
-22500127,GSW,LAC,76.2,78.2,"('Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.05,3,0,0,0,0,0,0,0,0,0,0,6
-22500127,GSW,LAC,78.2,79.2,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",1.6333333333333335,3,3,0,4,2,0,0,0,0,0,0,6
-22500127,GSW,LAC,76.8,79.2,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",0.1666666666666666,3,0,0,0,0,0,0,0,0,0,0,6
-22500127,GSW,LAC,77.0,78.6,"('Al Horford', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0,2,0,0,0,0,0,0,0,0,0,0,6
-22500127,GSW,LAC,77.4,78.6,"('Al Horford', 'Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Will Richard')",1.4166666666666663,2,0,5,1,2,0,1,0,0,0,0,6
-22500127,GSW,LAC,77.0,78.6,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",0.25,2,0,0,0,0,0,0,0,0,0,0,6
-22500127,GSW,LAC,76.8,78.6,"('Al Horford', 'Buddy Hield', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.7833333333333334,2,4,5,2,2,2,0,3,2,1,0,6
-22500127,GSW,LAC,78.6,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",3.783333333333332,2,7,0,7,3,3,0,3,2,0,0,6
-22500127,GSW,LAC,76.6,78.6,"('Al Horford', 'Buddy Hield', 'Draymond Green', 'Stephen Curry', 'Will Richard')",0.0,2,0,0,0,0,0,0,0,0,0,0,6
-22500127,GSW,LAC,78.2,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Quinten Post', 'Will Richard')",0.0,2,0,0,0,0,0,0,0,0,0,0,6
-22500127,GSW,LAC,76.6,78.6,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.9833333333333336,2,0,9,1,3,0,1,0,0,1,0,6
-22500127,GSW,LAC,77.8,78.6,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.783333333333333,2,2,5,3,5,0,1,0,1,1,0,6
-22500127,GSW,LAC,76.6,78.6,"('Al Horford', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,6
-22500127,GSW,LAC,78.0,78.6,"('Al Horford', 'Draymond Green', 'Gary Payton II', 'Quinten Post', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,6
-22500139,GSW,MIL,77.8,77.8,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Jonathan Kuminga')",1.3,4,2,4,0,1,0,2,2,2,0,2,7
-22500139,GSW,MIL,77.4,77.8,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0,4,0,0,0,0,0,0,0,0,0,0,7
-22500139,GSW,MIL,76.2,77.6,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",2.2,4,4,5,3,2,1,1,0,1,0,0,7
-22500139,GSW,MIL,77.8,78.2,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",3.15,4,8,14,3,1,1,2,2,0,0,2,7
-22500139,GSW,MIL,77.4,78.2,"('Al Horford', 'Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry')",1.7666666666666668,4,5,5,0,0,1,2,1,0,4,1,7
-22500139,GSW,MIL,77.0,77.6,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.3833333333333333,4,3,2,2,0,0,0,1,0,1,1,7
-22500139,GSW,MIL,78.2,77.6,"('Al Horford', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga')",0.0833333333333333,4,0,0,0,0,0,0,0,0,0,0,7
-22500139,GSW,MIL,77.0,77.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Stephen Curry')",1.4833333333333334,3,0,6,1,3,0,2,1,1,0,1,7
-22500139,GSW,MIL,77.0,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.1166666666666667,4,4,3,0,3,0,0,0,1,0,0,7
-22500139,GSW,MIL,78.2,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,7
-22500139,GSW,MIL,76.8,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",3.483333333333334,1,8,14,1,0,2,3,3,1,2,2,7
-22500139,GSW,MIL,76.6,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,7
-22500139,GSW,MIL,77.0,78.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Will Richard')",1.1833333333333336,1,0,5,0,1,0,1,0,0,0,0,7
-22500139,GSW,MIL,78.6,78.2,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",4.7833333333333306,1,11,8,8,4,3,1,1,0,2,3,7
-22500139,GSW,MIL,77.4,78.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody')",2.4166666666666665,1,6,5,1,2,2,1,0,2,0,0,7
-22500139,GSW,MIL,76.6,77.4,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",0.0,3,0,0,0,0,0,0,0,0,0,0,7
-22500139,GSW,MIL,77.0,78.0,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.4666666666666667,3,3,0,0,0,1,0,0,1,0,0,7
-22500139,GSW,MIL,76.6,77.6,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry')",1.6,3,6,3,2,1,2,1,0,0,1,1,7
-22500139,GSW,MIL,77.4,78.2,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0,2,0,0,0,0,0,0,0,0,0,0,7
-22500139,GSW,MIL,77.0,78.2,"('Brandin Podziemski', 'Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga')",0.0,2,0,0,0,0,0,0,0,0,0,0,7
-22500139,GSW,MIL,77.4,77.4,"('Al Horford', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Will Richard')",0.0,2,0,0,0,0,0,0,0,0,0,0,7
-22500139,GSW,MIL,77.2,77.4,"('Brandin Podziemski', 'Draymond Green', 'Gui Santos', 'Jimmy Butler III', 'Will Richard')",4.050000000000001,2,12,7,4,2,3,2,2,2,1,3,7
-22500139,GSW,MIL,77.0,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.3,2,7,6,3,1,2,1,2,0,0,1,7
-22500139,GSW,MIL,76.4,77.4,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jimmy Butler III', 'Stephen Curry')",0.0,2,0,0,0,0,0,0,0,0,0,0,7
-22500139,GSW,MIL,77.2,77.4,"('Buddy Hield', 'Draymond Green', 'Gui Santos', 'Jimmy Butler III', 'Will Richard')",0.0,2,0,0,0,0,0,0,0,0,0,0,7
-22500139,GSW,MIL,77.4,78.2,"('Al Horford', 'Buddy Hield', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.75,2,5,3,3,2,0,0,0,0,1,1,7
-22500139,GSW,MIL,76.6,78.2,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",2.9166666666666665,2,9,4,3,4,1,1,1,0,1,2,7
-22500139,GSW,MIL,76.6,77.4,"('Al Horford', 'Buddy Hield', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",0.6,2,0,6,0,1,0,2,0,0,0,0,7
-22500139,GSW,MIL,77.2,78.2,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody')",0.3833333333333333,2,0,0,1,0,0,0,0,0,0,0,7
-22500139,GSW,MIL,76.6,78.4,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Jimmy Butler III', 'Will Richard')",0.1333333333333333,1,0,2,0,0,0,0,0,0,0,0,7
-22500139,GSW,MIL,77.0,78.2,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,7
-22500139,GSW,MIL,78.6,78.2,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",4.866666666666665,3,12,12,4,2,4,2,2,1,3,1,7
-22500139,GSW,MIL,77.2,77.4,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Will Richard')",3.583333333333333,3,5,6,5,4,0,1,1,0,1,2,7
-22500139,GSW,MIL,76.2,77.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Stephen Curry', 'Will Richard')",0.0,3,0,0,0,0,0,0,0,0,0,0,7
-22500144,GSW,IND,78.8,78.4,"('Draymond Green', 'Gui Santos', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",1.3333333333333333,4,3,5,2,0,1,1,1,0,2,1,8
-22500144,GSW,IND,78.6,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",2.783333333333333,4,4,3,4,4,1,1,1,2,2,2,8
-22500144,GSW,IND,79.0,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post')",0.0,4,0,0,0,0,0,0,0,0,0,0,8
-22500144,GSW,IND,77.0,78.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.8000000000000003,4,5,9,1,5,0,1,0,0,2,3,8
-22500144,GSW,IND,76.4,78.4,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Stephen Curry')",0.0666666666666666,4,0,0,0,1,0,0,0,0,0,0,8
-22500144,GSW,IND,77.8,78.4,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.8833333333333333,4,0,5,3,2,0,2,2,0,0,0,8
-22500144,GSW,IND,78.8,78.8,"('Gui Santos', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",0.0,4,0,0,0,0,0,0,0,0,0,0,8
-22500144,GSW,IND,79.0,78.4,"('Al Horford', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",0.0,4,0,0,0,0,0,0,0,0,0,0,8
-22500144,GSW,IND,76.6,78.4,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.35,4,0,3,0,1,0,1,0,0,0,0,8
-22500144,GSW,IND,78.0,78.6,"('Al Horford', 'Brandin Podziemski', 'Gui Santos', 'Jimmy Butler III', 'Moses Moody')",3.333333333333333,3,12,5,3,1,2,0,1,1,3,2,8
-22500144,GSW,IND,77.4,77.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody')",3.099999999999999,1,7,8,2,2,3,3,1,1,4,0,8
-22500144,GSW,IND,75.4,78.6,"('Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Moses Moody', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,8
-22500144,GSW,IND,77.0,78.8,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,8
-22500144,GSW,IND,77.0,78.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",4.883333333333333,3,9,14,1,5,0,3,1,2,1,4,8
-22500144,GSW,IND,77.2,78.4,"('Buddy Hield', 'Draymond Green', 'Gui Santos', 'Jonathan Kuminga', 'Stephen Curry')",0.6166666666666667,3,0,2,0,0,0,0,1,0,2,0,8
-22500144,GSW,IND,77.6,78.4,"('Draymond Green', 'Gui Santos', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0,3,0,0,0,0,0,0,0,0,0,0,8
-22500144,GSW,IND,77.6,78.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gui Santos', 'Moses Moody')",2.4166666666666665,3,9,4,2,2,3,1,0,0,0,1,8
-22500144,GSW,IND,77.4,78.4,"('Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",5.183333333333332,2,13,12,3,5,4,3,3,2,5,0,8
-22500144,GSW,IND,78.2,78.4,"('Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",0.0,2,0,0,0,0,0,0,0,0,0,0,8
-22500144,GSW,IND,78.6,79.6,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",0.7333333333333334,2,3,0,1,0,1,0,0,1,0,0,8
-22500144,GSW,IND,77.8,78.4,"('Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",0.0,2,0,0,0,0,0,0,0,0,0,0,8
-22500144,GSW,IND,77.8,78.8,"('Al Horford', 'Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody')",3.033333333333333,2,4,4,4,4,1,1,0,0,1,0,8
-22500144,GSW,IND,77.0,78.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",3.0500000000000007,2,6,9,2,5,2,2,1,1,0,2,8
-22500144,GSW,IND,78.2,79.6,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Quinten Post')",0.0,2,0,0,0,0,0,0,0,0,0,0,8
-22500144,GSW,IND,78.6,79.6,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",0.0,2,0,0,0,0,0,0,0,0,0,0,8
-22500144,GSW,IND,79.0,79.6,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post')",0.0,2,0,0,0,0,0,0,0,0,0,0,8
-22500144,GSW,IND,75.6,78.6,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,8
-22500144,GSW,IND,76.6,78.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Moses Moody')",0.7000000000000001,1,0,1,0,1,0,0,0,0,0,0,8
-22500144,GSW,IND,76.2,78.6,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",2.5666666666666664,1,7,3,6,2,1,0,2,0,1,1,8
-22500144,GSW,IND,77.0,78.8,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",5.633333333333332,1,18,16,5,5,4,3,1,2,1,3,8
-22500144,GSW,IND,77.0,78.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gui Santos', 'Stephen Curry')",0.0,3,0,0,0,0,0,0,0,0,0,0,8
-22500144,GSW,IND,77.6,78.4,"('Al Horford', 'Buddy Hield', 'Gui Santos', 'Jonathan Kuminga', 'Stephen Curry')",0.75,3,0,4,1,1,0,2,1,0,0,1,8
-22500144,GSW,IND,79.2,78.8,"('Brandin Podziemski', 'Gui Santos', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post')",2.783333333333333,4,9,7,4,1,2,0,0,0,3,0,8
-22500169,GSW,PHX,76.8,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",0.0,4,0,0,0,0,0,0,0,0,0,0,9
-22500169,GSW,PHX,76.2,78.2,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Moses Moody', 'Stephen Curry')",0.0,4,0,0,0,0,0,0,0,0,0,0,9
-22500169,GSW,PHX,77.8,78.2,"('Brandin Podziemski', 'Draymond Green', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",5.883333333333333,4,20,5,5,6,4,2,1,3,2,5,9
-22500169,GSW,PHX,77.2,78.2,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody')",2.2,4,3,8,0,3,1,0,0,0,1,2,9
-22500169,GSW,PHX,76.8,76.2,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer')",0.4833333333333333,3,0,2,0,0,0,1,1,0,0,0,9
-22500169,GSW,PHX,78.4,78.2,"('Brandin Podziemski', 'Moses Moody', 'Quinten Post', 'Stephen Curry', 'Trayce Jackson-Davis')",0.0,4,0,0,0,0,0,0,0,0,0,0,9
-22500169,GSW,PHX,78.4,78.2,"('Brandin Podziemski', 'Moses Moody', 'Pat Spencer', 'Quinten Post', 'Trayce Jackson-Davis')",0.2333333333333333,4,0,0,0,0,0,0,1,0,1,0,9
-22500169,GSW,PHX,77.8,78.2,"('Buddy Hield', 'Draymond Green', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",2.35,4,3,9,1,2,1,2,1,0,1,1,9
-22500169,GSW,PHX,77.4,78.2,"('Brandin Podziemski', 'Buddy Hield', 'Moses Moody', 'Pat Spencer', 'Quinten Post')",1.3333333333333337,4,0,2,1,1,0,1,0,0,0,0,9
-22500169,GSW,PHX,78.2,78.8,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,9
-22500169,GSW,PHX,77.2,78.0,"('Brandin Podziemski', 'Draymond Green', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis')",2.233333333333334,1,6,4,3,2,2,1,0,1,0,0,9
-22500169,GSW,PHX,77.6,77.2,"('Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis')",2.8999999999999995,1,10,2,4,1,4,0,0,1,1,0,9
-22500169,GSW,PHX,77.4,77.2,"('Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer', 'Trayce Jackson-Davis')",1.6333333333333333,3,4,2,0,0,1,1,1,2,0,2,9
-22500169,GSW,PHX,78.0,77.2,"('Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer', 'Quinten Post')",0.4333333333333333,3,0,0,0,1,0,0,0,0,0,0,9
-22500169,GSW,PHX,76.8,77.2,"('Brandin Podziemski', 'Gui Santos', 'Pat Spencer', 'Stephen Curry', 'Trayce Jackson-Davis')",0.0,3,0,0,0,0,0,0,0,0,0,0,9
-22500169,GSW,PHX,78.2,78.0,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",1.35,3,2,3,1,1,1,0,1,1,1,0,9
-22500169,GSW,PHX,77.2,77.4,"('Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Stephen Curry', 'Trayce Jackson-Davis')",0.1666666666666666,3,0,1,0,0,0,0,0,0,1,0,9
-22500169,GSW,PHX,77.6,77.6,"('Buddy Hield', 'Jimmy Butler III', 'Jonathan Kuminga', 'Pat Spencer', 'Trayce Jackson-Davis')",0.0,2,0,0,0,0,0,0,0,0,0,0,9
-22500169,GSW,PHX,77.2,77.6,"('Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer', 'Trayce Jackson-Davis')",1.1833333333333331,2,5,3,1,2,1,1,0,1,1,1,9
-22500169,GSW,PHX,76.8,78.2,"('Buddy Hield', 'Jonathan Kuminga', 'Pat Spencer', 'Stephen Curry', 'Trayce Jackson-Davis')",4.016666666666667,2,10,10,2,4,2,1,1,4,2,3,9
-22500169,GSW,PHX,76.8,78.4,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",3.0500000000000003,2,8,9,1,4,3,4,1,1,1,0,9
-22500169,GSW,PHX,78.6,78.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",2.216666666666667,2,4,8,2,1,0,2,1,0,0,1,9
-22500169,GSW,PHX,77.6,78.4,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer', 'Trayce Jackson-Davis')",0.0,2,0,0,0,0,0,0,0,0,0,0,9
-22500169,GSW,PHX,76.0,78.2,"('Buddy Hield', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer', 'Stephen Curry')",0.0,2,0,0,0,0,0,0,0,0,0,0,9
-22500169,GSW,PHX,78.2,78.4,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer', 'Quinten Post')",1.5333333333333332,2,8,0,3,0,3,0,1,0,0,0,9
-22500169,GSW,PHX,76.8,77.4,"('Brandin Podziemski', 'Buddy Hield', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis')",0.5166666666666666,1,0,0,1,1,0,0,0,0,0,0,9
-22500169,GSW,PHX,76.6,78.8,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,9
-22500169,GSW,PHX,78.6,78.8,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",6.349999999999999,1,17,13,8,9,5,2,1,0,1,0,9
-22500169,GSW,PHX,77.2,77.2,"('Brandin Podziemski', 'Buddy Hield', 'Gui Santos', 'Stephen Curry', 'Trayce Jackson-Davis')",2.2166666666666672,3,2,10,1,4,0,3,0,0,1,1,9
-22500169,GSW,PHX,77.6,78.0,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry', 'Trayce Jackson-Davis')",0.0,3,0,0,0,0,0,0,0,0,0,0,9
-22500169,GSW,PHX,78.4,78.4,"('Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",5.316666666666667,3,16,13,5,3,5,3,4,3,4,2,9
-22500169,GSW,PHX,77.4,77.2,"('Brandin Podziemski', 'Gui Santos', 'Moses Moody', 'Pat Spencer', 'Trayce Jackson-Davis')",0.3999999999999999,3,0,3,0,1,0,1,0,0,0,0,9
-22500181,GSW,SAC,77.6,77.4,"('Al Horford', 'Buddy Hield', 'Gui Santos', 'Jonathan Kuminga', 'Pat Spencer')",1.1833333333333331,1,2,5,0,2,0,0,1,1,2,0,10
-22500181,GSW,SAC,78.2,77.8,"('Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post', 'Will Richard')",4.983333333333333,1,16,11,2,3,4,3,1,3,0,2,10
-22500181,GSW,SAC,77.4,78.0,"('Al Horford', 'Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Will Richard')",0.8333333333333334,1,3,0,1,0,1,0,0,1,0,1,10
-22500181,GSW,SAC,78.2,77.4,"('Gui Santos', 'Jonathan Kuminga', 'Moses Moody', 'Trayce Jackson-Davis', 'Will Richard')",0.0,2,0,0,0,0,0,0,0,0,0,0,10
-22500181,GSW,SAC,76.8,77.8,"('Al Horford', 'Gary Payton II', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer')",0.0,2,0,0,0,0,0,0,0,0,0,0,10
-22500181,GSW,SAC,78.4,77.4,"('Al Horford', 'Jonathan Kuminga', 'Moses Moody', 'Trayce Jackson-Davis', 'Will Richard')",0.0,2,0,0,0,0,0,0,0,0,0,0,10
-22500181,GSW,SAC,77.4,76.4,"('Al Horford', 'Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Will Richard')",0.6833333333333333,2,0,2,0,2,0,0,0,0,1,0,10
-22500181,GSW,SAC,77.6,77.4,"('Brandin Podziemski', 'Gui Santos', 'Moses Moody', 'Trayce Jackson-Davis', 'Will Richard')",3.966666666666668,2,11,10,6,5,3,3,0,1,2,0,10
-22500181,GSW,SAC,77.0,78.2,"('Al Horford', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer', 'Will Richard')",1.7833333333333337,2,5,4,1,2,2,1,0,0,1,2,10
-22500181,GSW,SAC,77.2,77.4,"('Al Horford', 'Buddy Hield', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer')",1.9833333333333332,3,5,7,1,1,1,1,0,0,2,1,10
-22500181,GSW,SAC,76.4,77.4,"('Al Horford', 'Buddy Hield', 'Moses Moody', 'Pat Spencer', 'Will Richard')",1.3166666666666669,3,0,4,2,3,0,1,1,1,1,0,10
-22500181,GSW,SAC,77.6,78.0,"('Brandin Podziemski', 'Gary Payton II', 'Jonathan Kuminga', 'Quinten Post', 'Will Richard')",0.5666666666666667,3,0,2,1,1,0,1,0,0,0,1,10
-22500181,GSW,SAC,78.6,77.2,"('Al Horford', 'Buddy Hield', 'Jonathan Kuminga', 'Pat Spencer', 'Quinten Post')",3.1666666666666674,1,7,7,0,3,2,2,1,2,1,0,10
-22500181,GSW,SAC,77.4,77.6,"('Al Horford', 'Brandin Podziemski', 'Gui Santos', 'Moses Moody', 'Will Richard')",1.3666666666666667,1,2,2,1,2,0,0,0,1,0,1,10
-22500181,GSW,SAC,77.2,77.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gui Santos', 'Will Richard')",0.4666666666666666,1,2,0,1,0,1,0,1,0,0,0,10
-22500181,GSW,SAC,76.8,77.4,"('Al Horford', 'Buddy Hield', 'Gui Santos', 'Pat Spencer', 'Will Richard')",0.0,1,0,0,0,0,0,0,0,0,0,0,10
-22500181,GSW,SAC,77.2,78.2,"('Al Horford', 'Buddy Hield', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer')",0.0,2,0,0,0,0,0,0,0,0,0,0,10
-22500181,GSW,SAC,77.2,77.4,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Jonathan Kuminga', 'Moses Moody')",2.3833333333333337,2,5,6,2,2,1,2,1,1,0,1,10
-22500181,GSW,SAC,76.6,77.8,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Pat Spencer')",3.183333333333334,2,9,10,3,1,2,2,2,1,2,1,10
-22500181,GSW,SAC,78.2,77.2,"('Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post', 'Will Richard')",5.616666666666665,3,13,14,6,6,5,2,2,2,6,3,10
-22500181,GSW,SAC,78.4,75.6,"('Al Horford', 'Brandin Podziemski', 'Moses Moody', 'Quinten Post', 'Will Richard')",0.1,4,0,0,0,0,0,0,1,0,0,1,10
-22500181,GSW,SAC,76.4,78.0,"('Buddy Hield', 'Gary Payton II', 'Moses Moody', 'Pat Spencer', 'Trayce Jackson-Davis')",0.0,3,0,0,0,0,0,0,0,0,0,0,10
-22500181,GSW,SAC,77.0,78.0,"('Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Quinten Post', 'Will Richard')",0.0,3,0,0,0,0,0,0,0,0,0,0,10
-22500181,GSW,SAC,76.0,78.0,"('Buddy Hield', 'Gary Payton II', 'Pat Spencer', 'Trayce Jackson-Davis', 'Will Richard')",0.0,3,0,0,0,0,0,0,0,0,0,0,10
-22500181,GSW,SAC,77.4,78.0,"('Buddy Hield', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer', 'Trayce Jackson-Davis')",1.616666666666667,3,4,2,1,0,0,0,2,2,1,1,10
-22500181,GSW,SAC,76.4,78.0,"('Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Trayce Jackson-Davis', 'Will Richard')",0.9,3,1,6,1,1,0,2,2,0,1,0,10
-22500181,GSW,SAC,77.2,77.4,"('Brandin Podziemski', 'Gary Payton II', 'Moses Moody', 'Quinten Post', 'Will Richard')",1.1,4,2,4,1,1,0,1,0,0,0,1,10
-22500181,GSW,SAC,77.2,77.2,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Jonathan Kuminga', 'Moses Moody')",0.0,4,0,0,0,0,0,0,0,0,0,0,10
-22500181,GSW,SAC,78.2,76.8,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Moses Moody', 'Quinten Post')",0.0,4,0,1,0,0,0,0,0,0,0,0,10
-22500181,GSW,SAC,77.4,77.2,"('Al Horford', 'Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Will Richard')",2.9333333333333336,4,10,2,5,3,2,1,0,0,1,1,10
-22500181,GSW,SAC,77.6,76.8,"('Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Trayce Jackson-Davis', 'Will Richard')",2.5500000000000003,4,5,4,3,1,2,1,2,0,2,0,10
-22500181,GSW,SAC,78.2,75.6,"('Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post', 'Will Richard')",0.1166666666666666,4,2,1,1,0,0,0,0,0,0,0,10
-22500181,GSW,SAC,76.2,75.6,"('Brandin Podziemski', 'Gary Payton II', 'Jonathan Kuminga', 'Moses Moody', 'Will Richard')",0.0666666666666666,4,0,2,0,0,0,0,0,0,2,0,10
-22500181,GSW,SAC,76.0,77.2,"('Al Horford', 'Gary Payton II', 'Moses Moody', 'Pat Spencer', 'Will Richard')",0.8000000000000002,4,0,5,0,2,0,1,0,0,0,0,10
-22500181,GSW,SAC,76.4,77.2,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Moses Moody', 'Will Richard')",2.4000000000000004,4,12,4,3,2,2,2,1,0,1,2,10
-22500181,GSW,SAC,77.0,77.2,"('Al Horford', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer', 'Will Richard')",1.9333333333333331,4,0,6,2,4,0,1,0,0,0,0,10
+game_id,team,opponent,team_avg_height,opp_avg_height,lineup,minutes_played,period,points,opp_points,rebounds,opp_rebounds,assists,opp_assists,turnovers,opp_turnovers,fouls_committed,fouls_drawn,possessions,opp_possessions,game_number
+22500002,GSW,LAL,77.0,79.0,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",4.550000000000001,1,12,11,2,5,4,3,0,4,0,2,10.88,11.0,1
+22500002,GSW,LAL,77.6,79.0,"('Al Horford', 'Brandin Podziemski', 'Gui Santos', 'Jimmy Butler III', 'Will Richard')",2.046666666666667,1,3,6,0,1,1,1,2,2,2,1,4.0,4.88,1
+22500002,GSW,LAL,76.8,79.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Jimmy Butler III')",1.2,1,5,0,2,0,0,0,0,0,1,1,1.88,2.0,1
+22500002,GSW,LAL,76.6,79.6,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.7166666666666666,1,5,3,4,2,1,0,2,1,2,0,6.0,6.44,1
+22500002,GSW,LAL,77.8,79.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gui Santos', 'Jimmy Butler III')",0.4833333333333333,1,0,2,0,1,0,0,0,0,1,0,1.0,0.88,1
+22500002,GSW,LAL,76.6,78.0,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.495,4,8,7,2,0,2,2,0,0,0,2,3.3200000000000003,4.0,1
+22500002,GSW,LAL,76.8,79.0,"('Al Horford', 'Buddy Hield', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.9,4,2,6,0,2,1,3,1,1,1,0,4.0,4.0,1
+22500002,GSW,LAL,76.8,79.0,"('Al Horford', 'Brandin Podziemski', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.95,4,3,9,0,1,1,2,2,0,1,0,4.0,4.0,1
+22500002,GSW,LAL,76.4,79.2,"('Al Horford', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",2.6500000000000004,2,8,8,2,3,2,2,2,2,2,2,8.32,6.88,1
+22500002,GSW,LAL,77.0,79.0,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",4.966666666666666,3,18,6,8,3,5,2,0,2,3,3,9.76,12.0,1
+22500002,GSW,LAL,78.4,78.8,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Quinten Post')",4.116666666666666,4,10,5,5,6,2,1,0,1,3,1,8.0,8.44,1
+22500002,GSW,LAL,77.0,79.0,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.9333333333333331,4,6,3,0,1,1,0,0,0,2,1,3.44,3.3200000000000003,1
+22500002,GSW,LAL,77.0,79.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Will Richard')",2.658333333333333,3,7,9,1,3,1,2,0,0,0,1,4.88,4.0,1
+22500002,GSW,LAL,76.2,79.0,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.0166666666666666,3,5,1,1,0,2,0,0,0,1,0,2.0,1.44,1
+22500002,GSW,LAL,76.6,79.2,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.95,3,0,7,1,2,0,1,2,0,2,0,4.0,5.32,1
+22500002,GSW,LAL,77.8,79.2,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Jonathan Kuminga')",1.3,3,5,2,1,0,1,0,0,1,0,0,2.0,3.0,1
+22500002,GSW,LAL,76.8,79.0,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Will Richard')",0.045,1,3,0,0,0,0,0,0,0,0,0,1.32,1.0,1
+22500002,GSW,LAL,76.2,79.2,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.3833333333333335,1,0,0,2,1,0,0,2,1,0,1,3.0,4.0,1
+22500002,GSW,LAL,77.2,79.2,"('Al Horford', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.5333333333333332,2,4,3,0,1,2,1,0,1,1,0,3.0,2.44,1
+22500002,GSW,LAL,78.0,79.0,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Quinten Post', 'Stephen Curry')",0.5166666666666666,2,1,2,0,0,0,0,0,0,0,1,0.44,1.0,1
+22500002,GSW,LAL,78.4,79.0,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Quinten Post')",3.883333333333333,2,7,7,3,4,2,1,3,2,2,2,8.44,8.0,1
+22500002,GSW,LAL,77.4,79.4,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0,2,1,0,0,0,0,0,0,0,0,0,0.44,0.0,1
+22500002,GSW,LAL,77.2,79.0,"('Al Horford', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",0.4166666666666666,2,1,0,1,0,0,0,0,0,0,0,0.44,1.0,1
+22500002,GSW,LAL,77.0,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.75,2,5,12,5,3,1,2,2,1,3,3,6.88,8.440000000000001,1
+22500006,GSW,DEN,77.0,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",5.366666666666665,1,10,10,5,3,4,5,3,1,1,1,12.0,10.0,2
+22500006,GSW,DEN,77.0,79.4,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.0,1,0,0,0,0,0,0,0,0,0,0,0.0,0.0,2
+22500006,GSW,DEN,76.8,78.8,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Jimmy Butler III')",1.4833333333333334,1,0,7,0,3,0,1,1,0,0,0,3.0,2.44,2
+22500006,GSW,DEN,76.4,79.4,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Stephen Curry')",0.0633333333333333,4,3,0,0,0,1,0,0,0,0,0,1.0,0.0,2
+22500006,GSW,DEN,76.6,78.4,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Will Richard')",4.1000000000000005,4,6,12,2,6,1,3,0,2,1,2,9.32,9.0,2
+22500006,GSW,DEN,77.0,79.4,"('Al Horford', 'Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",0.3116666666666666,4,0,0,0,0,0,0,0,0,0,0,0.0,1.0,2
+22500006,GSW,DEN,76.8,79.4,"('Al Horford', 'Brandin Podziemski', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",3.5333333333333328,4,9,8,2,3,1,3,1,1,1,2,8.0,7.44,2
+22500006,GSW,DEN,77.8,79.4,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",4.915,5,17,11,5,3,4,2,1,1,1,3,9.88,10.44,2
+22500006,GSW,DEN,77.0,78.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Will Richard')",3.911666666666666,3,10,9,5,3,3,2,1,1,1,3,8.32,8.88,2
+22500006,GSW,DEN,76.2,79.6,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",0.9333333333333332,3,2,2,1,0,1,0,0,0,0,0,1.0,2.0,2
+22500006,GSW,DEN,77.0,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",5.683333333333334,3,16,11,4,4,6,2,0,1,2,3,11.44,10.0,2
+22500006,GSW,DEN,76.6,79.6,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.3166666666666669,3,5,2,3,3,2,1,0,1,0,1,5.44,4.0,2
+22500006,GSW,DEN,77.4,79.4,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.5166666666666666,4,0,2,0,1,0,0,0,0,0,0,1.0,1.0,2
+22500006,GSW,DEN,77.8,79.4,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",3.333333333333333,4,8,4,4,2,0,1,0,0,2,2,5.2,5.44,2
+22500006,GSW,DEN,76.6,79.6,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.5333333333333334,1,4,4,2,2,1,1,0,1,1,0,3.0,3.44,2
+22500006,GSW,DEN,76.2,79.4,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.3833333333333333,1,4,6,0,0,0,1,0,0,0,0,3.0,3.0,2
+22500006,GSW,DEN,76.4,80.0,"('Al Horford', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",2.9,2,7,12,1,4,2,2,0,1,3,0,7.0,7.32,2
+22500006,GSW,DEN,78.6,78.4,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post')",0.6333333333333334,2,2,2,0,1,0,0,0,0,0,0,1.0,1.0,2
+22500006,GSW,DEN,77.4,79.2,"('Al Horford', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry')",1.5333333333333334,2,6,4,0,0,2,0,1,1,1,0,3.0,2.44,2
+22500006,GSW,DEN,76.0,79.4,"('Brandin Podziemski', 'Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Stephen Curry')",1.3383333333333334,2,4,0,3,2,1,0,0,1,0,0,4.0,4.0,2
+22500006,GSW,DEN,78.4,78.4,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Quinten Post')",3.65,2,10,13,1,2,3,5,0,0,0,2,6.44,7.0,2
+22500006,GSW,DEN,77.4,79.4,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.2666666666666666,2,4,6,1,1,0,2,0,0,0,0,3.0,3.0,2
+22500006,GSW,DEN,77.0,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.4833333333333333,2,1,2,0,0,0,0,0,0,1,1,0.44,0.88,2
+22500006,GSW,DEN,77.0,78.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Will Richard')",2.103333333333333,1,9,4,4,0,1,1,0,1,1,2,4.88,4.0,2
+22500037,GSW,DEN,78.2,79.4,"('Buddy Hield', 'Jimmy Butler III', 'Jonathan Kuminga', 'Pat Spencer', 'Quinten Post')",0.6166666666666667,2,0,1,1,1,0,0,0,0,1,0,1.0,0.44,3
+22500037,GSW,DEN,77.4,79.4,"('Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Trayce Jackson-Davis', 'Will Richard')",3.55,2,7,11,1,1,3,2,2,1,1,1,6.0,6.32,3
+22500037,GSW,DEN,78.6,79.2,"('Buddy Hield', 'Jimmy Butler III', 'Pat Spencer', 'Quinten Post', 'Trayce Jackson-Davis')",3.3500000000000005,1,11,9,4,3,3,2,0,0,0,0,6.0,5.44,3
+22500037,GSW,DEN,78.2,79.6,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Pat Spencer', 'Quinten Post')",0.9333333333333332,1,4,2,0,0,1,1,0,0,1,0,2.0,1.0,3
+22500037,GSW,DEN,77.6,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody')",5.033333333333331,3,13,10,6,3,4,3,1,2,2,0,11.0,11.32,3
+22500037,GSW,DEN,76.6,78.4,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer')",0.4716666666666666,3,1,4,0,1,0,1,0,0,1,0,1.44,1.88,3
+22500037,GSW,DEN,78.8,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post')",0.6166666666666667,3,0,1,1,1,0,0,0,0,1,0,1.0,0.44,3
+22500037,GSW,DEN,77.4,78.4,"('Buddy Hield', 'Jimmy Butler III', 'Pat Spencer', 'Quinten Post', 'Will Richard')",3.1766666666666663,3,7,12,1,2,2,4,1,0,0,4,7.32,7.0,3
+22500037,GSW,DEN,78.2,78.4,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer', 'Quinten Post')",2.7666666666666675,4,6,9,3,2,2,2,1,0,1,0,5.0,4.88,3
+22500037,GSW,DEN,76.6,78.6,"('Gary Payton II', 'Gui Santos', 'Pat Spencer', 'Trayce Jackson-Davis', 'Will Richard')",5.958333333333333,4,16,16,10,5,3,3,1,1,6,5,14.76,14.08,3
+22500037,GSW,DEN,77.4,79.0,"('Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Trayce Jackson-Davis', 'Will Richard')",2.4833333333333334,4,5,5,3,4,1,1,0,1,1,0,5.0,5.0,3
+22500037,GSW,DEN,78.8,78.8,"('Buddy Hield', 'Jonathan Kuminga', 'Pat Spencer', 'Quinten Post', 'Trayce Jackson-Davis')",0.6333333333333333,1,0,3,0,0,0,1,1,0,1,0,1.0,1.44,3
+22500037,GSW,DEN,78.6,79.6,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post')",2.6166666666666667,3,7,6,2,2,2,2,0,0,1,1,5.0,6.0,3
+22500037,GSW,DEN,77.2,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Will Richard')",1.1883333333333332,2,5,3,3,1,0,1,0,1,0,1,3.44,4.0,3
+22500037,GSW,DEN,77.4,79.4,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga')",1.6333333333333335,1,1,6,1,3,0,2,1,0,0,0,3.44,4.0,3
+22500037,GSW,DEN,77.6,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody')",4.966666666666665,1,5,12,4,7,2,4,2,0,0,1,11.0,9.0,3
+22500037,GSW,DEN,78.2,79.4,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer', 'Quinten Post')",4.733333333333332,2,13,11,5,3,4,3,1,2,0,2,8.88,10.0,3
+22500037,GSW,DEN,77.8,79.4,"('Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Trayce Jackson-Davis', 'Will Richard')",1.8666666666666667,2,3,8,1,2,1,2,1,0,1,0,5.0,4.0,3
+22500047,GSW,SAS,76.6,79.4,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody')",0.2983333333333333,1,0,2,0,0,0,1,0,0,1,0,0.0,1.0,4
+22500047,GSW,SAS,76.0,79.4,"('Al Horford', 'Gary Payton II', 'Moses Moody', 'Stephen Curry', 'Will Richard')",1.5,1,0,2,2,3,0,0,1,2,1,0,4.0,3.88,4
+22500047,GSW,SAS,75.6,79.4,"('Draymond Green', 'Gary Payton II', 'Moses Moody', 'Stephen Curry', 'Will Richard')",0.2,1,0,0,0,0,0,0,0,0,1,0,0.0,1.0,4
+22500047,GSW,SAS,77.6,80.0,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III')",3.2266666666666666,1,0,6,4,6,0,1,0,1,0,1,6.0,5.44,4
+22500047,GSW,SAS,76.4,79.4,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry', 'Will Richard')",4.366666666666667,1,11,7,4,5,3,2,1,2,0,1,10.0,10.0,4
+22500047,GSW,SAS,76.6,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.9833333333333332,3,0,2,3,2,0,0,0,0,1,0,2.0,1.88,4
+22500047,GSW,SAS,76.8,81.0,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Stephen Curry')",0.2,3,1,3,0,0,0,1,0,0,0,0,0.44,1.0,4
+22500047,GSW,SAS,77.0,79.4,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",2.6333333333333333,3,9,5,3,1,0,2,1,2,1,3,5.76,5.44,4
+22500047,GSW,SAS,76.4,79.4,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry', 'Will Richard')",3.9,3,7,12,1,2,1,4,2,1,3,1,7.44,7.44,4
+22500047,GSW,SAS,78.6,80.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",4.133333333333333,2,10,8,4,4,2,2,0,2,1,3,9.32,8.0,4
+22500047,GSW,SAS,76.6,79.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",3.5916666666666663,2,10,12,0,3,1,4,1,2,0,0,7.0,8.0,4
+22500047,GSW,SAS,76.6,80.6,"('Al Horford', 'Buddy Hield', 'Draymond Green', 'Stephen Curry', 'Will Richard')",1.7166666666666666,2,6,0,1,1,2,0,1,1,1,0,4.0,3.0,4
+22500047,GSW,SAS,78.0,80.2,"('Al Horford', 'Gary Payton II', 'Jimmy Butler III', 'Quinten Post', 'Stephen Curry')",0.3333333333333333,2,0,0,0,0,0,0,1,1,0,0,1.0,1.0,4
+22500047,GSW,SAS,75.8,79.4,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Stephen Curry', 'Will Richard')",2.1499999999999995,2,3,5,2,3,0,1,2,1,2,2,4.0,4.32,4
+22500047,GSW,SAS,77.0,80.0,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody')",0.145,1,0,0,0,0,0,0,1,0,1,0,1.0,0.0,4
+22500047,GSW,SAS,76.0,79.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Stephen Curry')",2.05,1,7,3,2,1,0,0,0,1,1,1,3.88,5.44,4
+22500047,GSW,SAS,76.4,79.4,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Jimmy Butler III', 'Stephen Curry')",3.4000000000000004,4,12,7,2,2,2,2,0,1,0,1,6.44,7.0,4
+22500047,GSW,SAS,76.2,80.8,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",0.1666666666666666,4,0,0,0,1,0,0,0,0,2,0,0.0,1.0,4
+22500047,GSW,SAS,76.8,80.8,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Will Richard')",1.2000000000000002,4,2,0,1,2,0,0,0,0,2,0,2.0,2.0,4
+22500047,GSW,SAS,78.6,80.8,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",2.3,4,3,8,3,4,1,3,0,0,0,0,4.0,6.0,4
+22500047,GSW,SAS,76.0,79.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Stephen Curry')",0.8833333333333334,3,4,2,1,0,0,1,0,0,0,1,2.0,2.0,4
+22500047,GSW,SAS,76.2,79.4,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.0816666666666666,4,0,0,0,0,0,0,0,0,0,0,0.0,1.0,4
+22500047,GSW,SAS,76.2,79.4,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Moses Moody', 'Stephen Curry')",1.2333333333333334,4,5,5,1,0,1,2,0,0,0,2,2.0,3.0,4
+22500047,GSW,SAS,76.6,79.6,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",0.6,4,2,5,0,0,0,0,0,0,2,1,1.88,3.2,4
+22500047,GSW,SAS,76.0,80.6,"('Brandin Podziemski', 'Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Stephen Curry')",0.0,4,1,0,0,0,0,0,0,0,0,0,0.44,0.0,4
+22500047,GSW,SAS,76.6,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",2.4266666666666667,4,7,4,2,4,3,0,1,2,0,2,6.44,6.0,4
+22500047,GSW,SAS,76.4,81.0,"('Al Horford', 'Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Stephen Curry')",3.368333333333333,3,9,10,3,3,2,2,2,1,0,0,7.0,6.0,4
+22500097,GSW,POR,76.2,78.8,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",2.486666666666667,2,4,12,0,3,1,2,0,0,0,2,6.0,6.0,5
+22500097,GSW,POR,78.0,79.8,"('Buddy Hield', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",0.9333333333333332,1,1,4,1,3,0,2,0,0,0,0,2.44,3.0,5
+22500097,GSW,POR,76.4,80.2,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.0166666666666666,2,5,6,0,0,2,1,0,0,0,1,2.44,2.0,5
+22500097,GSW,POR,76.2,80.0,"('Brandin Podziemski', 'Gui Santos', 'Moses Moody', 'Pat Spencer', 'Will Richard')",1.9333333333333331,4,6,6,1,1,1,1,1,1,1,2,5.32,4.0,5
+22500097,GSW,POR,77.0,79.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.05,4,0,3,1,1,0,0,2,1,1,1,3.0,3.44,5
+22500097,GSW,POR,77.2,80.2,"('Gui Santos', 'Moses Moody', 'Pat Spencer', 'Trayce Jackson-Davis', 'Will Richard')",6.2716666666666665,4,15,16,5,5,2,4,3,5,4,3,13.64,15.76,5
+22500097,GSW,POR,77.2,77.8,"('Brandin Podziemski', 'Draymond Green', 'Gui Santos', 'Jonathan Kuminga', 'Stephen Curry')",1.6,4,6,9,1,0,1,1,3,1,1,4,7.44,5.88,5
+22500097,GSW,POR,77.4,78.2,"('Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis')",1.7666666666666668,3,5,9,1,0,1,2,3,0,1,0,4.88,4.44,5
+22500097,GSW,POR,78.6,79.6,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",3.7,3,12,12,3,5,3,4,1,1,2,3,9.76,9.88,5
+22500097,GSW,POR,77.4,79.8,"('Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis', 'Will Richard')",3.7666666666666666,3,8,5,3,4,2,1,0,1,1,4,8.32,7.44,5
+22500097,GSW,POR,76.2,78.2,"('Buddy Hield', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.4666666666666663,3,10,8,3,0,1,2,1,0,0,3,5.32,5.0,5
+22500097,GSW,POR,77.2,78.2,"('Brandin Podziemski', 'Draymond Green', 'Gui Santos', 'Jonathan Kuminga', 'Pat Spencer')",0.1333333333333333,4,1,2,0,0,0,1,0,0,0,0,0.44,1.0,5
+22500097,GSW,POR,78.4,78.2,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Quinten Post')",3.083333333333333,2,7,8,5,2,1,3,3,1,3,0,8.0,8.0,5
+22500097,GSW,POR,76.4,78.2,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody', 'Will Richard')",0.2516666666666667,2,1,3,0,0,0,0,0,0,0,0,0.44,1.0,5
+22500097,GSW,POR,75.8,78.2,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",0.2333333333333333,2,0,1,0,0,0,0,1,0,0,0,1.0,0.44,5
+22500097,GSW,POR,77.2,78.2,"('Gary Payton II', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry', 'Will Richard')",2.5166666666666666,2,6,8,4,1,1,2,2,1,2,1,5.44,5.0,5
+22500097,GSW,POR,76.0,78.2,"('Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.0333333333333332,2,4,2,2,0,1,0,1,1,1,0,2.44,2.88,5
+22500097,GSW,POR,76.8,80.2,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Will Richard')",1.1166666666666667,2,1,1,2,1,0,0,0,0,0,1,2.44,2.44,5
+22500097,GSW,POR,78.2,78.2,"('Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody', 'Trayce Jackson-Davis')",0.0,3,0,0,0,0,0,0,0,0,0,0,0.0,0.0,5
+22500097,GSW,POR,77.4,80.0,"('Buddy Hield', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis')",0.5166666666666666,1,3,3,0,0,1,1,0,0,1,0,1.0,1.0,5
+22500097,GSW,POR,76.8,79.4,"('Brandin Podziemski', 'Buddy Hield', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis')",2.066666666666667,1,10,5,2,1,2,0,0,1,1,0,5.0,5.44,5
+22500097,GSW,POR,76.0,77.8,"('Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer', 'Will Richard')",1.5666666666666669,1,1,4,1,3,0,1,0,0,1,0,3.44,3.88,5
+22500097,GSW,POR,78.2,80.0,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",0.1833333333333333,1,1,1,0,0,0,0,0,0,0,1,0.44,0.44,5
+22500097,GSW,POR,77.4,77.8,"('Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis', 'Will Richard')",1.4833333333333334,1,0,3,1,2,0,0,1,1,1,1,4.0,3.3200000000000003,5
+22500097,GSW,POR,78.6,80.0,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",5.133333333333333,1,12,8,5,6,4,2,3,3,1,1,10.88,11.44,5
+22500121,GSW,MEM,76.4,78.6,"('Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",1.5166666666666668,3,8,2,2,1,3,1,0,1,0,0,3.0,4.0,6
+22500121,GSW,MEM,77.0,78.8,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody')",3.3466666666666667,3,8,7,3,4,2,2,1,1,1,1,7.32,7.0,6
+22500121,GSW,MEM,77.0,78.0,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",3.1666666666666665,3,8,7,4,2,2,2,1,0,1,3,6.44,7.44,6
+22500121,GSW,MEM,75.8,79.0,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Moses Moody', 'Stephen Curry')",1.35,3,5,3,1,1,0,1,1,1,1,1,3.88,5.0,6
+22500121,GSW,MEM,77.2,78.6,"('Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis')",1.85,1,0,5,2,2,0,2,2,0,0,1,6.0,4.0,6
+22500121,GSW,MEM,77.0,76.8,"('Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Stephen Curry', 'Trayce Jackson-Davis')",0.0916666666666666,1,2,1,0,0,1,0,0,0,0,0,1.0,0.44,6
+22500121,GSW,MEM,77.6,78.0,"('Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis')",1.855,1,6,6,0,1,2,3,0,1,0,2,5.88,4.0,6
+22500121,GSW,MEM,77.2,78.0,"('Buddy Hield', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis')",0.37,1,1,1,0,0,0,0,0,0,1,0,0.44,0.44,6
+22500121,GSW,MEM,77.0,78.0,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",5.9,1,25,15,4,4,8,4,0,2,2,0,14.0,12.76,6
+22500121,GSW,MEM,76.6,78.0,"('Buddy Hield', 'Gui Santos', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",2.583333333333333,2,9,5,3,3,2,1,1,3,1,4,7.76,8.44,6
+22500121,GSW,MEM,77.0,79.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.66,2,5,4,2,3,1,0,1,0,2,2,6.88,5.76,6
+22500121,GSW,MEM,77.8,78.6,"('Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",1.5666666666666669,1,2,6,1,0,1,1,2,0,2,0,3.0,2.76,6
+22500121,GSW,MEM,77.2,78.0,"('Brandin Podziemski', 'Gui Santos', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.6333333333333333,2,2,3,0,1,0,1,0,0,0,1,0.88,1.0,6
+22500121,GSW,MEM,77.0,78.6,"('Buddy Hield', 'Gary Payton II', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",0.1666666666666666,1,0,3,0,0,0,1,0,0,0,0,0.0,1.0,6
+22500121,GSW,MEM,77.6,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody')",2.333333333333333,2,4,10,0,2,1,4,2,0,1,1,4.44,5.0,6
+22500121,GSW,MEM,76.4,77.4,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",0.85,2,3,0,1,1,1,0,0,1,1,0,2.0,1.0,6
+22500121,GSW,MEM,76.8,77.6,"('Brandin Podziemski', 'Gary Payton II', 'Gui Santos', 'Jimmy Butler III', 'Moses Moody')",1.25,4,3,4,0,2,1,0,0,1,0,1,3.0,3.88,6
+22500121,GSW,MEM,78.0,79.2,"('Brandin Podziemski', 'Gary Payton II', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post')",1.7166666666666666,4,7,6,4,1,1,1,0,0,0,1,3.88,4.44,6
+22500121,GSW,MEM,77.6,77.6,"('Brandin Podziemski', 'Draymond Green', 'Gui Santos', 'Jimmy Butler III', 'Moses Moody')",0.7166666666666667,4,0,0,0,0,0,0,1,0,2,0,1.0,0.0,6
+22500121,GSW,MEM,77.8,79.2,"('Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Quinten Post')",0.8333333333333334,4,4,3,1,0,1,1,0,0,1,0,2.0,1.44,6
+22500121,GSW,MEM,78.6,77.6,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",2.583333333333333,2,5,2,4,2,1,0,2,0,2,1,5.0,6.0,6
+22500121,GSW,MEM,77.2,79.2,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody')",0.1483333333333333,2,1,0,0,0,0,0,0,0,0,0,0.44,1.0,6
+22500121,GSW,MEM,78.2,78.0,"('Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",2.4166666666666665,3,7,5,2,2,1,2,0,1,0,1,5.32,6.0,6
+22500121,GSW,MEM,76.4,78.2,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.0166666666666668,4,3,0,0,1,1,0,0,1,1,0,2.0,1.0,6
+22500121,GSW,MEM,78.0,77.4,"('Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Quinten Post', 'Will Richard')",0.0,4,0,1,0,0,0,0,0,0,0,0,0.0,0.44,6
+22500121,GSW,MEM,77.2,77.6,"('Brandin Podziemski', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis')",1.4166666666666663,4,5,2,1,1,2,1,0,0,0,0,2.0,2.0,6
+22500121,GSW,MEM,77.2,76.8,"('Gui Santos', 'Moses Moody', 'Pat Spencer', 'Trayce Jackson-Davis', 'Will Richard')",1.0783333333333334,4,0,4,1,3,0,1,1,0,1,0,4.0,2.88,6
+22500121,GSW,MEM,77.6,77.4,"('Buddy Hield', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry', 'Will Richard')",3.566666666666667,4,8,13,3,2,4,3,1,0,4,0,7.0,8.32,6
+22500127,GSW,LAC,78.2,79.4,"('Al Horford', 'Brandin Podziemski', 'Gui Santos', 'Jonathan Kuminga', 'Moses Moody')",1.7166666666666668,4,2,3,2,0,0,1,1,0,1,0,3.0,3.44,7
+22500127,GSW,LAC,78.6,79.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",5.466666666666666,4,12,7,4,4,3,2,3,2,3,0,11.0,10.32,7
+22500127,GSW,LAC,77.6,79.2,"('Al Horford', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",1.5666666666666669,4,3,0,1,1,0,0,0,0,0,1,2.0,2.0,7
+22500127,GSW,LAC,77.0,77.4,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.7666666666666667,3,5,2,0,0,0,1,0,1,0,0,2.0,2.0,7
+22500127,GSW,LAC,77.0,79.4,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody')",3.313333333333334,1,3,10,1,5,1,1,0,0,2,1,5.0,5.32,7
+22500127,GSW,LAC,78.2,78.6,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",2.7333333333333325,1,13,4,4,4,3,0,0,0,0,0,6.0,6.0,7
+22500127,GSW,LAC,77.0,78.0,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.1633333333333333,1,3,1,0,0,1,0,0,0,0,0,1.0,0.44,7
+22500127,GSW,LAC,78.6,79.2,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",5.3,1,14,10,5,5,4,1,1,0,2,1,11.0,11.44,7
+22500127,GSW,LAC,76.2,78.2,"('Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.0516666666666666,3,0,0,0,0,0,0,0,0,0,0,1.0,0.0,7
+22500127,GSW,LAC,78.2,79.2,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",1.6333333333333335,3,3,0,4,2,0,0,0,0,0,0,3.0,3.0,7
+22500127,GSW,LAC,77.4,78.2,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody')",2.7150000000000003,3,10,2,4,1,3,0,0,1,0,0,5.0,5.0,7
+22500127,GSW,LAC,76.8,79.2,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",0.0,3,0,0,0,0,0,0,0,0,0,0,0.0,0.0,7
+22500127,GSW,LAC,77.2,79.2,"('Al Horford', 'Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",1.1666666666666663,3,0,2,0,3,0,0,0,1,1,0,2.0,2.0,7
+22500127,GSW,LAC,78.6,79.2,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",4.366666666666666,3,14,8,2,4,3,0,1,2,2,1,9.32,8.0,7
+22500127,GSW,LAC,76.6,78.6,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",1.9333333333333336,2,0,9,1,3,0,1,0,0,1,0,3.0,4.88,7
+22500127,GSW,LAC,76.8,78.6,"('Al Horford', 'Buddy Hield', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.7833333333333334,2,4,5,2,2,2,0,3,2,1,0,6.0,5.44,7
+22500127,GSW,LAC,77.4,78.6,"('Al Horford', 'Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Will Richard')",1.4166666666666663,2,0,5,1,2,0,1,0,0,0,0,2.0,3.0,7
+22500127,GSW,LAC,77.8,78.6,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.751666666666667,2,2,5,3,5,0,1,0,1,1,0,5.0,5.0,7
+22500127,GSW,LAC,78.6,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",3.783333333333332,2,7,0,7,3,3,0,3,2,0,0,8.0,8.0,7
+22500127,GSW,LAC,77.0,79.0,"('Brandin Podziemski', 'Gui Santos', 'Pat Spencer', 'Trayce Jackson-Davis', 'Will Richard')",2.7,4,3,6,1,3,1,1,1,1,1,1,6.0,5.44,7
+22500139,GSW,MIL,77.4,78.2,"('Al Horford', 'Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry')",1.6666666666666667,4,5,5,0,0,1,2,1,0,4,1,3.0,3.0,8
+22500139,GSW,MIL,77.0,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.4666666666666667,3,3,0,0,0,1,0,0,1,0,0,1.0,1.0,8
+22500139,GSW,MIL,76.6,78.0,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry')",1.5666666666666669,3,6,3,2,1,2,1,0,0,1,1,4.44,3.0,8
+22500139,GSW,MIL,78.6,78.2,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",4.866666666666665,3,12,12,4,2,4,2,2,1,3,1,9.88,10.0,8
+22500139,GSW,MIL,77.0,77.8,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Stephen Curry')",1.4833333333333334,3,0,6,1,3,0,2,1,1,0,1,4.0,5.0,8
+22500139,GSW,MIL,77.2,77.4,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Will Richard')",3.556666666666666,3,5,6,5,4,0,1,1,0,1,2,7.88,8.0,8
+22500139,GSW,MIL,77.0,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.2766666666666664,2,7,6,3,1,2,1,2,0,0,1,6.88,5.0,8
+22500139,GSW,MIL,76.6,78.2,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",2.8833333333333333,2,9,4,3,4,1,1,1,0,1,2,6.32,7.0,8
+22500139,GSW,MIL,77.2,78.2,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody')",0.3799999999999999,2,0,0,1,0,0,0,0,0,0,0,0.0,1.0,8
+22500139,GSW,MIL,76.6,77.4,"('Al Horford', 'Buddy Hield', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",0.6,2,0,6,0,1,0,2,0,0,0,0,1.0,2.0,8
+22500139,GSW,MIL,77.2,77.4,"('Brandin Podziemski', 'Draymond Green', 'Gui Santos', 'Jimmy Butler III', 'Will Richard')",4.033333333333334,2,12,7,4,2,3,2,2,2,1,3,9.76,8.44,8
+22500139,GSW,MIL,77.4,78.2,"('Al Horford', 'Buddy Hield', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.7333333333333334,2,5,3,3,2,0,0,0,0,1,1,5.32,4.44,8
+22500139,GSW,MIL,77.0,78.2,"('Brandin Podziemski', 'Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga')",0.0,2,0,0,0,0,0,0,0,0,0,0,0.0,0.0,8
+22500139,GSW,MIL,76.6,78.4,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Jimmy Butler III', 'Will Richard')",0.09,1,0,2,0,0,0,0,0,0,0,0,0.0,1.0,8
+22500139,GSW,MIL,78.6,78.2,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",4.583333333333331,1,11,8,8,4,3,1,1,0,2,2,9.32,11.44,8
+22500139,GSW,MIL,77.0,78.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Will Richard')",1.1733333333333331,1,0,5,0,1,0,1,0,0,0,0,2.0,2.0,8
+22500139,GSW,MIL,77.8,78.2,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",3.1,4,8,14,3,1,1,2,2,0,0,2,7.32,8.0,8
+22500139,GSW,MIL,77.0,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.7866666666666666,4,4,3,0,3,0,0,0,1,0,0,5.0,3.0,8
+22500139,GSW,MIL,77.0,77.6,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.3833333333333333,4,3,2,2,0,0,0,1,0,1,1,2.0,2.88,8
+22500139,GSW,MIL,77.8,77.8,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Jonathan Kuminga')",1.3,4,2,4,0,1,0,2,2,2,0,2,3.88,4.0,8
+22500139,GSW,MIL,78.2,77.6,"('Al Horford', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga')",0.0,4,0,0,0,0,0,0,0,0,0,0,0.0,0.0,8
+22500139,GSW,MIL,76.2,77.4,"('Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",2.0166666666666666,4,4,5,3,2,1,1,0,1,0,0,4.0,5.0,8
+22500139,GSW,MIL,77.4,78.2,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody')",2.4,1,6,5,1,2,2,1,0,2,0,0,6.0,5.0,8
+22500139,GSW,MIL,76.8,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",3.4666666666666672,1,8,14,1,0,2,3,3,1,2,2,8.0,8.76,8
+22500144,GSW,IND,78.0,78.6,"('Al Horford', 'Brandin Podziemski', 'Gui Santos', 'Jimmy Butler III', 'Moses Moody')",3.3200000000000003,3,12,5,3,1,2,0,1,1,3,2,7.32,7.32,9
+22500144,GSW,IND,77.6,78.4,"('Al Horford', 'Buddy Hield', 'Gui Santos', 'Jonathan Kuminga', 'Stephen Curry')",0.75,3,0,4,1,1,0,2,1,0,0,1,2.0,3.0,9
+22500144,GSW,IND,77.0,78.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",3.0500000000000003,2,6,9,2,5,2,2,1,1,0,1,6.44,6.44,9
+22500144,GSW,IND,77.8,77.6,"('Al Horford', 'Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody')",2.9833333333333334,2,4,4,4,4,1,1,0,0,1,0,7.0,6.0,9
+22500144,GSW,IND,78.6,78.8,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",0.7333333333333334,2,3,0,1,0,1,0,0,1,0,0,1.0,2.0,9
+22500144,GSW,IND,77.4,78.6,"('Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",5.116666666666665,2,13,12,3,5,4,3,3,2,5,0,12.0,12.32,9
+22500144,GSW,IND,76.6,78.4,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.3233333333333333,4,0,3,0,1,0,1,0,0,0,0,1.0,1.0,9
+22500144,GSW,IND,79.2,78.8,"('Brandin Podziemski', 'Gui Santos', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post')",2.75,4,9,7,4,1,2,0,0,0,3,0,4.0,3.2,9
+22500144,GSW,IND,76.4,78.4,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Stephen Curry')",0.0283333333333333,4,0,0,0,1,0,0,0,0,0,0,1.0,0.0,9
+22500144,GSW,IND,78.8,78.4,"('Draymond Green', 'Gui Santos', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",1.2833333333333332,4,3,5,2,0,1,1,1,0,2,1,3.0,3.3200000000000003,9
+22500144,GSW,IND,77.6,77.8,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gui Santos', 'Moses Moody')",2.3666666666666667,3,9,4,2,2,3,1,0,0,0,1,6.88,4.0,9
+22500144,GSW,IND,77.0,78.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.726666666666667,4,5,9,1,5,0,1,0,0,2,3,7.44,4.76,9
+22500144,GSW,IND,77.8,78.4,"('Al Horford', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.8166666666666669,4,0,5,3,2,0,2,2,0,0,0,3.0,4.0,9
+22500144,GSW,IND,78.6,78.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",2.716666666666667,4,4,3,4,4,1,1,1,2,2,2,5.88,7.44,9
+22500144,GSW,IND,77.2,78.4,"('Buddy Hield', 'Draymond Green', 'Gui Santos', 'Jonathan Kuminga', 'Stephen Curry')",0.6166666666666667,3,0,2,0,0,0,0,1,0,2,0,1.0,0.88,9
+22500144,GSW,IND,77.0,78.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",4.8,3,9,14,1,5,0,3,1,2,1,4,11.32,10.0,9
+22500144,GSW,IND,77.4,77.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody')",3.09,1,7,8,2,2,3,3,1,1,4,0,6.0,7.0,9
+22500144,GSW,IND,76.2,78.8,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry')",2.5,1,7,3,6,2,1,0,2,0,1,1,6.88,6.44,9
+22500144,GSW,IND,76.6,78.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Moses Moody')",0.6833333333333333,1,0,1,0,1,0,0,0,0,0,0,1.0,1.44,9
+22500144,GSW,IND,77.0,78.8,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",5.599999999999999,1,18,16,5,5,4,3,1,2,1,3,13.2,14.0,9
+22500169,GSW,PHX,77.2,77.6,"('Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer', 'Trayce Jackson-Davis')",1.1833333333333331,2,5,3,1,2,1,1,0,1,1,1,2.44,3.0,10
+22500169,GSW,PHX,76.8,78.2,"('Buddy Hield', 'Jonathan Kuminga', 'Pat Spencer', 'Stephen Curry', 'Trayce Jackson-Davis')",3.983333333333333,2,10,10,2,4,2,1,1,4,2,3,8.88,9.32,10
+22500169,GSW,PHX,76.8,77.4,"('Brandin Podziemski', 'Buddy Hield', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis')",0.5,1,0,0,1,1,0,0,0,0,0,0,1.0,1.0,10
+22500169,GSW,PHX,77.6,77.2,"('Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis')",2.731666666666668,1,10,2,4,1,4,0,0,1,1,0,6.0,5.0,10
+22500169,GSW,PHX,78.2,78.4,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer', 'Quinten Post')",1.5166666666666666,2,8,0,3,0,3,0,1,0,0,0,4.0,3.0,10
+22500169,GSW,PHX,76.8,78.4,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",3.0133333333333328,2,8,9,1,4,3,4,1,1,1,0,7.0,6.44,10
+22500169,GSW,PHX,78.6,78.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",2.216666666666667,2,4,8,2,1,0,2,1,0,0,1,3.88,4.0,10
+22500169,GSW,PHX,77.2,77.4,"('Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Stephen Curry', 'Trayce Jackson-Davis')",0.1666666666666666,3,0,1,0,0,0,0,0,0,1,0,0.0,0.44,10
+22500169,GSW,PHX,78.4,78.4,"('Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",5.250000000000001,3,16,13,5,3,5,3,4,3,4,2,13.44,12.88,10
+22500169,GSW,PHX,77.4,77.2,"('Brandin Podziemski', 'Gui Santos', 'Moses Moody', 'Pat Spencer', 'Trayce Jackson-Davis')",0.3999999999999999,3,0,3,0,1,0,1,0,0,0,0,1.0,1.0,10
+22500169,GSW,PHX,76.8,76.2,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer')",0.2833333333333333,3,0,2,0,0,0,1,1,0,0,0,1.0,1.0,10
+22500169,GSW,PHX,77.2,77.2,"('Brandin Podziemski', 'Buddy Hield', 'Gui Santos', 'Stephen Curry', 'Trayce Jackson-Davis')",2.2000000000000006,3,2,10,1,4,0,3,0,0,1,1,3.88,4.32,10
+22500169,GSW,PHX,78.2,78.0,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",1.35,3,2,3,1,1,1,0,1,1,1,0,3.0,2.44,10
+22500169,GSW,PHX,77.4,77.2,"('Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer', 'Trayce Jackson-Davis')",1.275,3,4,2,0,0,1,1,1,2,0,2,3.44,3.0,10
+22500169,GSW,PHX,78.0,77.2,"('Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer', 'Quinten Post')",0.44,3,0,0,0,1,0,0,0,0,0,0,1.0,0.0,10
+22500169,GSW,PHX,78.4,78.2,"('Brandin Podziemski', 'Moses Moody', 'Pat Spencer', 'Quinten Post', 'Trayce Jackson-Davis')",0.2333333333333333,4,0,0,0,0,0,0,1,0,1,0,1.0,0.0,10
+22500169,GSW,PHX,77.8,78.2,"('Brandin Podziemski', 'Draymond Green', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",5.766666666666667,4,20,5,5,6,4,2,1,3,2,5,11.08,12.0,10
+22500169,GSW,PHX,77.8,78.2,"('Buddy Hield', 'Draymond Green', 'Moses Moody', 'Quinten Post', 'Stephen Curry')",2.2666666666666666,4,3,9,1,2,1,2,1,0,1,1,4.0,4.44,10
+22500169,GSW,PHX,77.4,78.2,"('Brandin Podziemski', 'Buddy Hield', 'Moses Moody', 'Pat Spencer', 'Quinten Post')",0.815,4,0,2,1,1,0,1,0,0,0,0,1.0,2.0,10
+22500169,GSW,PHX,77.2,78.2,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody')",1.8333333333333337,4,3,8,0,3,1,0,0,0,1,1,4.44,3.44,10
+22500169,GSW,PHX,78.6,78.8,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",6.299999999999999,1,17,13,8,9,5,2,1,0,1,0,13.0,15.88,10
+22500169,GSW,PHX,77.2,78.0,"('Brandin Podziemski', 'Draymond Green', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis')",2.2166666666666672,1,6,4,3,2,2,1,0,1,0,0,6.0,5.0,10
+22500181,GSW,SAC,78.6,77.2,"('Al Horford', 'Buddy Hield', 'Jonathan Kuminga', 'Pat Spencer', 'Quinten Post')",3.108333333333334,1,7,7,0,3,2,2,1,2,1,0,6.0,5.88,11
+22500181,GSW,SAC,77.6,76.8,"('Brandin Podziemski', 'Gary Payton II', 'Jonathan Kuminga', 'Quinten Post', 'Will Richard')",0.5666666666666667,3,0,2,1,1,0,1,0,0,0,1,2.0,1.0,11
+22500181,GSW,SAC,77.2,77.4,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Jonathan Kuminga', 'Moses Moody')",2.3683333333333336,2,5,6,2,2,1,2,1,1,0,1,5.44,5.44,11
+22500181,GSW,SAC,77.4,78.0,"('Buddy Hield', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer', 'Trayce Jackson-Davis')",1.5833333333333333,3,4,2,1,0,0,0,2,2,1,1,4.88,3.88,11
+22500181,GSW,SAC,77.2,77.6,"('Al Horford', 'Buddy Hield', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer')",1.9833333333333332,3,5,7,1,1,1,1,0,0,2,1,2.88,3.3200000000000003,11
+22500181,GSW,SAC,76.4,77.4,"('Al Horford', 'Buddy Hield', 'Moses Moody', 'Pat Spencer', 'Will Richard')",1.2566666666666668,3,0,4,2,3,0,1,1,1,1,0,4.0,4.88,11
+22500181,GSW,SAC,77.0,78.2,"('Al Horford', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer', 'Will Richard')",1.7833333333333337,2,5,4,1,2,2,1,0,0,1,2,4.44,3.0,11
+22500181,GSW,SAC,76.6,78.4,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Pat Spencer')",3.183333333333334,2,9,10,3,1,2,2,2,1,2,1,6.88,8.0,11
+22500181,GSW,SAC,77.2,77.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gui Santos', 'Will Richard')",0.4666666666666666,1,2,0,1,0,1,0,1,0,0,0,2.0,1.0,11
+22500181,GSW,SAC,77.4,78.0,"('Al Horford', 'Brandin Podziemski', 'Gui Santos', 'Moses Moody', 'Will Richard')",1.35,1,2,2,1,2,0,0,0,1,0,1,3.88,3.0,11
+22500181,GSW,SAC,78.2,77.2,"('Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post', 'Will Richard')",4.983333333333333,1,16,11,2,3,4,3,1,3,0,2,10.44,10.0,11
+22500181,GSW,SAC,77.6,76.4,"('Brandin Podziemski', 'Gui Santos', 'Moses Moody', 'Trayce Jackson-Davis', 'Will Richard')",3.800000000000001,2,11,10,6,5,3,3,0,1,2,0,8.0,9.32,11
+22500181,GSW,SAC,76.8,77.8,"('Al Horford', 'Gary Payton II', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer')",0.0,2,0,0,0,0,0,0,0,0,0,0,0.0,0.0,11
+22500181,GSW,SAC,77.4,76.4,"('Al Horford', 'Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Will Richard')",0.6983333333333333,2,0,2,0,2,0,0,0,0,1,0,2.0,1.88,11
+22500181,GSW,SAC,78.4,76.8,"('Al Horford', 'Brandin Podziemski', 'Moses Moody', 'Quinten Post', 'Will Richard')",0.0983333333333333,4,0,0,0,0,0,0,1,0,0,1,1.0,0.0,11
+22500181,GSW,SAC,77.4,77.8,"('Al Horford', 'Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Will Richard')",0.8333333333333334,1,3,0,1,0,1,0,0,1,0,1,1.44,2.0,11
+22500181,GSW,SAC,77.6,77.4,"('Al Horford', 'Buddy Hield', 'Gui Santos', 'Jonathan Kuminga', 'Pat Spencer')",1.1833333333333331,1,2,5,0,2,0,0,1,1,2,0,3.0,3.0,11
+22500181,GSW,SAC,76.0,77.2,"('Al Horford', 'Gary Payton II', 'Moses Moody', 'Pat Spencer', 'Will Richard')",0.8000000000000002,4,0,5,0,2,0,1,0,0,0,0,1.0,2.0,11
+22500181,GSW,SAC,77.2,77.4,"('Brandin Podziemski', 'Gary Payton II', 'Moses Moody', 'Quinten Post', 'Will Richard')",1.1,4,2,4,1,1,0,1,0,0,0,1,1.88,3.0,11
+22500181,GSW,SAC,77.2,77.2,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Jonathan Kuminga', 'Moses Moody')",0.0,4,0,0,0,0,0,0,0,0,0,0,0.0,0.0,11
+22500181,GSW,SAC,78.2,77.2,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Moses Moody', 'Quinten Post')",0.0,4,0,1,0,0,0,0,0,0,0,0,0.0,0.44,11
+22500181,GSW,SAC,76.2,75.6,"('Brandin Podziemski', 'Gary Payton II', 'Jonathan Kuminga', 'Moses Moody', 'Will Richard')",0.0683333333333333,4,0,2,0,0,0,0,0,0,2,0,0.0,0.88,11
+22500181,GSW,SAC,76.4,78.0,"('Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Trayce Jackson-Davis', 'Will Richard')",0.9,3,1,6,1,1,0,2,2,0,1,0,3.44,3.88,11
+22500181,GSW,SAC,77.6,77.4,"('Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Trayce Jackson-Davis', 'Will Richard')",2.4000000000000004,4,5,4,3,1,2,1,2,0,2,0,4.0,3.88,11
+22500181,GSW,SAC,78.2,75.6,"('Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post', 'Will Richard')",0.1066666666666666,4,2,1,1,0,0,0,0,0,0,0,1.0,0.44,11
+22500181,GSW,SAC,77.4,77.2,"('Al Horford', 'Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Will Richard')",2.9266666666666667,4,10,2,5,3,2,1,0,0,1,1,5.88,5.0,11
+22500181,GSW,SAC,77.0,77.2,"('Al Horford', 'Jonathan Kuminga', 'Moses Moody', 'Pat Spencer', 'Will Richard')",1.9333333333333331,4,0,6,2,4,0,1,0,0,0,0,4.0,3.0,11
+22500181,GSW,SAC,76.4,77.4,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Moses Moody', 'Will Richard')",2.4000000000000004,4,12,4,3,2,2,2,1,0,1,1,6.88,5.0,11
+22500181,GSW,SAC,78.2,77.2,"('Brandin Podziemski', 'Jonathan Kuminga', 'Moses Moody', 'Quinten Post', 'Will Richard')",5.616666666666665,3,13,14,6,6,5,2,2,2,6,3,13.0,15.2,11
+22500196,GSW,IND,79.0,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post')",4.8,1,14,6,5,5,3,1,1,3,0,2,12.44,10.0,12
+22500196,GSW,IND,78.6,78.6,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post')",1.7666666666666666,1,1,3,3,0,0,0,2,0,1,1,2.44,3.3200000000000003,12
+22500196,GSW,IND,77.4,78.6,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody')",1.1333333333333333,1,0,0,1,2,0,0,0,0,0,0,3.0,2.0,12
+22500196,GSW,IND,78.2,77.6,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer', 'Quinten Post')",2.716666666666667,2,6,2,2,2,1,1,1,2,0,1,5.88,7.0,12
+22500196,GSW,IND,77.0,78.6,"('Al Horford', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer')",4.1866666666666665,1,8,12,4,9,2,4,1,1,0,0,9.0,10.0,12
+22500196,GSW,IND,77.6,78.4,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Jonathan Kuminga', 'Will Richard')",0.35,2,1,0,0,0,0,0,0,0,0,1,1.44,0.0,12
+22500196,GSW,IND,77.2,77.8,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Will Richard')",3.043333333333333,2,8,3,3,2,0,1,0,1,1,1,5.88,5.0,12
+22500196,GSW,IND,77.4,78.4,"('Buddy Hield', 'Draymond Green', 'Pat Spencer', 'Quinten Post', 'Will Richard')",0.8333333333333333,2,3,2,1,0,1,1,0,0,0,1,1.44,2.0,12
+22500196,GSW,IND,77.4,77.8,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody', 'Will Richard')",0.065,2,0,1,0,0,0,0,0,0,1,0,0.0,0.44,12
+22500196,GSW,IND,78.0,77.4,"('Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Quinten Post', 'Will Richard')",0.2666666666666666,2,0,0,1,1,0,0,0,0,1,0,2.0,1.0,12
+22500196,GSW,IND,76.6,77.8,"('Brandin Podziemski', 'Buddy Hield', 'Draymond Green', 'Jimmy Butler III', 'Will Richard')",0.01,2,0,1,0,0,0,0,0,0,0,0,1.0,0.44,12
+22500196,GSW,IND,77.2,78.8,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Will Richard')",3.683333333333333,2,7,9,3,4,1,3,1,2,0,2,9.32,9.0,12
+22500196,GSW,IND,77.6,78.4,"('Draymond Green', 'Moses Moody', 'Pat Spencer', 'Quinten Post', 'Will Richard')",0.6833333333333333,2,0,2,0,1,0,0,0,0,2,0,1.0,2.0,12
+22500196,GSW,IND,78.0,78.6,"('Brandin Podziemski', 'Draymond Green', 'Moses Moody', 'Quinten Post', 'Will Richard')",0.8166666666666667,3,1,2,0,1,0,0,1,0,1,1,2.44,1.88,12
+22500196,GSW,IND,79.0,80.2,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post')",6.0666666666666655,3,11,17,9,8,1,4,1,0,3,4,13.32,13.0,12
+22500196,GSW,IND,77.0,79.0,"('Al Horford', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Pat Spencer')",3.754999999999999,3,10,3,6,5,1,1,1,2,2,5,9.76,9.44,12
+22500196,GSW,IND,78.4,78.6,"('Al Horford', 'Brandin Podziemski', 'Moses Moody', 'Quinten Post', 'Will Richard')",1.2,3,4,2,1,1,1,1,0,1,0,0,2.44,3.0,12
+22500196,GSW,IND,77.2,78.6,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Will Richard')",3.483333333333334,4,15,11,2,4,4,3,1,1,1,1,8.440000000000001,8.0,12
+22500196,GSW,IND,77.2,78.6,"('Al Horford', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Will Richard')",0.065,3,1,0,0,0,0,0,0,1,0,0,1.44,1.0,12
+22500196,GSW,IND,78.0,78.2,"('Brandin Podziemski', 'Draymond Green', 'Moses Moody', 'Quinten Post', 'Will Richard')",3.1333333333333337,4,10,2,5,2,2,0,0,2,1,4,5.32,7.0,12
+22500196,GSW,IND,76.8,78.2,"('Buddy Hield', 'Gary Payton II', 'Gui Santos', 'Pat Spencer', 'Trayce Jackson-Davis')",3.558333333333332,4,9,5,3,5,4,1,0,2,2,1,8.0,8.0,12
+22500196,GSW,IND,78.6,78.2,"('Brandin Podziemski', 'Moses Moody', 'Quinten Post', 'Trayce Jackson-Davis', 'Will Richard')",1.1,4,5,0,1,1,1,0,0,2,0,0,3.44,3.0,12
+22500210,GSW,OKC,78.6,79.6,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",4.416666666666668,3,12,14,0,5,2,6,1,2,2,4,9.2,9.0,13
+22500210,GSW,OKC,77.0,78.2,"('Brandin Podziemski', 'Buddy Hield', 'Moses Moody', 'Trayce Jackson-Davis', 'Will Richard')",3.69,3,10,15,1,3,1,3,1,1,2,2,7.76,8.32,13
+22500210,GSW,OKC,76.8,79.0,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",1.0,3,2,6,1,1,0,1,1,0,2,0,3.0,4.76,13
+22500210,GSW,OKC,77.2,79.6,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",0.7166666666666667,3,2,2,0,2,1,0,0,1,1,0,2.0,2.0,13
+22500210,GSW,OKC,78.6,80.6,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",3.183333333333333,2,4,10,2,4,1,3,2,1,2,1,7.44,7.0,13
+22500210,GSW,OKC,76.6,79.0,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.5833333333333333,2,0,0,1,1,0,0,0,0,0,1,1.0,1.0,13
+22500210,GSW,OKC,77.6,79.0,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody')",2.166666666666667,2,4,2,3,1,1,1,1,0,1,2,5.44,4.0,13
+22500210,GSW,OKC,76.4,78.6,"('Buddy Hield', 'Draymond Green', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.25,2,2,4,0,1,1,1,0,1,0,0,3.0,3.0,13
+22500210,GSW,OKC,77.8,79.0,"('Gary Payton II', 'Jimmy Butler III', 'Jonathan Kuminga', 'Moses Moody', 'Trayce Jackson-Davis')",0.3266666666666667,2,1,0,0,0,0,0,0,0,0,0,0.44,1.0,13
+22500210,GSW,OKC,77.0,78.2,"('Buddy Hield', 'Jonathan Kuminga', 'Stephen Curry', 'Trayce Jackson-Davis', 'Will Richard')",0.8999999999999999,2,6,6,0,0,2,2,0,1,1,0,2.0,3.44,13
+22500210,GSW,OKC,77.0,79.0,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",1.3,2,0,3,0,3,0,0,2,2,1,0,4.0,3.3200000000000003,13
+22500210,GSW,OKC,76.8,78.2,"('Buddy Hield', 'Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry', 'Trayce Jackson-Davis')",0.0,2,0,0,0,0,0,0,0,0,0,0,0.0,0.0,13
+22500210,GSW,OKC,76.6,79.0,"('Gary Payton II', 'Jonathan Kuminga', 'Stephen Curry', 'Trayce Jackson-Davis', 'Will Richard')",2.033333333333333,2,2,4,1,0,0,0,1,0,0,1,3.0,3.0,13
+22500210,GSW,OKC,76.8,79.0,"('Brandin Podziemski', 'Buddy Hield', 'Moses Moody', 'Stephen Curry', 'Trayce Jackson-Davis')",0.3666666666666667,1,0,2,1,0,0,0,2,0,1,0,2.0,2.0,13
+22500210,GSW,OKC,78.6,79.6,"('Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",4.433333333333334,1,11,15,2,4,4,3,0,2,1,1,9.0,10.0,13
+22500210,GSW,OKC,77.4,78.8,"('Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis', 'Will Richard')",1.3416666666666666,1,2,4,1,2,0,0,1,0,3,1,1.88,2.88,13
+22500210,GSW,OKC,77.2,78.2,"('Gary Payton II', 'Gui Santos', 'Pat Spencer', 'Quinten Post', 'Will Richard')",3.75,4,12,3,3,1,4,1,1,2,1,2,8.879999999999999,7.0,13
+22500210,GSW,OKC,76.6,78.2,"('Gary Payton II', 'Gui Santos', 'Pat Spencer', 'Trayce Jackson-Davis', 'Will Richard')",7.988333333333332,4,18,16,10,7,3,3,1,2,6,3,16.759999999999998,17.64,13
+22500210,GSW,OKC,77.8,79.4,"('Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Moses Moody', 'Trayce Jackson-Davis')",2.083333333333333,3,2,7,1,0,1,2,4,0,1,0,5.0,4.88,13
+22500210,GSW,OKC,77.6,77.6,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis')",0.0166666666666666,1,0,0,0,0,0,0,0,1,0,0,0.0,1.0,13
+22500210,GSW,OKC,76.4,77.6,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry', 'Will Richard')",0.1183333333333333,1,0,4,0,0,0,0,0,0,1,0,0.0,1.76,13
+22500210,GSW,OKC,76.8,79.0,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry')",1.4500000000000002,1,0,3,1,3,0,1,0,1,0,1,3.0,4.0,13
+22500210,GSW,OKC,77.6,77.8,"('Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Trayce Jackson-Davis')",3.1,1,9,6,3,2,1,2,1,2,1,2,7.32,6.44,13
+22500210,GSW,OKC,78.2,79.6,"('Brandin Podziemski', 'Draymond Green', 'Jonathan Kuminga', 'Quinten Post', 'Stephen Curry')",0.75,1,3,0,1,0,1,0,1,0,1,0,2.0,1.0,13
+22500220,GSW,SAS,75.8,80.8,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Stephen Curry', 'Will Richard')",1.5000000000000002,4,3,2,1,2,1,1,0,2,0,0,3.0,4.0,14
+22500220,GSW,SAS,76.0,80.6,"('Brandin Podziemski', 'Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Stephen Curry')",2.6266666666666665,4,7,2,3,3,3,0,1,2,1,0,6.0,5.0,14
+22500220,GSW,SAS,77.0,79.4,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody')",0.0316666666666666,4,1,2,0,0,0,1,0,0,0,0,0.44,1.0,14
+22500220,GSW,SAS,75.6,80.0,"('Draymond Green', 'Gary Payton II', 'Moses Moody', 'Stephen Curry', 'Will Richard')",2.033333333333333,3,10,6,3,2,1,1,0,0,1,3,5.08,5.44,14
+22500220,GSW,SAS,76.2,80.6,"('Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",2.0333333333333337,4,5,7,2,2,1,2,0,0,0,1,2.88,3.0,14
+22500220,GSW,SAS,76.8,81.0,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Jimmy Butler III')",3.083333333333333,3,11,4,2,1,3,1,0,2,0,2,7.76,6.0,14
+22500220,GSW,SAS,76.0,78.8,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Stephen Curry')",2.0166666666666666,3,6,7,1,2,2,1,1,2,0,0,4.0,5.0,14
+22500220,GSW,SAS,75.8,79.4,"('Brandin Podziemski', 'Draymond Green', 'Gary Payton II', 'Moses Moody', 'Stephen Curry')",0.4666666666666667,3,4,0,1,0,1,0,0,0,0,0,1.44,1.0,14
+22500220,GSW,SAS,76.4,80.6,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Jimmy Butler III', 'Stephen Curry')",0.195,4,0,3,0,1,0,1,0,0,0,0,0.0,1.0,14
+22500220,GSW,SAS,75.8,79.4,"('Brandin Podziemski', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.1966666666666666,4,2,2,0,1,0,0,0,0,2,0,0.88,1.88,14
+22500220,GSW,SAS,76.8,79.6,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Will Richard')",0.95,4,3,2,0,1,0,1,1,1,1,0,3.0,2.0,14
+22500220,GSW,SAS,76.4,79.4,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry', 'Will Richard')",4.716666666666666,1,11,14,4,6,3,4,2,1,2,0,11.0,10.88,14
+22500220,GSW,SAS,77.0,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",2.716666666666667,2,9,0,4,2,3,0,0,2,0,1,5.88,6.0,14
+22500220,GSW,SAS,77.0,79.4,"('Al Horford', 'Jonathan Kuminga', 'Moses Moody', 'Stephen Curry', 'Will Richard')",1.25,1,0,3,1,1,0,1,1,1,1,1,2.0,3.0,14
+22500220,GSW,SAS,77.0,79.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jonathan Kuminga', 'Stephen Curry')",2.9166666666666674,1,3,6,3,8,1,0,0,1,0,0,8.0,7.0,14
+22500220,GSW,SAS,77.8,80.0,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Jonathan Kuminga')",2.65,1,0,5,1,4,0,1,0,1,1,0,4.0,6.0,14
+22500220,GSW,SAS,78.6,79.6,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",3.816666666666666,2,14,12,2,3,3,3,0,2,2,2,8.32,8.88,14
+22500220,GSW,SAS,76.4,79.4,"('Al Horford', 'Buddy Hield', 'Moses Moody', 'Stephen Curry', 'Will Richard')",1.8333333333333333,2,9,6,2,1,3,2,0,0,1,2,5.0,5.0,14
+22500220,GSW,SAS,76.8,79.4,"('Al Horford', 'Buddy Hield', 'Jonathan Kuminga', 'Stephen Curry', 'Will Richard')",1.8333333333333333,2,3,8,0,0,0,3,3,0,0,1,5.32,4.0,14
+22500220,GSW,SAS,76.6,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.1383333333333333,2,0,0,0,0,0,0,0,0,0,0,1.0,0.0,14
+22500220,GSW,SAS,76.4,79.4,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry', 'Will Richard')",4.4,3,12,11,5,4,3,2,2,0,4,2,12.32,8.64,14
+22500220,GSW,SAS,76.8,79.8,"('Al Horford', 'Draymond Green', 'Moses Moody', 'Stephen Curry', 'Will Richard')",0.05,2,0,0,0,0,0,0,0,0,0,1,0.0,0.0,14
+22500220,GSW,SAS,77.4,79.4,"('Al Horford', 'Buddy Hield', 'Jimmy Butler III', 'Jonathan Kuminga', 'Stephen Curry')",0.4333333333333333,2,0,2,0,0,0,1,0,0,0,1,1.0,1.0,14
+22500220,GSW,SAS,76.6,79.4,"('Buddy Hield', 'Draymond Green', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody')",0.2916666666666667,2,0,0,0,0,0,0,0,1,0,0,0.0,1.0,14
+22500220,GSW,SAS,76.6,79.0,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",1.566666666666667,4,5,6,2,1,1,2,2,0,1,1,5.0,4.0,14
+22500220,GSW,SAS,76.2,79.4,"('Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.055,4,1,0,0,0,0,0,0,0,0,2,0.44,0.0,14
+22500220,GSW,SAS,77.0,79.4,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",0.0749999999999999,4,2,3,0,1,0,0,0,0,0,2,0.88,1.44,14
+22500220,GSW,SAS,77.8,79.6,"('Al Horford', 'Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody')",1.383333333333333,4,0,5,0,2,0,2,1,2,1,1,3.0,4.0,14
+22500220,GSW,SAS,77.2,79.6,"('Al Horford', 'Brandin Podziemski', 'Jimmy Butler III', 'Moses Moody', 'Will Richard')",1.3833333333333333,4,4,2,3,1,1,0,1,0,0,1,2.44,3.0,14
+22500237,GSW,NOP,76.0,79.0,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Stephen Curry')",2.3166666666666664,4,6,4,0,1,1,2,0,2,0,0,4.0,4.0,15
+22500237,GSW,NOP,76.8,78.0,"('Al Horford', 'Buddy Hield', 'Gui Santos', 'Pat Spencer', 'Will Richard')",1.6833333333333331,4,6,6,0,1,2,2,1,0,1,0,4.0,2.88,15
+22500237,GSW,NOP,77.0,79.2,"('Buddy Hield', 'Gui Santos', 'Pat Spencer', 'Trayce Jackson-Davis', 'Will Richard')",3.0066666666666677,4,10,14,4,4,3,1,2,0,4,0,8.0,9.64,15
+22500237,GSW,NOP,77.4,78.8,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody')",2.7783333333333338,3,5,6,1,3,2,1,1,1,1,0,5.0,4.44,15
+22500237,GSW,NOP,77.0,78.4,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Jimmy Butler III', 'Moses Moody')",0.0216666666666666,3,0,0,0,0,0,0,0,1,0,0,0.0,1.0,15
+22500237,GSW,NOP,76.8,79.4,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Stephen Curry')",0.7166666666666667,2,0,2,0,2,0,1,0,0,0,1,1.0,1.0,15
+22500237,GSW,NOP,78.6,79.0,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",4.883333333333332,4,17,11,3,1,4,4,2,1,2,3,10.2,11.44,15
+22500237,GSW,NOP,76.0,78.8,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Stephen Curry')",1.3833333333333335,3,4,2,2,4,1,0,0,1,1,1,3.44,3.0,15
+22500237,GSW,NOP,76.2,78.6,"('Al Horford', 'Brandin Podziemski', 'Gary Payton II', 'Moses Moody', 'Stephen Curry')",1.5500000000000005,3,1,4,0,4,0,0,0,2,0,1,4.44,4.0,15
+22500237,GSW,NOP,76.8,78.8,"('Al Horford', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry', 'Will Richard')",1.7833333333333332,3,2,6,1,2,1,2,1,1,0,2,5.0,4.0,15
+22500237,GSW,NOP,76.4,79.4,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry', 'Will Richard')",4.466666666666666,3,12,4,8,2,4,0,5,3,3,1,11.0,12.0,15
+22500237,GSW,NOP,76.2,78.6,"('Al Horford', 'Draymond Green', 'Gary Payton II', 'Stephen Curry', 'Will Richard')",0.0,2,0,0,0,0,0,0,0,0,0,0,0.0,0.0,15
+22500237,GSW,NOP,76.6,79.4,"('Al Horford', 'Buddy Hield', 'Jimmy Butler III', 'Stephen Curry', 'Will Richard')",0.2833333333333333,2,0,3,0,0,0,0,1,0,0,0,1.0,1.44,15
+22500237,GSW,NOP,76.6,79.4,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry')",3.1383333333333336,2,8,2,3,4,1,0,2,2,1,1,7.88,6.88,15
+22500237,GSW,NOP,75.8,79.4,"('Al Horford', 'Buddy Hield', 'Gary Payton II', 'Stephen Curry', 'Will Richard')",2.5166666666666666,2,6,3,3,1,2,1,1,1,3,0,5.0,4.44,15
+22500237,GSW,NOP,77.0,78.6,"('Draymond Green', 'Gary Payton II', 'Quinten Post', 'Stephen Curry', 'Will Richard')",0.9333333333333332,2,2,3,1,2,0,0,0,0,0,0,2.0,1.44,15
+22500237,GSW,NOP,76.4,78.8,"('Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Stephen Curry', 'Will Richard')",5.633333333333332,1,20,9,11,3,6,0,2,3,2,5,12.76,11.88,15
+22500237,GSW,NOP,77.4,78.8,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Jimmy Butler III', 'Moses Moody')",3.581666666666667,1,16,11,2,3,6,4,1,1,0,0,8.0,7.44,15
+22500237,GSW,NOP,78.6,77.6,"('Brandin Podziemski', 'Draymond Green', 'Jimmy Butler III', 'Moses Moody', 'Quinten Post')",3.833333333333333,2,1,8,7,6,0,3,1,0,2,1,9.44,8.440000000000001,15
+22500237,GSW,NOP,75.6,78.8,"('Draymond Green', 'Gary Payton II', 'Moses Moody', 'Stephen Curry', 'Will Richard')",1.2833333333333332,1,3,3,1,1,1,1,1,0,1,0,3.0,2.0,15
+22500237,GSW,NOP,76.0,79.2,"('Al Horford', 'Brandin Podziemski', 'Buddy Hield', 'Gary Payton II', 'Stephen Curry')",1.45,1,5,5,0,1,0,0,0,1,2,0,3.0,3.3200000000000003,15

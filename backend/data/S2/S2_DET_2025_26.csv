@@ -1,294 +1,366 @@
-game_id,team,opponent,team_avg_height,opp_avg_height,lineup,minutes_played,period,points,opp_points,rebounds,opp_rebounds,assists,opp_assists,turnovers,opp_turnovers,fouls_committed,fouls_drawn,game_number
-22500007,DET,CLE,79.0,78.0,"('Daniss Jenkins', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",1.7166666666666666,2,7,2,4,1,2,1,2,1,0,1,1
-22500007,DET,CLE,79.2,78.6,"('Cade Cunningham', 'Daniss Jenkins', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",0.6,2,2,0,0,0,1,0,0,0,1,0,1
-22500007,DET,CLE,79.6,78.0,"('Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
-22500007,DET,CLE,78.6,79.0,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II')",1.6166666666666667,2,4,9,0,1,1,2,0,0,1,1,1
-22500007,DET,CLE,79.8,78.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Tobias Harris')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
-22500007,DET,CLE,79.0,78.6,"('Daniss Jenkins', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
-22500007,DET,CLE,78.8,77.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",2.25,2,2,3,4,1,0,0,2,1,2,2,1
-22500007,DET,CLE,79.8,78.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",0.9666666666666668,2,0,4,0,2,0,1,0,0,1,1,1
-22500007,DET,CLE,78.2,77.4,"('Cade Cunningham', 'Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
-22500007,DET,CLE,79.6,78.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",4.133333333333333,3,7,11,2,6,1,2,3,3,4,3,1
-22500007,DET,CLE,78.8,77.4,"('Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",2.2333333333333334,3,7,7,1,3,2,1,1,2,2,0,1
-22500007,DET,CLE,79.2,79.6,"('Cade Cunningham', 'Isaiah Stewart', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.3,3,0,1,1,0,0,0,0,0,0,1,1
-22500007,DET,CLE,78.6,79.2,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II')",0.3,3,1,0,0,0,0,0,0,0,0,1,1
-22500007,DET,CLE,79.2,78.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II')",0.0,3,0,0,0,0,0,0,0,0,0,0,1
-22500007,DET,CLE,79.6,79.2,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Paul Reed', 'Ronald Holland II')",3.766666666666666,3,10,4,6,0,3,1,4,3,3,1,1
-22500007,DET,CLE,79.6,78.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",1.2666666666666668,3,0,4,1,3,0,0,0,1,0,0,1
-22500007,DET,CLE,78.6,78.2,"('Bobi Klintman', 'Chaz Lanier', 'Colby Jones', 'Daniss Jenkins', 'Tolu Smith')",6.066666666666664,4,20,8,11,4,4,2,2,3,1,6,1
-22500007,DET,CLE,78.2,78.2,"('Bobi Klintman', 'Chaz Lanier', 'Colby Jones', 'Daniss Jenkins', 'Paul Reed')",0.75,4,0,0,1,0,0,0,0,0,0,0,1
-22500007,DET,CLE,77.6,77.2,"('Chaz Lanier', 'Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",3.8333333333333326,4,7,16,1,2,1,3,4,2,1,1,1
-22500007,DET,CLE,79.6,78.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",5.183333333333333,1,16,14,5,5,3,5,1,1,3,3,1
-22500007,DET,CLE,79.2,77.4,"('Ausar Thompson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",0.55,1,0,3,0,0,0,0,1,0,1,0,1
-22500007,DET,CLE,79.0,77.4,"('Cade Cunningham', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",0.3666666666666666,1,0,2,0,0,0,1,1,0,1,0,1
-22500007,DET,CLE,78.6,77.4,"('Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",1.85,1,0,6,0,4,0,1,1,1,1,0,1
-22500007,DET,CLE,78.6,79.4,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.2333333333333333,1,0,0,0,0,0,0,0,0,0,0,1
-22500007,DET,CLE,78.2,77.8,"('Cade Cunningham', 'Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.0666666666666669,2,0,0,4,2,0,0,0,0,1,1,1
-22500007,DET,CLE,79.4,78.0,"('Ausar Thompson', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.0,2,0,0,0,0,0,0,0,0,0,0,1
-22500007,DET,CLE,79.6,78.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",2.9000000000000004,2,2,8,2,5,0,1,1,0,4,1,1
-22500007,DET,CLE,79.6,78.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",1.0333333333333332,1,2,3,1,0,0,1,1,0,0,0,1
-22500007,DET,CLE,78.6,78.6,"('Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",0.8833333333333334,2,0,4,0,2,0,1,0,0,1,0,1
-22500007,DET,CLE,79.8,78.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",2.333333333333333,1,6,5,3,3,1,2,0,0,1,1,1
-22500007,DET,CLE,77.8,77.2,"('Chaz Lanier', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.35,4,2,2,0,2,1,0,0,1,0,1,1
-22500007,DET,CLE,77.4,77.2,"('Chaz Lanier', 'Colby Jones', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed')",0.0,4,0,0,0,0,0,0,0,0,0,0,1
-22500007,DET,CLE,79.4,77.4,"('Cade Cunningham', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",0.4499999999999999,1,0,0,1,2,0,0,1,0,0,0,1
-22500007,DET,CLE,78.4,77.4,"('Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Tobias Harris')",0.0,1,0,0,0,0,0,0,0,0,0,0,1
-22500031,DET,BKN,80.0,81.0,"('Bobi Klintman', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",0.9333333333333332,1,3,2,1,0,0,1,1,1,0,1,2
-22500031,DET,BKN,80.0,80.0,"('Ausar Thompson', 'Bobi Klintman', 'Caris LeVert', 'Paul Reed', 'Ronald Holland II')",3.7666666666666666,1,8,2,3,2,4,0,2,4,1,0,2
-22500031,DET,BKN,79.4,80.0,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren')",2.9666666666666663,2,9,10,3,2,3,2,1,1,2,0,2
-22500031,DET,BKN,79.6,80.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",1.3833333333333333,2,4,0,3,0,1,0,0,0,0,0,2
-22500031,DET,BKN,80.0,81.0,"('Bobi Klintman', 'Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Ronald Holland II')",1.15,1,1,3,1,2,0,1,0,0,1,1,2
-22500031,DET,BKN,79.0,79.2,"('Ausar Thompson', 'Cade Cunningham', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.6833333333333333,2,3,2,0,0,0,1,0,0,0,2,2
-22500031,DET,BKN,79.6,81.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",6.149999999999999,1,15,22,4,6,5,6,4,3,2,2,2
-22500031,DET,BKN,79.8,81.0,"('Bobi Klintman', 'Cade Cunningham', 'Caris LeVert', 'Paul Reed', 'Ronald Holland II')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
-22500031,DET,BKN,79.2,80.2,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.15,2,5,4,0,0,1,0,0,0,2,0,2
-22500031,DET,BKN,79.8,81.0,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",0.0,1,0,0,0,0,0,0,0,0,0,0,2
-22500031,DET,BKN,78.8,80.2,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",0.8499999999999999,2,2,2,0,0,0,1,0,0,0,0,2
-22500031,DET,BKN,79.2,80.6,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
-22500031,DET,BKN,79.4,80.6,"('Ausar Thompson', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",2.683333333333333,4,4,5,3,2,1,1,0,0,1,3,2
-22500031,DET,BKN,78.8,77.4,"('Bobi Klintman', 'Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
-22500031,DET,BKN,78.8,79.2,"('Ausar Thompson', 'Cade Cunningham', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.866666666666667,2,3,0,2,1,1,0,1,1,1,0,2
-22500031,DET,BKN,79.2,80.8,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",1.85,2,6,5,1,2,2,2,0,0,1,1,2
-22500031,DET,BKN,79.6,80.4,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",0.7500000000000001,3,2,2,1,1,0,0,0,0,1,1,2
-22500031,DET,BKN,79.6,79.2,"('Ausar Thompson', 'Bobi Klintman', 'Cade Cunningham', 'Caris LeVert', 'Paul Reed')",1.75,3,5,6,2,1,0,1,0,0,1,2,2
-22500031,DET,BKN,79.6,81.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",5.333333333333333,3,16,8,5,1,4,1,3,3,2,3,2
-22500031,DET,BKN,80.0,79.2,"('Ausar Thompson', 'Bobi Klintman', 'Caris LeVert', 'Paul Reed', 'Ronald Holland II')",1.6333333333333333,3,5,0,3,1,1,0,0,0,0,0,2
-22500031,DET,BKN,79.6,80.0,"('Bobi Klintman', 'Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Paul Reed')",0.7833333333333334,3,2,3,0,1,0,1,0,2,0,0,2
-22500031,DET,BKN,79.8,80.2,"('Bobi Klintman', 'Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren')",1.75,3,4,0,3,2,1,0,0,1,1,1,2
-22500031,DET,BKN,78.4,77.4,"('Ausar Thompson', 'Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",2.3000000000000003,4,6,8,2,1,1,3,0,1,0,1,2
-22500031,DET,BKN,78.0,77.4,"('Bobi Klintman', 'Chaz Lanier', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed')",3.033333333333333,4,6,9,5,3,1,2,0,1,1,4,2
-22500031,DET,BKN,79.2,81.0,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",2.8000000000000003,4,11,9,1,1,4,2,1,1,2,1,2
-22500031,DET,BKN,78.8,77.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",1.1833333333333331,4,4,2,2,0,2,1,0,0,0,0,2
-22500031,DET,BKN,78.6,81.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Javonte Green', 'Ronald Holland II')",0.0,4,0,0,0,0,0,0,0,0,0,0,2
-22500031,DET,BKN,79.0,81.0,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",1.25,2,1,3,1,1,0,0,0,0,0,2,2
-22500084,DET,CHI,79.4,77.0,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",1.4666666666666666,1,2,5,2,2,1,2,0,0,0,0,3
-22500084,DET,CHI,79.6,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",2.0666666666666664,1,6,7,0,2,2,3,1,1,2,0,3
-22500084,DET,CHI,79.4,77.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",0.1666666666666666,2,0,1,0,0,0,0,0,0,1,0,3
-22500084,DET,CHI,79.6,77.0,"('Cade Cunningham', 'Caris LeVert', 'Paul Reed', 'Ronald Holland II', 'Tobias Harris')",0.5333333333333334,1,0,2,0,2,0,1,0,1,0,0,3
-22500084,DET,CHI,79.2,78.4,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",1.0,1,0,7,0,2,0,2,0,0,0,0,3
-22500084,DET,CHI,79.6,77.2,"('Ausar Thompson', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",3.683333333333333,2,11,7,3,4,2,1,1,2,2,3,3
-22500084,DET,CHI,79.4,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren')",1.6333333333333335,2,3,5,2,4,1,1,1,1,0,3,3
-22500084,DET,CHI,79.4,77.4,"('Ausar Thompson', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.5666666666666669,2,2,5,0,1,1,2,1,1,0,1,3
-22500084,DET,CHI,79.6,78.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",2.316666666666667,2,4,2,1,2,2,1,1,1,3,1,3
-22500084,DET,CHI,79.6,76.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",1.3666666666666667,2,4,7,0,1,1,2,0,0,0,1,3
-22500084,DET,CHI,79.0,77.4,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",0.4499999999999999,3,2,2,0,0,0,0,0,0,0,1,3
-22500084,DET,CHI,79.2,77.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",1.2666666666666666,2,6,2,2,1,2,0,0,0,1,0,3
-22500084,DET,CHI,79.6,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",2.716666666666667,3,6,8,1,3,3,3,0,1,0,0,3
-22500084,DET,CHI,79.8,78.4,"('Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",1.2833333333333334,3,3,0,0,0,1,0,1,2,2,1,3
-22500084,DET,CHI,79.6,77.4,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",3.8,3,12,10,6,2,4,2,1,0,1,2,3
-22500084,DET,CHI,79.4,78.4,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",1.666666666666667,3,4,5,1,2,2,0,0,1,2,1,3
-22500084,DET,CHI,79.8,79.2,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",2.083333333333333,3,3,5,5,2,0,1,0,2,3,3,3
-22500084,DET,CHI,79.2,77.0,"('Ausar Thompson', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",2.0000000000000004,1,3,5,1,2,1,0,2,1,1,0,3
-22500084,DET,CHI,79.2,78.0,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
-22500084,DET,CHI,79.2,77.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Ronald Holland II', 'Tobias Harris')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
-22500084,DET,CHI,79.0,77.4,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Tobias Harris')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
-22500084,DET,CHI,79.2,78.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",4.116666666666665,1,6,8,3,5,2,2,0,0,3,1,3
-22500084,DET,CHI,79.0,77.0,"('Cade Cunningham', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.8166666666666668,1,2,1,1,2,0,0,0,0,1,1,3
-22500084,DET,CHI,79.6,77.8,"('Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",0.05,4,0,1,0,0,0,0,0,0,0,0,3
-22500084,DET,CHI,78.6,76.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",2.75,4,7,3,4,3,1,1,0,1,2,2,3
-22500084,DET,CHI,79.0,78.0,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",1.25,4,2,0,3,2,0,0,0,0,0,2,3
-22500084,DET,CHI,79.8,77.4,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",2.183333333333334,4,5,6,2,2,0,1,0,0,1,0,3
-22500084,DET,CHI,78.6,78.0,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",0.6833333333333335,4,2,0,4,1,0,0,0,1,0,1,3
-22500084,DET,CHI,79.4,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",3.616666666666666,4,14,8,3,0,2,4,1,0,1,0,3
-22500084,DET,CHI,79.8,77.8,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",1.3,4,2,3,1,2,1,0,0,1,2,0,3
-22500084,DET,CHI,79.4,77.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",0.1666666666666666,4,0,0,1,1,0,0,0,0,1,0,3
-22500084,DET,CHI,80.0,77.8,"('Cade Cunningham', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",0.0,4,0,0,0,0,0,0,0,0,0,0,3
-22500093,DET,HOU,79.4,81.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Paul Reed', 'Tobias Harris')",4.466666666666667,3,8,15,3,2,2,5,3,0,4,0,4
-22500093,DET,HOU,79.2,81.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Ronald Holland II', 'Tobias Harris')",0.0,3,0,0,0,0,0,0,0,0,0,0,4
-22500093,DET,HOU,78.4,81.6,"('Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Tobias Harris')",0.9000000000000001,2,0,1,1,1,0,0,0,0,1,2,4
-22500093,DET,HOU,78.0,79.8,"('Cade Cunningham', 'Chaz Lanier', 'Isaiah Stewart', 'Javonte Green', 'Tobias Harris')",1.9333333333333331,2,5,3,3,0,2,1,2,0,2,0,4
-22500093,DET,HOU,79.4,81.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Paul Reed', 'Tobias Harris')",3.7833333333333328,2,13,14,3,3,4,2,0,1,2,0,4
-22500093,DET,HOU,78.8,81.2,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Paul Reed', 'Tobias Harris')",1.2333333333333334,2,7,0,2,0,1,0,0,0,1,1,4
-22500093,DET,HOU,78.6,81.6,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.0,2,0,0,0,0,0,0,0,0,0,0,4
-22500093,DET,HOU,78.8,81.6,"('Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",1.716666666666667,2,0,2,3,3,0,0,1,1,2,2,4
-22500093,DET,HOU,79.2,80.2,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.9333333333333332,2,2,1,0,1,1,0,0,0,1,0,4
-22500093,DET,HOU,79.4,79.6,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",0.0,1,0,0,0,0,0,0,0,0,0,0,4
-22500093,DET,HOU,79.8,79.6,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",3.2166666666666663,1,13,6,7,5,3,0,1,2,2,2,4
-22500093,DET,HOU,79.6,82.2,"('Ausar Thompson', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.0833333333333333,1,0,2,0,0,0,0,0,0,0,0,4
-22500093,DET,HOU,79.8,82.2,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",3.1,1,9,7,4,2,2,1,1,0,4,1,4
-22500093,DET,HOU,79.4,81.6,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",1.1,4,3,2,0,1,1,1,0,0,1,0,4
-22500093,DET,HOU,78.8,81.6,"('Ausar Thompson', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",1.25,4,5,3,0,0,1,1,0,0,1,0,4
-22500093,DET,HOU,79.0,81.6,"('Ausar Thompson', 'Daniss Jenkins', 'Duncan Robinson', 'Paul Reed', 'Tobias Harris')",0.1166666666666666,4,0,0,0,0,0,0,0,0,1,0,4
-22500093,DET,HOU,78.8,81.6,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.0,4,3,2,1,0,1,0,1,1,0,1,4
-22500093,DET,HOU,79.2,81.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.7000000000000001,4,0,3,1,2,0,0,0,0,1,0,4
-22500093,DET,HOU,79.0,80.4,"('Ausar Thompson', 'Cade Cunningham', 'Javonte Green', 'Paul Reed', 'Tobias Harris')",0.0833333333333333,4,0,0,0,0,0,0,0,0,0,0,4
-22500093,DET,HOU,78.6,81.6,"('Ausar Thompson', 'Cade Cunningham', 'Chaz Lanier', 'Paul Reed', 'Tobias Harris')",0.0,4,0,0,0,0,0,0,0,0,0,0,4
-22500093,DET,HOU,79.4,80.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Paul Reed', 'Tobias Harris')",5.299999999999999,4,10,10,8,5,3,1,1,0,2,2,4
-22500093,DET,HOU,78.8,79.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",2.333333333333333,4,5,5,1,2,1,1,0,1,0,1,4
-22500093,DET,HOU,78.2,81.6,"('Ausar Thompson', 'Cade Cunningham', 'Chaz Lanier', 'Duncan Robinson', 'Tobias Harris')",0.1166666666666666,4,2,0,0,0,0,0,0,0,0,1,4
-22500093,DET,HOU,78.6,79.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",0.0,4,0,0,0,0,0,0,0,0,0,0,4
-22500093,DET,HOU,78.0,80.2,"('Ausar Thompson', 'Chaz Lanier', 'Duncan Robinson', 'Javonte Green', 'Tobias Harris')",0.0,3,0,0,0,0,0,0,0,0,0,0,4
-22500093,DET,HOU,79.4,80.2,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",1.6833333333333331,3,2,1,1,2,0,0,1,2,1,3,4
-22500093,DET,HOU,78.0,80.2,"('Cade Cunningham', 'Chaz Lanier', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",1.1833333333333331,3,3,6,0,0,1,0,0,0,2,1,4
-22500093,DET,HOU,78.8,80.2,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",0.0,3,0,0,0,0,0,0,0,0,0,0,4
-22500093,DET,HOU,78.0,80.2,"('Cade Cunningham', 'Chaz Lanier', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.3666666666666667,3,2,3,1,2,0,1,0,1,1,1,4
-22500093,DET,HOU,79.2,79.2,"('Ausar Thompson', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Tobias Harris')",2.0500000000000003,3,7,0,3,0,1,0,2,2,0,2,4
-22500093,DET,HOU,77.8,80.2,"('Cade Cunningham', 'Chaz Lanier', 'Duncan Robinson', 'Javonte Green', 'Tobias Harris')",1.25,3,2,5,1,2,0,0,1,0,0,0,4
-22500093,DET,HOU,78.2,80.6,"('Ausar Thompson', 'Chaz Lanier', 'Isaiah Stewart', 'Javonte Green', 'Tobias Harris')",2.6,1,5,12,0,7,0,0,0,1,0,3,4
-22500093,DET,HOU,78.0,82.2,"('Cade Cunningham', 'Chaz Lanier', 'Isaiah Stewart', 'Javonte Green', 'Tobias Harris')",1.0166666666666668,1,2,3,1,2,0,1,0,0,1,2,4
-22500093,DET,HOU,79.6,82.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",1.45,1,0,3,1,2,0,0,2,0,2,0,4
-22500093,DET,HOU,78.4,80.2,"('Cade Cunningham', 'Chaz Lanier', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",1.5000000000000002,2,4,2,2,1,1,0,1,1,1,0,4
-22500093,DET,HOU,78.4,79.6,"('Cade Cunningham', 'Chaz Lanier', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.5333333333333333,1,3,0,1,0,1,0,0,0,0,0,4
-22500093,DET,HOU,78.8,82.2,"('Chaz Lanier', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.0,1,0,0,0,0,0,0,0,0,0,0,4
-22500106,DET,BOS,79.2,78.0,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",1.3833333333333333,4,4,7,1,2,1,1,0,0,1,1,5
-22500106,DET,BOS,79.6,78.0,"('Ausar Thompson', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",0.8500000000000001,4,0,2,0,3,0,1,1,1,0,0,5
-22500106,DET,BOS,79.4,77.4,"('Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",0.0,3,0,0,0,0,0,0,0,0,0,0,5
-22500106,DET,BOS,79.6,78.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",3.783333333333333,4,8,5,7,3,1,0,0,1,2,1,5
-22500106,DET,BOS,78.2,78.8,"('Cade Cunningham', 'Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.6833333333333331,4,2,4,3,2,0,0,2,0,1,1,5
-22500106,DET,BOS,79.0,77.4,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",1.6166666666666667,3,4,3,1,0,0,1,0,0,1,2,5
-22500106,DET,BOS,79.6,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",4.866666666666666,3,14,10,6,3,2,3,3,1,4,4,5
-22500106,DET,BOS,79.4,77.0,"('Ausar Thompson', 'Daniss Jenkins', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",1.9666666666666668,3,9,3,2,0,2,0,0,1,0,3,5
-22500106,DET,BOS,78.6,78.2,"('Cade Cunningham', 'Chaz Lanier', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",2.1333333333333333,2,4,8,1,2,0,2,2,0,0,0,5
-22500106,DET,BOS,79.4,78.2,"('Cade Cunningham', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.0,2,0,0,0,0,0,0,0,0,0,0,5
-22500106,DET,BOS,79.0,78.2,"('Cade Cunningham', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",1.1666666666666667,2,3,0,4,1,0,0,0,1,0,1,5
-22500106,DET,BOS,79.0,76.4,"('Ausar Thompson', 'Daniss Jenkins', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",1.4166666666666667,3,3,2,1,0,1,0,0,1,2,0,5
-22500106,DET,BOS,78.6,77.6,"('Ausar Thompson', 'Cade Cunningham', 'Daniss Jenkins', 'Isaiah Stewart', 'Ronald Holland II')",2.1333333333333333,3,4,5,2,1,0,0,0,0,0,0,5
-22500106,DET,BOS,78.0,78.8,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",1.4333333333333336,4,2,6,1,1,0,1,1,1,1,1,5
-22500106,DET,BOS,80.0,78.0,"('Ausar Thompson', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",1.3166666666666669,4,2,3,2,1,1,0,0,0,1,0,5
-22500106,DET,BOS,79.0,78.2,"('Ausar Thompson', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Tobias Harris')",0.0,4,0,0,0,0,0,0,0,0,0,0,5
-22500106,DET,BOS,78.4,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Chaz Lanier', 'Isaiah Stewart', 'Ronald Holland II')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
-22500106,DET,BOS,79.8,77.0,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",1.4833333333333332,1,3,3,2,2,1,1,0,0,0,0,5
-22500106,DET,BOS,79.6,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",5.4499999999999975,1,7,19,8,5,2,1,5,1,4,3,5
-22500106,DET,BOS,78.2,77.8,"('Ausar Thompson', 'Chaz Lanier', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",2.7333333333333334,1,12,4,2,1,4,0,0,2,1,2,5
-22500106,DET,BOS,79.6,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
-22500106,DET,BOS,78.2,77.0,"('Chaz Lanier', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",0.0,1,0,0,0,0,0,0,0,0,0,0,5
-22500106,DET,BOS,78.6,78.8,"('Cade Cunningham', 'Chaz Lanier', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",0.4666666666666667,1,0,0,0,1,0,0,0,0,0,0,5
-22500106,DET,BOS,78.8,77.0,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.8666666666666667,1,2,7,1,2,1,2,0,0,1,1,5
-22500106,DET,BOS,79.2,79.0,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",2.733333333333333,2,10,5,3,1,2,1,0,1,1,2,5
-22500106,DET,BOS,79.6,76.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",1.4333333333333331,2,3,0,3,2,0,0,1,0,1,1,5
-22500106,DET,BOS,79.4,78.0,"('Ausar Thompson', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",2.150000000000001,2,4,8,1,2,0,2,1,1,1,1,5
-22500106,DET,BOS,79.2,78.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",2.2,2,12,4,3,0,3,0,0,0,1,1,5
-22500106,DET,BOS,78.8,77.2,"('Ausar Thompson', 'Cade Cunningham', 'Isaiah Stewart', 'Javonte Green', 'Tobias Harris')",0.1833333333333333,2,0,0,0,2,0,0,0,0,0,0,5
-22500106,DET,BOS,78.6,78.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",1.5499999999999998,4,7,5,1,1,1,1,0,0,1,2,5
-22500129,DET,ORL,78.8,80.6,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.5833333333333333,4,9,0,2,1,1,0,0,1,1,1,6
-22500129,DET,ORL,78.8,78.8,"('Ausar Thompson', 'Daniss Jenkins', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.2499999999999999,4,1,0,1,0,0,0,0,0,0,1,6
-22500129,DET,ORL,77.8,78.8,"('Chaz Lanier', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",2.7,4,4,7,0,5,1,1,1,2,0,0,6
-22500129,DET,ORL,79.6,80.8,"('Ausar Thompson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",0.4333333333333333,4,0,2,0,0,0,0,1,0,1,0,6
-22500129,DET,ORL,79.0,80.6,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",0.0666666666666666,4,0,0,1,0,0,0,0,0,0,1,6
-22500129,DET,ORL,78.6,78.8,"('Ausar Thompson', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
-22500129,DET,ORL,79.2,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",1.75,4,4,2,3,0,1,0,1,2,0,1,6
-22500129,DET,ORL,79.6,80.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",1.2666666666666668,4,3,2,3,0,0,1,1,0,0,2,6
-22500129,DET,ORL,79.2,80.0,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.3666666666666666,3,0,0,2,1,0,0,0,0,0,0,6
-22500129,DET,ORL,79.2,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Tobias Harris')",0.0,3,0,0,0,0,0,0,0,0,0,0,6
-22500129,DET,ORL,79.8,80.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Tobias Harris')",0.0,3,0,0,0,0,0,0,0,0,0,0,6
-22500129,DET,ORL,79.6,78.8,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",2.1666666666666665,3,3,10,2,4,0,1,2,0,4,1,6
-22500129,DET,ORL,79.4,80.2,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",0.0,3,0,0,0,0,0,0,0,0,0,0,6
-22500129,DET,ORL,79.6,80.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",2.45,3,9,4,2,2,1,2,1,1,0,3,6
-22500129,DET,ORL,79.6,80.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",6.7499999999999964,3,21,14,5,8,7,1,1,1,5,5,6
-22500129,DET,ORL,79.8,80.2,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",0.2666666666666666,3,3,0,0,0,1,0,0,1,0,1,6
-22500129,DET,ORL,79.4,79.0,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",1.85,4,7,5,1,0,2,0,0,0,2,1,6
-22500129,DET,ORL,79.4,80.8,"('Ausar Thompson', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.7333333333333332,4,5,6,0,1,1,0,1,0,2,0,6
-22500129,DET,ORL,79.0,80.6,"('Ausar Thompson', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",0.0,4,0,0,0,0,0,0,0,0,0,0,6
-22500129,DET,ORL,78.8,78.8,"('Ausar Thompson', 'Daniss Jenkins', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",0.3666666666666666,4,1,0,1,0,0,0,0,0,0,0,6
-22500129,DET,ORL,79.2,80.2,"('Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",1.15,2,4,3,1,1,1,1,0,1,0,1,6
-22500129,DET,ORL,79.2,80.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Ronald Holland II', 'Tobias Harris')",0.0,2,0,0,0,0,0,0,0,0,0,0,6
-22500129,DET,ORL,79.2,80.6,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.4499999999999999,2,1,2,1,0,0,1,0,0,0,0,6
-22500129,DET,ORL,79.6,80.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",3.366666666666667,2,9,5,4,2,3,0,0,2,3,1,6
-22500129,DET,ORL,79.2,80.2,"('Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",2.583333333333333,2,10,7,2,2,1,2,0,0,1,1,6
-22500129,DET,ORL,79.0,79.8,"('Ausar Thompson', 'Duncan Robinson', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",0.05,2,0,0,0,0,0,0,0,0,0,0,6
-22500129,DET,ORL,78.8,79.2,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",3.2166666666666663,2,7,8,4,4,3,2,0,0,4,0,6
-22500129,DET,ORL,78.6,79.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Javonte Green', 'Ronald Holland II')",0.0,2,0,0,0,0,0,0,0,0,0,0,6
-22500129,DET,ORL,79.6,80.6,"('Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",0.0,1,0,0,0,0,0,0,0,0,0,0,6
-22500129,DET,ORL,79.6,80.6,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Tobias Harris')",2.1500000000000004,1,7,3,1,2,2,1,0,3,1,2,6
-22500129,DET,ORL,79.8,80.6,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Jalen Duren', 'Tobias Harris')",0.0,1,0,0,0,0,0,0,0,0,0,0,6
-22500129,DET,ORL,79.4,80.6,"('Ausar Thompson', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",1.1833333333333331,2,5,3,1,0,2,1,1,1,0,1,6
-22500129,DET,ORL,79.6,78.8,"('Ausar Thompson', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",3.3000000000000003,1,12,11,2,3,2,2,0,0,1,2,6
-22500129,DET,ORL,79.2,80.6,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II')",0.0,1,0,0,0,0,0,0,0,0,0,0,6
-22500129,DET,ORL,79.8,80.6,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",2.6500000000000004,1,4,7,1,3,0,2,1,0,3,0,6
-22500129,DET,ORL,79.6,80.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",3.9,1,6,15,6,4,0,4,2,1,2,2,6
-22500147,DET,DAL,79.2,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",1.1666666666666667,4,4,0,2,0,1,0,0,0,0,0,7
-22500147,DET,DAL,79.6,78.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",1.85,4,7,3,3,0,2,0,0,0,2,1,7
-22500147,DET,DAL,79.2,79.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.0666666666666666,3,0,0,1,0,0,0,0,0,0,0,7
-22500147,DET,DAL,79.6,78.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",2.283333333333333,3,7,3,1,1,3,0,0,1,0,1,7
-22500147,DET,DAL,79.6,78.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",0.8166666666666667,3,0,2,0,1,0,1,0,0,1,0,7
-22500147,DET,DAL,79.6,79.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",2.633333333333333,3,7,10,2,3,2,2,1,0,2,1,7
-22500147,DET,DAL,79.4,79.4,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",0.0,2,0,0,0,0,0,0,0,0,0,0,7
-22500147,DET,DAL,78.8,79.4,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",4.783333333333333,2,8,13,5,8,0,2,1,0,2,5,7
-22500147,DET,DAL,79.2,78.6,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Tobias Harris')",0.0,3,1,1,0,0,0,0,0,0,1,0,7
-22500147,DET,DAL,79.6,78.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",2.8166666666666664,3,8,5,2,1,3,1,0,1,1,2,7
-22500147,DET,DAL,79.2,78.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.0,3,0,0,0,0,0,0,0,0,0,0,7
-22500147,DET,DAL,79.6,78.6,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",3.383333333333333,3,5,11,1,3,1,3,1,1,2,0,7
-22500147,DET,DAL,79.8,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",0.8666666666666666,4,0,3,0,1,0,1,0,0,1,0,7
-22500147,DET,DAL,78.6,77.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",1.0333333333333334,4,4,0,2,1,1,0,0,1,0,1,7
-22500147,DET,DAL,79.6,78.2,"('Ausar Thompson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",1.933333333333333,4,4,3,2,2,1,1,0,3,0,0,7
-22500147,DET,DAL,79.2,78.0,"('Ausar Thompson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",0.1666666666666666,4,0,1,0,1,0,0,0,0,1,0,7
-22500147,DET,DAL,77.8,78.4,"('Cade Cunningham', 'Chaz Lanier', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",0.3666666666666666,2,2,1,0,0,0,0,0,0,0,0,7
-22500147,DET,DAL,79.6,79.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",1.0333333333333332,2,3,6,0,1,1,1,1,0,1,0,7
-22500147,DET,DAL,79.4,79.2,"('Ausar Thompson', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.0,2,0,0,0,0,0,0,0,0,0,0,7
-22500147,DET,DAL,79.2,79.2,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.6,2,3,0,0,1,1,0,1,2,0,0,7
-22500147,DET,DAL,79.4,78.8,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",1.4333333333333331,1,2,5,2,2,0,1,0,0,0,1,7
-22500147,DET,DAL,79.6,78.6,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",2.3833333333333333,1,4,4,5,4,0,0,0,1,1,2,7
-22500147,DET,DAL,79.6,78.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",0.8,1,2,4,0,1,1,0,0,0,0,0,7
-22500147,DET,DAL,79.2,79.0,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.4333333333333333,1,0,0,0,1,0,0,0,0,0,0,7
-22500147,DET,DAL,79.8,79.4,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",2.816666666666666,2,11,2,6,1,1,1,0,1,2,3,7
-22500147,DET,DAL,79.6,79.4,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Tobias Harris')",0.6166666666666667,2,3,0,1,1,1,0,0,0,1,0,7
-22500147,DET,DAL,79.2,79.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",1.4166666666666667,2,0,9,1,2,0,2,1,0,0,0,7
-22500147,DET,DAL,79.2,78.6,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green')",0.3666666666666666,2,2,0,1,0,0,0,0,0,0,1,7
-22500147,DET,DAL,78.8,77.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Tobias Harris')",3.2666666666666657,4,9,6,1,2,3,2,0,2,0,1,7
-22500147,DET,DAL,79.8,78.8,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",1.55,4,6,1,2,0,1,0,0,1,1,2,7
-22500147,DET,DAL,78.8,78.0,"('Ausar Thompson', 'Cade Cunningham', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",0.1666666666666666,4,1,0,0,0,0,0,0,0,0,1,7
-22500147,DET,DAL,79.6,78.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",1.0666666666666669,1,2,3,1,1,0,1,0,0,1,0,7
-22500147,DET,DAL,79.4,78.6,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.0,1,0,0,0,0,0,0,0,0,0,0,7
-22500147,DET,DAL,79.8,78.4,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",1.6,1,4,5,0,1,2,1,1,1,2,1,7
-22500147,DET,DAL,79.6,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",4.283333333333332,1,13,9,6,3,4,3,0,0,1,2,7
-22500161,DET,MEM,79.6,80.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",1.8333333333333333,1,6,2,2,1,2,1,1,1,0,0,8
-22500161,DET,MEM,79.2,78.4,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green')",2.466666666666666,2,8,7,1,3,1,2,1,2,3,1,8
-22500161,DET,MEM,79.8,79.2,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",1.1333333333333333,2,6,2,2,0,2,0,0,0,0,1,8
-22500161,DET,MEM,79.6,79.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",2.15,2,3,3,4,2,1,0,1,0,1,0,8
-22500161,DET,MEM,79.0,79.0,"('Cade Cunningham', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.0,1,0,0,0,0,0,0,0,0,0,0,8
-22500161,DET,MEM,79.2,79.0,"('Ausar Thompson', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",3.2333333333333334,1,12,9,1,1,1,1,3,2,4,2,8
-22500161,DET,MEM,79.6,79.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",4.916666666666667,1,12,7,4,6,3,3,0,3,1,1,8
-22500161,DET,MEM,79.2,79.0,"('Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.25,1,2,2,0,4,1,0,0,2,0,1,8
-22500161,DET,MEM,79.6,80.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",0.7666666666666667,1,0,5,1,3,0,1,0,0,0,0,8
-22500161,DET,MEM,79.2,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II')",0.8666666666666667,4,2,3,0,1,1,1,0,1,0,0,8
-22500161,DET,MEM,79.6,78.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",3.65,4,11,9,3,2,2,2,0,1,1,1,8
-22500161,DET,MEM,79.2,78.2,"('Ausar Thompson', 'Cade Cunningham', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green')",0.6166666666666667,4,2,3,2,0,0,1,0,0,0,2,8
-22500161,DET,MEM,78.6,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",4.4,4,11,9,4,4,2,3,1,2,1,2,8
-22500161,DET,MEM,79.2,77.6,"('Ausar Thompson', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.0,3,0,0,0,0,0,0,0,0,0,0,8
-22500161,DET,MEM,79.6,79.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",4.583333333333333,3,9,8,7,7,1,3,1,1,2,3,8
-22500161,DET,MEM,79.2,77.2,"('Caris LeVert', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.7333333333333332,3,0,6,0,2,0,1,1,1,2,0,8
-22500161,DET,MEM,80.0,80.2,"('Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",0.0,3,0,0,0,0,0,0,0,0,0,0,8
-22500161,DET,MEM,79.8,78.4,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",1.9666666666666663,3,7,2,1,1,2,0,0,1,0,2,8
-22500161,DET,MEM,79.6,80.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",2.1500000000000004,3,7,4,2,0,2,1,0,0,0,1,8
-22500161,DET,MEM,78.6,78.6,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",1.4666666666666668,2,0,2,3,1,0,0,2,0,1,1,8
-22500161,DET,MEM,79.8,79.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",1.8666666666666667,2,2,2,1,3,0,0,0,1,0,2,8
-22500161,DET,MEM,79.6,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",0.1,4,0,0,0,0,0,0,0,0,0,1,8
-22500161,DET,MEM,79.2,79.0,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",2.3666666666666667,4,5,8,2,3,1,2,1,1,2,0,8
-22500161,DET,MEM,79.2,79.0,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green')",0.0,4,0,0,0,0,0,0,0,0,0,0,8
-22500161,DET,MEM,79.4,77.6,"('Ausar Thompson', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.5666666666666664,3,2,6,0,2,0,2,0,0,0,0,8
-22500161,DET,MEM,79.2,78.4,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green')",0.35,2,1,0,1,0,0,0,0,0,0,0,8
-22500161,DET,MEM,79.6,79.2,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Jalen Duren')",0.0,2,0,0,0,0,0,0,0,0,0,0,8
-22500161,DET,MEM,79.8,79.2,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",0.6333333333333334,2,1,1,1,1,0,0,0,0,2,2,8
-22500161,DET,MEM,78.8,78.6,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.9333333333333336,2,5,6,1,2,1,1,0,1,2,1,8
-22500172,DET,UTA,79.0,80.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",0.0,1,0,0,0,0,0,0,0,0,0,0,9
-22500172,DET,UTA,79.2,79.4,"('Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.6166666666666667,1,5,4,2,2,1,0,0,0,2,1,9
-22500172,DET,UTA,79.0,79.6,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",0.1166666666666666,1,0,2,0,1,0,1,0,0,0,0,9
-22500172,DET,UTA,79.6,80.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",1.6500000000000004,1,3,2,3,1,1,1,2,0,0,1,9
-22500172,DET,UTA,79.6,80.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",0.3666666666666667,2,0,0,0,1,0,0,0,0,1,0,9
-22500172,DET,UTA,79.6,80.8,"('Ausar Thompson', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",0.2666666666666666,2,0,0,1,1,0,0,0,0,0,0,9
-22500172,DET,UTA,80.0,80.8,"('Ausar Thompson', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",1.7166666666666668,2,6,2,2,0,2,0,1,0,1,0,9
-22500172,DET,UTA,78.6,80.8,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Javonte Green')",0.0,2,0,0,0,0,0,0,0,0,0,0,9
-22500172,DET,UTA,79.0,79.4,"('Cade Cunningham', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.3333333333333337,1,4,4,1,0,0,0,0,0,0,2,9
-22500172,DET,UTA,78.8,80.0,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",0.3166666666666666,1,0,1,0,0,0,0,0,0,0,1,9
-22500172,DET,UTA,79.2,80.2,"('Ausar Thompson', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.9833333333333327,1,7,5,1,0,1,1,1,1,3,1,9
-22500172,DET,UTA,79.6,80.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",4.9833333333333325,1,9,12,5,8,3,4,1,3,1,0,9
-22500172,DET,UTA,79.8,80.2,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",3.466666666666667,2,7,11,1,2,2,3,1,1,2,0,9
-22500172,DET,UTA,78.6,80.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",0.0,2,0,0,0,0,0,0,0,0,0,0,9
-22500172,DET,UTA,79.6,80.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",1.9666666666666668,2,6,4,5,1,1,1,0,0,0,1,9
-22500172,DET,UTA,79.0,80.8,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",4.216666666666666,2,6,8,5,6,1,3,2,3,0,1,9
-22500172,DET,UTA,79.6,79.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",0.4333333333333333,3,0,1,1,1,0,0,0,0,1,0,9
-22500172,DET,UTA,78.8,80.8,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",0.0,3,0,0,0,0,0,0,0,0,0,0,9
-22500172,DET,UTA,79.2,79.4,"('Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",2.4499999999999997,3,2,5,3,5,1,1,1,1,0,0,9
-22500172,DET,UTA,79.8,79.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",0.0,3,0,0,0,0,0,0,0,0,0,0,9
-22500172,DET,UTA,78.6,80.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",0.15,3,2,0,0,0,0,0,0,0,0,0,9
-22500172,DET,UTA,79.6,79.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",6.6166666666666645,3,16,6,11,3,3,1,2,0,4,4,9
-22500172,DET,UTA,79.0,80.8,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.7500000000000004,3,1,2,1,3,0,0,0,2,1,2,9
-22500172,DET,UTA,79.4,79.4,"('Ausar Thompson', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",0.6,3,4,0,1,0,0,0,0,0,0,0,9
-22500172,DET,UTA,79.2,81.2,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",2.7166666666666663,4,5,9,1,4,0,3,0,1,1,0,9
-22500172,DET,UTA,79.2,81.2,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green')",0.0,4,0,0,0,0,0,0,0,0,0,0,9
-22500172,DET,UTA,80.0,79.2,"('Ausar Thompson', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",0.0,4,0,0,0,0,0,0,0,0,0,0,9
-22500172,DET,UTA,79.6,79.2,"('Ausar Thompson', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",0.4333333333333333,4,1,0,1,0,0,0,1,0,0,0,9
-22500172,DET,UTA,79.0,80.8,"('Ausar Thompson', 'Cade Cunningham', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.05,4,4,4,0,0,2,0,0,0,2,1,9
-22500172,DET,UTA,79.2,81.2,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.4666666666666668,4,9,3,0,0,1,1,0,2,0,0,9
-22500172,DET,UTA,79.6,79.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",3.866666666666666,4,14,12,4,3,4,2,0,0,2,2,9
-22500172,DET,UTA,79.0,80.2,"('Cade Cunningham', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",2.466666666666667,4,3,6,3,2,1,2,1,1,2,0,9
+game_id,team,opponent,team_avg_height,opp_avg_height,lineup,minutes_played,period,points,opp_points,rebounds,opp_rebounds,assists,opp_assists,turnovers,opp_turnovers,fouls_committed,fouls_drawn,possessions,opp_possessions,game_number
+22500007,DET,CLE,79.0,77.4,"('Cade Cunningham', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",0.3666666666666666,1,0,2,0,0,0,1,1,0,1,0,1.0,1.0,1
+22500007,DET,CLE,79.4,77.4,"('Cade Cunningham', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",0.4499999999999999,1,0,0,1,2,0,0,1,0,0,0,2.0,1.0,1
+22500007,DET,CLE,78.2,78.2,"('Bobi Klintman', 'Chaz Lanier', 'Colby Jones', 'Daniss Jenkins', 'Paul Reed')",0.7166666666666666,4,0,0,1,0,0,0,0,0,0,0,1.0,2.0,1
+22500007,DET,CLE,79.2,77.4,"('Ausar Thompson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",0.5333333333333333,1,0,3,0,0,0,0,1,0,1,0,1.0,2.44,1
+22500007,DET,CLE,77.6,77.2,"('Chaz Lanier', 'Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",3.816666666666666,4,7,16,1,2,1,3,4,2,1,1,9.0,9.88,1
+22500007,DET,CLE,78.6,78.2,"('Bobi Klintman', 'Chaz Lanier', 'Colby Jones', 'Daniss Jenkins', 'Tolu Smith')",5.558333333333332,4,20,8,11,4,4,2,2,3,1,6,15.2,13.44,1
+22500007,DET,CLE,78.6,78.6,"('Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",0.8833333333333334,2,0,3,0,2,0,1,0,0,1,0,1.0,1.44,1
+22500007,DET,CLE,79.2,78.6,"('Cade Cunningham', 'Daniss Jenkins', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",0.5833333333333333,2,2,1,0,0,1,0,0,0,1,0,1.0,2.44,1
+22500007,DET,CLE,79.6,78.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",2.8833333333333337,2,2,8,2,5,0,1,1,0,4,1,6.0,6.2,1
+22500007,DET,CLE,78.6,79.0,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II')",1.5883333333333334,2,4,9,0,1,1,2,0,0,1,1,4.44,3.88,1
+22500007,DET,CLE,78.6,79.4,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.2383333333333333,1,0,1,0,0,0,0,0,0,0,0,1.0,0.44,1
+22500007,DET,CLE,79.6,78.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",1.0333333333333332,1,2,3,1,0,0,1,1,0,0,0,2.0,2.0,1
+22500007,DET,CLE,78.6,77.4,"('Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",1.8416666666666668,1,0,5,0,4,0,1,1,1,1,0,4.0,3.44,1
+22500007,DET,CLE,79.8,78.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",2.333333333333333,1,6,5,3,3,1,2,0,0,1,1,4.44,6.0,1
+22500007,DET,CLE,79.6,78.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",5.0666666666666655,1,16,14,5,5,3,5,1,1,3,3,11.32,11.32,1
+22500007,DET,CLE,79.8,78.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",0.95,2,0,4,0,2,0,1,0,0,1,1,3.0,1.44,1
+22500007,DET,CLE,79.6,78.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",1.2666666666666668,3,0,4,1,3,0,0,0,1,0,0,2.0,3.0,1
+22500007,DET,CLE,79.2,79.6,"('Cade Cunningham', 'Isaiah Stewart', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.3066666666666666,3,0,1,1,0,0,0,0,0,0,1,1.0,0.44,1
+22500007,DET,CLE,79.6,77.4,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Paul Reed', 'Ronald Holland II')",3.733333333333333,3,10,4,6,0,3,1,4,3,3,1,9.44,9.0,1
+22500007,DET,CLE,79.6,78.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",4.116666666666665,3,7,11,2,6,1,2,3,3,4,3,11.88,10.88,1
+22500007,DET,CLE,78.6,79.2,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II')",0.3,3,1,0,0,0,0,0,0,0,0,1,0.44,0.0,1
+22500007,DET,CLE,78.2,77.8,"('Cade Cunningham', 'Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.05,2,0,0,4,2,0,0,0,0,1,1,2.0,2.0,1
+22500007,DET,CLE,78.8,77.4,"('Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",2.105,3,7,7,1,3,2,1,1,2,2,0,5.0,4.76,1
+22500007,DET,CLE,77.8,77.2,"('Chaz Lanier', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.3333333333333337,4,2,2,0,2,1,0,0,1,0,1,3.0,2.0,1
+22500007,DET,CLE,78.8,77.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",2.183333333333333,2,2,3,4,1,0,0,2,1,2,2,4.88,5.44,1
+22500007,DET,CLE,79.0,78.0,"('Daniss Jenkins', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",1.7,2,7,2,4,1,2,1,2,1,0,1,5.88,6.0,1
+22500031,DET,BKN,78.8,79.2,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",0.6499999999999999,2,2,2,0,0,0,1,0,0,0,0,1.0,1.0,2
+22500031,DET,BKN,79.6,81.0,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",0.7500000000000001,3,2,2,1,1,0,0,0,0,1,1,2.0,1.88,2
+22500031,DET,BKN,79.0,79.2,"('Ausar Thompson', 'Cade Cunningham', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.4333333333333333,2,3,2,0,0,0,1,0,0,0,1,1.44,1.0,2
+22500031,DET,BKN,79.6,80.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",1.305,2,4,0,3,0,1,0,0,0,0,0,2.0,3.0,2
+22500031,DET,BKN,79.6,80.0,"('Bobi Klintman', 'Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Paul Reed')",0.7833333333333334,3,2,3,0,1,0,1,0,2,0,0,3.0,3.0,2
+22500031,DET,BKN,79.6,79.2,"('Ausar Thompson', 'Bobi Klintman', 'Cade Cunningham', 'Caris LeVert', 'Paul Reed')",1.75,3,5,6,2,1,0,1,0,0,1,2,3.3200000000000003,4.44,2
+22500031,DET,BKN,79.8,80.2,"('Bobi Klintman', 'Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren')",1.75,3,4,0,3,2,1,0,0,1,1,1,3.88,3.0,2
+22500031,DET,BKN,79.6,81.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",5.333333333333333,3,16,8,5,1,4,1,3,3,2,3,10.32,11.2,2
+22500031,DET,BKN,80.0,79.2,"('Ausar Thompson', 'Bobi Klintman', 'Caris LeVert', 'Paul Reed', 'Ronald Holland II')",1.633333333333333,3,5,0,3,1,1,0,0,0,0,0,3.44,4.0,2
+22500031,DET,BKN,79.2,81.0,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",2.8000000000000003,4,11,9,1,1,4,2,1,1,2,1,7.0,6.0,2
+22500031,DET,BKN,79.4,80.6,"('Ausar Thompson', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",2.6666666666666665,4,4,5,3,2,1,1,0,0,1,3,5.0,3.88,2
+22500031,DET,BKN,78.4,77.4,"('Ausar Thompson', 'Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",2.3000000000000003,4,6,8,2,1,1,3,0,1,0,1,3.88,5.0,2
+22500031,DET,BKN,78.0,77.4,"('Bobi Klintman', 'Chaz Lanier', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed')",2.976666666666668,4,6,9,5,3,1,2,0,1,1,4,9.44,6.44,2
+22500031,DET,BKN,78.8,81.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",1.1833333333333331,4,4,2,2,0,2,1,0,0,0,0,2.0,2.0,2
+22500031,DET,BKN,80.0,81.2,"('Bobi Klintman', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",0.9333333333333332,1,3,2,1,0,0,1,1,1,0,1,2.44,3.0,2
+22500031,DET,BKN,79.6,81.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",6.149999999999999,1,15,22,4,6,5,6,4,3,2,2,14.88,14.88,2
+22500031,DET,BKN,79.0,81.0,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",1.25,2,1,3,1,1,0,0,0,0,0,2,2.44,2.44,2
+22500031,DET,BKN,78.8,79.2,"('Ausar Thompson', 'Cade Cunningham', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.8,2,3,0,2,1,1,0,1,1,1,0,3.44,5.0,2
+22500031,DET,BKN,80.0,80.0,"('Ausar Thompson', 'Bobi Klintman', 'Caris LeVert', 'Paul Reed', 'Ronald Holland II')",3.681666666666666,1,8,2,3,2,4,0,2,4,1,0,8.0,9.0,2
+22500031,DET,BKN,80.0,81.0,"('Bobi Klintman', 'Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Ronald Holland II')",1.1333333333333333,1,1,3,1,2,0,1,0,0,1,1,3.44,2.44,2
+22500031,DET,BKN,79.2,80.2,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.15,2,5,4,0,0,1,0,0,0,2,0,2.0,1.76,2
+22500031,DET,BKN,79.2,80.8,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",1.8166666666666664,2,6,5,1,2,2,2,0,0,1,1,3.88,3.0,2
+22500031,DET,BKN,79.4,80.8,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren')",2.933333333333333,2,9,10,3,2,3,2,1,1,2,0,7.0,7.32,2
+22500041,DET,PHI,77.6,77.8,"('Chaz Lanier', 'Daniss Jenkins', 'Duncan Robinson', 'Paul Reed', 'Wendell Moore Jr.')",0.1383333333333332,2,1,0,0,0,0,0,0,0,0,1,0.44,0.0,3
+22500041,DET,PHI,77.8,78.8,"('Chaz Lanier', 'Daniss Jenkins', 'Paul Reed', 'Ronald Holland II', 'Wendell Moore Jr.')",1.8583333333333327,3,13,4,2,0,4,0,0,1,1,3,5.32,4.88,3
+22500041,DET,PHI,77.6,78.6,"('Caris LeVert', 'Chaz Lanier', 'Isaiah Stewart', 'Javonte Green', 'Wendell Moore Jr.')",2.8666666666666667,2,9,4,4,1,3,0,0,0,1,2,5.44,4.88,3
+22500041,DET,PHI,78.4,78.6,"('Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Wendell Moore Jr.')",1.1166666666666667,2,5,0,1,1,1,0,0,0,1,0,2.0,2.0,3
+22500041,DET,PHI,78.0,77.8,"('Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Wendell Moore Jr.')",0.6233333333333334,2,1,0,1,1,0,0,0,0,0,0,1.44,1.0,3
+22500041,DET,PHI,77.8,78.0,"('Caris LeVert', 'Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Wendell Moore Jr.')",0.5566666666666668,4,0,0,2,1,0,0,0,0,1,0,1.0,2.0,3
+22500041,DET,PHI,77.2,77.8,"('Chaz Lanier', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed', 'Wendell Moore Jr.')",1.5500000000000005,2,7,5,0,2,2,1,0,2,0,0,4.0,4.44,3
+22500041,DET,PHI,78.2,78.0,"('Caris LeVert', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",3.7666666666666666,3,8,13,1,2,3,4,4,2,1,2,9.44,10.0,3
+22500041,DET,PHI,78.2,78.6,"('Caris LeVert', 'Chaz Lanier', 'Isaiah Stewart', 'Ronald Holland II', 'Wendell Moore Jr.')",1.4666666666666666,3,4,3,1,1,2,0,0,0,1,0,3.0,2.0,3
+22500041,DET,PHI,78.6,78.4,"('Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",3.5000000000000004,2,9,7,4,8,3,1,0,1,0,1,7.44,6.0,3
+22500041,DET,PHI,77.6,78.6,"('Caris LeVert', 'Chaz Lanier', 'Isaiah Stewart', 'Javonte Green', 'Wendell Moore Jr.')",1.4166666666666663,3,0,6,0,2,0,2,0,1,0,1,2.0,3.0,3
+22500041,DET,PHI,78.6,78.0,"('Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",2.9333333333333336,3,0,10,4,4,0,2,3,0,0,1,6.0,7.0,3
+22500041,DET,PHI,77.8,78.2,"('Chaz Lanier', 'Daniss Jenkins', 'Paul Reed', 'Ronald Holland II', 'Wendell Moore Jr.')",2.983333333333333,4,6,2,3,4,2,1,0,2,1,0,7.0,6.0,3
+22500041,DET,PHI,78.4,78.6,"('Caris LeVert', 'Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",1.15,4,4,2,2,0,1,0,1,0,0,1,2.44,3.0,3
+22500041,DET,PHI,78.2,78.0,"('Caris LeVert', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",2.363333333333333,4,5,2,4,3,1,0,0,0,0,2,5.32,4.0,3
+22500041,DET,PHI,78.4,78.0,"('Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Wendell Moore Jr.')",2.916666666666667,4,7,6,0,2,0,1,0,2,2,2,4.44,5.0,3
+22500041,DET,PHI,78.6,78.6,"('Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.9333333333333336,4,4,3,4,0,2,1,1,0,0,0,3.0,3.0,3
+22500041,DET,PHI,78.6,78.4,"('Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",6.199999999999998,1,16,15,6,6,5,2,3,4,2,2,16.88,14.32,3
+22500041,DET,PHI,77.6,78.2,"('Chaz Lanier', 'Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",0.95,1,2,2,1,1,0,0,0,0,0,0,2.0,1.88,3
+22500041,DET,PHI,77.4,78.4,"('Caris LeVert', 'Chaz Lanier', 'Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green')",1.95,1,3,2,6,3,0,0,1,0,2,0,5.0,5.0,3
+22500041,DET,PHI,78.8,78.8,"('Bobi Klintman', 'Caris LeVert', 'Chaz Lanier', 'Duncan Robinson', 'Isaiah Stewart')",2.455,1,7,8,0,2,2,0,0,0,3,0,5.0,6.32,3
+22500041,DET,PHI,79.4,79.0,"('Bobi Klintman', 'Daniss Jenkins', 'Duncan Robinson', 'Paul Reed', 'Ronald Holland II')",2.1166666666666663,2,3,11,0,2,1,4,0,0,1,2,3.0,4.0,3
+22500084,DET,CHI,79.8,79.2,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",2.0666666666666664,3,3,5,5,2,0,1,0,2,3,3,5.44,6.32,4
+22500084,DET,CHI,79.6,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",2.5166666666666666,3,6,8,1,3,3,3,0,1,0,0,5.0,5.0,4
+22500084,DET,CHI,79.6,77.4,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",3.8,3,12,10,6,2,4,2,1,0,1,2,8.44,8.879999999999999,4
+22500084,DET,CHI,79.6,78.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",2.0333333333333337,2,4,2,1,2,2,1,1,1,3,1,5.0,4.0,4
+22500084,DET,CHI,79.2,77.6,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",1.2666666666666666,2,6,2,2,1,2,0,0,0,1,0,3.44,3.0,4
+22500084,DET,CHI,79.6,77.2,"('Ausar Thompson', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",3.643333333333334,2,11,7,3,4,2,1,1,2,2,3,10.32,9.2,4
+22500084,DET,CHI,79.4,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren')",1.6333333333333335,2,3,5,2,4,1,1,1,1,0,2,5.44,5.0,4
+22500084,DET,CHI,79.6,76.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",1.1666666666666667,2,4,7,0,1,1,2,0,0,0,1,2.44,3.0,4
+22500084,DET,CHI,79.4,77.4,"('Ausar Thompson', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.5666666666666669,2,2,5,0,1,1,2,1,1,0,1,3.0,3.0,4
+22500084,DET,CHI,79.2,78.0,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",1.0,1,0,7,0,2,0,2,0,0,0,0,2.0,2.44,4
+22500084,DET,CHI,79.4,77.2,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",1.4,1,2,5,2,2,1,2,0,0,0,0,3.0,3.0,4
+22500084,DET,CHI,79.4,77.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",0.1666666666666666,2,0,1,0,0,0,0,0,0,1,0,0.0,0.44,4
+22500084,DET,CHI,79.6,77.0,"('Cade Cunningham', 'Caris LeVert', 'Paul Reed', 'Ronald Holland II', 'Tobias Harris')",0.5333333333333334,1,0,2,0,2,0,1,0,1,0,0,2.0,2.0,4
+22500084,DET,CHI,79.6,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",2.0666666666666664,1,6,7,0,2,2,3,1,1,2,0,4.0,4.44,4
+22500084,DET,CHI,79.2,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",4.116666666666665,1,6,8,3,5,2,2,0,0,3,1,7.0,7.32,4
+22500084,DET,CHI,79.2,77.0,"('Ausar Thompson', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",2.0000000000000004,1,3,5,1,2,1,0,2,1,1,0,4.0,4.44,4
+22500084,DET,CHI,79.4,78.4,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",1.666666666666667,3,4,5,1,2,2,0,0,1,2,1,4.0,4.32,4
+22500084,DET,CHI,79.0,78.6,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",1.25,4,2,0,3,2,0,0,0,0,0,2,3.0,1.0,4
+22500084,DET,CHI,79.4,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",3.616666666666666,4,14,8,3,0,2,4,1,0,1,0,7.0,7.0,4
+22500084,DET,CHI,79.0,77.0,"('Cade Cunningham', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.8166666666666668,1,2,1,1,2,0,0,0,0,1,1,1.88,2.44,4
+22500084,DET,CHI,80.0,77.8,"('Cade Cunningham', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",0.0,4,0,1,0,0,0,0,0,0,0,0,0.0,0.44,4
+22500084,DET,CHI,78.6,76.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",2.75,4,7,3,4,3,1,1,0,1,2,2,6.88,6.44,4
+22500084,DET,CHI,79.4,77.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",0.1783333333333333,4,0,0,1,1,0,0,0,0,1,0,1.0,0.0,4
+22500084,DET,CHI,79.6,77.8,"('Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",0.0466666666666666,4,0,1,0,0,0,0,0,0,0,0,1.0,1.44,4
+22500084,DET,CHI,78.6,78.0,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",0.6833333333333335,4,2,0,4,1,0,0,0,1,0,1,1.88,2.0,4
+22500084,DET,CHI,79.8,78.0,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",2.183333333333334,4,5,6,2,2,0,1,0,0,1,0,4.44,5.0,4
+22500084,DET,CHI,79.8,78.6,"('Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",1.25,3,3,0,0,0,1,0,1,2,2,1,3.44,4.0,4
+22500084,DET,CHI,79.8,77.8,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",1.2866666666666666,4,2,2,1,2,1,0,0,1,2,0,3.0,2.88,4
+22500084,DET,CHI,79.0,77.4,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",0.4449999999999999,3,2,2,0,0,0,0,0,0,0,1,1.88,1.0,4
+22500093,DET,HOU,78.4,79.6,"('Cade Cunningham', 'Chaz Lanier', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.5,1,3,0,2,0,1,0,0,0,0,0,1.0,1.0,5
+22500093,DET,HOU,78.8,82.2,"('Chaz Lanier', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.0,1,0,0,0,0,0,0,0,0,0,0,0.0,0.0,5
+22500093,DET,HOU,79.6,82.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",1.45,1,0,3,1,2,0,0,2,0,2,0,3.0,3.44,5
+22500093,DET,HOU,78.0,80.2,"('Cade Cunningham', 'Chaz Lanier', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",0.7666666666666666,3,3,6,0,0,1,0,0,0,2,1,2.0,2.76,5
+22500093,DET,HOU,79.4,80.2,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",1.5166666666666666,3,2,1,1,2,0,0,1,2,0,3,5.0,3.44,5
+22500093,DET,HOU,79.4,81.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Paul Reed', 'Tobias Harris')",4.433333333333333,3,8,15,3,2,2,5,3,0,4,0,7.0,8.76,5
+22500093,DET,HOU,79.2,79.2,"('Ausar Thompson', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Tobias Harris')",2.043333333333333,3,7,0,3,0,1,0,2,2,0,2,6.32,5.0,5
+22500093,DET,HOU,78.0,79.8,"('Cade Cunningham', 'Chaz Lanier', 'Isaiah Stewart', 'Javonte Green', 'Tobias Harris')",1.9333333333333331,2,5,3,3,0,2,1,2,0,2,0,4.0,4.0,5
+22500093,DET,HOU,78.4,79.8,"('Cade Cunningham', 'Chaz Lanier', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",1.4666666666666668,2,4,2,2,1,1,0,1,1,1,0,4.0,4.0,5
+22500093,DET,HOU,78.8,79.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.0,4,3,2,1,0,1,0,1,1,0,1,2.0,2.0,5
+22500093,DET,HOU,78.8,79.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",2.333333333333333,4,5,5,1,2,1,1,0,1,0,1,4.0,4.0,5
+22500093,DET,HOU,79.0,81.6,"('Ausar Thompson', 'Daniss Jenkins', 'Duncan Robinson', 'Paul Reed', 'Tobias Harris')",0.1166666666666666,4,0,0,0,0,0,0,0,0,1,0,0.0,1.0,5
+22500093,DET,HOU,77.8,80.2,"('Cade Cunningham', 'Chaz Lanier', 'Duncan Robinson', 'Javonte Green', 'Tobias Harris')",1.25,3,2,5,1,2,0,0,1,0,0,0,3.0,3.44,5
+22500093,DET,HOU,79.4,81.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Paul Reed', 'Tobias Harris')",5.193333333333333,4,10,10,8,5,3,1,1,0,2,2,10.0,10.76,5
+22500093,DET,HOU,79.4,81.6,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",1.1,4,3,2,0,1,1,1,0,0,1,0,2.0,1.0,5
+22500093,DET,HOU,78.2,80.6,"('Ausar Thompson', 'Chaz Lanier', 'Isaiah Stewart', 'Javonte Green', 'Tobias Harris')",2.5883333333333334,1,5,12,0,6,0,0,0,1,0,2,8.440000000000001,6.0,5
+22500093,DET,HOU,79.8,79.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",3.2,1,13,6,6,5,3,0,1,2,2,2,6.88,8.32,5
+22500093,DET,HOU,79.2,80.2,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.9166666666666666,2,2,1,0,1,1,0,0,0,1,0,3.0,1.44,5
+22500093,DET,HOU,78.0,80.2,"('Cade Cunningham', 'Chaz Lanier', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.3666666666666667,3,2,3,1,2,0,1,0,1,1,1,1.88,2.44,5
+22500093,DET,HOU,79.0,80.4,"('Ausar Thompson', 'Cade Cunningham', 'Javonte Green', 'Paul Reed', 'Tobias Harris')",0.0516666666666666,4,1,0,0,0,0,0,0,0,0,0,0.44,1.0,5
+22500093,DET,HOU,78.8,81.6,"('Ausar Thompson', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",1.25,4,5,2,0,0,1,1,0,0,1,0,2.0,1.0,5
+22500093,DET,HOU,79.2,81.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.7000000000000001,4,0,4,1,2,0,0,0,0,1,0,2.0,2.76,5
+22500093,DET,HOU,78.2,80.2,"('Ausar Thompson', 'Cade Cunningham', 'Chaz Lanier', 'Duncan Robinson', 'Tobias Harris')",0.1233333333333333,4,1,0,0,0,0,0,0,0,0,1,0.44,0.0,5
+22500093,DET,HOU,78.0,80.6,"('Cade Cunningham', 'Chaz Lanier', 'Isaiah Stewart', 'Javonte Green', 'Tobias Harris')",1.028333333333333,1,2,3,1,3,0,1,0,0,1,2,2.88,2.44,5
+22500093,DET,HOU,78.8,80.2,"('Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",1.716666666666667,2,0,2,3,3,0,0,1,1,1,2,4.0,5.88,5
+22500093,DET,HOU,79.6,82.2,"('Ausar Thompson', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.0633333333333333,1,0,2,0,0,0,0,0,0,0,0,0.0,1.0,5
+22500093,DET,HOU,78.8,80.6,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Paul Reed', 'Tobias Harris')",1.2333333333333334,2,7,0,2,0,1,0,0,0,1,1,2.88,3.0,5
+22500093,DET,HOU,79.4,81.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Paul Reed', 'Tobias Harris')",3.771666666666666,2,13,14,3,3,4,2,0,1,2,0,8.0,8.76,5
+22500093,DET,HOU,79.8,82.2,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",3.083333333333333,1,9,7,4,2,2,1,1,0,4,1,7.44,5.2,5
+22500093,DET,HOU,78.4,81.6,"('Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Tobias Harris')",0.8333333333333334,2,0,1,1,1,0,0,0,0,1,2,3.0,2.44,5
+22500106,DET,BOS,79.2,78.0,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",1.3833333333333333,4,4,6,1,2,1,1,0,0,1,1,2.88,2.44,6
+22500106,DET,BOS,78.2,78.8,"('Cade Cunningham', 'Daniss Jenkins', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.6833333333333331,4,2,4,3,2,0,0,2,0,1,1,2.88,3.88,6
+22500106,DET,BOS,78.0,78.8,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",1.4333333333333336,4,2,6,1,1,0,1,1,1,1,1,2.88,4.44,6
+22500106,DET,BOS,80.0,78.0,"('Ausar Thompson', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",1.3166666666666669,4,2,3,2,1,1,0,0,0,1,0,2.0,2.0,6
+22500106,DET,BOS,78.6,78.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",1.5333333333333332,4,7,5,1,1,1,1,0,0,1,2,2.88,2.44,6
+22500106,DET,BOS,79.0,78.2,"('Cade Cunningham', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",1.1666666666666667,2,3,0,4,1,0,0,0,1,0,1,2.44,3.0,6
+22500106,DET,BOS,79.2,79.0,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",2.7166666666666663,2,10,5,3,1,2,1,0,1,1,2,6.32,5.0,6
+22500106,DET,BOS,78.2,77.8,"('Ausar Thompson', 'Chaz Lanier', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",2.4933333333333336,1,12,4,2,1,4,0,0,2,1,2,5.88,7.0,6
+22500106,DET,BOS,78.6,78.8,"('Cade Cunningham', 'Chaz Lanier', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",0.4816666666666667,1,0,0,0,1,0,0,0,0,0,0,1.0,1.0,6
+22500106,DET,BOS,79.8,77.0,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",1.4833333333333332,1,3,3,2,2,1,1,0,0,0,0,4.0,3.0,6
+22500106,DET,BOS,79.0,77.4,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",1.6166666666666667,3,4,3,1,0,0,1,0,0,1,2,2.88,3.44,6
+22500106,DET,BOS,79.2,78.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",2.03,2,12,4,3,0,3,0,0,0,1,1,5.44,4.88,6
+22500106,DET,BOS,79.6,76.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",1.3833333333333333,2,3,0,3,2,0,0,1,0,1,1,4.44,3.0,6
+22500106,DET,BOS,78.8,77.0,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.8,1,2,7,1,2,1,2,0,0,1,1,4.0,5.0,6
+22500106,DET,BOS,79.6,78.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",3.671666666666667,4,8,6,7,3,1,0,0,1,2,1,7.0,8.76,6
+22500106,DET,BOS,79.4,78.0,"('Ausar Thompson', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",2.0,2,4,8,1,2,0,2,1,1,1,1,4.88,5.44,6
+22500106,DET,BOS,78.8,77.2,"('Ausar Thompson', 'Cade Cunningham', 'Isaiah Stewart', 'Javonte Green', 'Tobias Harris')",0.1766666666666666,2,0,0,0,2,0,0,0,0,0,0,1.0,1.0,6
+22500106,DET,BOS,79.6,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",4.866666666666666,3,14,10,6,3,2,3,3,1,4,3,12.64,11.44,6
+22500106,DET,BOS,79.4,77.0,"('Ausar Thompson', 'Daniss Jenkins', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",1.95,3,9,3,2,0,2,0,0,1,0,3,5.2,4.0,6
+22500106,DET,BOS,78.6,78.2,"('Cade Cunningham', 'Chaz Lanier', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",2.1333333333333333,2,4,8,1,2,0,2,2,0,0,0,5.0,4.0,6
+22500106,DET,BOS,79.6,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",5.399999999999998,1,7,19,8,5,2,1,5,1,4,3,14.0,13.44,6
+22500106,DET,BOS,79.6,78.0,"('Ausar Thompson', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",0.8500000000000001,4,0,2,0,3,0,1,1,1,0,0,2.0,2.0,6
+22500106,DET,BOS,78.6,77.6,"('Ausar Thompson', 'Cade Cunningham', 'Daniss Jenkins', 'Isaiah Stewart', 'Ronald Holland II')",2.1083333333333334,3,4,5,2,1,0,0,0,0,0,0,4.0,4.44,6
+22500106,DET,BOS,79.0,76.4,"('Ausar Thompson', 'Daniss Jenkins', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",1.2799999999999998,3,3,2,1,0,1,0,0,1,2,0,2.44,2.88,6
+22500129,DET,ORL,79.8,80.2,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",0.2666666666666666,3,3,0,0,0,1,0,0,1,0,1,1.44,1.0,7
+22500129,DET,ORL,79.6,78.8,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",2.155,3,3,10,2,4,0,1,2,0,4,1,6.44,6.76,7
+22500129,DET,ORL,79.0,79.8,"('Ausar Thompson', 'Duncan Robinson', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",0.045,2,0,0,0,0,0,0,0,0,0,0,0.0,1.0,7
+22500129,DET,ORL,79.6,80.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",3.3550000000000004,2,9,5,4,2,3,0,0,2,2,1,6.44,6.88,7
+22500129,DET,ORL,79.2,80.2,"('Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",1.15,2,4,3,1,1,1,1,0,1,0,1,3.0,3.0,7
+22500129,DET,ORL,79.2,80.6,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.4499999999999999,2,1,2,1,0,0,1,0,0,0,0,1.44,1.0,7
+22500129,DET,ORL,79.6,78.8,"('Ausar Thompson', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",3.2366666666666664,1,12,11,2,3,2,2,0,0,1,2,6.76,5.88,7
+22500129,DET,ORL,78.8,79.2,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",3.2,2,7,8,4,4,3,2,0,0,4,0,7.0,7.88,7
+22500129,DET,ORL,79.4,80.6,"('Ausar Thompson', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",1.1833333333333331,2,5,3,1,0,2,1,1,1,0,1,3.44,3.0,7
+22500129,DET,ORL,79.2,80.2,"('Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",2.5666666666666664,2,10,7,2,2,1,2,0,0,1,1,3.88,5.44,7
+22500129,DET,ORL,79.6,80.6,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Tobias Harris')",2.1333333333333337,1,7,3,1,2,2,1,0,3,1,2,5.32,4.0,7
+22500129,DET,ORL,79.8,80.6,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",2.316666666666667,1,4,7,1,3,0,2,1,0,3,0,5.0,4.88,7
+22500129,DET,ORL,79.6,80.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",3.833333333333333,1,6,15,6,4,0,4,2,1,2,2,10.76,10.32,7
+22500129,DET,ORL,77.8,78.8,"('Chaz Lanier', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",2.611666666666667,4,4,7,0,5,1,1,1,2,0,0,6.0,6.0,7
+22500129,DET,ORL,79.6,80.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",2.45,3,9,4,2,2,1,2,1,1,0,3,5.76,5.0,7
+22500129,DET,ORL,79.4,80.8,"('Ausar Thompson', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.7333333333333332,4,5,6,0,1,1,0,1,0,2,0,4.0,3.0,7
+22500129,DET,ORL,79.4,79.0,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",1.85,4,7,5,1,0,2,0,0,0,1,1,3.0,3.3200000000000003,7
+22500129,DET,ORL,79.2,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",1.7,4,4,2,3,0,1,0,1,2,0,1,3.0,4.0,7
+22500129,DET,ORL,79.6,80.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",6.68333333333333,3,21,14,5,8,7,1,1,1,4,5,14.32,15.08,7
+22500129,DET,ORL,79.2,80.0,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.3533333333333333,3,0,0,2,1,0,0,0,0,0,0,1.0,1.0,7
+22500129,DET,ORL,79.0,80.6,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",0.0666666666666666,4,0,0,1,0,0,0,0,0,1,1,0.0,1.0,7
+22500129,DET,ORL,78.8,80.6,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.5833333333333333,4,9,0,2,1,1,0,0,1,1,1,3.88,4.0,7
+22500129,DET,ORL,78.8,78.8,"('Ausar Thompson', 'Daniss Jenkins', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",0.2833333333333333,4,1,0,1,0,0,0,0,0,0,0,0.44,1.0,7
+22500129,DET,ORL,79.6,80.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",1.2500000000000002,4,3,2,3,0,0,1,1,0,0,2,4.44,3.0,7
+22500129,DET,ORL,78.8,78.8,"('Ausar Thompson', 'Daniss Jenkins', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.2333333333333333,4,1,0,1,0,0,0,0,0,0,1,1.44,0.0,7
+22500129,DET,ORL,79.6,80.8,"('Ausar Thompson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",0.4333333333333333,4,0,2,0,0,0,0,1,0,1,0,1.0,0.88,7
+22500147,DET,DAL,79.8,79.4,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",2.816666666666666,2,11,2,6,1,1,1,0,1,2,3,6.32,6.0,8
+22500147,DET,DAL,79.6,79.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",1.0333333333333332,2,3,6,0,1,1,1,1,0,1,0,3.0,2.88,8
+22500147,DET,DAL,79.6,79.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",2.633333333333333,3,7,10,2,3,2,2,1,0,2,1,6.0,5.32,8
+22500147,DET,DAL,79.6,78.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",2.283333333333333,3,7,3,1,1,3,0,0,1,0,1,4.44,4.44,8
+22500147,DET,DAL,79.2,79.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.0299999999999999,3,0,0,1,0,0,0,0,0,0,0,0.0,1.0,8
+22500147,DET,DAL,79.6,78.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",0.8166666666666667,3,0,2,0,1,0,1,0,0,1,0,1.0,2.0,8
+22500147,DET,DAL,79.2,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.7483333333333333,4,4,0,2,0,1,0,0,0,0,0,1.44,2.0,8
+22500147,DET,DAL,79.2,78.0,"('Ausar Thompson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",0.1666666666666666,4,0,1,0,1,0,0,0,0,1,0,1.0,0.44,8
+22500147,DET,DAL,78.8,78.0,"('Ausar Thompson', 'Cade Cunningham', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",0.1666666666666666,4,1,0,0,0,0,0,0,0,0,1,0.44,0.0,8
+22500147,DET,DAL,79.6,78.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",2.8,3,8,5,2,1,3,1,0,1,1,2,6.44,4.88,8
+22500147,DET,DAL,79.4,78.8,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",1.4333333333333331,1,2,5,2,2,0,1,0,0,0,1,3.0,3.0,8
+22500147,DET,DAL,79.6,78.6,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",2.3483333333333336,1,4,4,5,4,0,0,0,1,1,2,5.76,5.44,8
+22500147,DET,DAL,79.6,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",4.283333333333332,1,13,9,6,3,4,3,0,0,1,2,9.0,9.0,8
+22500147,DET,DAL,79.6,78.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",0.8,1,2,4,0,1,1,0,0,0,0,0,2.0,2.0,8
+22500147,DET,DAL,79.6,78.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",1.0666666666666669,1,2,3,1,1,0,1,0,0,1,0,2.0,2.44,8
+22500147,DET,DAL,79.6,79.4,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Tobias Harris')",0.6166666666666667,2,3,0,1,1,1,0,0,0,1,0,2.0,1.0,8
+22500147,DET,DAL,77.8,78.4,"('Cade Cunningham', 'Chaz Lanier', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",0.3666666666666667,2,2,1,0,0,0,0,0,0,0,0,1.0,1.44,8
+22500147,DET,DAL,79.2,79.0,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",0.385,1,0,0,0,1,0,0,0,0,0,0,1.0,0.0,8
+22500147,DET,DAL,79.8,78.4,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",1.5333333333333332,1,4,5,0,1,2,1,1,1,2,1,3.0,4.32,8
+22500147,DET,DAL,79.2,79.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Tobias Harris')",1.3966666666666667,2,0,9,1,2,0,2,1,0,0,0,3.0,4.0,8
+22500147,DET,DAL,79.2,79.2,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Tobias Harris')",0.5833333333333333,2,3,0,0,1,1,0,1,2,0,0,2.44,2.0,8
+22500147,DET,DAL,78.8,79.4,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",4.781666666666666,2,8,13,5,8,0,2,1,0,2,5,12.88,9.32,8
+22500147,DET,DAL,79.2,78.6,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green')",0.3666666666666666,2,2,0,1,0,0,0,0,0,0,1,0.88,1.0,8
+22500147,DET,DAL,79.2,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Tobias Harris')",0.0,3,1,1,0,0,0,0,0,0,0,0,0.44,0.44,8
+22500147,DET,DAL,79.6,78.6,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Ronald Holland II', 'Tobias Harris')",3.298333333333334,3,5,11,1,3,1,3,1,1,2,0,6.0,6.88,8
+22500147,DET,DAL,79.6,78.2,"('Ausar Thompson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II', 'Tobias Harris')",1.933333333333333,4,4,3,2,2,1,1,0,3,0,0,4.0,4.44,8
+22500147,DET,DAL,79.8,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",0.8666666666666666,4,0,3,0,1,0,1,0,0,1,0,2.0,1.0,8
+22500147,DET,DAL,79.6,78.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Tobias Harris')",1.85,4,7,3,3,0,2,0,0,0,2,1,3.44,3.3200000000000003,8
+22500147,DET,DAL,78.6,77.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",1.0333333333333334,4,4,0,2,1,1,0,0,1,0,1,2.44,3.0,8
+22500147,DET,DAL,79.8,78.8,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II', 'Tobias Harris')",1.55,4,6,1,2,0,1,0,0,1,1,2,2.76,3.44,8
+22500147,DET,DAL,78.8,77.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Tobias Harris')",3.1499999999999995,4,9,6,1,2,3,2,0,2,0,1,6.0,8.0,8
+22500161,DET,MEM,79.8,78.8,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",1.1166666666666667,2,6,2,2,0,2,0,0,0,0,1,2.88,2.88,9
+22500161,DET,MEM,79.6,79.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",0.7666666666666667,1,0,5,1,3,0,1,0,0,0,0,2.0,3.0,9
+22500161,DET,MEM,79.6,79.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",4.9,1,12,7,4,6,3,3,0,3,1,1,10.0,11.0,9
+22500161,DET,MEM,79.2,80.2,"('Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.25,1,2,2,0,4,1,0,0,2,0,1,2.0,3.0,9
+22500161,DET,MEM,79.2,79.0,"('Ausar Thompson', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",3.233333333333333,1,12,9,1,1,1,1,3,2,4,2,8.32,7.76,9
+22500161,DET,MEM,79.6,80.2,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",1.8333333333333333,1,6,2,2,1,2,1,1,1,0,0,5.0,4.0,9
+22500161,DET,MEM,78.6,78.6,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",1.4666666666666668,2,0,2,3,1,0,0,2,0,1,1,3.0,3.88,9
+22500161,DET,MEM,79.2,78.4,"('Cade Cunningham', 'Caris LeVert', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green')",0.3483333333333333,2,1,0,1,0,0,0,0,0,0,0,0.44,1.0,9
+22500161,DET,MEM,79.8,79.2,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",0.6333333333333334,2,1,1,1,1,0,0,0,0,1,1,1.44,1.44,9
+22500161,DET,MEM,79.8,79.8,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",1.8666666666666667,2,2,2,1,3,0,0,0,1,0,2,3.88,3.0,9
+22500161,DET,MEM,79.8,80.2,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",1.9666666666666663,3,7,2,1,1,2,0,0,1,0,2,3.0,3.0,9
+22500161,DET,MEM,79.2,77.2,"('Caris LeVert', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.7333333333333332,3,0,6,0,2,0,1,1,1,2,0,4.0,4.32,9
+22500161,DET,MEM,79.2,79.2,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",2.25,4,5,8,2,3,1,2,1,1,2,0,5.0,4.76,9
+22500161,DET,MEM,79.2,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II')",0.8666666666666667,4,2,3,0,1,1,1,0,1,0,0,2.0,2.0,9
+22500161,DET,MEM,79.6,79.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",3.1950000000000003,4,11,9,3,2,2,2,0,1,1,1,5.88,6.44,9
+22500161,DET,MEM,79.6,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",0.1,4,0,0,0,0,0,0,0,0,0,1,0.0,0.0,9
+22500161,DET,MEM,78.6,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",4.366666666666666,4,11,9,4,4,2,3,1,2,1,2,11.44,9.0,9
+22500161,DET,MEM,79.2,78.2,"('Ausar Thompson', 'Cade Cunningham', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green')",0.3199999999999999,4,2,3,2,0,0,1,0,0,0,2,1.88,2.0,9
+22500161,DET,MEM,79.6,78.6,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",2.116666666666667,2,3,3,4,2,1,0,1,0,1,0,4.0,3.0,9
+22500161,DET,MEM,78.8,78.6,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.9333333333333336,2,5,6,1,2,1,1,0,1,2,1,3.88,4.88,9
+22500161,DET,MEM,79.6,79.0,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",4.583333333333333,3,9,8,7,7,1,3,1,1,2,2,11.0,9.0,9
+22500161,DET,MEM,79.6,79.4,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",2.1500000000000004,3,7,4,2,0,2,1,0,0,0,1,3.0,4.0,9
+22500161,DET,MEM,79.2,78.6,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green')",2.453333333333333,2,8,7,1,3,1,2,1,2,3,1,5.88,6.32,9
+22500161,DET,MEM,79.4,78.4,"('Ausar Thompson', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.5666666666666664,3,2,6,0,2,0,2,0,0,0,0,2.88,2.0,9
+22500172,DET,UTA,79.6,80.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",1.6500000000000004,1,3,2,3,1,1,1,2,0,0,1,4.0,4.0,10
+22500172,DET,UTA,79.0,79.4,"('Cade Cunningham', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.3333333333333337,1,4,4,1,0,0,0,0,0,0,2,2.88,2.0,10
+22500172,DET,UTA,78.8,80.0,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",0.3183333333333333,1,0,1,0,0,0,0,0,0,0,1,1.0,0.44,10
+22500172,DET,UTA,79.6,80.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",4.9833333333333325,1,9,12,5,8,3,4,1,3,1,0,11.0,10.88,10
+22500172,DET,UTA,79.6,80.8,"('Ausar Thompson', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",0.2516666666666666,2,0,0,1,1,0,0,0,0,0,0,0.0,1.0,10
+22500172,DET,UTA,79.0,80.8,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",4.133333333333333,2,6,8,5,6,1,3,2,3,0,1,11.0,13.0,10
+22500172,DET,UTA,78.6,80.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green')",0.115,3,2,0,0,0,0,0,0,0,0,0,1.0,0.0,10
+22500172,DET,UTA,79.2,79.4,"('Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",2.4333333333333327,3,2,5,3,5,1,1,1,1,0,0,5.0,6.0,10
+22500172,DET,UTA,79.6,79.8,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",6.6166666666666645,3,16,6,11,3,3,1,2,0,4,4,12.76,10.88,10
+22500172,DET,UTA,79.6,79.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",0.4333333333333333,3,0,1,1,1,0,0,0,0,1,0,1.0,1.44,10
+22500172,DET,UTA,79.4,79.4,"('Ausar Thompson', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",0.6,3,4,0,1,0,0,0,0,0,0,0,2.0,1.0,10
+22500172,DET,UTA,79.8,80.2,"('Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",3.466666666666667,2,7,11,1,2,2,3,1,1,2,0,6.0,6.44,10
+22500172,DET,UTA,79.2,80.2,"('Ausar Thompson', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.9816666666666665,1,7,5,1,0,1,1,1,1,3,1,4.32,4.88,10
+22500172,DET,UTA,79.0,79.6,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",0.1166666666666666,1,0,2,0,1,0,1,0,0,0,0,1.0,1.0,10
+22500172,DET,UTA,79.6,80.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",1.9666666666666668,2,6,4,5,1,1,1,0,0,0,1,4.0,4.44,10
+22500172,DET,UTA,79.6,80.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",0.3666666666666667,2,0,0,0,1,0,0,0,0,1,0,1.0,0.0,10
+22500172,DET,UTA,80.0,80.8,"('Ausar Thompson', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",1.705,2,6,2,2,0,2,0,1,0,1,0,4.0,3.0,10
+22500172,DET,UTA,79.2,79.4,"('Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.6166666666666667,1,5,4,2,2,1,0,0,0,2,1,4.44,3.76,10
+22500172,DET,UTA,79.6,79.2,"('Ausar Thompson', 'Isaiah Stewart', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",0.4283333333333333,4,1,0,1,0,0,0,1,0,0,0,1.44,1.0,10
+22500172,DET,UTA,79.0,80.8,"('Ausar Thompson', 'Caris LeVert', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",1.7366666666666668,3,1,2,1,3,0,0,0,2,1,2,5.44,4.88,10
+22500172,DET,UTA,79.0,80.2,"('Cade Cunningham', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",2.35,4,3,6,3,2,1,2,1,1,2,0,5.0,4.88,10
+22500172,DET,UTA,79.0,80.8,"('Ausar Thompson', 'Cade Cunningham', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.0333333333333332,4,4,4,0,0,2,0,0,0,2,1,2.0,1.88,10
+22500172,DET,UTA,79.2,81.2,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.4666666666666668,4,9,3,0,0,1,1,0,2,0,0,4.0,3.44,10
+22500172,DET,UTA,79.2,81.2,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",2.7,4,5,9,1,4,0,3,0,1,1,0,5.0,5.88,10
+22500172,DET,UTA,79.6,79.2,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",3.8649999999999993,4,14,12,4,3,4,2,0,0,2,2,6.44,8.879999999999999,10
+22500195,DET,PHI,79.0,78.6,"('Cade Cunningham', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.8333333333333333,3,2,3,0,2,0,1,0,1,0,2,2.88,3.0,11
+22500195,DET,PHI,79.0,77.2,"('Cade Cunningham', 'Caris LeVert', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.1166666666666667,1,2,0,2,1,1,0,0,1,0,1,2.0,3.0,11
+22500195,DET,PHI,79.0,78.4,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",1.1166666666666667,1,5,2,0,1,1,0,0,0,1,1,3.0,2.88,11
+22500195,DET,PHI,79.4,78.4,"('Ausar Thompson', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",2.6000000000000005,4,3,5,3,1,1,1,1,0,1,1,4.0,5.0,11
+22500195,DET,PHI,79.2,78.8,"('Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",0.9166666666666669,1,2,4,0,1,1,1,1,0,0,0,2.0,2.0,11
+22500195,DET,PHI,79.2,77.6,"('Caris LeVert', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.7583333333333333,1,8,9,0,4,1,0,0,1,1,0,4.88,4.88,11
+22500195,DET,PHI,79.2,78.6,"('Cade Cunningham', 'Caris LeVert', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",2.0333333333333337,4,7,2,2,2,1,1,0,2,1,1,4.32,4.0,11
+22500195,DET,PHI,79.0,77.6,"('Ausar Thompson', 'Cade Cunningham', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.4499999999999995,4,2,5,0,2,0,1,1,1,0,0,2.0,2.88,11
+22500195,DET,PHI,79.2,77.8,"('Ausar Thompson', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",4.196666666666665,4,9,7,3,3,2,1,2,1,2,2,11.44,7.88,11
+22500195,DET,PHI,79.2,77.4,"('Ausar Thompson', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",0.8166666666666667,4,0,2,0,0,0,0,1,0,2,0,1.0,0.88,11
+22500195,DET,PHI,78.8,78.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",0.4666666666666667,4,1,1,0,0,0,0,0,0,1,1,1.44,0.44,11
+22500195,DET,PHI,79.6,78.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",6.916666666666663,1,20,17,9,8,6,5,0,2,4,2,14.76,15.64,11
+22500195,DET,PHI,79.0,78.8,"('Ausar Thompson', 'Cade Cunningham', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.9866666666666668,3,3,1,2,2,0,0,0,0,1,1,2.3200000000000003,2.44,11
+22500195,DET,PHI,79.4,78.8,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Paul Reed', 'Ronald Holland II')",0.3383333333333333,3,2,0,0,0,1,0,0,1,0,0,1.0,1.0,11
+22500195,DET,PHI,79.6,78.4,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",3.400000000000001,2,4,4,2,4,1,0,2,1,0,2,9.0,7.0,11
+22500195,DET,PHI,79.4,78.6,"('Ausar Thompson', 'Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren')",2.595,2,6,10,2,2,1,2,1,0,2,1,5.0,6.0,11
+22500195,DET,PHI,79.4,77.6,"('Bobi Klintman', 'Caris LeVert', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",1.4166666666666663,2,2,6,1,1,0,1,1,1,1,1,3.0,3.88,11
+22500195,DET,PHI,79.4,77.4,"('Ausar Thompson', 'Bobi Klintman', 'Cade Cunningham', 'Jalen Duren', 'Javonte Green')",2.333333333333333,2,2,8,1,2,1,2,3,1,0,0,5.0,6.0,11
+22500195,DET,PHI,79.2,77.6,"('Ausar Thompson', 'Bobi Klintman', 'Cade Cunningham', 'Javonte Green', 'Paul Reed')",1.4166666666666667,2,3,4,1,1,1,1,1,2,0,1,3.0,3.44,11
+22500195,DET,PHI,79.0,78.4,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",3.3999999999999995,3,15,2,4,0,2,0,0,1,2,0,6.44,5.88,11
+22500195,DET,PHI,79.2,78.8,"('Ausar Thompson', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.2783333333333332,3,0,0,1,0,0,0,0,0,0,0,0.0,2.0,11
+22500195,DET,PHI,79.6,78.4,"('Cade Cunningham', 'Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",0.5666666666666667,3,0,2,0,0,0,0,1,0,0,1,3.0,1.0,11
+22500195,DET,PHI,79.6,78.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",5.449999999999999,3,12,13,4,6,2,5,0,2,1,4,11.88,12.0,11
+22500195,DET,PHI,79.0,78.6,"('Ausar Thompson', 'Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",0.3333333333333333,4,1,1,0,1,0,0,0,1,1,0,1.44,2.44,11
+22500199,DET,WAS,78.8,78.4,"('Cade Cunningham', 'Daniss Jenkins', 'Jalen Duren', 'Javonte Green', 'Paul Reed')",0.2366666666666666,5,0,0,1,1,0,0,0,0,0,1,3.0,1.0,12
+22500199,DET,WAS,78.4,77.8,"('Chaz Lanier', 'Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",2.8,4,7,8,1,4,1,1,2,1,3,2,6.88,6.76,12
+22500199,DET,WAS,78.2,77.8,"('Bobi Klintman', 'Cade Cunningham', 'Chaz Lanier', 'Daniss Jenkins', 'Paul Reed')",3.838333333333333,3,4,9,7,4,1,3,0,0,2,0,7.0,7.0,12
+22500199,DET,WAS,77.4,79.0,"('Cade Cunningham', 'Chaz Lanier', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed')",0.5,3,1,0,0,0,0,0,0,1,0,1,1.44,1.0,12
+22500199,DET,WAS,78.4,79.0,"('Cade Cunningham', 'Chaz Lanier', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.75,3,6,11,0,1,0,3,0,0,0,0,3.44,4.0,12
+22500199,DET,WAS,79.2,79.0,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",5.383333333333332,3,9,13,7,8,1,2,0,1,1,2,9.88,11.0,12
+22500199,DET,WAS,78.0,78.4,"('Cade Cunningham', 'Chaz Lanier', 'Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren')",0.4466666666666666,3,0,1,1,0,0,0,0,0,0,1,1.0,0.44,12
+22500199,DET,WAS,78.4,77.8,"('Bobi Klintman', 'Chaz Lanier', 'Daniss Jenkins', 'Duncan Robinson', 'Paul Reed')",0.0083333333333333,3,0,1,0,0,0,0,0,0,1,0,0.0,0.44,12
+22500199,DET,WAS,77.6,78.2,"('Cade Cunningham', 'Chaz Lanier', 'Daniss Jenkins', 'Jalen Duren', 'Javonte Green')",2.4666666666666672,2,8,4,3,1,3,1,2,2,0,1,6.44,6.0,12
+22500199,DET,WAS,78.4,78.0,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",2.341666666666667,2,5,5,3,3,1,0,0,0,1,1,6.44,5.44,12
+22500199,DET,WAS,78.2,78.6,"('Cade Cunningham', 'Chaz Lanier', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",3.0500000000000003,2,10,5,3,2,3,2,1,4,1,3,9.88,8.0,12
+22500199,DET,WAS,78.4,76.8,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",4.608333333333332,5,10,8,8,7,2,1,1,1,2,3,11.32,11.88,12
+22500199,DET,WAS,78.4,78.8,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",7.5966666666666685,4,26,17,7,2,5,2,1,2,3,4,13.64,13.2,12
+22500199,DET,WAS,79.0,77.8,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",0.5666666666666667,4,0,3,2,0,0,0,1,0,0,0,1.0,1.44,12
+22500199,DET,WAS,79.4,78.8,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Paul Reed')",0.005,4,0,0,1,0,0,0,0,0,0,0,0.0,1.0,12
+22500199,DET,WAS,78.2,78.4,"('Cade Cunningham', 'Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",0.95,4,4,3,0,0,0,0,0,1,0,2,1.76,2.0,12
+22500199,DET,WAS,78.0,79.4,"('Cade Cunningham', 'Chaz Lanier', 'Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren')",0.0099999999999999,4,3,0,0,0,1,0,0,0,0,0,1.0,0.0,12
+22500199,DET,WAS,79.2,79.0,"('Cade Cunningham', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",4.416666666666666,1,11,13,4,4,1,3,1,1,2,2,8.76,9.32,12
+22500199,DET,WAS,78.0,79.2,"('Cade Cunningham', 'Chaz Lanier', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",3.066666666666666,1,12,8,4,3,2,1,0,2,1,1,7.44,7.0,12
+22500199,DET,WAS,78.4,77.8,"('Chaz Lanier', 'Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Ronald Holland II')",4.066666666666667,2,8,10,5,3,3,2,3,2,0,3,10.0,10.0,12
+22500199,DET,WAS,79.2,77.8,"('Bobi Klintman', 'Daniss Jenkins', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",0.1183333333333333,1,1,0,1,0,0,0,0,0,0,0,0.44,1.0,12
+22500199,DET,WAS,78.2,79.0,"('Cade Cunningham', 'Chaz Lanier', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",1.2833333333333334,1,2,6,1,1,0,2,1,1,0,0,3.0,3.44,12
+22500199,DET,WAS,78.2,77.8,"('Bobi Klintman', 'Cade Cunningham', 'Chaz Lanier', 'Daniss Jenkins', 'Paul Reed')",1.7499999999999996,1,7,4,4,1,3,1,0,0,1,0,4.0,3.44,12
+22500199,DET,WAS,78.8,77.8,"('Bobi Klintman', 'Chaz Lanier', 'Daniss Jenkins', 'Jalen Duren', 'Ronald Holland II')",1.36,1,3,6,0,1,0,2,1,1,0,1,3.44,4.0,12
+22500214,DET,CHI,79.4,77.4,"('Caris LeVert', 'Daniss Jenkins', 'Duncan Robinson', 'Ronald Holland II', 'Tolu Smith')",2.716666666666667,2,9,6,3,1,1,1,0,1,2,1,5.0,6.44,13
+22500214,DET,CHI,79.4,76.8,"('Bobi Klintman', 'Caris LeVert', 'Chaz Lanier', 'Duncan Robinson', 'Tolu Smith')",3.5316666666666667,1,13,11,5,3,4,3,1,0,0,1,8.440000000000001,8.0,13
+22500214,DET,CHI,78.6,77.8,"('Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",7.349999999999995,1,21,9,8,7,6,2,1,5,1,2,14.88,17.44,13
+22500214,DET,CHI,78.0,76.8,"('Caris LeVert', 'Chaz Lanier', 'Daniss Jenkins', 'Javonte Green', 'Tolu Smith')",0.8333333333333333,1,0,3,1,2,0,0,1,0,0,1,3.0,2.0,13
+22500214,DET,CHI,78.2,77.0,"('Chaz Lanier', 'Daniss Jenkins', 'Javonte Green', 'Ronald Holland II', 'Tolu Smith')",0.2866666666666666,2,0,0,1,0,0,0,0,0,0,1,0.0,1.0,13
+22500214,DET,CHI,78.2,77.4,"('Daniss Jenkins', 'Javonte Green', 'Paul Reed', 'Ronald Holland II', 'Wendell Moore Jr.')",2.7166666666666663,2,8,5,0,1,0,1,1,3,1,0,6.0,5.0,13
+22500214,DET,CHI,79.4,76.0,"('Bobi Klintman', 'Daniss Jenkins', 'Ronald Holland II', 'Tolu Smith', 'Wendell Moore Jr.')",0.7166666666666667,2,0,4,0,1,0,2,1,0,0,0,1.0,2.0,13
+22500214,DET,CHI,79.0,76.8,"('Bobi Klintman', 'Caris LeVert', 'Chaz Lanier', 'Javonte Green', 'Tolu Smith')",0.2333333333333333,1,1,0,1,0,0,0,0,0,1,1,1.44,1.0,13
+22500214,DET,CHI,78.4,77.2,"('Caris LeVert', 'Chaz Lanier', 'Daniss Jenkins', 'Duncan Robinson', 'Tolu Smith')",0.4783333333333333,3,0,0,2,0,0,0,0,0,0,1,0.0,1.0,13
+22500214,DET,CHI,77.8,76.2,"('Caris LeVert', 'Chaz Lanier', 'Javonte Green', 'Paul Reed', 'Wendell Moore Jr.')",0.5333333333333333,3,2,0,0,0,1,0,0,2,0,0,1.0,2.0,13
+22500214,DET,CHI,78.6,78.2,"('Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",5.466666666666665,3,8,12,6,8,1,3,3,3,3,1,13.0,12.0,13
+22500214,DET,CHI,77.6,77.0,"('Bobi Klintman', 'Caris LeVert', 'Chaz Lanier', 'Daniss Jenkins', 'Javonte Green')",0.8833333333333333,4,2,6,0,2,1,0,1,0,1,0,3.0,2.88,13
+22500214,DET,CHI,78.4,77.6,"('Caris LeVert', 'Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",1.7999999999999996,4,9,4,3,0,4,1,0,0,0,0,4.0,5.0,13
+22500214,DET,CHI,78.8,77.6,"('Bobi Klintman', 'Chaz Lanier', 'Daniss Jenkins', 'Duncan Robinson', 'Tolu Smith')",1.5666666666666664,4,0,3,1,3,0,0,0,1,3,1,3.0,4.44,13
+22500214,DET,CHI,77.8,76.8,"('Chaz Lanier', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",2.521666666666667,4,4,7,1,3,1,0,3,3,1,1,5.88,7.88,13
+22500214,DET,CHI,78.6,77.6,"('Caris LeVert', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",2.0500000000000003,4,7,5,3,0,1,1,2,1,2,3,5.44,6.32,13
+22500214,DET,CHI,78.8,77.0,"('Bobi Klintman', 'Caris LeVert', 'Chaz Lanier', 'Daniss Jenkins', 'Tolu Smith')",0.7999999999999999,4,0,5,1,2,0,1,0,0,1,0,2.0,2.88,13
+22500214,DET,CHI,78.6,77.2,"('Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.15,4,2,4,0,1,1,1,1,0,0,0,3.0,2.0,13
+22500214,DET,CHI,77.6,77.0,"('Chaz Lanier', 'Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",0.8333333333333334,4,5,0,0,0,1,0,0,1,1,0,2.0,2.0,13
+22500214,DET,CHI,79.0,77.0,"('Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Ronald Holland II', 'Tolu Smith')",0.4333333333333333,2,0,1,0,0,0,0,1,0,2,0,1.0,0.44,13
+22500214,DET,CHI,78.6,77.2,"('Bobi Klintman', 'Caris LeVert', 'Chaz Lanier', 'Paul Reed', 'Wendell Moore Jr.')",1.55,3,8,2,3,2,2,0,0,0,0,2,4.44,4.0,13
+22500214,DET,CHI,77.6,75.8,"('Caris LeVert', 'Chaz Lanier', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed')",1.633333333333333,3,6,5,1,1,3,1,0,0,1,1,4.0,3.0,13
+22500214,DET,CHI,79.0,77.2,"('Bobi Klintman', 'Caris LeVert', 'Chaz Lanier', 'Tolu Smith', 'Wendell Moore Jr.')",1.9566666666666663,3,3,8,0,3,1,1,1,1,3,0,5.0,5.2,13
+22500214,DET,CHI,78.0,78.6,"('Caris LeVert', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed', 'Wendell Moore Jr.')",2.4166666666666665,2,7,9,0,2,1,2,1,0,0,0,4.0,4.0,13
+22500214,DET,CHI,79.8,76.0,"('Bobi Klintman', 'Daniss Jenkins', 'Duncan Robinson', 'Ronald Holland II', 'Tolu Smith')",2.5333333333333337,2,6,4,4,2,1,1,0,0,2,0,5.0,4.44,13
+22500214,DET,CHI,77.4,77.0,"('Chaz Lanier', 'Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Ronald Holland II')",0.1766666666666667,2,3,0,0,0,0,0,0,0,0,1,1.32,0.0,13
+22500242,DET,IND,79.0,78.2,"('Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Wendell Moore Jr.')",0.7,4,2,1,1,0,0,0,0,0,2,0,1.0,1.44,14
+22500242,DET,IND,78.6,78.6,"('Chaz Lanier', 'Isaac Jones', 'Paul Reed', 'Ronald Holland II', 'Wendell Moore Jr.')",0.6683333333333333,4,2,5,0,0,1,1,0,0,0,0,2.0,2.0,14
+22500242,DET,IND,77.8,77.8,"('Chaz Lanier', 'Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",1.2999999999999998,4,2,8,0,0,1,1,1,0,1,0,2.0,2.88,14
+22500242,DET,IND,79.4,78.2,"('Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",0.4166666666666666,4,2,0,1,0,1,0,0,0,1,0,1.0,1.0,14
+22500242,DET,IND,78.8,78.6,"('Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",4.7833333333333306,4,13,16,5,5,3,1,2,1,3,1,10.88,14.2,14
+22500242,DET,IND,78.4,78.2,"('Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II', 'Wendell Moore Jr.')",1.2333333333333334,4,4,3,0,1,0,0,0,0,1,1,2.0,2.44,14
+22500242,DET,IND,77.8,78.6,"('Chaz Lanier', 'Daniss Jenkins', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.6499999999999999,4,2,2,0,0,1,0,0,1,0,0,1.0,2.0,14
+22500242,DET,IND,78.8,78.2,"('Caris LeVert', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II')",1.1,4,6,2,2,2,1,1,0,0,0,1,2.88,3.0,14
+22500242,DET,IND,78.6,78.6,"('Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.2166666666666666,4,1,0,0,0,0,0,1,0,0,0,1.44,0.0,14
+22500242,DET,IND,78.0,78.0,"('Caris LeVert', 'Chaz Lanier', 'Jalen Duren', 'Javonte Green', 'Wendell Moore Jr.')",0.8583333333333334,3,0,3,1,2,0,1,0,0,0,0,2.0,1.44,14
+22500242,DET,IND,77.8,78.0,"('Caris LeVert', 'Chaz Lanier', 'Javonte Green', 'Paul Reed', 'Wendell Moore Jr.')",1.4483333333333337,3,5,6,0,1,2,0,1,0,3,0,3.0,4.76,14
+22500242,DET,IND,79.4,79.2,"('Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",5.316666666666666,3,11,9,5,5,3,2,3,4,4,6,11.88,11.32,14
+22500242,DET,IND,79.2,79.2,"('Caris LeVert', 'Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren')",1.0166666666666666,3,3,2,0,1,0,0,0,0,0,2,2.3200000000000003,1.0,14
+22500242,DET,IND,77.4,78.2,"('Chaz Lanier', 'Daniss Jenkins', 'Jalen Duren', 'Javonte Green', 'Wendell Moore Jr.')",3.3999999999999995,2,13,4,6,2,2,1,1,2,1,2,9.32,8.440000000000001,14
+22500242,DET,IND,79.0,78.6,"('Caris LeVert', 'Duncan Robinson', 'Isaiah Stewart', 'Javonte Green', 'Ronald Holland II')",0.5333333333333333,2,0,2,1,1,0,1,2,0,1,0,2.0,2.0,14
+22500242,DET,IND,78.8,78.6,"('Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.5333333333333332,2,8,3,1,1,0,1,0,2,0,2,6.88,4.44,14
+22500242,DET,IND,78.6,78.6,"('Caris LeVert', 'Chaz Lanier', 'Isaiah Stewart', 'Jalen Duren', 'Wendell Moore Jr.')",0.5,2,3,2,0,0,1,1,0,0,1,0,1.0,1.0,14
+22500242,DET,IND,78.6,78.6,"('Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",0.4783333333333334,2,0,2,0,0,0,0,0,0,0,1,1.0,1.0,14
+22500242,DET,IND,79.4,78.6,"('Caris LeVert', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green', 'Ronald Holland II')",1.0499999999999998,2,6,6,1,0,2,1,0,0,2,1,2.44,4.32,14
+22500242,DET,IND,78.6,78.8,"('Caris LeVert', 'Daniss Jenkins', 'Duncan Robinson', 'Jalen Duren', 'Javonte Green')",1.15,3,4,2,0,2,1,1,0,2,0,0,4.0,3.0,14
+22500242,DET,IND,78.2,77.6,"('Caris LeVert', 'Chaz Lanier', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",2.1166666666666663,3,8,7,2,2,3,1,1,0,1,1,5.0,4.44,14
+22500242,DET,IND,78.6,78.6,"('Caris LeVert', 'Chaz Lanier', 'Duncan Robinson', 'Isaiah Stewart', 'Ronald Holland II')",0.9166666666666669,2,0,2,1,1,0,1,0,0,1,1,2.0,1.0,14
+22500242,DET,IND,78.6,79.4,"('Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed', 'Ronald Holland II')",1.7999999999999998,1,7,5,0,0,2,2,1,1,0,1,4.0,4.0,14
+22500242,DET,IND,78.8,78.6,"('Caris LeVert', 'Isaiah Stewart', 'Javonte Green', 'Paul Reed', 'Wendell Moore Jr.')",0.3333333333333333,1,1,0,1,0,0,0,0,0,0,0,0.44,1.0,14
+22500242,DET,IND,77.8,79.0,"('Caris LeVert', 'Chaz Lanier', 'Javonte Green', 'Paul Reed', 'Wendell Moore Jr.')",1.596666666666667,1,1,0,2,1,0,0,1,1,0,2,2.44,3.0,14
+22500242,DET,IND,78.2,79.0,"('Caris LeVert', 'Chaz Lanier', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",1.6,1,2,0,5,1,1,0,1,0,0,0,3.0,3.0,14
+22500242,DET,IND,78.0,77.6,"('Chaz Lanier', 'Daniss Jenkins', 'Isaiah Stewart', 'Jalen Duren', 'Wendell Moore Jr.')",1.1333333333333333,2,4,0,2,0,1,0,0,1,0,0,2.0,3.0,14
+22500242,DET,IND,78.2,79.2,"('Daniss Jenkins', 'Javonte Green', 'Paul Reed', 'Ronald Holland II', 'Wendell Moore Jr.')",0.9466666666666668,2,2,2,1,1,0,0,0,0,1,1,2.88,1.88,14
+22500242,DET,IND,78.4,80.2,"('Caris LeVert', 'Daniss Jenkins', 'Duncan Robinson', 'Javonte Green', 'Paul Reed')",0.8833333333333334,1,0,3,0,2,0,1,1,1,1,0,3.0,2.0,14
+22500242,DET,IND,78.2,78.6,"('Caris LeVert', 'Chaz Lanier', 'Isaiah Stewart', 'Ronald Holland II', 'Wendell Moore Jr.')",1.366666666666667,2,0,2,1,5,0,0,0,1,0,0,2.0,4.0,14
+22500242,DET,IND,79.4,79.0,"('Daniss Jenkins', 'Duncan Robinson', 'Isaiah Stewart', 'Jalen Duren', 'Ronald Holland II')",5.716666666666664,1,15,13,4,7,3,1,0,4,4,3,10.88,12.52,14

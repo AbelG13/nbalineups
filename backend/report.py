@@ -119,7 +119,6 @@ def games():
     try:
         team_map = get_team_id_to_abbr()
         today = date.today().strftime("%Y-%m-%d")
-
         #change string to datetime
         today = datetime.strptime(today, '%Y-%m-%d')
         print(f"Fetching NBA schedule for {today.strftime('%Y-%m-%d')} ...")
@@ -221,6 +220,8 @@ def report_data():
             # Filter data to only include top 3 lineups
             home_filtered = home_data[home_data['lineup'].isin(home_top_lineups)]
             away_filtered = away_data[away_data['lineup'].isin(away_top_lineups)]
+
+            home_filtered.to_csv("test_data.csv", index=False)
 
             max_game_home = home_data['game_number'].max()
             max_game_away = away_data['game_number'].max()
@@ -348,6 +349,6 @@ def report_data():
         return pd.DataFrame()  # Return empty DataFrame on error
 
 
-# if __name__ == "__main__":
-#     rep = report_data()    
-#     print(rep[['EDGE_1', 'EDGE_2', 'EDGE_3', 'EDGE_4']])
+if __name__ == "__main__":
+    rep = report_data()    
+    print(rep[['GAME_ID', 'HOME_TEAM', 'VISITOR_TEAM', 'GAME_TIME']])
