@@ -9,6 +9,7 @@ import numpy as np
 import unicodedata
 import os
 from datetime import datetime
+import ast
 
 #time how long it takes to run
 time_start = time.time()
@@ -75,6 +76,15 @@ def elapsed_time(idx, row, df):
     delta_min = (t_prev - t_current) / 60
     return delta_min
 
+# Safely convert stringified lists/dicts in 'qualifiers' column **once**
+def safe_literal_eval(x):
+    if isinstance(x, str):
+        try:
+            return ast.literal_eval(x)
+        except (SyntaxError, ValueError):
+            return x  # or return None, depending on what you want
+    return x
+
 # Fetch the full 2024–25 NBA schedule
 sched = scheduleleaguev2.ScheduleLeagueV2(
     league_id='00', 
@@ -107,10 +117,11 @@ team_lineup_stats = {
     for team in team_abbreviations
 }
 
-height_dict = dict()
 
-start=125
-end=207
+height_dict = dict()
+test = False
+start= 125
+end= 250
 for idx,id in enumerate(game_ids[start:end]):
     # Load game
     game_id = id
@@ -135,7 +146,13 @@ for idx,id in enumerate(game_ids[start:end]):
                 time.sleep(int(np.random.choice([21, 33,42])))
     if double_break:
         break
-    # pbp_df.to_csv('test_pbp.csv', index=False)
+
+
+    # # Apply the function to the 'qualifiers' column
+    # pbp_df['qualifiers'] = pbp_df['qualifiers'].apply(safe_literal_eval)
+
+    if test:
+        pbp_df.to_csv('test_pbp.csv', index=False)
 
 
     # avoid rate limits
@@ -173,6 +190,7 @@ for idx,id in enumerate(game_ids[start:end]):
         'away': set(box_df[box_df['teamTricode'] == away_team]['full_name']),
     }
 
+
     for idx, row in pbp_df.iterrows():
         if row['personId'] == 0 or row['subType'] == 'technical':
             continue
@@ -182,7 +200,8 @@ for idx,id in enumerate(game_ids[start:end]):
         player_name = idToName(player_id)
         if player_name == "none":
             print(row)        
-        team_involved = 'home' if row['teamTricode'] == home_team else 'away'        
+        team_involved = 'home' if row['teamTricode'] == home_team else 'away'
+                
         
         # Substitution logic with team lookup
         if event_type == 'substitution':
@@ -250,7 +269,7 @@ for idx,id in enumerate(game_ids[start:end]):
                     last_name = 'LaVine'
                 if first_name == 'Tobais' and last_name == 'Harris':
                     first_name = 'Tobias'
-                    
+
                 height = additional_data[(additional_data['first_name'] == first_name) & (additional_data['last_name'] == last_name)]['height']
                 if len(height) == 0:
                     print(f"[⚠️ Height Error] Could not resolve height {height} for away player: {first_name} (first) {last_name} (last), {game_id}")
@@ -278,11 +297,13 @@ for idx,id in enumerate(game_ids[start:end]):
             'avg_away_height': height_dict[tuple(sorted(away_on_court))],
             'shot_result': row['shotResult'],
             'subtype': row['subType'],
+            'qualifiers': row['qualifiers']
         })
 
     lineup_df = pd.DataFrame(lineup_tracking)
 
-    # lineup_df.to_csv(f'test_lineup.csv', index=False)
+    if test:
+        lineup_df.to_csv(f'test_lineup.csv', index=False)
 
     periods = 8
 
@@ -301,8 +322,12 @@ for idx,id in enumerate(game_ids[start:end]):
                 
             # Calculate stats
 
-            made_2pt = made_fts = made_3pt = missed_2pt = missed_fts = missed_3pt = rebounds = assists = turnovers = fouls_committed = minutes_played = off_rebounds = 0
-            opp_made_2pt = opp_made_fts = opp_made_3pt = opp_missed_2pt = opp_missed_fts = opp_missed_3pt = opp_rebounds = opp_assists = opp_turnovers = fouls_drawn = opp_off_rebounds = 0
+            made_2pt = made_fts = made_3pt = missed_2pt = missed_fts = missed_3pt = rebounds = assists \
+            = turnovers = fouls_committed = minutes_played = off_rebounds = fastbreak_2 = from_turnover_2 = second_chance_2 \
+            = fastbreak_3 = from_turnover_3 = second_chance_3 = points_in_paint = opp_made_2pt = opp_made_fts = opp_made_3pt \
+            = opp_missed_2pt = opp_missed_fts = opp_missed_3pt = opp_rebounds = opp_assists = opp_turnovers = fouls_drawn \
+            = opp_off_rebounds = opp_fastbreak_2 = opp_from_turnover_2 = opp_second_chance_2 = opp_fastbreak_3 = \
+            opp_from_turnover_3 = opp_second_chance_3 = opp_points_in_paint = 0
 
             for _, row in new_lineup_df.iterrows():
                 team_involved = row['team_involved']
@@ -313,14 +338,35 @@ for idx,id in enumerate(game_ids[start:end]):
                 minutes_played += row['elapsed_time']
                 result = row['shot_result']
                 subtype = row['subtype']
-                
+
+                # # convert string to actual list
+                # try:
+                #     row['qualifiers'] = ast.literal_eval(row['qualifiers'])
+                # except:
+                #     pass
+                qualifiers = row['qualifiers']
+
                 if is_us:
                     if action in ['2pt', '3pt'] and 'AST' in desc:
                         assists += 1
                     if action == '2pt' and result == 'Made':
                         made_2pt += 1
+                        if 'fastbreak' in qualifiers:
+                            fastbreak_2 += 1
+                        if 'fromturnover' in qualifiers:
+                            from_turnover_2 += 1
+                        if '2ndchance' in qualifiers:
+                            second_chance_2 += 1
+                        if 'pointsinthepaint' in qualifiers:
+                            points_in_paint += 1
                     if action == '3pt' and result == 'Made':
                         made_3pt += 1
+                        if 'fastbreak' in qualifiers:
+                            fastbreak_3 += 1
+                        if 'fromturnover' in qualifiers:
+                            from_turnover_3 += 1
+                        if '2ndchance' in qualifiers:
+                            second_chance_3 += 1
                     if action == 'freethrow' and result == 'Made':
                         made_fts += 1
                     if action == 'rebound':
@@ -336,17 +382,29 @@ for idx,id in enumerate(game_ids[start:end]):
                     if action == 'freethrow' and result == 'Missed':
                         missed_fts += 1
                     if action == 'rebound' and subtype == 'offensive':
-                        off_rebounds += 1
-
-                    
+                        off_rebounds += 1                   
 
                 elif if_not_us:
                     if action in ['2pt', '3pt'] and 'AST' in desc:
                         opp_assists += 1
                     if action == '2pt' and result == 'Made':
                         opp_made_2pt += 1
+                        if 'fastbreak' in qualifiers:
+                            opp_fastbreak_2 += 1
+                        if 'fromturnover' in qualifiers:
+                            opp_from_turnover_2 += 1
+                        if '2ndchance' in qualifiers:
+                            opp_second_chance_2 += 1
+                        if 'pointsinthepaint' in qualifiers:
+                            opp_points_in_paint += 1
                     if action == '3pt' and result == 'Made':
                         opp_made_3pt += 1
+                        if 'fastbreak' in qualifiers:
+                            opp_fastbreak_3 += 1
+                        if 'fromturnover' in qualifiers:
+                            opp_from_turnover_3 += 1
+                        if '2ndchance' in qualifiers:
+                            opp_second_chance_3 += 1
                     if action == 'freethrow' and result == 'Made':
                         opp_made_fts += 1
                     if action == 'rebound':
@@ -363,6 +421,10 @@ for idx,id in enumerate(game_ids[start:end]):
                         opp_missed_fts += 1
                     if action == 'rebound' and subtype == 'offensive':
                         opp_off_rebounds += 1
+
+            # possession calculation
+            poss_calc = made_2pt + missed_2pt + made_3pt + missed_3pt - off_rebounds + turnovers + 0.44 * made_fts + missed_fts
+            opp_poss_calc = opp_made_2pt + opp_missed_2pt + opp_made_3pt + opp_missed_3pt - opp_off_rebounds + opp_turnovers + 0.44 * opp_made_fts + opp_missed_fts
 
             record = {
                 'game_id': game_id,
@@ -383,8 +445,19 @@ for idx,id in enumerate(game_ids[start:end]):
                 'opp_turnovers': opp_turnovers,
                 'fouls_committed': fouls_committed,
                 'fouls_drawn': fouls_drawn,
-                'possessions': made_2pt + missed_2pt + made_3pt + missed_3pt - off_rebounds + turnovers + 0.44 * made_fts + missed_fts,
-                'opp_possessions': opp_made_2pt + opp_missed_2pt + opp_made_3pt + opp_missed_3pt - opp_off_rebounds + opp_turnovers + 0.44 * opp_made_fts + opp_missed_fts
+                'possessions': poss_calc,
+                'opp_possessions': opp_poss_calc,
+                'fastbreak' : fastbreak_2*2 + fastbreak_3 *3,
+                'from_turnover' : from_turnover_2*2 + from_turnover_3*3,
+                'second_chance' : second_chance_2*2 + second_chance_3*3,
+                'points_in_paint' : points_in_paint*2,
+                'opp_from_turnover': opp_from_turnover_2*2 + opp_from_turnover_3*3,
+                'opp_fastbreak': opp_fastbreak_2*2 + opp_fastbreak_3*3,
+                'opp_second_chance': opp_second_chance_2*2 + opp_second_chance_3*3,
+                'opp_points_in_paint': opp_points_in_paint*2,
+                'unscaled_pace': poss_calc + opp_poss_calc# Multiple by 24/minutes_played AFTER aggregation
+    
+            
             }
 
 
@@ -403,9 +476,14 @@ for idx,id in enumerate(game_ids[start:end]):
             
             # Calculate stats
 
-            made_2pt = made_fts = made_3pt = missed_2pt = missed_fts = missed_3pt = rebounds = assists = turnovers = fouls_committed = minutes_played= off_rebounds = 0
-            opp_made_2pt = opp_made_fts = opp_made_3pt = opp_missed_2pt = opp_missed_fts = opp_missed_3pt = opp_rebounds = opp_assists = opp_turnovers = fouls_drawn = opp_off_rebounds = 0
-            
+            made_2pt = made_fts = made_3pt = missed_2pt = missed_fts = missed_3pt = rebounds = assists \
+            = turnovers = fouls_committed = minutes_played = off_rebounds = fastbreak_2 = from_turnover_2 = second_chance_2 \
+            = fastbreak_3 = from_turnover_3 = second_chance_3 = points_in_paint = opp_made_2pt = opp_made_fts = opp_made_3pt \
+            = opp_missed_2pt = opp_missed_fts = opp_missed_3pt = opp_rebounds = opp_assists = opp_turnovers = fouls_drawn \
+            = opp_off_rebounds = opp_fastbreak_2 = opp_from_turnover_2 = opp_second_chance_2 = opp_fastbreak_3 = \
+            opp_from_turnover_3 = opp_second_chance_3 = opp_points_in_paint = 0
+
+
             for i, row in new_lineup_df.iterrows():
                 team_involved = row['team_involved']
                 is_us = team_involved == 'away'
@@ -416,14 +494,34 @@ for idx,id in enumerate(game_ids[start:end]):
                 result = row['shot_result']
                 subtype = row['subtype']
 
+                # # convert string to actual list
+                # try:
+                #     row['qualifiers'] = ast.literal_eval(row['qualifiers'])
+                # except:
+                #     pass
+                qualifiers = row['qualifiers']
 
                 if is_us:
                     if action in ['2pt', '3pt'] and 'AST' in desc:
                         assists += 1
                     if action == '2pt' and result == 'Made':
                         made_2pt += 1
+                        if 'fastbreak' in qualifiers:
+                            fastbreak_2 += 1
+                        if 'fromturnover' in qualifiers:
+                            from_turnover_2 += 1
+                        if '2ndchance' in qualifiers:
+                            second_chance_2 += 1
+                        if 'pointsinthepaint' in qualifiers:
+                            points_in_paint += 1
                     if action == '3pt' and result == 'Made':
                         made_3pt += 1
+                        if 'fastbreak' in qualifiers:
+                            fastbreak_3 += 1
+                        if 'fromturnover' in qualifiers:
+                            from_turnover_3 += 1
+                        if '2ndchance' in qualifiers:
+                            second_chance_3 += 1
                     if action == 'freethrow' and result == 'Made':
                         made_fts += 1
                     if action == 'rebound':
@@ -439,17 +537,29 @@ for idx,id in enumerate(game_ids[start:end]):
                     if action == 'freethrow' and result == 'Missed':
                         missed_fts += 1
                     if action == 'rebound' and subtype == 'offensive':
-                        off_rebounds += 1
-
-                    
+                        off_rebounds += 1                   
 
                 elif if_not_us:
                     if action in ['2pt', '3pt'] and 'AST' in desc:
                         opp_assists += 1
                     if action == '2pt' and result == 'Made':
                         opp_made_2pt += 1
+                        if 'fastbreak' in qualifiers:
+                            opp_fastbreak_2 += 1
+                        if 'fromturnover' in qualifiers:
+                            opp_from_turnover_2 += 1
+                        if '2ndchance' in qualifiers:
+                            opp_second_chance_2 += 1
+                        if 'pointsinthepaint' in qualifiers:
+                            opp_points_in_paint += 1
                     if action == '3pt' and result == 'Made':
                         opp_made_3pt += 1
+                        if 'fastbreak' in qualifiers:
+                            opp_fastbreak_3 += 1
+                        if 'fromturnover' in qualifiers:
+                            opp_from_turnover_3 += 1
+                        if '2ndchance' in qualifiers:
+                            opp_second_chance_3 += 1
                     if action == 'freethrow' and result == 'Made':
                         opp_made_fts += 1
                     if action == 'rebound':
@@ -467,6 +577,9 @@ for idx,id in enumerate(game_ids[start:end]):
                     if action == 'rebound' and subtype == 'offensive':
                         opp_off_rebounds += 1
 
+            # possession calculation
+            poss_calc = made_2pt + missed_2pt + made_3pt + missed_3pt - off_rebounds + turnovers + 0.44 * made_fts + missed_fts
+            opp_poss_calc = opp_made_2pt + opp_missed_2pt + opp_made_3pt + opp_missed_3pt - opp_off_rebounds + opp_turnovers + 0.44 * opp_made_fts + opp_missed_fts
 
             record = {
                 'game_id': game_id,
@@ -487,10 +600,19 @@ for idx,id in enumerate(game_ids[start:end]):
                 'opp_turnovers': opp_turnovers,
                 'fouls_committed': fouls_committed,
                 'fouls_drawn': fouls_drawn,
-                'possessions': made_2pt + missed_2pt + made_3pt + missed_3pt - off_rebounds + turnovers + 0.44 * made_fts + missed_fts,
-                'opp_possessions': opp_made_2pt + opp_missed_2pt + opp_made_3pt + opp_missed_3pt - opp_off_rebounds + opp_turnovers + 0.44 * opp_made_fts + opp_missed_fts
+                'possessions': poss_calc,
+                'opp_possessions': opp_poss_calc,
+                'fastbreak' : fastbreak_2*2 + fastbreak_3 *3,
+                'from_turnover' : from_turnover_2*2 + from_turnover_3*3,
+                'second_chance' : second_chance_2*2 + second_chance_3*3,
+                'points_in_paint' : points_in_paint*2,
+                'opp_from_turnover': opp_from_turnover_2*2 + opp_from_turnover_3*3,
+                'opp_fastbreak': opp_fastbreak_2*2 + opp_fastbreak_3*3,
+                'opp_second_chance': opp_second_chance_2*2 + opp_second_chance_3*3,
+                'opp_points_in_paint': opp_points_in_paint*2,
+                'unscaled_pace': poss_calc + opp_poss_calc# Multiple by 24/minutes_played AFTER aggregation
+            
             }
-
 
             team_lineup_stats[away_team] = pd.concat(
                 [team_lineup_stats[away_team], pd.DataFrame([record])],
@@ -525,36 +647,52 @@ columns = [
     'fouls_committed',
     'fouls_drawn',
     'possessions',
-    'opp_possessions'
+    'opp_possessions',
+    'fastbreak',
+    'from_turnover',
+    'second_chance',
+    'points_in_paint',
+    'opp_from_turnover',
+    'opp_fastbreak',
+    'opp_second_chance',
+    'opp_points_in_paint',
+    'unscaled_pace'
 ]
 
-
-# Define the subfolder where you want to save files
-save_dir = os.path.join("S2")
-
-# Create the folder if it doesn’t exist
-os.makedirs(save_dir, exist_ok=True)
-
-# Create empty files if they don’t exist
-for abbrev in team_abbrevs:
-    filename = f"S2_{abbrev}_2025_26.csv"
-    file_path = os.path.join(save_dir, filename)
-    if not os.path.exists(file_path):
-        pd.DataFrame(columns=columns).to_csv(file_path, index=False)
-
-# Append or write team data
-for team in team_lineup_stats.keys():
-    df = team_lineup_stats[team]
-    # Reorder columns explicitly before writing
+# Hou test case, save as test_team
+if test:
+    df = team_lineup_stats['HOU']
     df = df[columns]
-    csv_path = os.path.join(save_dir, f"S2_{team}_2025_26.csv")
+    df.to_csv("test_team.csv", index=False)
 
-    # If file exists, append without header
-    if os.path.exists(csv_path):
-        df.to_csv(csv_path, mode='a', header=False, index=False)
-    else:
-        # First batch — write with header
-        df.to_csv(csv_path, index=False)
+
+if not test:
+    # Define the subfolder where you want to save files
+    save_dir = os.path.join("S2")
+
+    # Create the folder if it doesn’t exist
+    os.makedirs(save_dir, exist_ok=True)
+
+    # Create empty files if they don’t exist
+    for abbrev in team_abbrevs:
+        filename = f"S2_{abbrev}_2025_26.csv"
+        file_path = os.path.join(save_dir, filename)
+        if not os.path.exists(file_path):
+            pd.DataFrame(columns=columns).to_csv(file_path, index=False)
+
+    # Append or write team data
+    for team in team_lineup_stats.keys():
+        df = team_lineup_stats[team]
+        # Reorder columns explicitly before writing
+        df = df[columns]
+        csv_path = os.path.join(save_dir, f"S2_{team}_2025_26.csv")
+
+        # If file exists, append without header
+        if os.path.exists(csv_path):
+            df.to_csv(csv_path, mode='a', header=False, index=False)
+        else:
+            # First batch — write with header
+            df.to_csv(csv_path, index=False)
 
 
 

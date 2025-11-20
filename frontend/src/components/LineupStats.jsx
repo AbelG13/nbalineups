@@ -25,6 +25,14 @@ function getInitials(name) {
   return parts.map(p => p[0]).join('').toUpperCase();
 }
 
+// Helper to convert inches to feet and inches format (e.g., 78 -> "6'6.0")
+function formatHeight(inches) {
+  if (!inches || inches === 0) return "0'0.0";
+  const feet = Math.floor(inches / 12);
+  const remainingInches = (inches % 12).toFixed(1);
+  return `${feet}'${remainingInches}`;
+}
+
 function LineupStats() {
   const teams = [
     'ATL', 'BOS', 'BKN', 'CHA', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW',
@@ -59,6 +67,8 @@ function LineupStats() {
   const [showNet, setShowNet] = useState(false);
   const [showOpponent, setShowOpponent] = useState(false);
   const [perMinute, setPerMinute] = useState(false);
+  const [per100Poss, setPer100Poss] = useState(false);
+  const [statType, setStatType] = useState('traditional'); // 'traditional' or 'advanced'
   const [playerMap, setPlayerMap] = useState({});
   const defaultMinutes = { min: 1, max: 2000 };
   const [selectedMinutesRange, setSelectedMinutesRange] = useState([defaultMinutes.min, defaultMinutes.max]);
@@ -68,6 +78,9 @@ function LineupStats() {
   // Dropdown state
   const [isTeamDropdownOpen, setIsTeamDropdownOpen] = useState(false);
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
+  const [isShowDropdownOpen, setIsShowDropdownOpen] = useState(false);
+  const [isStatTypeDropdownOpen, setIsStatTypeDropdownOpen] = useState(false);
+  const [isScaleDropdownOpen, setIsScaleDropdownOpen] = useState(false);
 
   // Load player info for headshots and last names
   useEffect(() => {
@@ -129,6 +142,10 @@ function LineupStats() {
   // Load data on mount and when filters change
   useEffect(() => {
     loadData();
+    // Reset stat type to traditional when switching to 2024-25
+    if (selectedSeason === '2024-25' && statType === 'advanced') {
+      setStatType('traditional');
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedTeams, selectedPeriods, gameRange, selectedSeason]);
 
@@ -140,6 +157,10 @@ function LineupStats() {
     const maxGameVal = (typeof pendingMaxGame === 'string' ? pendingMaxGame.trim() : '') === '' ? defaultGame.max : Number(pendingMaxGame);
     setGameRange([isNaN(minGameVal) ? defaultGame.min : minGameVal, isNaN(maxGameVal) ? defaultGame.max : maxGameVal]);
     setSelectedSeason(pendingSeason);
+    // Reset stat type to traditional if switching to 2024-25
+    if (pendingSeason === '2024-25' && statType === 'advanced') {
+      setStatType('traditional');
+    }
     const minVal = pendingMinMinutes.trim() === '' ? defaultMinutes.min : Number(pendingMinMinutes);
     const maxVal = pendingMaxMinutes.trim() === '' ? defaultMinutes.max : Number(pendingMaxMinutes);
     setSelectedMinutesRange([isNaN(minVal) ? defaultMinutes.min : minVal, isNaN(maxVal) ? defaultMinutes.max : maxVal]);
@@ -165,12 +186,39 @@ function LineupStats() {
   };
 
   const getValueForKey = (row, key) => {
-    const value = row[key] ?? 0;
-    if (!perMinute) return value;
+    // Minutes and pace should not be scaled
     if (key === 'minutes_played') return row.minutes_played ?? 0;
-    const minutes = row.minutes_played ?? 0;
-    if (!minutes || minutes === 0) return 0;
-    return value / minutes;
+    if (key === 'pace') {
+      const unscaledPace = row.unscaled_pace ?? 0;
+      const minutes = row.minutes_played ?? 0;
+      if (!minutes || minutes === 0) return 0;
+      return (unscaledPace * 24) / minutes;
+    }
+    
+    // Handle net stats for advanced mode
+    let value = 0;
+    if (key.startsWith('net_') && statType === 'advanced') {
+      const baseKey = key.replace('net_', '');
+      const oppKey = `opp_${baseKey}`;
+      value = (row[baseKey] ?? 0) - (row[oppKey] ?? 0);
+    } else {
+      value = row[key] ?? 0;
+    }
+    
+    // Apply scaling
+    if (per100Poss) {
+      const possessions = row.possessions ?? 0;
+      if (!possessions || possessions === 0) return 0;
+      return (value / possessions) * 100;
+    }
+    
+    if (perMinute) {
+      const minutes = row.minutes_played ?? 0;
+      if (!minutes || minutes === 0) return 0;
+      return value / minutes;
+    }
+    
+    return value;
   };
 
   const handleTeamToggle = (team) => {
@@ -220,27 +268,60 @@ function LineupStats() {
   }
 
   // Table columns for team, opponent, and net
-  const teamColumns = [
+  const teamColumnsTraditional = [
     { key: 'points', label: 'Points' },
     { key: 'rebounds', label: 'Rebounds' },
     { key: 'assists', label: 'Assists' },
     { key: 'turnovers', label: 'Turnovers' },
     { key: 'fouls_committed', label: 'Fouls' },
   ];
-  const opponentColumns = [
+  const teamColumnsAdvanced = [
+    { key: 'second_chance', label: 'Second Chance Pts' },
+    { key: 'fastbreak', label: 'Fastbreak Pts' },
+    { key: 'from_turnover', label: 'Pts Off Turnovers' },
+    { key: 'points_in_paint', label: 'Paint Pts' },
+  ];
+  const opponentColumnsTraditional = [
     { key: 'opp_points', label: 'Opp Points' },
     { key: 'opp_rebounds', label: 'Opp Rebounds' },
     { key: 'opp_assists', label: 'Opp Assists' },
     { key: 'opp_turnovers', label: 'Opp Turnovers' },
     { key: 'fouls_drawn', label: 'Opp Fouls' },
   ];
-  const netColumns = [
+  const opponentColumnsAdvanced = [
+    { key: 'opp_second_chance', label: 'Opp Second Chance Pts' },
+    { key: 'opp_fastbreak', label: 'Opp Fastbreak Pts' },
+    { key: 'opp_from_turnover', label: 'Opp Pts Off Turnovers' },
+    { key: 'opp_points_in_paint', label: 'Opp Paint Pts' },
+  ];
+  const netColumnsTraditional = [
     { key: 'net_points', label: 'Net Points' },
     { key: 'net_rebounds', label: 'Net Rebounds' },
     { key: 'net_assists', label: 'Net Assists' },
     { key: 'net_turnovers', label: 'Net Turnovers' },
     { key: 'net_fouls', label: 'Net Fouls' },
   ];
+  const netColumnsAdvanced = [
+    { key: 'net_second_chance', label: 'Net Second Chance Points' },
+    { key: 'net_fastbreak', label: 'Net Fastbreak Points' },
+    { key: 'net_from_turnover', label: 'Net Points Off Turnovers' },
+    { key: 'net_points_in_paint', label: 'Net Paint Points' },
+  ];
+  
+  // Determine which columns to show based on current selection
+  let teamColumns = [];
+  let opponentColumns = [];
+  let netColumns = [];
+  
+  if (statType === 'advanced') {
+    teamColumns = teamColumnsAdvanced;
+    opponentColumns = opponentColumnsAdvanced;
+    netColumns = netColumnsAdvanced;
+  } else {
+    teamColumns = teamColumnsTraditional;
+    opponentColumns = opponentColumnsTraditional;
+    netColumns = netColumnsTraditional;
+  }
   
   // Determine which columns to show based on current selection
   let columns = [];
@@ -252,6 +333,7 @@ function LineupStats() {
     // Default to team stats
     columns = teamColumns;
   }
+  
 
   // Apply minutes filter
   const minutesFiltered = lineupData.filter((row) => {
@@ -261,8 +343,21 @@ function LineupStats() {
 
   // Sort and paginate data
   const sortedData = [...minutesFiltered].sort((a, b) => {
-    const aVal = getValueForKey(a, sortBy) || 0;
-    const bVal = getValueForKey(b, sortBy) || 0;
+    let aVal, bVal;
+    if (sortBy === 'pace') {
+      const aUnscaled = a.unscaled_pace ?? 0;
+      const bUnscaled = b.unscaled_pace ?? 0;
+      const aMinutes = a.minutes_played ?? 0;
+      const bMinutes = b.minutes_played ?? 0;
+      aVal = (aMinutes === 0) ? 0 : (aUnscaled * 24) / aMinutes;
+      bVal = (bMinutes === 0) ? 0 : (bUnscaled * 24) / bMinutes;
+    } else if (sortBy === 'team_avg_height') {
+      aVal = a.team_avg_height ?? 0;
+      bVal = b.team_avg_height ?? 0;
+    } else {
+      aVal = getValueForKey(a, sortBy) || 0;
+      bVal = getValueForKey(b, sortBy) || 0;
+    }
     return sortOrder === 'asc' ? aVal - bVal : bVal - aVal;
   });
 
@@ -282,233 +377,323 @@ function LineupStats() {
         </div>
 
         {/* Filters and toggles */}
-        <div className="bg-gray-900 rounded-xl shadow-subtle p-6 mb-8 border border-gray-800">
-          <div className="grid md:grid-cols-7 gap-6 items-start">
-            {/* Season Selector */}
-            <div>
-              <label className="block text-sm font-medium text-gray-300 mb-3">
-                Season
-              </label>
-              <select
-                value={pendingSeason}
-                onChange={(e) => setPendingSeason(e.target.value)}
-                className="w-30 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
-              >
-                <option value="2024-25">2024-25</option>
-                <option value="2025-26">2025-26</option>
-              </select>
-            </div>
+        <div className="bg-gray-900 rounded-xl shadow-subtle p-6 mb-8 border border-gray-800 max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+            {/* Left side: Two rows of filters */}
+            <div className="flex-1 space-y-6">
+              {/* First row: Season, Teams, Periods */}
+              <div className="grid grid-cols-3 gap-16">
+                {/* Season Selector */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-300 mb-3">
+                    Season
+                  </label>
+                  <select
+                    value={pendingSeason}
+                    onChange={(e) => setPendingSeason(e.target.value)}
+                    className="w-full px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
+                  >
+                    <option value="2024-25">2024-25</option>
+                    <option value="2025-26">2025-26</option>
+                  </select>
+                </div>
 
-            {/* Team Filter */}
-            <div>
-              <label className="block text-sm font-medium text-gray-300 mb-3 -translate-x-10">
-                Teams ({pendingTeams.length} selected)
-              </label>
-              <div className="relative">
-                <button
-                  type="button"
-                  onClick={() => setIsTeamDropdownOpen(!isTeamDropdownOpen)}
-                  className="w-48 px-3 py-2 -translate-x-10 text-left border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
-                >
-                  {pendingTeams.length === 0 ? 'Select teams...' : `${pendingTeams.length} teams selected`}
-                  <span className="absolute inset-y-0 right-0 flex items-center pr-2">
-                    <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </span>
-                </button>
-                
-                {isTeamDropdownOpen && (
-                  <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-700 rounded-lg shadow-medium max-h-60 overflow-y-auto">
-                    <div className="p-2 border-b border-gray-700">
-                      <div className="flex space-x-2">
+                {/* Team Filter */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-300 mb-3">
+                    Teams ({pendingTeams.length} selected)
+                  </label>
+                  <div className="relative">
+                    <button
+                      type="button"
+                      onClick={() => setIsTeamDropdownOpen(!isTeamDropdownOpen)}
+                      className="w-full px-3 py-2 text-left border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
+                    >
+                      {pendingTeams.length === 0 ? 'Select teams...' : `${pendingTeams.length} teams selected`}
+                      <span className="absolute inset-y-0 right-0 flex items-center pr-2">
+                        <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </span>
+                    </button>
+                    
+                    {isTeamDropdownOpen && (
+                      <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-700 rounded-lg shadow-medium max-h-60 overflow-y-auto">
+                        <div className="p-2 border-b border-gray-700">
+                          <div className="flex space-x-2">
+                            <button
+                              onClick={handleSelectAllTeams}
+                              className="px-2 py-1 text-xs bg-accent-500/20 text-accent-400 rounded hover:bg-accent-500/30 transition-colors"
+                            >
+                              Select All
+                            </button>
+                            <button
+                              onClick={handleDeselectAllTeams}
+                              className="px-2 py-1 text-xs bg-gray-700 text-gray-300 rounded hover:bg-gray-600 transition-colors"
+                            >
+                              Deselect All
+                            </button>
+                          </div>
+                        </div>
+                        <div className="p-2">
+                          {teams.map(team => (
+                            <label key={team} className="flex items-center space-x-2 p-1 hover:bg-gray-700 rounded cursor-pointer transition-colors">
+                              <input
+                                type="checkbox"
+                                checked={pendingTeams.includes(team)}
+                                onChange={() => handleTeamToggle(team)}
+                                className="rounded border-gray-600 text-accent-500 focus:ring-accent-500 bg-gray-700"
+                              />
+                              <span className="text-sm text-gray-300">{team}</span>
+                            </label>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* Period Filter - dropdown selector */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-300 mb-3">
+                    Periods ({pendingPeriods.length === 0 ? 'All' : pendingPeriods.length} selected)
+                  </label>
+                  <div className="relative">
+                    <button
+                      type="button"
+                      onClick={() => setIsPeriodDropdownOpen(!isPeriodDropdownOpen)}
+                      className="w-full px-3 py-2 text-left border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
+                    >
+                      {pendingPeriods.length === 0 ? 'Select periods...' : `${pendingPeriods.length} selected`}
+                      <span className="absolute inset-y-0 right-0 flex items-center pr-2">
+                        <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </span>
+                    </button>
+                    {isPeriodDropdownOpen && (
+                      <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-700 rounded-lg shadow-medium max-h-60 overflow-y-auto">
+                        <div className="p-2 border-b border-gray-700">
+                          <div className="flex space-x-2">
+                            <button
+                              onClick={() => setPendingPeriods(periods)}
+                              className="px-2 py-1 text-xs bg-accent-500/20 text-accent-400 rounded hover:bg-accent-500/30 transition-colors"
+                            >
+                              Select All
+                            </button>
+                            <button
+                              onClick={() => setPendingPeriods([])}
+                              className="px-2 py-1 text-xs bg-gray-700 text-gray-300 rounded hover:bg-gray-600 transition-colors"
+                            >
+                              Deselect All
+                            </button>
+                          </div>
+                        </div>
+                        <div className="p-2">
+                          {periods.map(period => (
+                            <label key={period} className="flex items-center space-x-2 p-1 hover:bg-gray-700 rounded cursor-pointer transition-colors">
+                              <input
+                                type="checkbox"
+                                checked={pendingPeriods.includes(period)}
+                                onChange={() => {
+                                  if (pendingPeriods.includes(period)) {
+                                    setPendingPeriods(pendingPeriods.filter(p => p !== period));
+                                  } else {
+                                    setPendingPeriods([...pendingPeriods, period]);
+                                  }
+                                }}
+                                className="rounded border-gray-600 text-accent-500 focus:ring-accent-500 bg-gray-700"
+                              />
+                              <span className="text-sm text-gray-300">{period === 5 ? 'OT' : `Q${period}`}</span>
+                            </label>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              {/* Second row: Show, Stat Type, Scale */}
+              <div className="grid grid-cols-3 gap-16">
+                {/* Show: Team/Opponent/Net */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-300 mb-3">Show</label>
+                  <div className="relative">
+                    <button
+                      type="button"
+                      onClick={() => setIsShowDropdownOpen(!isShowDropdownOpen)}
+                      className="w-full px-3 py-2 text-left border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
+                    >
+                      {showNet ? 'Net' : showOpponent ? 'Opponent' : 'Team'}
+                      <span className="absolute inset-y-0 right-0 flex items-center pr-2">
+                        <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </span>
+                    </button>
+                    {isShowDropdownOpen && (
+                      <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-700 rounded-lg shadow-medium">
                         <button
-                          onClick={handleSelectAllTeams}
-                          className="px-2 py-1 text-xs bg-accent-500/20 text-accent-400 rounded hover:bg-accent-500/30 transition-colors"
+                          className={`w-full px-3 py-2 text-left text-sm rounded-t-lg transition-colors ${!showNet && !showOpponent ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'}`}
+                          onClick={() => { setShowNet(false); setShowOpponent(false); setIsShowDropdownOpen(false); }}
                         >
-                          Select All
+                          Team
                         </button>
                         <button
-                          onClick={handleDeselectAllTeams}
-                          className="px-2 py-1 text-xs bg-gray-700 text-gray-300 rounded hover:bg-gray-600 transition-colors"
+                          className={`w-full px-3 py-2 text-left text-sm transition-colors ${showOpponent ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'}`}
+                          onClick={() => { setShowNet(false); setShowOpponent(true); setIsShowDropdownOpen(false); }}
                         >
-                          Deselect All
+                          Opponent
+                        </button>
+                        <button
+                          className={`w-full px-3 py-2 text-left text-sm rounded-b-lg transition-colors ${showNet ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'}`}
+                          onClick={() => { setShowNet(true); setIsShowDropdownOpen(false); }}
+                        >
+                          Net
                         </button>
                       </div>
-                    </div>
-                    <div className="p-2">
-                      {teams.map(team => (
-                        <label key={team} className="flex items-center space-x-2 p-1 hover:bg-gray-700 rounded cursor-pointer transition-colors">
-                          <input
-                            type="checkbox"
-                            checked={pendingTeams.includes(team)}
-                            onChange={() => handleTeamToggle(team)}
-                            className="rounded border-gray-600 text-accent-500 focus:ring-accent-500 bg-gray-700"
-                          />
-                          <span className="text-sm text-gray-300">{team}</span>
-                        </label>
-                      ))}
-                    </div>
+                    )}
                   </div>
-                )}
-              </div>
-            </div>
+                </div>
 
-            {/* Period Filter - dropdown selector */}
-            <div>
-              <label className="block text-sm font-medium text-gray-300 mb-3">
-                Periods ({pendingPeriods.length === 0 ? 'All' : pendingPeriods.length} selected)
-              </label>
-              <div className="relative">
-                <button
-                  type="button"
-                  onClick={() => setIsPeriodDropdownOpen(!isPeriodDropdownOpen)}
-                  className="w-full px-3 py-2 text-left border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
-                >
-                  {pendingPeriods.length === 0 ? 'Select periods...' : `${pendingPeriods.length} selected`}
-                  <span className="absolute inset-y-0 right-0 flex items-center pr-2">
-                    <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </span>
-                </button>
-                {isPeriodDropdownOpen && (
-                  <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-700 rounded-lg shadow-medium max-h-60 overflow-y-auto">
-                    <div className="p-2 border-b border-gray-700">
-                      <div className="flex space-x-2">
+                {/* Stat Type: Traditional vs Advanced */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-300 mb-3">Stat Type</label>
+                  <div className="relative">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (selectedSeason === '2025-26') {
+                          setIsStatTypeDropdownOpen(!isStatTypeDropdownOpen);
+                        }
+                      }}
+                      disabled={selectedSeason === '2024-25'}
+                      className={`w-full px-3 py-2 text-left border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200 ${
+                        selectedSeason === '2024-25' ? 'cursor-not-allowed opacity-50' : ''
+                      }`}
+                      title={selectedSeason === '2024-25' ? 'Advanced stats not available for 2024-25' : ''}
+                    >
+                      {statType === 'traditional' ? 'Traditional' : 'Advanced'}
+                      <span className="absolute inset-y-0 right-0 flex items-center pr-2">
+                        <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </span>
+                    </button>
+                    {isStatTypeDropdownOpen && selectedSeason === '2025-26' && (
+                      <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-700 rounded-lg shadow-medium">
                         <button
-                          onClick={() => setPendingPeriods(periods)}
-                          className="px-2 py-1 text-xs bg-accent-500/20 text-accent-400 rounded hover:bg-accent-500/30 transition-colors"
+                          className={`w-full px-3 py-2 text-left text-sm rounded-t-lg transition-colors ${statType === 'traditional' ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'}`}
+                          onClick={() => { setStatType('traditional'); setIsStatTypeDropdownOpen(false); }}
                         >
-                          Select All
+                          Traditional
                         </button>
                         <button
-                          onClick={() => setPendingPeriods([])}
-                          className="px-2 py-1 text-xs bg-gray-700 text-gray-300 rounded hover:bg-gray-600 transition-colors"
+                          className={`w-full px-3 py-2 text-left text-sm rounded-b-lg transition-colors ${statType === 'advanced' ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'}`}
+                          onClick={() => { setStatType('advanced'); setIsStatTypeDropdownOpen(false); }}
                         >
-                          Deselect All
+                          Advanced
                         </button>
                       </div>
-                    </div>
-                    <div className="p-2">
-                      {periods.map(period => (
-                        <label key={period} className="flex items-center space-x-2 p-1 hover:bg-gray-700 rounded cursor-pointer transition-colors">
-                          <input
-                            type="checkbox"
-                            checked={pendingPeriods.includes(period)}
-                            onChange={() => {
-                              if (pendingPeriods.includes(period)) {
-                                setPendingPeriods(pendingPeriods.filter(p => p !== period));
-                              } else {
-                                setPendingPeriods([...pendingPeriods, period]);
-                              }
-                            }}
-                            className="rounded border-gray-600 text-accent-500 focus:ring-accent-500 bg-gray-700"
-                          />
-                          <span className="text-sm text-gray-300">{period === 5 ? 'OT' : `Q${period}`}</span>
-                        </label>
-                      ))}
-                    </div>
+                    )}
                   </div>
-                )}
+                </div>
+
+                {/* Scale: Total vs Per Minute vs Per 100 Poss */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-300 mb-3">Scale</label>
+                  <div className="relative">
+                    <button
+                      type="button"
+                      onClick={() => setIsScaleDropdownOpen(!isScaleDropdownOpen)}
+                      className="w-full px-3 py-2 text-left border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
+                    >
+                      {per100Poss ? 'Per 100 Poss' : perMinute ? 'Per Minute' : 'Total'}
+                      <span className="absolute inset-y-0 right-0 flex items-center pr-2">
+                        <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </span>
+                    </button>
+                    {isScaleDropdownOpen && (
+                      <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-700 rounded-lg shadow-medium">
+                        <button
+                          className={`w-full px-3 py-2 text-left text-sm rounded-t-lg transition-colors ${!perMinute && !per100Poss ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'}`}
+                          onClick={() => { setPerMinute(false); setPer100Poss(false); setIsScaleDropdownOpen(false); }}
+                        >
+                          Total
+                        </button>
+                        <button
+                          className={`w-full px-3 py-2 text-left text-sm transition-colors ${perMinute ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'}`}
+                          onClick={() => { setPerMinute(true); setPer100Poss(false); setIsScaleDropdownOpen(false); }}
+                        >
+                          Per Minute
+                        </button>
+                        <button
+                          className={`w-full px-3 py-2 text-left text-sm rounded-b-lg transition-colors ${per100Poss ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'}`}
+                          onClick={() => { setPerMinute(false); setPer100Poss(true); setIsScaleDropdownOpen(false); }}
+                        >
+                          Per 100 Poss
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
 
-            {/* Game Range - min/max inputs */}
-            <div>
-              <label className="block text-sm font-medium text-gray-300 mb-3">Game Range</label>
-              <div className="flex items-center space-x-2 w-full">
-                <input
-                  type="number"
-                  min="1"
-                  step="1"
-                  value={pendingMinGame}
-                  onChange={(e) => setPendingMinGame(e.target.value)}
-                  placeholder="1"
-                  className="w-16 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500"
-                />
-                <span className="text-gray-400">-</span>
-                <input
-                  type="number"
-                  min="1"
-                  step="1"
-                  value={pendingMaxGame}
-                  onChange={(e) => setPendingMaxGame(e.target.value)}
-                  placeholder="82"
-                  className="w-16 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500"
-                />
+            {/* Right side: Game Range and Minutes stacked */}
+            <div className="md:ml-12 flex-shrink-0">
+              {/* Game Range - min/max inputs */}
+              <div>
+                <label className="block text-sm font-medium text-gray-300 mb-3">Game Range</label>
+                <div className="flex items-center space-x-3 w-full">
+                  <input
+                    type="number"
+                    min="1"
+                    step="1"
+                    value={pendingMinGame}
+                    onChange={(e) => setPendingMinGame(e.target.value)}
+                    placeholder="1"
+                    className="w-20 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500"
+                  />
+                  <span className="text-gray-400">-</span>
+                  <input
+                    type="number"
+                    min="1"
+                    step="1"
+                    value={pendingMaxGame}
+                    onChange={(e) => setPendingMaxGame(e.target.value)}
+                    placeholder="82"
+                    className="w-20 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500"
+                  />
+                </div>
               </div>
-              <p className="mt-2 text-xs text-gray-400">Defaults used for empty boxes.</p>
-            </div>
-
-            {/* Minutes filter (min - max) moved here after Game Range */}
-            <div className="flex flex-col items-start">
-              <label className="block text-sm font-medium text-gray-300 mb-3">Minutes</label>
-              <div className="flex items-center space-x-2 w-full">
-                <input
-                  type="number"
-                  min="0"
-                  step="0.1"
-                  value={pendingMinMinutes}
-                  onChange={(e) => setPendingMinMinutes(e.target.value)}
-                  placeholder={String(defaultMinutes.min)}
-                  className="w-20 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500"
-                />
-                <span className="text-gray-400">-</span>
-                <input
-                  type="number"
-                  min="0"
-                  step="0.1"
-                  value={pendingMaxMinutes}
-                  onChange={(e) => setPendingMaxMinutes(e.target.value)}
-                  placeholder={String(defaultMinutes.max)}
-                  className="w-20 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500"
-                />
-              </div>
-              <p className="mt-2 text-xs text-gray-400">Defaults used for empty boxes.</p>
-            </div>
-
-            {/* Scale: Total vs Per Minute */}
-            <div className="flex flex-col items-start">
-              <label className="block text-sm font-medium text-gray-300 mb-3 translate-x-7">Scale</label>
-              <div className="flex flex-col space-y-2 w-32 translate-x-7">
-                <button
-                  className={`px-3 py-1.5 text-sm rounded-lg font-medium border transition-all duration-200 ${!perMinute ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
-                  onClick={() => setPerMinute(false)}
-                >
-                  Total
-                </button>
-                <button
-                  className={`px-3 py-1.5 text-sm rounded-lg font-medium border transition-all duration-200 ${perMinute ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
-                  onClick={() => setPerMinute(true)}
-                >
-                  Per Minute
-                </button>
-              </div>
-            </div>
-
-            {/* Show: Team/Opponent/Net */}
-            <div className="flex flex-col items-start">
-              <label className="block text-sm font-medium text-gray-300 mb-3 translate-x-2">Show</label>
-              <div className="flex flex-col space-y-2 w-32 translate-x-2">
-                <button
-                  className={`px-3 py-1.5 text-sm rounded-lg font-medium border transition-all duration-200 ${!showNet && !showOpponent ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
-                  onClick={() => { setShowNet(false); setShowOpponent(false); }}
-                >
-                  Team
-                </button>
-                <button
-                  className={`px-3 py-1.5 text-sm rounded-lg font-medium border transition-all duration-200 ${showOpponent ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
-                  onClick={() => { setShowNet(false); setShowOpponent(true); }}
-                >
-                  Opponent
-                </button>
-                <button
-                  className={`px-3 py-1.5 text-sm rounded-lg font-medium border transition-all duration-200 ${showNet ? 'bg-accent-500 text-white border-accent-500' : 'bg-gray-800 text-accent-400 border-accent-500 hover:bg-accent-500 hover:text-white'}`}
-                  onClick={() => setShowNet(true)}
-                >
-                  Net
-                </button>
+              {/* Minutes filter directly below Game Range */}
+              <div className="mt-6">
+                <label className="block text-sm font-medium text-gray-300 mb-3">Minutes</label>
+                <div className="flex items-center space-x-3 w-full">
+                  <input
+                    type="number"
+                    min="0"
+                    step="0.1"
+                    value={pendingMinMinutes}
+                    onChange={(e) => setPendingMinMinutes(e.target.value)}
+                    placeholder={String(defaultMinutes.min)}
+                    className="w-20 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500"
+                  />
+                  <span className="text-gray-400">-</span>
+                  <input
+                    type="number"
+                    min="0"
+                    step="0.1"
+                    value={pendingMaxMinutes}
+                    onChange={(e) => setPendingMaxMinutes(e.target.value)}
+                    placeholder={String(defaultMinutes.max)}
+                    className="w-20 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -560,8 +745,12 @@ function LineupStats() {
                   <th className="px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
                     Team
                   </th>
-                  <th className="px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
-                    Height
+                  <th 
+                    className="px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider"
+                    onClick={() => handleSort('team_avg_height')}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    Height <SortIcon column="team_avg_height" />
                   </th>
                   <th 
                     className="px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider"
@@ -570,6 +759,15 @@ function LineupStats() {
                   >
                     Minutes <SortIcon column="minutes_played" />
                   </th>
+                  {selectedSeason === '2025-26' && (
+                    <th 
+                      className="px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider"
+                      onClick={() => handleSort('pace')}
+                      style={{ cursor: 'pointer' }}
+                    >
+                      Pace <SortIcon column="pace" />
+                    </th>
+                  )}
                   {columns.map(col => (
                     <th
                       key={col.key}
@@ -577,7 +775,7 @@ function LineupStats() {
                       onClick={() => handleSort(col.key)}
                       style={{ cursor: 'pointer' }}
                     >
-                      {perMinute ? `${col.label} / min` : col.label} <SortIcon column={col.key} />
+                      {per100Poss ? `${col.label} per 100 poss` : perMinute ? `${col.label} / min` : col.label} <SortIcon column={col.key} />
                     </th>
                   ))}
                 </tr>
@@ -618,22 +816,27 @@ function LineupStats() {
                     </td>
                     <td className="px-3 py-3 text-sm text-white">{row.team}</td>
                     <td className="px-3 py-3 text-sm text-white">
-                      {row.team_avg_height ? row.team_avg_height.toFixed(1) : '0.0'}
+                      {row.team_avg_height ? formatHeight(row.team_avg_height) : "0'0.0"}
                     </td>
                     <td className="px-3 py-3 text-sm text-white">
                       {row.minutes_played ? row.minutes_played.toFixed(1) : '0.0'}
                     </td>
-                    {columns.map(col => (
-                      <td key={col.key} className={`px-3 py-3 text-sm text-white ${col.key === columns[0].key ? 'border-l-2 border-gray-700' : ''}`}>
+                    {selectedSeason === '2025-26' && (
+                      <td className="px-3 py-3 text-sm text-white">
                         {(() => {
-                          const val = getValueForKey(row, col.key);
-                          if (typeof val === 'number') {
-                            return perMinute ? val.toFixed(2) : val;
-                          }
-                          return val;
+                          const pace = getValueForKey(row, 'pace');
+                          return typeof pace === 'number' ? pace.toFixed(1) : '0.0';
                         })()}
                       </td>
-                    ))}
+                    )}
+                    {columns.map(col => {
+                      const val = getValueForKey(row, col.key);
+                      return (
+                        <td key={col.key} className={`px-3 py-3 text-sm text-white ${col.key === columns[0].key ? 'border-l-2 border-gray-700' : ''}`}>
+                          {typeof val === 'number' ? (perMinute || per100Poss ? val.toFixed(2) : val) : val}
+                        </td>
+                      );
+                    })}
                   </tr>
                 ))}
               </tbody>
