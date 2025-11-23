@@ -134,7 +134,7 @@ export default function PregameReports() {
 
   if (loading) {
     return (
-      <div className="min-h-[50vh] flex items-center justify-center text-gray-300">Loading pregame reports...</div>
+      <div className="min-h-[50vh] flex items-center justify-center text-gray-300">Loading pregame reports.... (sorry if this takes a second)</div>
     );
   }
   if (error) {
@@ -218,29 +218,15 @@ export default function PregameReports() {
                     <h3 className="text-sm uppercase tracking-wider text-gray-400 mb-3">The Edge Up</h3>
                     <div className="grid md:grid-cols-4 gap-4">
                       {[g.EDGE_1, g.EDGE_2, g.EDGE_3, g.EDGE_4].filter(Boolean).map((edgeStr, i) => {
-                        // Parse edge string: "PHI Reb/Min 1.325"
+                        // Parse edge string: "PHI ORtg 1.325" or "BOS REB/100 Poss -0.850"
                         const formatEdge = (edge) => {
                           if (!edge) return { text: '', scale: 'slight', borderColor: 'border-green-500' };
                           
-                          // Extract value (number at the end)
+                          // Extract value (number at the end, can be negative)
                           const valueMatch = edge.match(/([-\d.]+)\s*$/);
-                          const value = valueMatch ? Math.abs(parseFloat(valueMatch[1])) : 0;
-                          
-                          // Determine scale and border color based on absolute value
-                          let scale, borderColor;
-                          if (value < 0.5) {
-                            scale = 'slight';
-                            borderColor = 'border-green-500';
-                          } else if (value < 1.0) {
-                            scale = 'moderate';
-                            borderColor = 'border-yellow-500';
-                          } else if (value < 1.5) {
-                            scale = 'strong';
-                            borderColor = 'border-orange-500';
-                          } else {
-                            scale = 'dominant';
-                            borderColor = 'border-red-500';
-                          }
+                          const rawValue = valueMatch ? parseFloat(valueMatch[1]) : 0;
+                          const absValue = Math.abs(rawValue);
+                          const isNegative = rawValue < 0;
                           
                           // Extract team name (first 3 letters)
                           const teamMatch = edge.match(/^([A-Z]{3})/);
@@ -249,19 +235,84 @@ export default function PregameReports() {
                           // Determine opponent (home or away)
                           const opponent = team === g.HOME_TEAM ? g.VISITOR_TEAM : g.HOME_TEAM;
                           
+                          // Determine if this is ORtg (different thresholds)
+                          const isORtg = edge.includes('ORtg');
+                          
+                          // Determine scale and border color based on absolute value and stat type
+                          let scale, borderColor;
+                          if (isORtg) {
+                            // ORtg thresholds: [1, 1.5, 2.5]
+                            if (absValue < 1.0) {
+                              scale = 'slight';
+                              borderColor = 'border-green-500';
+                            } else if (absValue < 1.5) {
+                              scale = 'moderate';
+                              borderColor = 'border-yellow-500';
+                            } else if (absValue < 2.5) {
+                              scale = 'strong';
+                              borderColor = 'border-orange-500';
+                            } else {
+                              scale = 'dominant';
+                              borderColor = 'border-red-500';
+                            }
+                          } else {
+                            // Other stats thresholds: [1.0, 1.4, 1.8]
+                            if (absValue < 1.0) {
+                              scale = 'slight';
+                              borderColor = 'border-green-500';
+                            } else if (absValue < 1.4) {
+                              scale = 'moderate';
+                              borderColor = 'border-yellow-500';
+                            } else if (absValue < 1.8) {
+                              scale = 'strong';
+                              borderColor = 'border-orange-500';
+                            } else {
+                              scale = 'dominant';
+                              borderColor = 'border-red-500';
+                            }
+                          }
+                          
                           // Extract stat type and build template
                           let template = '';
-                          if (edge.includes('Pts/Min') && !edge.includes('Q1')) {
-                            template = `${team} top lineups have a ${scale} advantage over ${opponent} in terms of scoring.`;
-                          } else if (edge.includes('Reb/Min')) {
-                            template = `${team} top lineups have a ${scale} advantage over ${opponent} in terms of rebounding.`;
-                          } else if (edge.includes('Ast/Tov')) {
-                            template = `${team} top lineups have a ${scale} advantage over ${opponent} in terms of ball movement.`;
-                          } else if (edge.includes('Q1 Pts/Min') || edge.includes('Q1')) {
-                            template = `${team} top lineups have a ${scale} advantage over ${opponent} in terms of first quarter scoring.`;
+                          
+                          if (isNegative) {
+                            // Negative advantage means opponent has defensive advantage
+                            if (edge.includes('ORtg')) {
+                              template = `${opponent} has a ${scale} defensive advantage against ${team}'s offense.`;
+                            } else if (edge.includes('REB/100 Poss')) {
+                              template = `${opponent} has a ${scale} defensive advantage against ${team} on the boards.`;
+                            } else if (edge.includes('SecondChance/100 Poss')) {
+                              template = `${opponent} has a ${scale} defensive advantage limiting ${team}'s second chance opportunities.`;
+                            } else if (edge.includes('FastBreak/100 Poss')) {
+                              template = `${opponent} has a ${scale} defensive advantage limiting ${team}'s fastbreak opportunities.`;
+                            } else if (edge.includes('PtsOffTurnover/100 Poss')) {
+                              template = `${opponent} has a ${scale} defensive advantage limiting ${team}'s points off turnovers.`;
+                            } else if (edge.includes('PointsInPaint/100 Poss')) {
+                              template = `${opponent} has a ${scale} defensive advantage limiting ${team}'s paint scoring.`;
+                            } else if (edge.includes('ForcedTO/100 Poss')) {
+                              template = `${opponent} has a ${scale} advantage in ball security against ${team}'s pressure.`;
+                            } else {
+                              template = edge;
+                            }
                           } else {
-                            // Fallback to original text
-                            template = edge;
+                            // Positive advantage means team has offensive advantage
+                            if (edge.includes('ORtg')) {
+                              template = `${team} has a ${scale} offensive advantage over ${opponent}.`;
+                            } else if (edge.includes('REB/100 Poss')) {
+                              template = `${team} has a ${scale} advantage over ${opponent} on the boards.`;
+                            } else if (edge.includes('SecondChance/100 Poss')) {
+                              template = `${team} has a ${scale} advantage over ${opponent} in second chance opportunities.`;
+                            } else if (edge.includes('FastBreak/100 Poss')) {
+                              template = `${team} has a ${scale} advantage over ${opponent} in fastbreak opportunities.`;
+                            } else if (edge.includes('PtsOffTurnover/100 Poss')) {
+                              template = `${team} has a ${scale} advantage over ${opponent} in points off turnovers.`;
+                            } else if (edge.includes('PointsInPaint/100 Poss')) {
+                              template = `${team} has a ${scale} advantage over ${opponent} in paint scoring.`;
+                            } else if (edge.includes('ForcedTO/100 Poss')) {
+                              template = `${team} has a ${scale} advantage over ${opponent} in forcing turnovers.`;
+                            } else {
+                              template = edge;
+                            }
                           }
                           
                           return { text: template, scale, borderColor };

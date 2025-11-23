@@ -797,7 +797,7 @@ function LineupStats() {
                                   <img
                                     src={info.image_url}
                                     alt={cleanName}
-                                    className="w-16 h-16 rounded-full object-cover border border-gray-600 bg-gray-800"
+                                    className="w-14 h-14 rounded-full object-cover border border-gray-600 bg-gray-800"
                                     onError={e => {
                                       e.target.style.display = 'none';
                                       e.target.nextSibling.style.display = 'flex';
