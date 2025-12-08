@@ -9,7 +9,7 @@ id,full_name,is_active,last_name,first_name
 76006,Forest Able,False,Able,Forest
 76007,John Abramovic,False,Abramovic,John
 203518,Alex Abrines,False,Abrines,Alex
-1630173,Precious Achiuwa,False,Achiuwa,Precious
+1630173,Precious Achiuwa,True,Achiuwa,Precious
 101165,Alex Acker,False,Acker,Alex
 76008,Donald Ackerman,False,Ackerman,Donald
 76009,Mark Acres,False,Acres,Mark
@@ -447,7 +447,7 @@ id,full_name,is_active,last_name,first_name
 1628449,Chris Boucher,True,Boucher,Chris
 1630547,James Bouknight,False,Bouknight,James
 2257,Ruben Boumtje-Boumtje,False,Boumtje-Boumtje,Ruben
-1631123,Jamaree Bouyea,False,Bouyea,Jamaree
+1631123,Jamaree Bouyea,True,Bouyea,Jamaree
 76214,Don Boven,False,Boven,Don
 1898,Cal Bowdler,False,Bowdler,Cal
 1477,Bruce Bowen,False,Bowen,Bruce
@@ -612,7 +612,7 @@ id,full_name,is_active,last_name,first_name
 201978,Chase Budinger,False,Budinger,Chase
 76298,Walter Budko,False,Budko,Walter
 146,Jud Buechler,False,Buechler,Jud
-1641723,Kobe Bufkin,False,Bufkin,Kobe
+1641723,Kobe Bufkin,True,Bufkin,Kobe
 1934,Rodney Buford,False,Buford,Rodney
 672,Matt Bullard,False,Bullard,Matt
 203493,Reggie Bullock Jr.,False,Bullock Jr.,Reggie
@@ -1782,7 +1782,7 @@ id,full_name,is_active,last_name,first_name
 1631160,Jordan Hall,False,Hall,Jordan
 1630221,Josh Hall,False,Hall,Josh
 200837,Mike Hall,False,Hall,Mike
-1641790,PJ Hall,True,Hall,PJ
+1641790,PJ Hall,False,Hall,PJ
 1629788,Tyler Hall,False,Hall,Tyler
 76923,Jeff Halliburton,False,Halliburton,Jeff
 1032,Darvin Ham,False,Ham,Darvin
@@ -2111,7 +2111,6 @@ id,full_name,is_active,last_name,first_name
 1626154,RJ Hunter,False,Hunter,RJ
 2212,Steven Hunter,False,Hunter,Steven
 1626205,Vincent Hunter,False,Hunter,Vincent
-1643047,CJ Huntley,True,Huntley,CJ
 310,Bobby Hurley,False,Hurley,Bobby
 77086,Roy Hurley,False,Hurley,Roy
 1630562,Matt Hurt,False,Hurt,Matt
@@ -2329,7 +2328,7 @@ id,full_name,is_active,last_name,first_name
 279,Charles Jones,False,Jones,Charles
 77178,Charles Jones,False,Jones,Charles
 1869,Charles R. Jones,False,Jones,Charles R.
-1641732,Colby Jones,True,Jones,Colby
+1641732,Colby Jones,False,Jones,Colby
 1642938,Curtis Jones,True,Jones,Curtis
 2563,Dahntay Jones,False,Jones,Dahntay
 1627745,Damian Jones,False,Jones,Damian
@@ -2702,7 +2701,7 @@ id,full_name,is_active,last_name,first_name
 1629642,Nassir Little,False,Little,Nassir
 1641726,Dereck Lively II,True,Lively II,Dereck
 1630587,Isaiah Livers,True,Livers,Isaiah
-1641753,Chris Livingston,False,Livingston,Chris
+1641753,Chris Livingston,True,Livingston,Chris
 988,Randy Livingston,False,Livingston,Randy
 2733,Shaun Livingston,False,Livingston,Shaun
 77392,Ron Livingstone,False,Livingstone,Ron
@@ -2872,6 +2871,7 @@ id,full_name,is_active,last_name,first_name
 77479,Ronald Martin,False,Martin,Ronald
 77480,Slater Martin,False,Martin,Slater
 1631213,Tyrese Martin,True,Martin,Tyrese
+1642942,Jahmai Mashack,True,Mashack,Jahmai
 469,Jamal Mashburn,False,Mashburn,Jamal
 77482,Al Masino,False,Masino,Al
 193,Anthony Mason,False,Mason,Anthony
@@ -2881,7 +2881,7 @@ id,full_name,is_active,last_name,first_name
 763,Tony Massenburg,False,Massenburg,Tony
 77483,Eddie Mast,False,Mast,Eddie
 1628999,Yante Maten,False,Maten,Yante
-1629726,Garrison Mathews,False,Mathews,Garrison
+1629726,Garrison Mathews,True,Mathews,Garrison
 1628493,Mangok Mathiang,False,Mathiang,Mangok
 1629751,Dakota Mathias,False,Mathias,Dakota
 1631097,Bennedict Mathurin,True,Mathurin,Bennedict
@@ -3167,7 +3167,7 @@ id,full_name,is_active,last_name,first_name
 77637,Ron Moore,False,Moore,Ron
 1631386,Taze Moore,False,Moore,Taze
 929,Tracy Moore,False,Moore,Tracy
-1631111,Wendell Moore Jr.,False,Moore Jr.,Wendell
+1631111,Wendell Moore Jr.,True,Moore Jr.,Wendell
 1629630,Ja Morant,True,Morant,Ja
 203961,Eric Moreland,False,Moreland,Eric
 77639,Jackie Moreland,False,Moreland,Jackie
@@ -3182,7 +3182,7 @@ id,full_name,is_active,last_name,first_name
 1628537,Jaylen Morris,False,Morris,Jaylen
 202693,Markieff Morris,False,Morris,Markieff
 77646,Max Morris,False,Morris,Max
-1628420,Monté Morris,False,Morris,Monté
+1628420,Monte Morris,False,Morris,Monte
 201043,Randolph Morris,False,Morris,Randolph
 2242,Terence Morris,False,Morris,Terence
 202694,Marcus Morris Sr.,False,Morris Sr.,Marcus
@@ -3867,7 +3867,7 @@ id,full_name,is_active,last_name,first_name
 77993,Truck Robinson,False,Robinson,Truck
 77996,Wayne Robinson,False,Robinson,Wayne
 203922,Glenn Robinson III,False,Robinson III,Glenn
-1630526,Jeremiah Robinson-Earl,False,Robinson-Earl,Jeremiah
+1630526,Jeremiah Robinson-Earl,True,Robinson-Earl,Jeremiah
 77997,Bill Robinzine,False,Robinzine,Bill
 77998,Dave Robisch,False,Robisch,Dave
 1629676,Isaiah Roby,False,Roby,Isaiah
@@ -5002,7 +5002,7 @@ id,full_name,is_active,last_name,first_name
 78600,Brian Winters,False,Winters,Brian
 78601,Voise Winters,False,Winters,Voise
 78602,Willie Wise,False,Wise,Willie
-1630164,James Wiseman,True,Wiseman,James
+1630164,James Wiseman,False,Wiseman,James
 203481,Jeff Withey,False,Withey,Jeff
 78603,Luke Witte,False,Witte,Luke
 1456,Randy Wittman,False,Wittman,Randy

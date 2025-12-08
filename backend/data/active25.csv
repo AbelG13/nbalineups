@@ -1,4 +1,5 @@
 player_id,first_name,last_name,position,team_abbreviation
+1630173,Precious,Achiuwa,F,MIA
 203500,Steven,Adams,C,HOU
 1628389,Bam,Adebayo,C-F,MIA
 1630534,Ochai,Agbaji,G,TOR
@@ -41,6 +42,7 @@ player_id,first_name,last_name,position,team_abbreviation
 1641737,Adem,Bona,F,PHI
 1626164,Devin,Booker,G,PHX
 1628449,Chris,Boucher,F,BOS
+1631123,Jamaree,Bouyea,G,MIL
 1628396,Tony,Bradley,C,IND
 1631103,Malaki,Branham,F,WAS
 1631128,Christian,Braun,G,DEN
@@ -55,6 +57,7 @@ player_id,first_name,last_name,position,team_abbreviation
 1628973,Jalen,Brunson,G,NYK
 1642868,Carter,Bryant,F,SAS
 1628418,Thomas,Bryant,C,CLE
+1641723,Kobe,Bufkin,G,BKN
 202710,Jimmy,Butler III,G-F,GSW
 1641824,Matas,Buzelis,F,CHI
 1631288,Jamal,Cain,F,ORL
@@ -170,7 +173,6 @@ player_id,first_name,last_name,position,team_abbreviation
 1631243,Mouhamed,Gueye,F,ATL
 1629060,Rui,Hachimura,F,LAL
 1630169,Tyrese,Haliburton,G,IND
-1641790,PJ,Hall,C,MEM
 203501,Tim,Hardaway Jr.,G,DEN
 201935,James,Harden,G,LAC
 1630702,Jaden,Hardy,G,DAL
@@ -204,7 +206,6 @@ player_id,first_name,last_name,position,team_abbreviation
 1630643,Jay,Huff,F-C,IND
 1630574,Ariel,Hukporti,C,NYK
 1629631,De'Andre,Hunter,F,CLE
-1643047,CJ,Huntley,F,PHX
 1630538,Bones,Hyland,G,MIN
 1642345,Oso,Ighodaro,F,PHX
 204060,Joe,Ingles,F,MIN
@@ -235,7 +236,6 @@ player_id,first_name,last_name,position,team_abbreviation
 1642352,Keshad,Johnson,F,MIA
 1642848,Tre,Johnson,G,WAS
 203999,Nikola,Jokić,C,DEN
-1641732,Colby,Jones,G,DET
 1642938,Curtis,Jones,G,DEN
 1630529,Herbert,Jones,F,NOP
 1642403,Isaac,Jones,F,SAC
@@ -276,6 +276,7 @@ player_id,first_name,last_name,position,team_abbreviation
 203081,Damian,Lillard,G,POR
 1641726,Dereck,Lively II,C,DAL
 1630587,Isaiah,Livers,F,PHX
+1641753,Chris,Livingston,F,MIL
 1626172,Kevon,Looney,F,NOP
 201572,Brook,Lopez,C,LAC
 1631126,Caleb,Love,G,POR
@@ -290,6 +291,8 @@ player_id,first_name,last_name,position,team_abbreviation
 1642918,Alijah,Martin,G,TOR
 1628997,Caleb,Martin,F,DAL
 1631213,Tyrese,Martin,G,BKN
+1642942,Jahmai,Mashack,G,HOU
+1629726,Garrison,Mathews,G,NYK
 1631097,Bennedict,Mathurin,G-F,IND
 1631255,Karlo,Matković,F-C,NOP
 1630178,Tyrese,Maxey,G,PHI
@@ -321,6 +324,7 @@ player_id,first_name,last_name,position,team_abbreviation
 1642367,Jonathan,Mogbo,F,TOR
 1628370,Malik,Monk,G,SAC
 1630541,Moses,Moody,G,GSW
+1631111,Wendell,Moore Jr.,G,BOS
 1629630,Ja,Morant,G,MEM
 1630530,Trey,Murphy III,F,NOP
 1627749,Dejounte,Murray,G,NOP
@@ -392,6 +396,7 @@ player_id,first_name,last_name,position,team_abbreviation
 1629130,Duncan,Robinson,F,DET
 1629011,Mitchell,Robinson,C,NYK
 1631115,Orlando,Robinson,C,ORL
+1630526,Jeremiah,Robinson-Earl,F,DAL
 1631157,Ryan,Rollins,G,MIL
 1642050,Jackson,Rowe,F,GSW
 1626179,Terry,Rozier,G,MIA
@@ -515,7 +520,6 @@ player_id,first_name,last_name,position,team_abbreviation
 1631246,Vince,Williams Jr.,G,MEM
 1629627,Zion,Williamson,F,NOP
 1630592,Jalen,Wilson,F,BKN
-1630164,James,Wiseman,C,IND
 1642874,Danny,Wolf,F-C,BKN
 1627824,Guerschon,Yabusele,F,NYK
 1642905,Yang,Hansen,C,POR

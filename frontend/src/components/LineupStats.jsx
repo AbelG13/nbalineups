@@ -69,6 +69,7 @@ function LineupStats() {
   const [perMinute, setPerMinute] = useState(false);
   const [per100Poss, setPer100Poss] = useState(false);
   const [statType, setStatType] = useState('traditional'); // 'traditional' or 'advanced'
+  const [lineupSize, setLineupSize] = useState(5); // 2, 3, 4, or 5
   const [playerMap, setPlayerMap] = useState({});
   const defaultMinutes = { min: 1, max: 2000 };
   const [selectedMinutesRange, setSelectedMinutesRange] = useState([defaultMinutes.min, defaultMinutes.max]);
@@ -81,6 +82,7 @@ function LineupStats() {
   const [isShowDropdownOpen, setIsShowDropdownOpen] = useState(false);
   const [isStatTypeDropdownOpen, setIsStatTypeDropdownOpen] = useState(false);
   const [isScaleDropdownOpen, setIsScaleDropdownOpen] = useState(false);
+  const [isLineupSizeDropdownOpen, setIsLineupSizeDropdownOpen] = useState(false);
 
   // Load player info for headshots and last names
   useEffect(() => {
@@ -118,7 +120,8 @@ function LineupStats() {
         const params = {
           season: selectedSeason,
           game_min: gameRange[0],
-          game_max: gameRange[1]
+          game_max: gameRange[1],
+          lineup_size: lineupSize
         };
         if (selectedPeriods.length > 0) {
           params.periods = selectedPeriods.join(','); // Send as comma-separated string
@@ -139,6 +142,13 @@ function LineupStats() {
     setLoading(false);
   };
 
+  // Reset lineup size when pending season changes to 2024-25
+  useEffect(() => {
+    if (pendingSeason === '2024-25' && lineupSize !== 5) {
+      setLineupSize(5);
+    }
+  }, [pendingSeason, lineupSize]);
+
   // Load data on mount and when filters change
   useEffect(() => {
     loadData();
@@ -146,8 +156,12 @@ function LineupStats() {
     if (selectedSeason === '2024-25' && statType === 'advanced') {
       setStatType('traditional');
     }
+    // Reset lineup size to 5 when switching to 2024-25 (only 5-man available)
+    if (selectedSeason === '2024-25' && lineupSize !== 5) {
+      setLineupSize(5);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedTeams, selectedPeriods, gameRange, selectedSeason]);
+  }, [selectedTeams, selectedPeriods, gameRange, selectedSeason, lineupSize]);
 
   const handleShowResults = () => {
     setSelectedTeams(pendingTeams);
@@ -160,6 +174,10 @@ function LineupStats() {
     // Reset stat type to traditional if switching to 2024-25
     if (pendingSeason === '2024-25' && statType === 'advanced') {
       setStatType('traditional');
+    }
+    // Reset lineup size to 5 if switching to 2024-25 (only 5-man available)
+    if (pendingSeason === '2024-25' && lineupSize !== 5) {
+      setLineupSize(5);
     }
     const minVal = pendingMinMinutes.trim() === '' ? defaultMinutes.min : Number(pendingMinMinutes);
     const maxVal = pendingMaxMinutes.trim() === '' ? defaultMinutes.max : Number(pendingMaxMinutes);
@@ -177,7 +195,18 @@ function LineupStats() {
   };
 
   const parseLineup = (lineupStr) => {
-    return lineupStr.split(',').map(player => player.trim());
+    if (!lineupStr) return [];
+    // Handle tuple format: "('Player1', 'Player2', 'Player3', 'Player4', 'Player5')"
+    try {
+      // Remove outer parentheses and quotes, then split
+      const cleaned = lineupStr.replace(/^[\(\[]|[\)\]]$/g, '').trim();
+      // Split by comma, but handle commas within quotes
+      const players = cleaned.match(/'([^']+)'/g) || cleaned.match(/"([^"]+)"/g) || [];
+      return players.map(p => p.replace(/['"]/g, '').trim());
+    } catch (e) {
+      // Fallback to simple comma split
+      return lineupStr.split(',').map(player => player.trim());
+    }
   };
 
   const SortIcon = ({ column }) => {
@@ -643,8 +672,8 @@ function LineupStats() {
               </div>
             </div>
 
-            {/* Right side: Game Range and Minutes stacked */}
-            <div className="md:ml-12 flex-shrink-0">
+            {/* Right side: Game Range, Minutes, and Lineup Size */}
+            <div className="md:ml-8 flex-shrink-0 space-y-6">
               {/* Game Range - min/max inputs */}
               <div>
                 <label className="block text-sm font-medium text-gray-300 mb-3">Game Range</label>
@@ -671,7 +700,7 @@ function LineupStats() {
                 </div>
               </div>
               {/* Minutes filter directly below Game Range */}
-              <div className="mt-6">
+              <div>
                 <label className="block text-sm font-medium text-gray-300 mb-3">Minutes</label>
                 <div className="flex items-center space-x-3 w-full">
                   <input
@@ -693,6 +722,51 @@ function LineupStats() {
                     placeholder={String(defaultMinutes.max)}
                     className="w-20 px-3 py-2 border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500"
                   />
+                </div>
+              </div>
+              {/* Lineup Size dropdown */}
+              <div>
+                <label className="block text-sm font-medium text-gray-300 mb-3">Lineup Size</label>
+                <div className="relative">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (selectedSeason === '2025-26') {
+                        setIsLineupSizeDropdownOpen(!isLineupSizeDropdownOpen);
+                      }
+                    }}
+                    disabled={selectedSeason === '2024-25'}
+                    className={`w-full px-3 py-2 text-left border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200 ${
+                      selectedSeason === '2024-25' ? 'cursor-not-allowed opacity-50' : ''
+                    }`}
+                    title={selectedSeason === '2024-25' ? 'Only 5-man lineups available for 2024-25' : ''}
+                  >
+                    {lineupSize}-Man
+                    <span className="absolute inset-y-0 right-0 flex items-center pr-2">
+                      <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </span>
+                  </button>
+                  {isLineupSizeDropdownOpen && selectedSeason === '2025-26' && (
+                    <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-700 rounded-lg shadow-medium">
+                      {[5, 4, 3, 2].map((size) => (
+                        <button
+                          key={size}
+                          className={`w-full px-3 py-2 text-left text-sm transition-colors ${
+                            size === 5 ? 'rounded-t-lg' : ''
+                          } ${
+                            size === 2 ? 'rounded-b-lg' : ''
+                          } ${
+                            lineupSize === size ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'
+                          }`}
+                          onClick={() => { setLineupSize(size); setIsLineupSizeDropdownOpen(false); }}
+                        >
+                          {size}-Man
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -739,7 +813,12 @@ function LineupStats() {
             <table className="w-full">
               <thead className="bg-gray-800">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider w-[600px]">
+                  <th className={`px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider ${
+                    lineupSize === 5 ? 'w-[600px]' : 
+                    lineupSize === 4 ? 'w-[500px]' : 
+                    lineupSize === 3 ? 'w-[400px]' : 
+                    'w-[300px]'
+                  }`}>
                     Lineup
                   </th>
                   <th className="px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">
@@ -784,9 +863,19 @@ function LineupStats() {
                 {paginatedData.map((row, index) => (
                   <tr key={index} className="hover:bg-gray-800 transition-colors duration-200">
                     {/* Lineup headshots and last names */}
-                    <td className="px-6 py-3 text-sm text-white w-[600px]">
+                    <td className={`px-6 py-3 text-sm text-white ${
+                      lineupSize === 5 ? 'w-[600px]' : 
+                      lineupSize === 4 ? 'w-[500px]' : 
+                      lineupSize === 3 ? 'w-[400px]' : 
+                      'w-[300px]'
+                    }`}>
                       <div className="flex flex-col items-start">
-                        <div className="flex gap-10 mb-2">
+                        <div className={`flex mb-2 ${
+                          lineupSize === 5 ? 'gap-10' : 
+                          lineupSize === 4 ? 'gap-12' : 
+                          lineupSize === 3 ? 'gap-16' : 
+                          'gap-20'
+                        }`}>
                           {parseLineup(row.lineup).map((player, idx) => {
                             const cleanName = cleanPlayerName(player);
                             const norm = normalizeName(cleanName);

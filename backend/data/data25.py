@@ -120,8 +120,8 @@ team_lineup_stats = {
 
 height_dict = dict()
 test = False
-start= 125
-end= 250
+start= 200
+end= 300
 for idx,id in enumerate(game_ids[start:end]):
     # Load game
     game_id = id
@@ -235,25 +235,29 @@ for idx,id in enumerate(game_ids[start:end]):
 
         # calculate average height of home and away
         total_height = 0
-        if tuple(sorted(home_on_court)) not in height_dict:
-            for player in sorted(home_on_court):
-                first_name, last_name = player.split(' ', 1)
-                
-                # Debugging... fix player name (poor fix, improve later)
-                if first_name == 'Yanic':
-                    first_name = "Yanic Konan"
-                    last_name = "Niederhäuser"
-                if last_name == 'Lavine':
-                    last_name = 'LaVine' # capitalize the V
+        try:
+            if tuple(sorted(home_on_court)) not in height_dict:
+                for player in sorted(home_on_court):
+                    first_name, last_name = player.split(' ', 1)
+                    
+                    # Debugging... fix player name (poor fix, improve later)
+                    if first_name == 'Yanic':
+                        first_name = "Yanic Konan"
+                        last_name = "Niederhäuser"
+                    if last_name == 'Lavine':
+                        last_name = 'LaVine' # capitalize the V
 
-                height = additional_data[(additional_data['first_name'] == first_name) & (additional_data['last_name'] == last_name)]['height']
-                if len(height) == 0:
-                    print(f"[⚠️ Height Error] Could not resolve height {height} for home player: {first_name} (first) {last_name} (last), {game_id}")
-                    continue
-                feet, inches = str(height.dropna().reset_index(drop=True)[0]).split('-')
-                total_height += int(feet) * 12 + int(inches)
-            avg_home_height = total_height / len(home_on_court)
-            height_dict[tuple(sorted(home_on_court))] = avg_home_height
+                    height = additional_data[(additional_data['first_name'] == first_name) & (additional_data['last_name'] == last_name)]['height']
+                    if len(height) == 0:
+                        print(f"[⚠️ Height Error] Could not resolve height {height} for home player: {first_name} (first) {last_name} (last), {game_id}")
+                        continue
+                    feet, inches = str(height.dropna().reset_index(drop=True)[0]).split('-')
+                    total_height += int(feet) * 12 + int(inches)
+                avg_home_height = total_height / len(home_on_court)
+                height_dict[tuple(sorted(home_on_court))] = avg_home_height
+        except:
+            print(f"[⚠️ Height Error] Could not resolve lineup {home_on_court} for home team, {game_id}")
+            continue
 
         total_height = 0
         
@@ -460,7 +464,7 @@ for idx,id in enumerate(game_ids[start:end]):
             
             }
 
-
+            
             team_lineup_stats[home_team] = pd.concat(
                 [team_lineup_stats[home_team], pd.DataFrame([record])],
                 ignore_index=True
@@ -675,7 +679,7 @@ if not test:
 
     # Create empty files if they don’t exist
     for abbrev in team_abbrevs:
-        filename = f"S2_{abbrev}_2025_26.csv"
+        filename = f"S2_{abbrev}_5man_2025_26.csv"
         file_path = os.path.join(save_dir, filename)
         if not os.path.exists(file_path):
             pd.DataFrame(columns=columns).to_csv(file_path, index=False)
@@ -685,7 +689,7 @@ if not test:
         df = team_lineup_stats[team]
         # Reorder columns explicitly before writing
         df = df[columns]
-        csv_path = os.path.join(save_dir, f"S2_{team}_2025_26.csv")
+        csv_path = os.path.join(save_dir, f"S2_{team}_5man_2025_26.csv")
 
         # If file exists, append without header
         if os.path.exists(csv_path):

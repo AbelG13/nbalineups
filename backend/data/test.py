@@ -82,92 +82,93 @@ import pandas as pd
 #     if 'fastbreak' in row['qualifiers']:
 #         print(row)
 
-import requests
-import pandas as pd
-from typing import List
+# Import report_data function from report.py
+# from report import report_data
 
-ESPN_INJURY_URL = "https://www.espn.com/nba/injuries"
+# # Input 1
+# injuries = pd.read_csv("data/injuries25.csv")["NAME"].tolist()
+# print(injuries)
+# no_injuries = []
+# # Input 2
+# injuries_report = report_data(injuries)
+# # Input 3
+# no_injuries_report = report_data(no_injuries)
 
-class InjuryAPIError(Exception):
-    """Custom exception for injury scraping errors."""
-    pass
+# print(injuries_report[['EDGE_1', 'EDGE_2']])
+# print(no_injuries_report[['EDGE_1', 'EDGE_2']])
 
-def fetch_espn_injury_tables(timeout: int = 10) -> List[pd.DataFrame]:
+
+# who played in game 0022500057
+
+# from nba_api.live.nba.endpoints import playbyplay
+
+# game_id = '0022500242'
+# pbp_df = pd.DataFrame(playbyplay.PlayByPlay(game_id=game_id).get_dict()["game"]["actions"])
+
+# pbp_df.to_csv('test_pbp.csv', index=False)
+
+# from nba_api.stats.endpoints import scheduleleaguev2
+
+# # Fetch the full 2024–25 NBA schedule
+# sched = scheduleleaguev2.ScheduleLeagueV2(
+#     league_id='00', 
+#     season='2025-26'
+# )
+# df = sched.get_data_frames()[0]  # 'SeasonGames' table
+
+# # Filter for regular season games
+# df_reg = df[df['gameId'].str.startswith('0022')]
+
+
+# game_ids = df_reg['gameId'].unique().tolist()
+# print(game_ids[200:201])
+# Create or update 2,3,and 4 man lineups
+
+import ast
+from itertools import combinations
+
+def parse_lineup(lineup_str):
+    try:
+        # Handle NaN values (pandas might read them as string "nan" or actual NaN)
+        if pd.isna(lineup_str) or (isinstance(lineup_str, str) and lineup_str.lower() == 'nan'):
+            return None
+        raw = ast.literal_eval(lineup_str)
+        return tuple(p.strip().strip("'\"") for p in raw)
+    except Exception:
+        return None
+
+def explode_to_x_man(df, x):
     """
-    Fetch and parse the injury tables from ESPN's NBA injuries page.
+    df: 5-man lineup DataFrame with a 'lineup' column as string
+    x: 2, 3, or 4
 
-    Returns
-    -------
-    list[pd.DataFrame]
-        List of DataFrames, one per table on the page.
-
-    Raises
-    ------
-    InjuryAPIError
-        If the request fails or no tables are found.
+    Returns: new DataFrame where each original row is duplicated
+             for every x-man combo contained in its lineup.
+             Only the 'lineup' field changes.
     """
-    headers = {
-        # Pretend to be a normal Chrome browser on Windows
-        "User-Agent": (
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/122.0.0.0 Safari/537.36"
-        ),
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.5",
-        "Referer": "https://www.espn.com/nba/"
-    }
+    df = df.copy()
+    # parse the original 5-man lineup string into a tuple of players
+    df["parsed"] = df["lineup"].map(parse_lineup)
 
-    try:
-        resp = requests.get(ESPN_INJURY_URL, headers=headers, timeout=timeout)
-        resp.raise_for_status()
-    except requests.RequestException as e:
-        raise InjuryAPIError(f"Error fetching ESPN injuries page: {e}") from e
+    # for each row, build all x-man combos from the 5 players
+    df["x_lineups"] = df["parsed"].apply(
+        lambda players: [tuple(sorted(c)) for c in combinations(players, x)] if players and len(players) >= x else []
+    )
 
-    try:
-        tables = pd.read_html(resp.text)
-    except ValueError as e:
-        raise InjuryAPIError("No injury tables found on ESPN injuries page") from e
+    # explode: each row → one row per x-man combo
+    exploded = df.explode("x_lineups").reset_index(drop=True)
 
-    if not tables:
-        raise InjuryAPIError("ESPN injuries page returned no tables")
+    # Filter out rows where x_lineups is None or empty
+    exploded = exploded[exploded["x_lineups"].notna()]
 
-    return tables
+    # replace the lineup column with the x-man combo
+    exploded["lineup"] = exploded["x_lineups"].apply(lambda combo: str(combo) if combo else None)
 
-def get_espn_injuries_df(timeout: int = 10) -> pd.DataFrame:
-    tables = fetch_espn_injury_tables(timeout=timeout)
+    # drop helper columns
+    exploded = exploded.drop(columns=["parsed", "x_lineups"])
 
-    df = pd.concat(tables, ignore_index=True)
-    df.columns = [c.strip() for c in df.columns]
+    return exploded
 
-    col_map = {
-        "TEAM": "Team",
-        "PLAYER": "Name",
-        "PLAYER NAME": "Name",
-        "POS": "Pos",
-        "POSITION": "Pos",
-        "DATE": "Date",
-        "INJURY": "Injury",
-        "STATUS": "Status",
-    }
-
-    renamed = {}
-    for c in df.columns:
-        upper = c.upper()
-        if upper in col_map:
-            renamed[c] = col_map[upper]
-    df = df.rename(columns=renamed)
-
-    for c in df.columns:
-        if pd.api.types.is_string_dtype(df[c]):
-            df[c] = df[c].str.strip()
-
-    return df
-
-if __name__ == "__main__":
-    try:
-        inj_df = get_espn_injuries_df()
-        print(inj_df[['NAME', 'Status']].head(15))
-        print(inj_df.columns)
-    except InjuryAPIError as e:
-        print("Failed to fetch injuries:", e)
+df = pd.read_csv("test_team.csv")
+df2 = explode_to_x_man(df, 2)
+df2.to_csv("test_team_2man.csv", index=False)

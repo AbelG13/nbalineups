@@ -46,8 +46,9 @@ A modern, interactive web application for building and analyzing NBA team lineup
 
 ### Prerequisites
 - Node.js (v16 or higher)
-- Python 3.8+
+- Python 3.8+ (Python 3.10+ recommended)
 - npm or yarn
+- pip (Python package installer)
 
 ### Installation
 
@@ -57,32 +58,74 @@ A modern, interactive web application for building and analyzing NBA team lineup
    cd nbalineups
    ```
 
-2. **Install frontend dependencies**
+2. **Set up the backend**
+   
+   **Option A: Use the setup script (recommended)**
+   
+   **For Windows:**
+   ```bash
+   cd backend
+   setup.bat
+   ```
+   
+   **For Mac/Linux:**
+   ```bash
+   cd backend
+   chmod +x setup.sh
+   ./setup.sh
+   ```
+   
+   **Option B: Manual setup**
+   
+   **For Windows:**
+   ```bash
+   cd backend
+   python -m venv venv
+   venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+   
+   **For Mac/Linux:**
+   ```bash
+   cd backend
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+3. **Install frontend dependencies**
    ```bash
    cd frontend
    npm install
    ```
 
-3. **Install backend dependencies**
-   ```bash
-   cd ../backend
-   pip install -r requirements.txt
-   ```
-
 ### Running the Application
 
-1. **Start the backend server**
-   ```bash
-   Mac:
-   cd backend
-   python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
+**Important:** Make sure you have activated your Python virtual environment before starting the backend!
 
-   Windows:
+1. **Start the backend server**
+   
+   First, activate your virtual environment:
+   
+   **Windows:**
+   ```bash
    cd backend
+   venv\Scripts\activate
    uvicorn main:app --reload
    ```
+   
+   **Mac/Linux:**
+   ```bash
+   cd backend
+   source venv/bin/activate
+   uvicorn main:app --reload
+   ```
+   
+   The backend will start on `http://localhost:8000`
 
 2. **Start the frontend development server**
+   
+   In a new terminal window:
    ```bash
    cd frontend
    npm run dev
@@ -90,6 +133,21 @@ A modern, interactive web application for building and analyzing NBA team lineup
 
 3. **Open your browser**
    Navigate to `http://localhost:5173`
+
+### Troubleshooting
+
+**Backend won't start:**
+- Make sure you've activated the virtual environment (you should see `(venv)` in your terminal prompt)
+- Verify all dependencies are installed: `pip install -r requirements.txt`
+- Check that Python 3.8+ is installed: `python --version`
+- If you get import errors, make sure you're in the `backend` directory when running uvicorn
+
+**Module not found errors:**
+- Reinstall requirements: `pip install -r requirements.txt --force-reinstall`
+- Make sure `nba-api` is installed (it's in requirements.txt but sometimes needs explicit installation)
+
+**Port already in use:**
+- Change the port in the uvicorn command: `uvicorn main:app --reload --port 8001`
 
 ## Usage Guide
 

@@ -59,45 +59,45 @@
 
 #### IF STATIC API DOES NOT WORK USE THIS ENDPOINT ####
 
-# from nba_api.stats.endpoints import commonallplayers
-# import pandas as pd
+from nba_api.stats.endpoints import commonallplayers
+import pandas as pd
 
-# # Get all players
-# players_df = commonallplayers.CommonAllPlayers(is_only_current_season=0).get_data_frames()[0]
+# Get all players
+players_df = commonallplayers.CommonAllPlayers(is_only_current_season=0).get_data_frames()[0]
 
-# # Rename columns
-# renamed = players_df.rename(columns={
-#     'PERSON_ID': 'id',
-#     'DISPLAY_FIRST_LAST': 'full_name',
-#     'DISPLAY_LAST_COMMA_FIRST': 'last_comma_first',
-#     'ROSTERSTATUS': 'is_active'
-# })
+# Rename columns
+renamed = players_df.rename(columns={
+    'PERSON_ID': 'id',
+    'DISPLAY_FIRST_LAST': 'full_name',
+    'DISPLAY_LAST_COMMA_FIRST': 'last_comma_first',
+    'ROSTERSTATUS': 'is_active'
+})
 
-# # Split last_comma_first safely
-# def split_last_comma_first(name):
-#     if isinstance(name, str) and ',' in name:
-#         last, first = name.split(',', 1)
-#         return pd.Series([last.strip(), first.strip()])
-#     else:
-#         # If no comma, put entire name as full_name in first_name and leave last_name blank
-#         return pd.Series(['', name.strip() if isinstance(name, str) else ''])
+# Split last_comma_first safely
+def split_last_comma_first(name):
+    if isinstance(name, str) and ',' in name:
+        last, first = name.split(',', 1)
+        return pd.Series([last.strip(), first.strip()])
+    else:
+        # If no comma, put entire name as full_name in first_name and leave last_name blank
+        return pd.Series(['', name.strip() if isinstance(name, str) else ''])
 
-# renamed[['last_name', 'first_name']] = renamed['last_comma_first'].apply(split_last_comma_first)
+renamed[['last_name', 'first_name']] = renamed['last_comma_first'].apply(split_last_comma_first)
 
-# # Convert is_active to boolean
-# renamed['is_active'] = renamed['is_active'].apply(lambda x: True if x == 1 else False)
+# Convert is_active to boolean
+renamed['is_active'] = renamed['is_active'].apply(lambda x: True if x == 1 else False)
 
-# # Drop helper column
-# renamed = renamed.drop(columns=['last_comma_first'])
+# Drop helper column
+renamed = renamed.drop(columns=['last_comma_first'])
 
-# # Debugging
+# Debugging
 
-# # where full name is Yang Hansen, change first name to Yang and last name to Hansen
-# renamed.loc[renamed['full_name'] == 'Yang Hansen', 'first_name'] = 'Yang'
-# renamed.loc[renamed['full_name'] == 'Yang Hansen', 'last_name'] = 'Hansen'
+# where full name is Yang Hansen, change first name to Yang and last name to Hansen
+renamed.loc[renamed['full_name'] == 'Yang Hansen', 'first_name'] = 'Yang'
+renamed.loc[renamed['full_name'] == 'Yang Hansen', 'last_name'] = 'Hansen'
 
 
-# renamed[['id', 'full_name', 'is_active', 'last_name', 'first_name']].to_csv("playersAPI25.csv", index=False)
+renamed[['id', 'full_name', 'is_active', 'last_name', 'first_name']].to_csv("playersAPI25.csv", index=False)
 
 import pandas as pd 
 import ast
@@ -105,7 +105,7 @@ import ast
 df1 = pd.read_csv("playersBDL25.csv")
 df2 = pd.read_csv("playersAPI25.csv")
 
-# Debugging... Mapping of simplified names → corrected official names
+# Debugging... Mapping of   names → corrected official names
 name_corrections = {
     ("Bogdan", "Bogdanovic"): ("Bogdan", "Bogdanović"),
     ("Brandon", "Boston Jr."): ("Brandon", "Boston"),

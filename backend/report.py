@@ -61,7 +61,7 @@ def standards_values():
         d_forcedTO_per100 = []
 
         for team in team_abbreviations:
-            csv_path = os.path.join(DATA_DIR, 'S2', f'S2_{team}_2025_26.csv')
+            csv_path = os.path.join(DATA_DIR, 'S2', f'S2_{team}_5man_2025_26.csv')
             df = pd.read_csv(csv_path)
 
             lineup_agg = df.groupby('lineup').agg(FIELDS).reset_index()
@@ -91,7 +91,7 @@ def standards_values():
 
 
         for team in team_abbreviations:
-            csv_path = os.path.join(DATA_DIR, 'S2', f'S2_{team}_2025_26.csv')
+            csv_path = os.path.join(DATA_DIR, 'S2', f'S2_{team}_5man_2025_26.csv')
             df = pd.read_csv(csv_path)
 
             lineup_agg = df.groupby('lineup').agg(FIELDS).reset_index()
@@ -214,7 +214,7 @@ def games():
         return pd.DataFrame()  # Return empty DataFrame on error
 
 
-def report_data():
+def report_data(injuries=INJURIES):
     try:
         games_df = games()
         
@@ -231,8 +231,8 @@ def report_data():
             away_team = row["VISITOR_TEAM"]
             game_time = row["GAME_TIME"]
 
-            home_csv_path = os.path.join(DATA_DIR, 'S2', f'S2_{home_team}_2025_26.csv')
-            away_csv_path = os.path.join(DATA_DIR, 'S2', f'S2_{away_team}_2025_26.csv')
+            home_csv_path = os.path.join(DATA_DIR, 'S2', f'S2_{home_team}_5man_2025_26.csv')
+            away_csv_path = os.path.join(DATA_DIR, 'S2', f'S2_{away_team}_5man_2025_26.csv')
             
             # Skip if files don't exist
             if not os.path.exists(home_csv_path) or not os.path.exists(away_csv_path):
@@ -268,14 +268,14 @@ def report_data():
                 
                 return top_lineups['lineup'].tolist(), top_lineups
 
-            home_top_lineups, home_top_lineups_df = get_top_lineups(home_data, INJURIES, 3)
-            away_top_lineups, away_top_lineups_df = get_top_lineups(away_data, INJURIES, 3)
+            home_top_lineups, home_top_lineups_df = get_top_lineups(home_data, injuries, 3)
+            away_top_lineups, away_top_lineups_df = get_top_lineups(away_data, injuries, 3)
 
             # Filter data to only include top 3 lineups
             home_filtered = home_data[home_data['lineup'].isin(home_top_lineups)]
             away_filtered = away_data[away_data['lineup'].isin(away_top_lineups)]
 
-            home_filtered.to_csv("test_data.csv", index=False)
+            # home_filtered.to_csv("test_data.csv", index=False)
 
             # Aggregate stats from top 3 lineups
             home_stats = home_filtered.agg(FIELDS)
@@ -365,14 +365,14 @@ def report_data():
                 edges[i]['rank_value'] = abs(edges[i]['advantage'])
             edges_sorted = sorted(edges, key=lambda x: x['rank_value'], reverse=True)
             
-            # Turn edges_sorted to a DataFrame
-            edges_df = pd.DataFrame(edges_sorted)
+            # # Turn edges_sorted to a DataFrame
+            # edges_df = pd.DataFrame(edges_sorted)
 
-            # create csv if not created, otherwise append data
-            if os.path.exists('test_edges.csv'):
-                edges_df.to_csv('test_edges.csv', mode='a', header=False, index=False)
-            else:
-                edges_df.to_csv('test_edges.csv', index=False)
+            # # create csv if not created, otherwise append data
+            # if os.path.exists('test_edges.csv'):
+            #     edges_df.to_csv('test_edges.csv', mode='a', header=False, index=False)
+            # else:
+            #     edges_df.to_csv('test_edges.csv', index=False)
 
             top_4_edges = edges_sorted[:4]
 
@@ -412,6 +412,6 @@ def report_data():
         return pd.DataFrame()  # Return empty DataFrame on error
 
 
-if __name__ == "__main__":
-    rep = report_data()    
-    print(rep[['EDGE_1', 'EDGE_2', 'EDGE_3', 'EDGE_4']])
+# if __name__ == "__main__":
+#     rep = report_data()    
+#     print(rep[['EDGE_1', 'EDGE_2', 'EDGE_3', 'EDGE_4']])
