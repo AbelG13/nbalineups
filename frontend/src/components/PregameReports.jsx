@@ -98,6 +98,8 @@ export default function PregameReports() {
   const [error, setError] = useState(null);
   const [expanded, setExpanded] = useState({});
   const [playerMap, setPlayerMap] = useState({});
+  const [aiReports, setAiReports] = useState({});
+  const [loadingAi, setLoadingAi] = useState({});
 
   useEffect(() => {
     const load = async () => {
@@ -134,7 +136,7 @@ export default function PregameReports() {
 
   if (loading) {
     return (
-      <div className="min-h-[50vh] flex items-center justify-center text-gray-300">Loading pregame reports.... (sorry if this takes a second)</div>
+      <div className="min-h-[50vh] flex items-center justify-center text-gray-300">Loading pregame reports...</div>
     );
   }
   if (error) {
@@ -173,9 +175,46 @@ export default function PregameReports() {
                 </button>
               </div>
 
-              {isOpen && (
+                  {isOpen && (
                 <div className="px-5 pb-6 border-t border-gray-800">
-                  <h2 className="text-xl font-semibold text-white mt-4 mb-6">{g.VISITOR_TEAM} @ {g.HOME_TEAM} Pregame Report</h2>
+                  <div className="flex items-center justify-between mt-4 mb-6">
+                    <h2 className="text-xl font-semibold text-white">{g.VISITOR_TEAM} @ {g.HOME_TEAM} Pregame Report</h2>
+                    <button
+                      onClick={async () => {
+                        if (aiReports[gameKey]) return; // Already loaded
+                        setLoadingAi(prev => ({ ...prev, [gameKey]: true }));
+                        try {
+                          // Pass team info as query params for more reliable lookup
+                          const response = await axios.get(
+                            `http://127.0.0.1:8000/ai-report/${gameKey}`,
+                            { params: { home_team: g.HOME_TEAM, away_team: g.VISITOR_TEAM } }
+                          );
+                          setAiReports(prev => ({ ...prev, [gameKey]: response.data.report }));
+                        } catch (e) {
+                          console.error('Error loading AI report:', e);
+                          setAiReports(prev => ({ ...prev, [gameKey]: `Error: ${e.response?.data?.error || e.message}` }));
+                        } finally {
+                          setLoadingAi(prev => ({ ...prev, [gameKey]: false }));
+                        }
+                      }}
+                      disabled={loadingAi[gameKey] || !!aiReports[gameKey]}
+                      className="px-4 py-2 rounded-lg border border-blue-500 text-white bg-blue-500 hover:bg-blue-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {loadingAi[gameKey] ? 'Generating...' : aiReports[gameKey] ? 'AI Report Ready' : 'Generate AI Analysis'}
+                    </button>
+                  </div>
+
+                  {/* AI Report Section */}
+                  {aiReports[gameKey] && (
+                    <div className="mb-6 p-5 bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-blue-500/50 rounded-lg">
+                      <h3 className="text-lg font-semibold text-white mb-3 flex items-center">
+                        Pregame Analysis
+                      </h3>
+                      <div className="text-gray-200 leading-relaxed whitespace-pre-wrap">
+                        {aiReports[gameKey]}
+                      </div>
+                    </div>
+                  )}
 
                   <div className="grid md:grid-cols-2 gap-6">
                     {/* Away lineups */}
