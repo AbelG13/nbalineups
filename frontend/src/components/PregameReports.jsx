@@ -136,7 +136,12 @@ export default function PregameReports() {
 
   if (loading) {
     return (
-      <div className="min-h-[50vh] flex items-center justify-center text-gray-300">Loading pregame reports...</div>
+      <div className="min-h-screen flex items-center justify-center text-gray-300">
+        <div className="flex flex-col items-center gap-4">
+          <div className="h-14 w-14 rounded-full border-4 border-accent-500 border-t-transparent animate-spin"></div>
+          <span className="text-lg">Loading pregame reports...</span>
+        </div>
+      </div>
     );
   }
   if (error) {
@@ -210,8 +215,13 @@ export default function PregameReports() {
                       <h3 className="text-lg font-semibold text-white mb-3 flex items-center">
                         Pregame Analysis
                       </h3>
-                      <div className="text-gray-200 leading-relaxed whitespace-pre-wrap">
-                        {aiReports[gameKey]}
+                      <div className="text-gray-200 leading-relaxed space-y-2">
+                        {(aiReports[gameKey] || '')
+                          .split(/\r?\n/)
+                          .filter((line) => line.trim().length > 0)
+                          .map((line, idx) => (
+                            <p key={idx}>{line}</p>
+                          ))}
                       </div>
                     </div>
                   )}
