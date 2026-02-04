@@ -120,8 +120,9 @@ team_lineup_stats = {
 
 height_dict = dict()
 test = False
-start= 200
-end= 300
+start= 625
+end= 750
+check = ['0022500360']
 for idx,id in enumerate(game_ids[start:end]):
     # Load game
     game_id = id
@@ -161,12 +162,12 @@ for idx,id in enumerate(game_ids[start:end]):
             print(idx+start)
         time.sleep(0.5)
 
+    if 'Hansen Yang' in box_df['full_name'].tolist():
+        # Change to Yang Hansen
+        box_df.loc[box_df['full_name'] == 'Hansen Yang', 'full_name'] = 'Yang Hansen'
+
     # Build player-to-team map
     player_team_map = dict(zip(box_df['full_name'], box_df['teamTricode']))
-
-    # If Hansen Yang is in dictionary, reverse it to Yang Hansen
-    if 'Hansen Yang' in player_team_map:
-        player_team_map['Yang Hansen'] = player_team_map.pop('Hansen Yang')
 
     team_codes = box_df['teamTricode'].unique()
     try:

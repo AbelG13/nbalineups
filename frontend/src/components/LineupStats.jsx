@@ -197,15 +197,64 @@ function LineupStats() {
   const parseLineup = (lineupStr) => {
     if (!lineupStr) return [];
     // Handle tuple format: "('Player1', 'Player2', 'Player3', 'Player4', 'Player5')"
+    // Also handles names with apostrophes like "O'Brien"
     try {
-      // Remove outer parentheses and quotes, then split
+      // Remove outer parentheses
       const cleaned = lineupStr.replace(/^[\(\[]|[\)\]]$/g, '').trim();
-      // Split by comma, but handle commas within quotes
-      const players = cleaned.match(/'([^']+)'/g) || cleaned.match(/"([^"]+)"/g) || [];
-      return players.map(p => p.replace(/['"]/g, '').trim());
+      
+      // Parse quoted strings, handling both single and double quotes
+      // This regex matches: '...' or "..." where ... can contain the opposite quote type
+      // or escaped quotes of the same type
+      const players = [];
+      let i = 0;
+      
+      while (i < cleaned.length) {
+        // Skip whitespace and commas
+        while (i < cleaned.length && (cleaned[i] === ' ' || cleaned[i] === ',')) {
+          i++;
+        }
+        if (i >= cleaned.length) break;
+        
+        const startChar = cleaned[i];
+        if (startChar === "'" || startChar === '"') {
+          // Found a quoted string
+          const quoteChar = startChar;
+          i++; // Skip opening quote
+          let playerName = '';
+          
+          // Read until we find the matching closing quote
+          while (i < cleaned.length) {
+            if (cleaned[i] === quoteChar) {
+              // Check if it's escaped
+              if (i > 0 && cleaned[i - 1] === '\\') {
+                // Escaped quote, include it in the name
+                playerName = playerName.slice(0, -1) + quoteChar;
+              } else {
+                // Found closing quote
+                i++; // Skip closing quote
+                players.push(playerName);
+                break;
+              }
+            } else {
+              playerName += cleaned[i];
+            }
+            i++;
+          }
+        } else {
+          // Unquoted string (fallback case)
+          let playerName = '';
+          while (i < cleaned.length && cleaned[i] !== ',') {
+            playerName += cleaned[i];
+            i++;
+          }
+          players.push(playerName.trim());
+        }
+      }
+      
+      return players.length > 0 ? players : cleaned.split(',').map(p => p.trim().replace(/^['"]|['"]$/g, ''));
     } catch (e) {
       // Fallback to simple comma split
-      return lineupStr.split(',').map(player => player.trim());
+      return lineupStr.split(',').map(player => player.trim().replace(/^['"]|['"]$/g, ''));
     }
   };
 
@@ -813,11 +862,11 @@ function LineupStats() {
             <table className="w-full">
               <thead className="bg-gray-800">
                 <tr>
-                  <th className={`px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider ${
-                    lineupSize === 5 ? 'w-[600px]' : 
-                    lineupSize === 4 ? 'w-[500px]' : 
-                    lineupSize === 3 ? 'w-[400px]' : 
-                    'w-[300px]'
+                  <th className={`px-3 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider ${
+                    lineupSize === 5 ? 'w-[350px]' : 
+                    lineupSize === 4 ? 'w-[300px]' : 
+                    lineupSize === 3 ? 'w-[250px]' : 
+                    'w-[200px]'
                   }`}>
                     Lineup
                   </th>
@@ -863,40 +912,45 @@ function LineupStats() {
                 {paginatedData.map((row, index) => (
                   <tr key={index} className="hover:bg-gray-800 transition-colors duration-200">
                     {/* Lineup headshots and last names */}
-                    <td className={`px-6 py-3 text-sm text-white ${
-                      lineupSize === 5 ? 'w-[600px]' : 
-                      lineupSize === 4 ? 'w-[500px]' : 
-                      lineupSize === 3 ? 'w-[400px]' : 
-                      'w-[300px]'
+                    <td className={`px-3 py-3 text-sm text-white ${
+                      lineupSize === 5 ? 'w-[350px]' : 
+                      lineupSize === 4 ? 'w-[300px]' : 
+                      lineupSize === 3 ? 'w-[250px]' : 
+                      'w-[200px]'
                     }`}>
                       <div className="flex flex-col items-start">
                         <div className={`flex mb-2 ${
-                          lineupSize === 5 ? 'gap-10' : 
-                          lineupSize === 4 ? 'gap-12' : 
-                          lineupSize === 3 ? 'gap-16' : 
-                          'gap-20'
+                          lineupSize === 5 ? 'gap-4' : 
+                          lineupSize === 4 ? 'gap-5' : 
+                          lineupSize === 3 ? 'gap-6' : 
+                          'gap-8'
                         }`}>
                           {parseLineup(row.lineup).map((player, idx) => {
                             const cleanName = cleanPlayerName(player);
                             const norm = normalizeName(cleanName);
                             const info = playerMap[norm] || {};
+                            const displayName = info.last_name || cleanName.split(' ').slice(-1)[0];
                             return (
-                              <div key={idx} className="flex flex-col items-center">
-                                {info.image_url ? (
-                                  <img
-                                    src={info.image_url}
-                                    alt={cleanName}
-                                    className="w-14 h-14 rounded-full object-cover border border-gray-600 bg-gray-800"
-                                    onError={e => {
-                                      e.target.style.display = 'none';
-                                      e.target.nextSibling.style.display = 'flex';
-                                    }}
-                                  />
-                                ) : null}
-                                <div className={`w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center border border-gray-600 text-xs text-gray-400 ${info.image_url ? 'hidden' : ''}`}>
-                                  {getInitials(cleanName)}
+                              <div key={idx} className="flex flex-col items-center w-16 flex-shrink-0">
+                                <div className="relative w-14 h-14 flex-shrink-0">
+                                  {info.image_url ? (
+                                    <img
+                                      src={info.image_url}
+                                      alt={cleanName}
+                                      className="w-14 h-14 rounded-full object-cover border border-gray-600 bg-gray-800"
+                                      onError={e => {
+                                        e.target.style.display = 'none';
+                                        e.target.nextSibling.style.display = 'flex';
+                                      }}
+                                    />
+                                  ) : null}
+                                  <div className={`w-14 h-14 rounded-full bg-gray-700 flex items-center justify-center border border-gray-600 text-xs text-gray-400 ${info.image_url ? 'hidden' : ''}`}>
+                                    {getInitials(cleanName)}
+                                  </div>
                                 </div>
-                                <span className="text-xs text-gray-300 mt-1 text-center max-w-20 truncate">{info.last_name || cleanName.split(' ').slice(-1)[0]}</span>
+                                <span className="text-[10px] text-gray-300 mt-1 text-center w-full truncate" title={displayName}>
+                                  {displayName}
+                                </span>
                               </div>
                             );
                           })}

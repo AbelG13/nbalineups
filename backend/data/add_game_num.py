@@ -96,11 +96,19 @@ for team_abbr in team_abbrevs:
     df = pd.read_csv(csv_path)
 
     df2 = explode_to_x_man(df, 2)
-    df2.to_csv(f'{save_dir}\S2_{team_abbr}_2man_2025_26.csv', index=False)
+    filename2 = f'S2_{team_abbr}_2man_2025_26.csv'
+    filepath2 = os.path.join(save_dir, filename2)
+    df2.to_csv(filepath2, index=False)
+    
     df3 = explode_to_x_man(df, 3)
-    df3.to_csv(f'{save_dir}\S2_{team_abbr}_3man_2025_26.csv', index=False)
+    filename3 = f'S2_{team_abbr}_3man_2025_26.csv'
+    filepath3 = os.path.join(save_dir, filename3)
+    df3.to_csv(filepath3, index=False)
+    
     df4 = explode_to_x_man(df, 4)
-    df4.to_csv(f'{save_dir}\S2_{team_abbr}_4man_2025_26.csv', index=False)
+    filename4 = f'S2_{team_abbr}_4man_2025_26.csv'
+    filepath4 = os.path.join(save_dir, filename4)
+    df4.to_csv(filepath4, index=False)
 
 
 

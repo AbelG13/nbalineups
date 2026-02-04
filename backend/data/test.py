@@ -124,51 +124,51 @@ import pandas as pd
 # print(game_ids[200:201])
 # Create or update 2,3,and 4 man lineups
 
-import ast
-from itertools import combinations
+# from nba_api.stats.static import teams
+from nba_api.stats.endpoints import TeamGameLog, LeagueGameLog
+# import pandas as pd
 
-def parse_lineup(lineup_str):
-    try:
-        # Handle NaN values (pandas might read them as string "nan" or actual NaN)
-        if pd.isna(lineup_str) or (isinstance(lineup_str, str) and lineup_str.lower() == 'nan'):
-            return None
-        raw = ast.literal_eval(lineup_str)
-        return tuple(p.strip().strip("'\"") for p in raw)
-    except Exception:
-        return None
+# TEAM_ID = 1610612747  # LAL
+# gamelog = LeagueGameLog(
+#     season="2025-26",
+#     league_id="00",
+#     player_or_team_abbreviation="T"  # T = teams, P = players
+# )
 
-def explode_to_x_man(df, x):
-    """
-    df: 5-man lineup DataFrame with a 'lineup' column as string
-    x: 2, 3, or 4
+# df = gamelog.get_data_frames()[0]
 
-    Returns: new DataFrame where each original row is duplicated
-             for every x-man combo contained in its lineup.
-             Only the 'lineup' field changes.
-    """
-    df = df.copy()
-    # parse the original 5-man lineup string into a tuple of players
-    df["parsed"] = df["lineup"].map(parse_lineup)
+# def last_5_games(team_abbrev, df):
+#     team_abbrev = team_abbrev.upper()
 
-    # for each row, build all x-man combos from the 5 players
-    df["x_lineups"] = df["parsed"].apply(
-        lambda players: [tuple(sorted(c)) for c in combinations(players, x)] if players and len(players) >= x else []
-    )
+#     team_games = (
+#         df[df["TEAM_ABBREVIATION"] == team_abbrev]
+#         .sort_values("GAME_DATE", ascending=False)
+#         .head(5)
+#     )
 
-    # explode: each row → one row per x-man combo
-    exploded = df.explode("x_lineups").reset_index(drop=True)
+#     return team_games
 
-    # Filter out rows where x_lineups is None or empty
-    exploded = exploded[exploded["x_lineups"].notna()]
+# last_5 = last_5_games("LAL", df)
 
-    # replace the lineup column with the x-man combo
-    exploded["lineup"] = exploded["x_lineups"].apply(lambda combo: str(combo) if combo else None)
 
-    # drop helper columns
-    exploded = exploded.drop(columns=["parsed", "x_lineups"])
 
-    return exploded
+# print(last_5[[
+#     "GAME_DATE",
+#     "MATCHUP",
+#     "WL",
+#     "PTS",
+#     "PLUS_MINUS"
+# ]])
 
-df = pd.read_csv("test_team.csv")
-df2 = explode_to_x_man(df, 2)
-df2.to_csv("test_team_2man.csv", index=False)
+
+SEASON = '2025-26'
+log = LeagueGameLog(
+    season=SEASON,
+    season_type_all_star="Regular Season",
+    player_or_team_abbreviation="P",  # player rows
+)
+df = log.get_data_frames()[0]
+df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"])
+
+df.to_csv('test.csv', index=False)
+

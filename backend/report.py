@@ -374,7 +374,6 @@ def report_data(injuries=INJURIES):
             # else:
             #     edges_df.to_csv('test_edges.csv', index=False)
 
-            top_4_edges = edges_sorted[:4]
 
             # Format lineup strings for output (remove quotes and parentheses)
             def format_lineup(lineup_str):
@@ -396,10 +395,18 @@ def report_data(injuries=INJURIES):
                 "AWAY_LINEUP_1": format_lineup(away_top_lineups[0]) if len(away_top_lineups) > 0 else "",
                 "AWAY_LINEUP_2": format_lineup(away_top_lineups[1]) if len(away_top_lineups) > 1 else "",
                 "AWAY_LINEUP_3": format_lineup(away_top_lineups[2]) if len(away_top_lineups) > 2 else "",
-                "EDGE_1": top_4_edges[0]['name'] + f" {top_4_edges[0]['advantage']:.3f}" if len(top_4_edges) > 0 else "",
-                "EDGE_2": top_4_edges[1]['name'] + f" {top_4_edges[1]['advantage']:.3f}" if len(top_4_edges) > 1 else "",
-                "EDGE_3": top_4_edges[2]['name'] + f" {top_4_edges[2]['advantage']:.3f}" if len(top_4_edges) > 2 else "",
-                "EDGE_4": top_4_edges[3]['name'] + f" {top_4_edges[3]['advantage']:.3f}" if len(top_4_edges) > 3 else ""
+                "EDGE_1": edges_sorted[0]['name'] + f" {edges_sorted[0]['advantage']:.3f}" if len(edges_sorted) > 0 else "",
+                "EDGE_2": edges_sorted[1]['name'] + f" {edges_sorted[1]['advantage']:.3f}" if len(edges_sorted) > 1 else "",
+                "EDGE_3": edges_sorted[2]['name'] + f" {edges_sorted[2]['advantage']:.3f}" if len(edges_sorted) > 2 else "",
+                "EDGE_4": edges_sorted[3]['name'] + f" {edges_sorted[3]['advantage']:.3f}" if len(edges_sorted) > 3 else "",
+                "EDGE_5": edges_sorted[4]['name'] + f" {edges_sorted[4]['advantage']:.3f}" if len(edges_sorted) > 4 else "",
+                "EDGE_6": edges_sorted[5]['name'] + f" {edges_sorted[5]['advantage']:.3f}" if len(edges_sorted) > 5 else "",
+                "EDGE_7": edges_sorted[6]['name'] + f" {edges_sorted[6]['advantage']:.3f}" if len(edges_sorted) > 6 else "",
+                "EDGE_8": edges_sorted[7]['name'] + f" {edges_sorted[7]['advantage']:.3f}" if len(edges_sorted) > 7 else "",
+                "EDGE_9": edges_sorted[8]['name'] + f" {edges_sorted[8]['advantage']:.3f}" if len(edges_sorted) > 8 else "",
+                "EDGE_10": edges_sorted[9]['name'] + f" {edges_sorted[9]['advantage']:.3f}" if len(edges_sorted) > 9 else "",
+                "EDGE_11": edges_sorted[10]['name'] + f" {edges_sorted[10]['advantage']:.3f}" if len(edges_sorted) > 10 else "",
+                "EDGE_12": edges_sorted[11]['name'] + f" {edges_sorted[11]['advantage']:.3f}" if len(edges_sorted) > 11 else "",
             })
 
         # Convert rows to DataFrame and return
@@ -412,6 +419,10 @@ def report_data(injuries=INJURIES):
         return pd.DataFrame()  # Return empty DataFrame on error
 
 
-# if __name__ == "__main__":
-#     rep = report_data()    
-#     print(rep[['EDGE_1', 'EDGE_2', 'EDGE_3', 'EDGE_4']])
+if __name__ == "__main__":
+    rep = report_data()    
+    # parse through the home lineup 1 of the first row
+    home_lineup = rep.iloc[0]["HOME_LINEUP_1"]
+    print(list(home_lineup))
+
+    
