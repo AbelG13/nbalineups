@@ -184,7 +184,7 @@ function LineupBuilder() {
                   )
                   .map((player) => (
                     <div
-                      key={player.id}
+                      key={player.player_id}
                       onClick={() => handlePlayerSelect(player)}
                       className="flex items-center gap-3 p-3 hover:bg-gray-700 cursor-pointer border-b border-gray-700 last:border-b-0 transition-colors duration-200"
                     >

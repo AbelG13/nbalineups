@@ -76,6 +76,13 @@ function LineupStats() {
   const [pendingMinMinutes, setPendingMinMinutes] = useState(String(defaultMinutes.min));
   const [pendingMaxMinutes, setPendingMaxMinutes] = useState(String(defaultMinutes.max));
 
+  // On/Off feature: raw player list from API (filter when typing); backend returns every on/off combination
+  const [onOffBarPlayers, setOnOffBarPlayers] = useState([]); // [{ fullName, player_id }]
+  const [onOffSearchInput, setOnOffSearchInput] = useState('');
+  const [useOnOffData, setUseOnOffData] = useState(false);
+  const [onOffErrorMessage, setOnOffErrorMessage] = useState(null); // validation message when using On/Off
+  const [playersCatalog, setPlayersCatalog] = useState([]); // raw API response: [{ player_id, first_name, last_name, team_abbreviation, ... }]
+
   // Dropdown state
   const [isTeamDropdownOpen, setIsTeamDropdownOpen] = useState(false);
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
@@ -84,26 +91,35 @@ function LineupStats() {
   const [isScaleDropdownOpen, setIsScaleDropdownOpen] = useState(false);
   const [isLineupSizeDropdownOpen, setIsLineupSizeDropdownOpen] = useState(false);
 
-  // Load player info for headshots and last names
+  // Load player info: raw catalog for On/Off search (filter by typing, key by player_id); map for lineup table
   useEffect(() => {
     const fetchPlayers = async () => {
       try {
         const res = await axios.get('http://127.0.0.1:8000/players');
+        const data = Array.isArray(res.data) ? res.data : [];
         const map = {};
-        for (const p of res.data) {
-          if (p.first_name && p.last_name) {
-            const fullName = `${p.first_name} ${p.last_name}`;
-            map[normalizeName(fullName)] = {
-              player_id: p.player_id,
-              last_name: p.last_name,
-              image_url: `https://cdn.nba.com/headshots/nba/latest/1040x760/${p.player_id}.png`
-            };
-          }
+        const seenIds = new Set();
+        const catalog = [];
+        for (const p of data) {
+          if (!p || p.player_id == null || !p.first_name || !p.last_name) continue;
+          if (seenIds.has(p.player_id)) continue;
+          seenIds.add(p.player_id);
+          const fullName = `${p.first_name} ${p.last_name}`;
+          map[normalizeName(fullName)] = {
+            player_id: p.player_id,
+            last_name: p.last_name,
+            image_url: `https://cdn.nba.com/headshots/nba/latest/1040x760/${p.player_id}.png`,
+            team_abbreviation: p.team_abbreviation || p.team,
+            position: p.position
+          };
+          catalog.push({ player_id: p.player_id, first_name: p.first_name, last_name: p.last_name, team_abbreviation: p.team_abbreviation || p.team, position: p.position });
         }
         setPlayerMap(map);
+        setPlayersCatalog(catalog);
       } catch (e) {
         console.error('Error loading players:', e);
         setPlayerMap({});
+        setPlayersCatalog([]);
       }
     };
     fetchPlayers();
@@ -142,6 +158,40 @@ function LineupStats() {
     setLoading(false);
   };
 
+  // Load on/off combination data (5-man filter; backend returns every on/off combination)
+  const loadOnOffData = async () => {
+    setLoading(true);
+    setError(null);
+    if (onOffBarPlayers.length === 0) {
+      setLineupData([]);
+      setLoading(false);
+      return;
+    }
+    const playersParam = onOffBarPlayers.map((e) => e.fullName).join(',');
+    const allData = [];
+    for (const team of selectedTeams) {
+      try {
+        const params = {
+          season: selectedSeason,
+          game_min: gameRange[0],
+          game_max: gameRange[1],
+          periods: selectedPeriods.length > 0 ? selectedPeriods.join(',') : undefined,
+          players: playersParam
+        };
+        const response = await axios.get(`http://127.0.0.1:8000/lineup-stats/${team}/on-off`, { params });
+        if (response.data && Array.isArray(response.data)) {
+          allData.push(...response.data);
+        }
+      } catch (err) {
+        console.error(`Error loading on/off data for ${team}:`, err);
+        setError(`Failed to load on/off data for ${team}`);
+        break;
+      }
+    }
+    setLineupData(allData);
+    setLoading(false);
+  };
+
   // Reset lineup size when pending season changes to 2024-25
   useEffect(() => {
     if (pendingSeason === '2024-25' && lineupSize !== 5) {
@@ -151,7 +201,19 @@ function LineupStats() {
 
   // Load data on mount and when filters change
   useEffect(() => {
-    loadData();
+    if (useOnOffData) {
+      if (onOffBarPlayers.length > 0) {
+        loadOnOffData();
+      } else {
+        setLineupData([]);
+      }
+    } else if (onOffErrorMessage && onOffBarPlayers.length > 0) {
+      // On/Off validation failed: keep table empty, don't load normal data
+      setLineupData([]);
+      setLoading(false);
+    } else {
+      loadData();
+    }
     // Reset stat type to traditional when switching to 2024-25
     if (selectedSeason === '2024-25' && statType === 'advanced') {
       setStatType('traditional');
@@ -161,7 +223,7 @@ function LineupStats() {
       setLineupSize(5);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedTeams, selectedPeriods, gameRange, selectedSeason, lineupSize]);
+  }, [selectedTeams, selectedPeriods, gameRange, selectedSeason, lineupSize, useOnOffData, onOffBarPlayers.length, onOffErrorMessage]);
 
   const handleShowResults = () => {
     setSelectedTeams(pendingTeams);
@@ -182,6 +244,33 @@ function LineupStats() {
     const minVal = pendingMinMinutes.trim() === '' ? defaultMinutes.min : Number(pendingMinMinutes);
     const maxVal = pendingMaxMinutes.trim() === '' ? defaultMinutes.max : Number(pendingMaxMinutes);
     setSelectedMinutesRange([isNaN(minVal) ? defaultMinutes.min : minVal, isNaN(maxVal) ? defaultMinutes.max : maxVal]);
+
+    // On/Off: require exactly one team and all selected players on that team
+    if (onOffBarPlayers.length > 0 && pendingSeason === '2025-26') {
+      if (pendingTeams.length !== 1) {
+        setOnOffErrorMessage('Select exactly one team when using On/Off.');
+        setUseOnOffData(false);
+        setLineupData([]);
+      } else {
+        const selectedTeam = pendingTeams[0];
+        const allOnSelectedTeam = onOffBarPlayers.every((entry) => {
+          const p = playersCatalog.find((c) => c.player_id === entry.player_id);
+          const team = p?.team_abbreviation || p?.team;
+          return team === selectedTeam;
+        });
+        if (!allOnSelectedTeam) {
+          setOnOffErrorMessage('Make sure the selected players are on the selected team.');
+          setUseOnOffData(false);
+          setLineupData([]);
+        } else {
+          setOnOffErrorMessage(null);
+          setUseOnOffData(true);
+        }
+      }
+    } else {
+      setOnOffErrorMessage(null);
+      setUseOnOffData(onOffBarPlayers.length > 0 && pendingSeason === '2025-26');
+    }
     setCurrentPage(1);
   };
 
@@ -719,6 +808,91 @@ function LineupStats() {
                   </div>
                 </div>
               </div>
+
+              {/* Third row: On/Off search bar (players for on/off combinations; backend returns every combination) */}
+              <div className="grid grid-cols-3 gap-16">
+                <div className="col-span-1">
+                  <label className="block text-sm font-medium text-gray-300 mb-3">On/Off</label>
+                  <div className="relative">
+                    <input
+                      type="text"
+                      value={onOffSearchInput}
+                      onChange={(e) => setOnOffSearchInput(e.target.value)}
+                      placeholder="Search for a player..."
+                      className="w-full p-3 border border-gray-700 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 transition-all duration-200"
+                    />
+                    {onOffSearchInput.trim() !== '' && (
+                      <div className="absolute z-20 w-full mt-1 max-h-60 overflow-y-auto border border-gray-700 rounded-lg bg-gray-800 shadow-medium">
+                        {playersCatalog
+                          .filter((player) => {
+                            const fullName = `${player.first_name} ${player.last_name}`.toLowerCase();
+                            const search = onOffSearchInput.trim().toLowerCase();
+                            const matchesSearch = search === '' || fullName.includes(search);
+                            const notAlreadySelected = !onOffBarPlayers.some((e) => e.player_id === player.player_id);
+                            return matchesSearch && notAlreadySelected;
+                          })
+                          .slice(0, 50)
+                          .map((player) => (
+                            <button
+                              key={player.player_id}
+                              type="button"
+                              className="w-full flex items-center gap-3 p-3 hover:bg-gray-700 cursor-pointer border-b border-gray-700 last:border-b-0 transition-colors duration-200 text-left"
+                              onClick={() => {
+                                setOnOffBarPlayers([...onOffBarPlayers, { fullName: `${player.first_name} ${player.last_name}`, player_id: player.player_id }]);
+                                setOnOffSearchInput('');
+                              }}
+                            >
+                              <img
+                                src={`https://cdn.nba.com/headshots/nba/latest/1040x760/${player.player_id}.png`}
+                                alt={`${player.first_name} ${player.last_name}`}
+                                className="w-10 h-10 rounded-full object-cover border border-gray-600 flex-shrink-0"
+                                onError={(e) => { e.target.style.display = 'none'; const next = e.target.nextElementSibling; if (next) next.style.display = 'flex'; }}
+                              />
+                              <div className="w-10 h-10 rounded-full bg-gray-700 border border-gray-600 flex items-center justify-center text-xs text-gray-400 flex-shrink-0 hidden">
+                                {getInitials(`${player.first_name} ${player.last_name}`)}
+                              </div>
+                              <div>
+                                <div className="font-medium text-white">{`${player.first_name} ${player.last_name}`}</div>
+                                {(player.team_abbreviation || player.position) && (
+                                  <div className="text-sm text-gray-400">
+                                    {[player.team_abbreviation, player.position].filter(Boolean).join(' • ')}
+                                  </div>
+                                )}
+                              </div>
+                            </button>
+                          ))}
+                      </div>
+                    )}
+                    {onOffBarPlayers.length > 0 && (
+                      <div className="mt-2 flex flex-wrap gap-1">
+                        {onOffBarPlayers.map((entry) => (
+                          <span
+                            key={entry.player_id}
+                            className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-accent-500/30 text-accent-200 text-sm"
+                          >
+                            {entry.fullName}
+                            <button
+                              type="button"
+                              onClick={() => setOnOffBarPlayers(onOffBarPlayers.filter((e) => e.player_id !== entry.player_id))}
+                              className="hover:text-white"
+                            >
+                              ×
+                            </button>
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                    {onOffBarPlayers.length > 0 && (
+                      <p className="text-xs text-gray-500 mt-1">2025-26 only • Show Results for combinations</p>
+                    )}
+                    {onOffErrorMessage && (
+                      <p className="mt-2 text-sm text-amber-400" role="alert">
+                        {onOffErrorMessage}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Right side: Game Range, Minutes, and Lineup Size */}
@@ -913,6 +1087,7 @@ function LineupStats() {
                   <tr key={index} className="hover:bg-gray-800 transition-colors duration-200">
                     {/* Lineup headshots and last names */}
                     <td className={`px-3 py-3 text-sm text-white ${
+                      useOnOffData && row.combination ? 'w-[350px]' :
                       lineupSize === 5 ? 'w-[350px]' : 
                       lineupSize === 4 ? 'w-[300px]' : 
                       lineupSize === 3 ? 'w-[250px]' : 
@@ -920,40 +1095,76 @@ function LineupStats() {
                     }`}>
                       <div className="flex flex-col items-start">
                         <div className={`flex mb-2 ${
+                          useOnOffData && row.combination ? 'gap-4' :
                           lineupSize === 5 ? 'gap-4' : 
                           lineupSize === 4 ? 'gap-5' : 
                           lineupSize === 3 ? 'gap-6' : 
                           'gap-8'
                         }`}>
-                          {parseLineup(row.lineup).map((player, idx) => {
-                            const cleanName = cleanPlayerName(player);
-                            const norm = normalizeName(cleanName);
-                            const info = playerMap[norm] || {};
-                            const displayName = info.last_name || cleanName.split(' ').slice(-1)[0];
-                            return (
-                              <div key={idx} className="flex flex-col items-center w-16 flex-shrink-0">
-                                <div className="relative w-14 h-14 flex-shrink-0">
-                                  {info.image_url ? (
-                                    <img
-                                      src={info.image_url}
-                                      alt={cleanName}
-                                      className="w-14 h-14 rounded-full object-cover border border-gray-600 bg-gray-800"
-                                      onError={e => {
-                                        e.target.style.display = 'none';
-                                        e.target.nextSibling.style.display = 'flex';
-                                      }}
-                                    />
-                                  ) : null}
-                                  <div className={`w-14 h-14 rounded-full bg-gray-700 flex items-center justify-center border border-gray-600 text-xs text-gray-400 ${info.image_url ? 'hidden' : ''}`}>
-                                    {getInitials(cleanName)}
+                          {useOnOffData && row.combination
+                            ? Object.keys(row.combination).map((playerName, idx) => {
+                                const norm = normalizeName(playerName);
+                                const info = playerMap[norm] || {};
+                                const displayName = info.last_name || playerName.split(' ').slice(-1)[0];
+                                const isOn = row.combination[playerName];
+                                return (
+                                  <div key={idx} className="flex flex-col items-center w-16 flex-shrink-0">
+                                    <div className="relative w-14 h-14 flex-shrink-0">
+                                      {info.image_url ? (
+                                        <img
+                                          src={info.image_url}
+                                          alt={playerName}
+                                          className="w-14 h-14 rounded-full object-cover border border-gray-600 bg-gray-800"
+                                          onError={e => {
+                                            e.target.style.display = 'none';
+                                            e.target.nextSibling.style.display = 'flex';
+                                          }}
+                                        />
+                                      ) : null}
+                                      <div className={`w-14 h-14 rounded-full bg-gray-700 flex items-center justify-center border border-gray-600 text-xs text-gray-400 ${info.image_url ? 'hidden' : ''}`}>
+                                        {getInitials(playerName)}
+                                      </div>
+                                      {!isOn && (
+                                        <div className="absolute inset-0 rounded-full bg-gray-900/70 flex items-center justify-center">
+                                          <span className="text-xs font-bold text-white drop-shadow">OFF</span>
+                                        </div>
+                                      )}
+                                    </div>
+                                    <span className="text-[10px] text-gray-300 mt-1 text-center w-full truncate" title={displayName}>
+                                      {displayName}
+                                    </span>
                                   </div>
-                                </div>
-                                <span className="text-[10px] text-gray-300 mt-1 text-center w-full truncate" title={displayName}>
-                                  {displayName}
-                                </span>
-                              </div>
-                            );
-                          })}
+                                );
+                              })
+                            : parseLineup(row.lineup).map((player, idx) => {
+                                const cleanName = cleanPlayerName(player);
+                                const norm = normalizeName(cleanName);
+                                const info = playerMap[norm] || {};
+                                const displayName = info.last_name || cleanName.split(' ').slice(-1)[0];
+                                return (
+                                  <div key={idx} className="flex flex-col items-center w-16 flex-shrink-0">
+                                    <div className="relative w-14 h-14 flex-shrink-0">
+                                      {info.image_url ? (
+                                        <img
+                                          src={info.image_url}
+                                          alt={cleanName}
+                                          className="w-14 h-14 rounded-full object-cover border border-gray-600 bg-gray-800"
+                                          onError={e => {
+                                            e.target.style.display = 'none';
+                                            e.target.nextSibling.style.display = 'flex';
+                                          }}
+                                        />
+                                      ) : null}
+                                      <div className={`w-14 h-14 rounded-full bg-gray-700 flex items-center justify-center border border-gray-600 text-xs text-gray-400 ${info.image_url ? 'hidden' : ''}`}>
+                                        {getInitials(cleanName)}
+                                      </div>
+                                    </div>
+                                    <span className="text-[10px] text-gray-300 mt-1 text-center w-full truncate" title={displayName}>
+                                      {displayName}
+                                    </span>
+                                  </div>
+                                );
+                              })}
                         </div>
                       </div>
                     </td>
