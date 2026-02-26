@@ -100,12 +100,12 @@ import pandas as pd
 
 # who played in game 0022500057
 
-# from nba_api.live.nba.endpoints import playbyplay
+from nba_api.live.nba.endpoints import playbyplay
 
-# game_id = '0022500242'
-# pbp_df = pd.DataFrame(playbyplay.PlayByPlay(game_id=game_id).get_dict()["game"]["actions"])
+game_id = '0022500842'
+pbp_df = pd.DataFrame(playbyplay.PlayByPlay(game_id=game_id).get_dict()["game"]["actions"])
 
-# pbp_df.to_csv('test_pbp.csv', index=False)
+pbp_df.to_csv('test_pbp.csv', index=False)
 
 # from nba_api.stats.endpoints import scheduleleaguev2
 
@@ -125,7 +125,7 @@ import pandas as pd
 # Create or update 2,3,and 4 man lineups
 
 # from nba_api.stats.static import teams
-from nba_api.stats.endpoints import TeamGameLog, LeagueGameLog
+# from nba_api.stats.endpoints import TeamGameLog, LeagueGameLog
 # import pandas as pd
 
 # TEAM_ID = 1610612747  # LAL
@@ -161,14 +161,69 @@ from nba_api.stats.endpoints import TeamGameLog, LeagueGameLog
 # ]])
 
 
-SEASON = '2025-26'
-log = LeagueGameLog(
-    season=SEASON,
-    season_type_all_star="Regular Season",
-    player_or_team_abbreviation="P",  # player rows
-)
-df = log.get_data_frames()[0]
-df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"])
+# SEASON = '2025-26'
+# log = LeagueGameLog(
+#     season=SEASON,
+#     season_type_all_star="Regular Season",
+#     player_or_team_abbreviation="P",  # player rows
+# )
+# df = log.get_data_frames()[0]
+# df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"])
 
-df.to_csv('test.csv', index=False)
+# df.to_csv('test.csv', index=False)
 
+# from nba_api.stats.endpoints import commonallplayers
+
+# players_df = commonallplayers.CommonAllPlayers(
+#     season="2025-26",
+#     is_only_current_season=1,  # current season players
+#     league_id="00"
+# ).get_data_frames()[0]
+
+# kad = players_df[players_df["DISPLAY_FIRST_LAST"].str.strip() == "Kadary Richmond"]
+# for col in kad.columns:
+#     print(f"{col}: {kad[col].values[0]}")
+
+# from nba_api.stats.endpoints import commonteamroster
+
+# wizards_df = commonteamroster.CommonTeamRoster(
+#     team_id=1610612764,
+#     season="2025-26"
+# ).get_data_frames()[0]
+
+# print(wizards_df[['PLAYER', 'PLAYER_ID']])
+
+# import pandas as pd
+# from nba_api.stats.endpoints import leaguegamelog
+
+# def all_active_players():
+#     games = leaguegamelog.LeagueGameLog(
+#         season="2025-26",
+#         season_type_all_star="Regular Season",
+#         player_or_team_abbreviation="P"
+#     ).get_data_frames()[0]
+
+#     players = (
+#         games[["PLAYER_ID", "PLAYER_NAME", "TEAM_ABBREVIATION"]]
+#         .drop_duplicates()
+#         .reset_index(drop=True)
+#     )
+
+#     # Split first / last
+#     players[["first_name", "last_name"]] = players["PLAYER_NAME"].str.split(" ", n=1, expand=True)
+
+#     # Rename + reorder
+#     players = players.rename(columns={
+#         "PLAYER_ID": "player_id",
+#         "PLAYER_NAME": "full_name",
+#         "TEAM_ABBREVIATION": "team_abbreviation"
+#     })
+
+#     players = players[
+#         ["player_id", "first_name", "last_name", "full_name", "team_abbreviation"]
+#     ]
+
+#     return players
+
+# df = all_active_players()
+# df.to_csv("all_active_players.csv", index=False)

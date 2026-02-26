@@ -89,7 +89,7 @@ def safe_literal_eval(x):
 sched = scheduleleaguev2.ScheduleLeagueV2(
     league_id='00', 
     season='2025-26'
-)
+    )
 df = sched.get_data_frames()[0]  # 'SeasonGames' table
 
 # Filter for regular season games
@@ -120,9 +120,9 @@ team_lineup_stats = {
 
 height_dict = dict()
 test = False
-start= 625
-end= 750
-check = ['0022500360']
+start= 600
+end= 900
+check = ['0022500776']
 for idx,id in enumerate(game_ids[start:end]):
     # Load game
     game_id = id
@@ -136,15 +136,14 @@ for idx,id in enumerate(game_ids[start:end]):
             box_df['full_name'] = box_df['firstName'] + ' ' + box_df['familyName']
             break
         except Exception as e:
-            if "'NoneType' object has no attribute 'keys'" in str(e) or "Expecting value" in str(e):
+            if "'NoneType' object has no attribute" in str(e) or "Expecting value" in str(e):
                 print(f"Game {game_id} not played yet: {str(e)}. Further games likely not played either. Last played game is {idx + start - 1}")
                 double_break = True
                 break  
-            elif "columns passed" in str(e):
-                print("game in progress, wait till it finishes")
             else:
-                print(f"Attempt {attempt + 1} failed for game {game_id}: {str(e)}")
-                time.sleep(int(np.random.choice([21, 33,42])))
+                print(f"Likely request timeout for game {game_id}: {str(e)}")
+                double_break = True
+                break
     if double_break:
         break
 
@@ -200,7 +199,7 @@ for idx,id in enumerate(game_ids[start:end]):
         player_id = row['personId']
         player_name = idToName(player_id)
         if player_name == "none":
-            print(row)        
+            print(row)
         team_involved = 'home' if row['teamTricode'] == home_team else 'away'
                 
         
@@ -256,33 +255,40 @@ for idx,id in enumerate(game_ids[start:end]):
                     total_height += int(feet) * 12 + int(inches)
                 avg_home_height = total_height / len(home_on_court)
                 height_dict[tuple(sorted(home_on_court))] = avg_home_height
-        except:
+        except Exception as e:
             print(f"[⚠️ Height Error] Could not resolve lineup {home_on_court} for home team, {game_id}")
+            print(e)
             continue
 
         total_height = 0
         
-        if tuple(sorted(away_on_court)) not in height_dict:
-            for player in sorted(away_on_court):
-                first_name, last_name = player.split(' ', 1)
-                
-                # Debugging... fix player name (poor fix, improve later)
-                if first_name == 'Yanic':
-                    first_name = "Yanic Konan"
-                    last_name = "Niederhäuser"
-                if last_name == 'Lavine':
-                    last_name = 'LaVine'
-                if first_name == 'Tobais' and last_name == 'Harris':
-                    first_name = 'Tobias'
+        try:
+            if tuple(sorted(away_on_court)) not in height_dict:
+                for player in sorted(away_on_court):
+                    first_name, last_name = player.split(' ', 1)
+                    
+                    # Debugging... fix player name (poor fix, improve later)
+                    if first_name == 'Yanic':
+                        first_name = "Yanic Konan"
+                        last_name = "Niederhäuser"
+                    if last_name == 'Lavine':
+                        last_name = 'LaVine'
+                    if first_name == 'Tobais' and last_name == 'Harris':
+                        first_name = 'Tobias'
 
-                height = additional_data[(additional_data['first_name'] == first_name) & (additional_data['last_name'] == last_name)]['height']
-                if len(height) == 0:
-                    print(f"[⚠️ Height Error] Could not resolve height {height} for away player: {first_name} (first) {last_name} (last), {game_id}")
-                    continue
-                feet, inches = str(height.dropna().reset_index(drop=True)[0]).split('-')
-                total_height += int(feet) * 12 + int(inches)
-            avg_away_height = total_height / len(away_on_court)
-            height_dict[tuple(sorted(away_on_court))] = avg_away_height
+                    height = additional_data[(additional_data['first_name'] == first_name) & (additional_data['last_name'] == last_name)]['height']
+                    if len(height) == 0:
+                        print(f"[⚠️ Height Error] Could not resolve height {height} for away player: {first_name} (first) {last_name} (last), {game_id}")
+                        continue
+                    feet, inches = str(height.dropna().reset_index(drop=True)[0]).split('-')
+                    total_height += int(feet) * 12 + int(inches)
+                avg_away_height = total_height / len(away_on_court)
+                height_dict[tuple(sorted(away_on_court))] = avg_away_height
+
+        except:
+            print(f"[⚠️ Height Error] Could not resolve lineup {away_on_court} for away team, {game_id}")
+            continue
+
 
         # Log current state
         lineup_tracking.append({

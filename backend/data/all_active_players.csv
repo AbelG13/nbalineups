@@ -1,4 +1,4 @@
-id,first_name,last_name,full_name,team_abbreviation
+player_id,first_name,last_name,full_name,team_abbreviation
 1642964,Brooks,Barnhizer,Brooks Barnhizer,OKC
 1642959,Chris,Youngblood,Chris Youngblood,OKC
 1641717,Cason,Wallace,Cason Wallace,OKC
@@ -603,4 +603,3 @@ id,first_name,last_name,full_name,team_abbreviation
 1627749,Dejounte,Murray,Dejounte Murray,NOP
 1630625,Dalano,Banton,Dalano Banton,BOS
 1642910,John,Tonje,John Tonje,BOS
-1631116,Patrick,Baldwin Jr.,Patrick Baldwin Jr.,SAC

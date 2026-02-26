@@ -66,6 +66,7 @@ function LineupStats() {
   const [error, setError] = useState(null);
   const [showNet, setShowNet] = useState(false);
   const [showOpponent, setShowOpponent] = useState(false);
+  const [showGeneral, setShowGeneral] = useState(false);
   const [perMinute, setPerMinute] = useState(false);
   const [per100Poss, setPer100Poss] = useState(false);
   const [statType, setStatType] = useState('traditional'); // 'traditional' or 'advanced'
@@ -80,7 +81,6 @@ function LineupStats() {
   const [onOffBarPlayers, setOnOffBarPlayers] = useState([]); // [{ fullName, player_id }]
   const [onOffSearchInput, setOnOffSearchInput] = useState('');
   const [useOnOffData, setUseOnOffData] = useState(false);
-  const [onOffErrorMessage, setOnOffErrorMessage] = useState(null); // validation message when using On/Off
   const [playersCatalog, setPlayersCatalog] = useState([]); // raw API response: [{ player_id, first_name, last_name, team_abbreviation, ... }]
 
   // Dropdown state
@@ -207,10 +207,6 @@ function LineupStats() {
       } else {
         setLineupData([]);
       }
-    } else if (onOffErrorMessage && onOffBarPlayers.length > 0) {
-      // On/Off validation failed: keep table empty, don't load normal data
-      setLineupData([]);
-      setLoading(false);
     } else {
       loadData();
     }
@@ -223,7 +219,7 @@ function LineupStats() {
       setLineupSize(5);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedTeams, selectedPeriods, gameRange, selectedSeason, lineupSize, useOnOffData, onOffBarPlayers.length, onOffErrorMessage]);
+  }, [selectedTeams, selectedPeriods, gameRange, selectedSeason, lineupSize, useOnOffData, onOffBarPlayers.length]);
 
   const handleShowResults = () => {
     setSelectedTeams(pendingTeams);
@@ -245,32 +241,8 @@ function LineupStats() {
     const maxVal = pendingMaxMinutes.trim() === '' ? defaultMinutes.max : Number(pendingMaxMinutes);
     setSelectedMinutesRange([isNaN(minVal) ? defaultMinutes.min : minVal, isNaN(maxVal) ? defaultMinutes.max : maxVal]);
 
-    // On/Off: require exactly one team and all selected players on that team
-    if (onOffBarPlayers.length > 0 && pendingSeason === '2025-26') {
-      if (pendingTeams.length !== 1) {
-        setOnOffErrorMessage('Select exactly one team when using On/Off.');
-        setUseOnOffData(false);
-        setLineupData([]);
-      } else {
-        const selectedTeam = pendingTeams[0];
-        const allOnSelectedTeam = onOffBarPlayers.every((entry) => {
-          const p = playersCatalog.find((c) => c.player_id === entry.player_id);
-          const team = p?.team_abbreviation || p?.team;
-          return team === selectedTeam;
-        });
-        if (!allOnSelectedTeam) {
-          setOnOffErrorMessage('Make sure the selected players are on the selected team.');
-          setUseOnOffData(false);
-          setLineupData([]);
-        } else {
-          setOnOffErrorMessage(null);
-          setUseOnOffData(true);
-        }
-      }
-    } else {
-      setOnOffErrorMessage(null);
-      setUseOnOffData(onOffBarPlayers.length > 0 && pendingSeason === '2025-26');
-    }
+    // On/Off: use selected teams' CSVs; no team/player validation — if players aren't in a team's lineups, backend returns empty/zero for that team
+    setUseOnOffData(onOffBarPlayers.length > 0 && pendingSeason === '2025-26');
     setCurrentPage(1);
   };
 
@@ -353,6 +325,17 @@ function LineupStats() {
   };
 
   const getValueForKey = (row, key) => {
+    // OFF Rating (points per 100 poss) and DEF Rating (opp points per 100 poss) - not scaled
+    if (key === 'off_rating') {
+      const poss = row.possessions ?? 0;
+      if (!poss || poss === 0) return 0;
+      return ((row.points ?? 0) / poss) * 100;
+    }
+    if (key === 'def_rating') {
+      const poss = row.possessions ?? 0;
+      if (!poss || poss === 0) return 0;
+      return ((row.opp_points ?? 0) / poss) * 100;
+    }
     // Minutes and pace should not be scaled
     if (key === 'minutes_played') return row.minutes_played ?? 0;
     if (key === 'pace') {
@@ -474,6 +457,10 @@ function LineupStats() {
     { key: 'net_from_turnover', label: 'Net Points Off Turnovers' },
     { key: 'net_points_in_paint', label: 'Net Paint Points' },
   ];
+  const generalColumns = [
+    { key: 'off_rating', label: 'OFF Rating' },
+    { key: 'def_rating', label: 'DEF Rating' },
+  ];
   
   // Determine which columns to show based on current selection
   let teamColumns = [];
@@ -492,7 +479,9 @@ function LineupStats() {
   
   // Determine which columns to show based on current selection
   let columns = [];
-  if (showNet) {
+  if (showGeneral) {
+    columns = generalColumns;
+  } else if (showNet) {
     columns = netColumns;
   } else if (showOpponent) {
     columns = opponentColumns;
@@ -692,7 +681,7 @@ function LineupStats() {
                       onClick={() => setIsShowDropdownOpen(!isShowDropdownOpen)}
                       className="w-full px-3 py-2 text-left border border-gray-700 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-accent-500 focus:border-accent-500 transition-all duration-200"
                     >
-                      {showNet ? 'Net' : showOpponent ? 'Opponent' : 'Team'}
+                      {showGeneral ? 'General' : showNet ? 'Net' : showOpponent ? 'Opponent' : 'Team'}
                       <span className="absolute inset-y-0 right-0 flex items-center pr-2">
                         <svg className="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -702,22 +691,28 @@ function LineupStats() {
                     {isShowDropdownOpen && (
                       <div className="absolute z-10 w-full mt-1 bg-gray-800 border border-gray-700 rounded-lg shadow-medium">
                         <button
-                          className={`w-full px-3 py-2 text-left text-sm rounded-t-lg transition-colors ${!showNet && !showOpponent ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'}`}
-                          onClick={() => { setShowNet(false); setShowOpponent(false); setIsShowDropdownOpen(false); }}
+                          className={`w-full px-3 py-2 text-left text-sm rounded-t-lg transition-colors ${!showNet && !showOpponent && !showGeneral ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'}`}
+                          onClick={() => { setShowNet(false); setShowOpponent(false); setShowGeneral(false); setIsShowDropdownOpen(false); }}
                         >
                           Team
                         </button>
                         <button
                           className={`w-full px-3 py-2 text-left text-sm transition-colors ${showOpponent ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'}`}
-                          onClick={() => { setShowNet(false); setShowOpponent(true); setIsShowDropdownOpen(false); }}
+                          onClick={() => { setShowNet(false); setShowOpponent(true); setShowGeneral(false); setIsShowDropdownOpen(false); }}
                         >
                           Opponent
                         </button>
                         <button
-                          className={`w-full px-3 py-2 text-left text-sm rounded-b-lg transition-colors ${showNet ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'}`}
-                          onClick={() => { setShowNet(true); setIsShowDropdownOpen(false); }}
+                          className={`w-full px-3 py-2 text-left text-sm transition-colors ${showNet ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'}`}
+                          onClick={() => { setShowNet(true); setShowOpponent(false); setShowGeneral(false); setIsShowDropdownOpen(false); }}
                         >
                           Net
+                        </button>
+                        <button
+                          className={`w-full px-3 py-2 text-left text-sm rounded-b-lg transition-colors ${showGeneral ? 'bg-accent-500/20 text-accent-400' : 'text-gray-300 hover:bg-gray-700'}`}
+                          onClick={() => { setShowNet(false); setShowOpponent(false); setShowGeneral(true); setIsShowDropdownOpen(false); }}
+                        >
+                          General
                         </button>
                       </div>
                     )}
@@ -884,11 +879,6 @@ function LineupStats() {
                     )}
                     {onOffBarPlayers.length > 0 && (
                       <p className="text-xs text-gray-500 mt-1">2025-26 only • Show Results for combinations</p>
-                    )}
-                    {onOffErrorMessage && (
-                      <p className="mt-2 text-sm text-amber-400" role="alert">
-                        {onOffErrorMessage}
-                      </p>
                     )}
                   </div>
                 </div>
@@ -1077,7 +1067,7 @@ function LineupStats() {
                       onClick={() => handleSort(col.key)}
                       style={{ cursor: 'pointer' }}
                     >
-                      {per100Poss ? `${col.label} per 100 poss` : perMinute ? `${col.label} / min` : col.label} <SortIcon column={col.key} />
+                      {showGeneral ? col.label : per100Poss ? `${col.label} per 100 poss` : perMinute ? `${col.label} / min` : col.label} <SortIcon column={col.key} />
                     </th>
                   ))}
                 </tr>
@@ -1185,9 +1175,10 @@ function LineupStats() {
                     )}
                     {columns.map(col => {
                       const val = getValueForKey(row, col.key);
+                      const isGeneralRating = col.key === 'off_rating' || col.key === 'def_rating';
                       return (
                         <td key={col.key} className={`px-3 py-3 text-sm text-white ${col.key === columns[0].key ? 'border-l-2 border-gray-700' : ''}`}>
-                          {typeof val === 'number' ? (perMinute || per100Poss ? val.toFixed(2) : val) : val}
+                          {typeof val === 'number' ? (isGeneralRating || perMinute || per100Poss ? val.toFixed(2) : val) : val}
                         </td>
                       );
                     })}

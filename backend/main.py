@@ -81,8 +81,10 @@ def get_players():
     try:
         csv_path = os.path.join(DATA_DIR, "active25.csv")
         df = pd.read_csv(csv_path)
-        df['image_url'] = df['player_id'].apply(lambda x: f"https://cdn.nba.com/headshots/nba/latest/1040x760/{x}.png")
-        df = df.fillna("N/A")  # Replace NaN 
+        # Deduplicate by player_id so consumers (e.g. Lineup Builder) get unique keys
+        df = df.drop_duplicates(subset=["player_id"], keep="first")
+        df["image_url"] = df["player_id"].apply(lambda x: f"https://cdn.nba.com/headshots/nba/latest/1040x760/{x}.png")
+        df = df.fillna("N/A")
         players = df.to_dict(orient="records")
         return JSONResponse(content=players)
     except Exception as e:
